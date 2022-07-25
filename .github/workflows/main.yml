@@ -1,7 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-- name: Tag/Release on Push Action
-  uses: rymndhng/release-on-push-action@v0.23.1
-
 name: CI
 
 on:
