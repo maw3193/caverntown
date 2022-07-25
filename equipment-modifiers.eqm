@@ -1,0 +1,15 @@
+{
+	"type": "eqp_modifier_list",
+	"version": 2,
+	"id": "214a5dcb-7ca6-44a5-ab94-33f4c7e2c6ee",
+	"rows": [
+		{
+			"type": "eqp_modifier",
+			"id": "0ae9f056-7686-438c-b3ff-afff459c16e4",
+			"name": "Shattersand Explosive",
+			"cost_type": "to_original_cost",
+			"cost": "x5",
+			"notes": "Made of semi-precious gems but functions in mana"
+		}
+	]
+}

@@ -1,0 +1,1791 @@
+{
+	"type": "equipment_list",
+	"version": 2,
+	"id": "8d2d7538-cb7d-4647-a385-ba4e482f5f61",
+	"rows": [
+		{
+			"type": "equipment",
+			"id": "c7f7e0a3-e9c7-4157-b828-3f1845af1176",
+			"quantity": 1,
+			"description": "Shattersand Bomb, Small",
+			"tech_level": "5",
+			"legality_class": "2",
+			"value": "16",
+			"weight": "2.2 lb",
+			"reference": "B277",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr ex",
+						"base": "1d",
+						"fragmentation": "1d-4",
+						"fragmentation_type": "cut"
+					},
+					"accuracy": "0",
+					"range": "x2.5",
+					"rate_of_fire": "1",
+					"shots": "1",
+					"bulk": "0",
+					"recoil": "0",
+					"calc": {
+						"level": 0,
+						"range": "x2.5",
+						"damage": "1d cr ex [1d-4 cut]"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Throwing"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "16",
+				"extended_weight": "2.2 lb"
+			},
+			"notes": "Impact explosion",
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "bf555dd4-e35f-4cab-a01b-2e1eaa0f1160",
+			"quantity": 1,
+			"description": "Shattersand Bomb, Medium",
+			"tech_level": "5",
+			"legality_class": "2",
+			"value": "49",
+			"weight": "5.7 lb",
+			"reference": "B277",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr ex",
+						"base": "2d",
+						"fragmentation": "1d-2",
+						"fragmentation_type": "cut"
+					},
+					"accuracy": "0",
+					"range": "x1.2",
+					"rate_of_fire": "1",
+					"shots": "1",
+					"bulk": "0",
+					"recoil": "0",
+					"calc": {
+						"level": 0,
+						"range": "x1.2",
+						"damage": "2d cr ex [1d-2 cut]"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Throwing"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "49",
+				"extended_weight": "5.7 lb"
+			},
+			"notes": "Impact explosion",
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "ec0fc4af-1982-434d-aa05-e2cf210e8e6a",
+			"quantity": 1,
+			"description": "Shattersand Bomb, Large",
+			"tech_level": "5",
+			"legality_class": "2",
+			"value": "97",
+			"weight": "10.1 lb",
+			"reference": "B277",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr ex",
+						"base": "3d",
+						"fragmentation": "1d",
+						"fragmentation_type": "cut"
+					},
+					"accuracy": "0",
+					"range": "x0.8",
+					"rate_of_fire": "1",
+					"shots": "1",
+					"bulk": "0",
+					"recoil": "0",
+					"calc": {
+						"level": 0,
+						"range": "x0.8",
+						"damage": "3d cr ex [1d cut]"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Throwing"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "97",
+				"extended_weight": "10.1 lb"
+			},
+			"notes": "Impact explosion",
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "aad82811-2abd-46fd-858a-06625888c89c",
+			"quantity": 1,
+			"description": "Shattersand Bomb, Huge",
+			"tech_level": "5",
+			"legality_class": "2",
+			"value": "160",
+			"weight": "15.2 lb",
+			"reference": "B277",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr ex",
+						"base": "4d",
+						"fragmentation": "1d+1",
+						"fragmentation_type": "cut"
+					},
+					"accuracy": "0",
+					"range": "x0.7",
+					"rate_of_fire": "1",
+					"shots": "1",
+					"bulk": "0",
+					"recoil": "0",
+					"calc": {
+						"level": 0,
+						"range": "x0.7",
+						"damage": "4d cr ex [1d+1 cut]"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Throwing"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "160",
+				"extended_weight": "15.2 lb"
+			},
+			"notes": "Impact explosion",
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "69183862-345c-4d91-843d-dd3be783a523",
+			"description": "Firearms",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "43900",
+				"extended_weight": "1555.1 lb"
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"id": "70ee9258-545b-4e34-93be-3ce5b6b54120",
+					"description": "Pistols",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "680",
+						"extended_weight": "2.9 lb"
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "a5adfa7b-4aae-4b3e-863b-feabb2f5dbac",
+							"quantity": 1,
+							"description": "Double Pistol, .44 Caplock",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "130",
+							"weight": "0.4 lb",
+							"reference": "HT91",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi+",
+										"base": "2d-1"
+									},
+									"strength": "6",
+									"accuracy": "1",
+									"range": "50/550",
+									"rate_of_fire": "1",
+									"shots": "1(20)",
+									"bulk": "-1",
+									"recoil": "3",
+									"calc": {
+										"level": 0,
+										"range": "50/550",
+										"damage": "2d-1 pi+"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "130",
+								"extended_weight": "0.4 lb"
+							},
+							"notes": "No lanyard ring. Malf 16.",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"id": "6d98a69e-1a00-438e-b6a4-c95229c14c36",
+							"quantity": 1,
+							"description": "Revolver, .45",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "550",
+							"weight": "2.5 lb",
+							"reference": "HT95",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi+",
+										"base": "2d-1"
+									},
+									"strength": "10",
+									"accuracy": "2",
+									"range": "120/1,300",
+									"rate_of_fire": "1",
+									"shots": "6(2i)",
+									"bulk": "-2",
+									"recoil": "3",
+									"calc": {
+										"level": 0,
+										"range": "120/1,300",
+										"damage": "2d-1 pi+"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "550",
+								"extended_weight": "2.5 lb"
+							},
+							"categories": [
+								"Firearms"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "36eb54c0-085d-4808-8e67-0c69ca7b3401",
+					"description": "Rifles",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "4170",
+						"extended_weight": "28.9 lb"
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "7bc48c89-6874-4e91-99ae-656719de6427",
+							"quantity": 1,
+							"description": "Elephant Rifle, 8-bore",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "3000",
+							"weight": "12 lb",
+							"reference": "HT120",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "6d+2"
+									},
+									"strength": "13†",
+									"accuracy": "4",
+									"range": "180/1,800",
+									"rate_of_fire": "1",
+									"shots": "2(3i)",
+									"bulk": "-5",
+									"recoil": "7",
+									"calc": {
+										"level": 0,
+										"range": "180/1,800",
+										"damage": "6d+2 pi++"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "3000",
+								"extended_weight": "12 lb"
+							},
+							"notes": "Lacks sling swivels.",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"id": "35c909c1-0305-45e6-9750-97efca8f17d9",
+							"quantity": 1,
+							"description": "Lever-Action Rifle, .44-40",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "420",
+							"weight": "8.9 lb",
+							"reference": "HT120",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi+",
+										"base": "3d+1"
+									},
+									"strength": "9†",
+									"accuracy": "3",
+									"range": "300/2,200",
+									"rate_of_fire": "2",
+									"shots": "15+1(2i)",
+									"bulk": "-5",
+									"recoil": "2",
+									"calc": {
+										"level": 0,
+										"range": "300/2,200",
+										"damage": "3d+1 pi+"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "420",
+								"extended_weight": "8.9 lb"
+							},
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"id": "acbc703c-7319-49c4-8501-d1d19efb1466",
+							"quantity": 1,
+							"description": "Light Lever-Action Rifle, .38 Volcanic",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "750",
+							"weight": "8 lb",
+							"reference": "HT120",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi",
+										"base": "2d-1"
+									},
+									"strength": "8†",
+									"accuracy": "2",
+									"range": "70/800",
+									"rate_of_fire": "2",
+									"shots": "25+1(3i)",
+									"bulk": "-5",
+									"recoil": "2",
+									"calc": {
+										"level": 0,
+										"range": "70/800",
+										"damage": "2d-1 pi"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "750",
+								"extended_weight": "8 lb"
+							},
+							"notes": "Malf 16.",
+							"categories": [
+								"Firearms"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "b03e7c71-3842-4c09-9b5e-39e97f6c9ddc",
+					"description": "Shotguns",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "1050",
+						"extended_weight": "18.3 lb"
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "f743d11f-7add-4848-9db1-1e09ba544bbe",
+							"quantity": 1,
+							"description": "Revolving Shotgun, 20G Caplock",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "800",
+							"weight": "10.9 lb",
+							"reference": "HT104",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi",
+										"base": "1d"
+									},
+									"strength": "11†",
+									"accuracy": "2",
+									"range": "40/800",
+									"rate_of_fire": "2x7",
+									"shots": "5(10i)",
+									"bulk": "-6",
+									"recoil": "1",
+									"calc": {
+										"level": 0,
+										"range": "40/800",
+										"damage": "1d pi"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "4d"
+									},
+									"strength": "11†",
+									"accuracy": "2",
+									"range": "100/1200",
+									"rate_of_fire": "2",
+									"shots": "5(10i)",
+									"bulk": "-6",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "100/1200",
+										"damage": "4d pi++"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "800",
+								"extended_weight": "10.9 lb"
+							},
+							"notes": "Malf 16.",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"id": "4f9eccea-3234-43d3-9863-309b2cdde062",
+							"quantity": 1,
+							"description": "Double-Barrel Shotgun, 12G 2.5\"",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "250",
+							"weight": "7.4 lb",
+							"reference": "HT104",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi",
+										"base": "1d+1"
+									},
+									"strength": "10†",
+									"accuracy": "3",
+									"range": "40/800",
+									"rate_of_fire": "2x8",
+									"shots": "2(4i)",
+									"bulk": "-6",
+									"recoil": "1",
+									"calc": {
+										"level": 0,
+										"range": "40/800",
+										"damage": "1d+1 pi"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "3d+2"
+									},
+									"strength": "10†",
+									"accuracy": "3",
+									"range": "110/2200",
+									"rate_of_fire": "2",
+									"shots": "2(4i)",
+									"bulk": "-6",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "110/2200",
+										"damage": "3d+2 pi++"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "250",
+								"extended_weight": "7.4 lb"
+							},
+							"notes": "Both barrels can be fired simultaneously at no penalty",
+							"categories": [
+								"Firearms"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "49e89d79-cb83-467c-9653-a920430d3b5c",
+					"description": "Machine Guns",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "16000",
+						"extended_weight": "200 lb"
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "1ae737ca-d967-4355-bb80-d35d1432b322",
+							"quantity": 1,
+							"description": "Gatling Gun, .45-70",
+							"tech_level": "5",
+							"legality_class": "2",
+							"value": "16000",
+							"weight": "200 lb",
+							"reference": "HT128",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi+",
+										"base": "4d+1"
+									},
+									"strength": "26M",
+									"accuracy": "4",
+									"range": "470/3,000",
+									"rate_of_fire": "15",
+									"shots": "40(5)",
+									"bulk": "-10",
+									"recoil": "2",
+									"calc": {
+										"level": 0,
+										"range": "470/3,000",
+										"damage": "4d+1 pi+"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"specialization": "Machine Gun"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "16000",
+								"extended_weight": "200 lb"
+							},
+							"notes": "Malf 15.",
+							"categories": [
+								"Firearms"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "c1b5c567-63aa-46aa-9acd-f929c4dc1185",
+					"description": "Cannon",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "22000",
+						"extended_weight": "1305 lb"
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "d2c5aa8c-0722-438b-bfa7-5261645e2cea",
+							"quantity": 1,
+							"description": "Harpoon Gun, 1.5\" Caplock",
+							"tech_level": "5",
+							"legality_class": "3",
+							"value": "2000",
+							"weight": "75 lb",
+							"reference": "HT140",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "imp",
+										"base": "5dx2"
+									},
+									"strength": "26M",
+									"usage": "Indirect",
+									"accuracy": "3",
+									"range": "30/120",
+									"rate_of_fire": "1",
+									"shots": "1(20)",
+									"bulk": "-8",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "30/120",
+										"damage": "5dx2 imp"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Artillery",
+											"specialization": "Cannon"
+										},
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "imp",
+										"base": "5dx2"
+									},
+									"strength": "26M",
+									"usage": "Direct",
+									"accuracy": "3",
+									"range": "30/120",
+									"rate_of_fire": "1",
+									"shots": "1(20)",
+									"bulk": "-8",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "30/120",
+										"damage": "5dx2 imp"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"specialization": "Cannon"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "2000",
+								"extended_weight": "75 lb"
+							},
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"id": "0893f931-e6f1-4864-887c-2556f1e78c84",
+							"quantity": 1,
+							"description": "12-pounder Cannon",
+							"tech_level": "5",
+							"legality_class": "1",
+							"value": "20000",
+							"weight": "1230 lb",
+							"reference": "HT140",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "6dx5"
+									},
+									"strength": "52M",
+									"usage": "Indirect",
+									"accuracy": "2",
+									"range": "400/2,000",
+									"rate_of_fire": "1",
+									"shots": "1(30)",
+									"bulk": "-13",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "400/2,000",
+										"damage": "6dx5 pi++"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Artillery",
+											"specialization": "Cannon"
+										},
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "6dx5"
+									},
+									"strength": "52M",
+									"usage": "Direct",
+									"accuracy": "2",
+									"range": "400/2,000",
+									"rate_of_fire": "1",
+									"shots": "1(30)",
+									"bulk": "-13",
+									"recoil": "5",
+									"calc": {
+										"level": 0,
+										"range": "400/2,000",
+										"damage": "6dx5 pi++"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"specialization": "Cannon"
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gunner",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"extended_value": "20000",
+								"extended_weight": "1230 lb"
+							},
+							"categories": [
+								"Firearms"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "016bc94a-9732-4112-b4df-9c62eacdc163",
+			"description": "Ammunition",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "76.75",
+				"extended_weight": "20.821 lb"
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "3090c463-9616-41f2-99fb-8e70ef0667f0",
+					"quantity": 1,
+					"description": ".44 Caplock (Deringer)",
+					"value": "0.2",
+					"weight": "0.022 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "da5a6eb7-9633-41f1-8cc5-b3f791c2b920",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "1",
+						"extended_weight": "0.022 lb"
+					},
+					"notes": "Powder and shot.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "bfc74535-bbcb-42b0-99c1-3ce0de64488e",
+					"quantity": 1,
+					"description": ".45 (11.43x28mmR)",
+					"value": "0.5",
+					"weight": "0.045 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "9083dad2-8315-42c3-ae0b-e63d9c2d1a24",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "2.5",
+						"extended_weight": "0.045 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "d3962807-5160-4a5a-9a1e-0024e0486e1a",
+					"quantity": 1,
+					"description": ".45-70 (11.43x53mmR)",
+					"value": "1",
+					"weight": "0.086 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "5e5d0628-80d3-4f49-bcb8-9f012c139bb1",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "0.086 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "fd1db65c-3c66-49e9-83bb-a5452d893729",
+					"quantity": 1,
+					"description": "8-bore (21.2x70mmR)",
+					"value": "4",
+					"weight": "0.26 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "5e8b5113-d07d-4d7d-9162-75bf7e2a6e3d",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "20",
+						"extended_weight": "0.26 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "a3b6573f-d2ab-4e0c-860e-258d4422f45c",
+					"quantity": 1,
+					"description": ".44-40 (10.8x33mmR)",
+					"value": "0.6",
+					"weight": "0.043 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "d9608390-0a77-4f24-964a-590cf0aee3d4",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "3",
+						"extended_weight": "0.043 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "3809e4a3-99ec-4519-8d53-744a18e7f1c0",
+					"quantity": 1,
+					"description": ".38 Volcanic",
+					"value": "0.25",
+					"weight": "0.015 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "abd4a3c3-a5ac-4ace-a0aa-d7f9d466354a",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "1.25",
+						"extended_weight": "0.015 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "36705712-fd3e-4de0-9f3e-67416cc9a72b",
+					"quantity": 1,
+					"description": "20-gauge Caplock",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "9f12189f-1c40-43d6-b56f-8c206390ce3a",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "0.075 lb"
+					},
+					"notes": "Powder and shot. Shotshell.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "acc0aef0-b165-45eb-b666-1030fe82b4dd",
+					"quantity": 1,
+					"description": "20-gauge Caplock Ball",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "1e5879b6-a22e-442e-a701-0644d1d01b46",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "0.075 lb"
+					},
+					"notes": "Powder and Ball",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "20c4095b-b6e1-44e0-b7a7-9407119b8314",
+					"quantity": 1,
+					"description": "12-gauge 2.5\" (18.5x63mmR)",
+					"value": "0.5",
+					"weight": "0.1 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "4a6f1136-c6af-4739-a49f-36e7d36c3b82",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "2.5",
+						"extended_weight": "0.1 lb"
+					},
+					"notes": "Light cased. Shotshell.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "e00372a7-87ba-4bd7-aba7-ddc0db6c531c",
+					"quantity": 1,
+					"description": "12-gauge 2.5\" (18.5x63mmR) Ball",
+					"value": "0.5",
+					"weight": "0.1 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "c2ad02be-5bc2-411d-8a13-6f90d950ea06",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "2.5",
+						"extended_weight": "0.1 lb"
+					},
+					"notes": "Light Cased. Ball.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "f6d3f8eb-2295-49b7-8898-5cf7165cb865",
+					"quantity": 1,
+					"description": "1.5\" Caplock Harpoon",
+					"value": "10",
+					"weight": "5 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "2d6cd281-3ace-4770-9157-a2ffb7f59f95",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "5 lb"
+					},
+					"notes": "Powder and harpoon. Typically used with a 30yd 1\" rope.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "d90263c1-0e02-4ae2-85dd-1ae1f8798269",
+					"quantity": 1,
+					"description": "12-pounder Cannonlock",
+					"value": "25",
+					"weight": "15 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "26f645fe-7c6c-448f-b7d2-e43edb5eca21",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "125",
+						"extended_weight": "15 lb"
+					},
+					"notes": "Powder and shot.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				}
+			]
+		}
+	]
+}
