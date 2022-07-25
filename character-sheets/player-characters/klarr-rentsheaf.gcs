@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Jul 24, 2022, 10:51 AM",
+	"modified_date": "Jul 25, 2022, 10:58 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -678,7 +678,7 @@
 			}
 		}
 	],
-	"total_points": 249,
+	"total_points": 250,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -725,7 +725,7 @@
 					"parry": "0",
 					"calc": {
 						"level": 12,
-						"parry": "10",
+						"parry": "9",
 						"block": "",
 						"damage": "1d-3 cr"
 					},
@@ -1950,6 +1950,43 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "advantage",
+			"id": "307b76c8-4edf-43b0-9a95-0d3e5810d746",
+			"name": "Wizard Guild Rank",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "8f91d60a-a767-48f2-a3b6-b6f873cd9c91",
+					"disabled": true,
+					"name": "Replaces Status",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": 5,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "2000ebd2-c4a9-42aa-9b8b-a3bca0126297",
+					"disabled": true,
+					"name": "Courtesy",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": -4,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B29",
+			"calc": {
+				"points": 5
+			},
+			"categories": [
+				"Advantage"
+			]
 		}
 	],
 	"skills": [
@@ -2501,11 +2538,11 @@
 				},
 				{
 					"type": "skill",
-					"id": "9765b3b6-6433-4db0-8a82-19daf4a92cc9",
-					"name": "Cloak",
-					"reference": "B184",
+					"id": "6bdf0b54-3eb3-40d9-afa6-034a26830702",
+					"name": "Staff",
+					"reference": "B208",
 					"difficulty": "dx/a",
-					"points": 4,
+					"points": 12,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -5,
@@ -2514,8 +2551,8 @@
 						"points": -7
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "DX+1"
+						"level": 15,
+						"rsl": "DX+3"
 					},
 					"defaults": [
 						{
@@ -2524,77 +2561,13 @@
 						},
 						{
 							"type": "skill",
-							"name": "Net",
+							"name": "Polearm",
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
-							"modifier": -4
-						}
-					],
-					"categories": [
-						"Combat/Weapon",
-						"Melee Combat"
-					]
-				},
-				{
-					"type": "skill",
-					"id": "e57379b2-a138-4097-8915-07cc7b12e5f0",
-					"name": "Shortsword",
-					"reference": "B209",
-					"difficulty": "dx/a",
-					"points": 8,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"calc": {
-						"level": 14,
-						"rsl": "DX+2"
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Broadsword",
+							"name": "Spear",
 							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Jitte/Sai",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Knife",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Saber",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Smallsword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Tonfa",
-							"modifier": -3
-						},
-						{
-							"type": "dx",
-							"modifier": -5
 						}
 					],
 					"categories": [
@@ -2909,37 +2882,6 @@
 					"categories": [
 						"Outdoor/Exploration"
 					]
-				},
-				{
-					"type": "skill",
-					"id": "3803215a-0b8c-4259-9dd2-2aff2662cd04",
-					"name": "Savoir-Faire",
-					"reference": "B218,MA59",
-					"specialization": "Military",
-					"difficulty": "iq/e",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 11,
-						"adjusted_level": 11,
-						"points": -11
-					},
-					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						}
-					],
-					"categories": [
-						"Knowledge",
-						"Military",
-						"Social"
-					]
 				}
 			]
 		},
@@ -3011,256 +2953,142 @@
 	"equipment": [
 		{
 			"type": "equipment",
-			"id": "079f67fe-7a13-44a1-9a98-ae19544af3e1",
+			"id": "bfb59e33-b2d6-48d3-9225-c8a89a5114b5",
 			"equipped": true,
 			"quantity": 1,
-			"description": "Long Knife",
-			"tech_level": "2",
-			"value": "120",
-			"weight": "1.5 lb",
-			"reference": "MA228,MA229",
+			"description": "Wizardly Grimoire (Flame Jet(2))",
+			"value": "200",
+			"weight": "6 lb",
+			"calc": {
+				"extended_value": "200",
+				"extended_weight": "6 lb"
+			}
+		},
+		{
+			"type": "equipment",
+			"id": "cfd59a0e-d49c-47d9-8bcd-0565e1eb2621",
+			"equipped": true,
+			"quantity": 25,
+			"description": "C-Notes",
+			"value": "1",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "25",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"type": "equipment_container",
+			"id": "b8acc6cf-5396-4d0f-ac74-690c349bd7a1",
+			"equipped": true,
+			"description": "Lever-Action Rifle, .44-40",
+			"tech_level": "5",
+			"legality_class": "3",
+			"value": "420",
+			"weight": "8.9 lb",
+			"reference": "HT120",
 			"weapons": [
 				{
-					"type": "melee_weapon",
+					"type": "ranged_weapon",
 					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "-1"
+						"type": "pi+",
+						"base": "3d+1"
 					},
-					"strength": "7",
-					"usage": "Knife Swing",
-					"reach": "C,1",
-					"parry": "0",
-					"calc": {
-						"level": 11,
-						"parry": "9",
-						"block": "",
-						"damage": "1d-2 cut"
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "thr"
-					},
-					"strength": "7",
-					"usage": "Knife Thrust",
-					"reach": "C,1",
-					"parry": "0",
-					"calc": {
-						"level": 11,
-						"parry": "9",
-						"block": "",
-						"damage": "1d-2 imp"
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "-1"
-					},
-					"strength": "7",
-					"usage": "Shortsword Swing",
-					"reach": "C,1",
-					"parry": "0",
+					"strength": "9†",
+					"accuracy": "3",
+					"range": "300/2,200",
+					"rate_of_fire": "2",
+					"shots": "15+1(2i)",
+					"bulk": "-5",
+					"recoil": "2",
 					"calc": {
 						"level": 14,
-						"parry": "11",
-						"block": "",
-						"damage": "1d-2 cut"
+						"range": "300/2,200",
+						"damage": "3d+1 pi+"
 					},
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Shortsword"
+							"name": "Guns",
+							"specialization": "Rifle"
 						},
 						{
 							"type": "dx",
-							"modifier": -5
+							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Broadsword",
+							"name": "Guns",
+							"specialization": "Pistol",
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Jitte/Sai",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Knife",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Saber",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Smallsword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Tonfa",
-							"modifier": -3
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "thr"
-					},
-					"strength": "7",
-					"usage": "Shortsword Thrust",
-					"reach": "C,1",
-					"parry": "0",
-					"calc": {
-						"level": 14,
-						"parry": "11",
-						"block": "",
-						"damage": "1d-2 imp"
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Shortsword"
-						},
-						{
-							"type": "dx",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Broadsword",
+							"name": "Guns",
+							"specialization": "Rifle",
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Jitte/Sai",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Knife",
+							"name": "Guns",
+							"specialization": "Gyroc",
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Saber",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
 							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Smallsword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Tonfa",
-							"modifier": -3
 						}
 					]
 				}
 			],
 			"calc": {
-				"extended_value": "120",
-				"extended_weight": "1.5 lb"
+				"extended_value": "465",
+				"extended_weight": "9.545 lb"
 			},
 			"categories": [
-				"Melee Weapon"
-			]
-		},
-		{
-			"type": "equipment_container",
-			"id": "4280a90c-d265-4e26-aedd-8ca8502ecab9",
-			"equipped": true,
-			"description": "Cartridge Bandoleer",
-			"tech_level": "5",
-			"value": "15",
-			"weight": "1 lb",
-			"reference": "HT54",
-			"calc": {
-				"extended_value": "60",
-				"extended_weight": "1.645 lb"
-			},
-			"notes": "Holds 50 rounds.",
-			"categories": [
-				"General Equipment"
+				"Firearms"
 			],
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
+					"id": "4a70878f-1a71-4624-b6c5-88a894d3867d",
 					"equipped": true,
 					"quantity": 15,
 					"description": ".44-40 (10.8x33mmR)",
@@ -3270,7 +3098,7 @@
 					"modifiers": [
 						{
 							"type": "eqp_modifier",
-							"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
+							"id": "0baf9256-a9d8-4416-b3dd-3e92afdb17b6",
 							"name": "Shattersand Explosive",
 							"cost_type": "to_original_cost",
 							"cost": "x5",
@@ -3289,269 +3117,41 @@
 			]
 		},
 		{
-			"type": "equipment_container",
-			"id": "09b9f742-4dc0-48e3-8ab0-dfe8687c8120",
-			"equipped": true,
-			"description": "Rifle Sling",
-			"tech_level": "5",
-			"value": "10",
-			"weight": "1 lb",
-			"reference": "HT154",
-			"calc": {
-				"extended_value": "475",
-				"extended_weight": "10.545 lb"
-			},
-			"categories": [
-				"Firearm Accessories"
-			],
-			"open": true,
-			"children": [
-				{
-					"type": "equipment_container",
-					"id": "b8acc6cf-5396-4d0f-ac74-690c349bd7a1",
-					"equipped": true,
-					"description": "Lever-Action Rifle, .44-40",
-					"tech_level": "5",
-					"legality_class": "3",
-					"value": "420",
-					"weight": "8.9 lb",
-					"reference": "HT120",
-					"weapons": [
-						{
-							"type": "ranged_weapon",
-							"damage": {
-								"type": "pi+",
-								"base": "3d+1"
-							},
-							"strength": "9†",
-							"accuracy": "3",
-							"range": "300/2,200",
-							"rate_of_fire": "2",
-							"shots": "15+1(2i)",
-							"bulk": "-5",
-							"recoil": "2",
-							"calc": {
-								"level": 14,
-								"range": "300/2,200",
-								"damage": "3d+1 pi+"
-							},
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Rifle"
-								},
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Rifle",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Musket",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Shotgun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Machine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Submachine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Gun!"
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Grenade Launcher",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Gyroc",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Anti-Armor Weapon",
-									"modifier": -4
-								}
-							]
-						}
-					],
-					"calc": {
-						"extended_value": "465",
-						"extended_weight": "9.545 lb"
-					},
-					"categories": [
-						"Firearms"
-					],
-					"open": true,
-					"children": [
-						{
-							"type": "equipment",
-							"id": "4a70878f-1a71-4624-b6c5-88a894d3867d",
-							"equipped": true,
-							"quantity": 15,
-							"description": ".44-40 (10.8x33mmR)",
-							"value": "0.6",
-							"weight": "0.043 lb",
-							"reference": "HT177",
-							"modifiers": [
-								{
-									"type": "eqp_modifier",
-									"id": "0baf9256-a9d8-4416-b3dd-3e92afdb17b6",
-									"name": "Shattersand Explosive",
-									"cost_type": "to_original_cost",
-									"cost": "x5",
-									"notes": "Made of semi-precious gems but functions in mana"
-								}
-							],
-							"calc": {
-								"extended_value": "45",
-								"extended_weight": "0.645 lb"
-							},
-							"categories": [
-								"Ammunition",
-								"Warheads"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"type": "equipment",
-			"id": "7cd41859-6ccf-4fe0-b953-4208f29f2c96",
+			"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
 			"equipped": true,
-			"quantity": 1,
-			"description": "Light Cloak",
-			"tech_level": "1",
-			"value": "20",
-			"weight": "2 lb",
-			"reference": "B287",
-			"weapons": [
+			"quantity": 10,
+			"description": ".44-40 (10.8x33mmR)",
+			"value": "0.6",
+			"weight": "0.043 lb",
+			"reference": "HT177",
+			"modifiers": [
 				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "-"
-					},
-					"strength": "-",
-					"reach": "-",
-					"parry": "No",
-					"block": "+0",
-					"calc": {
-						"level": 10,
-						"parry": "No",
-						"block": "10",
-						"damage": "-"
-					},
-					"defaults": [
-						{
-							"type": "block",
-							"name": "Cloak"
-						}
-					]
-				},
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "Special"
-					},
-					"strength": "5",
-					"usage": "Thrown",
-					"accuracy": "+1",
-					"range": "2",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-4",
-					"calc": {
-						"level": 13,
-						"range": "2",
-						"damage": "Special"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Cloak"
-						},
-						{
-							"type": "skill",
-							"name": "Net",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"modifier": -4
-						}
-					]
+					"type": "eqp_modifier",
+					"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
+					"name": "Shattersand Explosive",
+					"cost_type": "to_original_cost",
+					"cost": "x5",
+					"notes": "Made of semi-precious gems but functions in mana"
 				}
 			],
 			"calc": {
-				"extended_value": "20",
-				"extended_weight": "2 lb"
+				"extended_value": "30",
+				"extended_weight": "0.43 lb"
 			},
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "dodge"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "parry"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "block"
-				}
-			],
 			"categories": [
-				"Clothing"
+				"Ammunition",
+				"Warheads"
 			]
 		}
 	],
 	"other_equipment": [
 		{
 			"type": "equipment",
-			"id": "204c04ea-a903-44ee-a887-9257a730f7cf",
+			"id": "3b543469-cf99-469c-93ad-c4ea15bafcef",
 			"equipped": true,
 			"quantity": 1,
-			"description": "Wizardly Grimoire (Haste)",
+			"description": "Wizardly Grimoire (Ignite Fire)",
 			"value": "100",
 			"weight": "3 lb",
 			"calc": {
@@ -3561,7 +3161,20 @@
 		},
 		{
 			"type": "equipment",
-			"id": "3b543469-cf99-469c-93ad-c4ea15bafcef",
+			"id": "e4d925d5-2409-4248-b179-305b56958cdb",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Wizardly Grimoire (Shape Fire)",
+			"value": "100",
+			"weight": "3 lb",
+			"calc": {
+				"extended_value": "100",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"type": "equipment",
+			"id": "e09b2aa8-b5e1-44ee-9828-9fe8ff075def",
 			"equipped": true,
 			"quantity": 1,
 			"description": "Wizardly Grimoire (Light)",
@@ -3577,12 +3190,17 @@
 		{
 			"type": "note",
 			"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
-			"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Create Fire"
+			"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire -> Flame Jet"
 		},
 		{
 			"type": "note",
 			"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
 			"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
+		},
+		{
+			"type": "note",
+			"id": "dc80d589-8422-4594-9d24-e7c8e3f52fcf",
+			"text": "Wizard Rank 1 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (60% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 5 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - irrelevant to actual members."
 		}
 	],
 	"calc": {
@@ -3600,14 +3218,14 @@
 			1
 		],
 		"dodge": [
-			10,
 			9,
 			8,
 			7,
-			6
+			6,
+			5
 		],
-		"dodge_bonus": 1,
-		"block_bonus": 1,
-		"parry_bonus": 1
+		"dodge_bonus": 0,
+		"block_bonus": 0,
+		"parry_bonus": 0
 	}
 }
