@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Jul 25, 2022, 10:58 PM",
+	"modified_date": "Jul 26, 2022, 10:18 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -2897,85 +2897,37 @@
 			"type": "spell_container",
 			"id": "cec20da9-7f71-49fc-883d-be0ee75a86b5",
 			"name": "Book-Learned Spells",
-			"open": true,
-			"children": [
-				{
-					"type": "spell",
-					"id": "ca68b363-caa0-4a9d-8689-25816120f54b",
-					"name": "Haste",
-					"reference": "M142",
-					"difficulty": "iq/h",
-					"college": [
-						"Movement"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2/pt",
-					"maintenance_cost": "Half",
-					"casting_time": "2 sec",
-					"duration": "1 min",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
-					},
-					"categories": [
-						"Movement"
-					]
-				},
-				{
-					"type": "spell",
-					"id": "2ebd8ec9-1eda-4ba9-a0f0-75f0c2808bf3",
-					"name": "Light",
-					"reference": "M110",
-					"difficulty": "iq/h",
-					"college": [
-						"Light & Darkness"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1",
-					"maintenance_cost": "1",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
-					},
-					"categories": [
-						"Light & Darkness"
-					]
-				}
-			]
+			"open": true
 		}
 	],
 	"equipment": [
 		{
 			"type": "equipment",
-			"id": "bfb59e33-b2d6-48d3-9225-c8a89a5114b5",
+			"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
 			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Flame Jet(2))",
-			"value": "200",
-			"weight": "6 lb",
+			"quantity": 10,
+			"description": ".44-40 (10.8x33mmR)",
+			"value": "0.6",
+			"weight": "0.043 lb",
+			"reference": "HT177",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
+					"name": "Shattersand Explosive",
+					"cost_type": "to_original_cost",
+					"cost": "x5",
+					"notes": "Made of semi-precious gems but functions in mana"
+				}
+			],
 			"calc": {
-				"extended_value": "200",
-				"extended_weight": "6 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "cfd59a0e-d49c-47d9-8bcd-0565e1eb2621",
-			"equipped": true,
-			"quantity": 25,
-			"description": "C-Notes",
-			"value": "1",
-			"weight": "0 lb",
-			"calc": {
-				"extended_value": "25",
-				"extended_weight": "0 lb"
-			}
+				"extended_value": "30",
+				"extended_weight": "0.43 lb"
+			},
+			"categories": [
+				"Ammunition",
+				"Warheads"
+			]
 		},
 		{
 			"type": "equipment_container",
@@ -2988,6 +2940,90 @@
 			"weight": "8.9 lb",
 			"reference": "HT120",
 			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Swung like a Staff",
+					"reach": "1,2",
+					"parry": "+2",
+					"calc": {
+						"level": 15,
+						"parry": "12",
+						"block": "",
+						"damage": "1d+1 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Thrust like a Staff",
+					"reach": "1,2",
+					"parry": "+2",
+					"calc": {
+						"level": 15,
+						"parry": "12",
+						"block": "",
+						"damage": "1d cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "3"
+					},
+					"strength": "7†",
+					"usage": "Swung like a Club",
+					"reach": "1,2",
+					"parry": "0U",
+					"calc": {
+						"level": 7,
+						"parry": "6U",
+						"block": "",
+						"damage": "1d+2 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Axe/Mace"
+						}
+					]
+				},
 				{
 					"type": "ranged_weapon",
 					"damage": {
@@ -3078,7 +3114,7 @@
 				}
 			],
 			"calc": {
-				"extended_value": "465",
+				"extended_value": "490",
 				"extended_weight": "9.545 lb"
 			},
 			"categories": [
@@ -3113,35 +3149,48 @@
 						"Ammunition",
 						"Warheads"
 					]
+				},
+				{
+					"type": "equipment",
+					"id": "9a105e24-de07-45af-86f8-eef364db8b3b",
+					"equipped": true,
+					"quantity": 5,
+					"description": "Magical Power Item Energy",
+					"value": "5",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "25",
+						"extended_weight": "0 lb"
+					}
 				}
 			]
 		},
 		{
-			"type": "equipment",
-			"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
+			"type": "equipment_container",
+			"id": "bfb59e33-b2d6-48d3-9225-c8a89a5114b5",
 			"equipped": true,
-			"quantity": 10,
-			"description": ".44-40 (10.8x33mmR)",
-			"value": "0.6",
-			"weight": "0.043 lb",
-			"reference": "HT177",
-			"modifiers": [
-				{
-					"type": "eqp_modifier",
-					"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
-					"name": "Shattersand Explosive",
-					"cost_type": "to_original_cost",
-					"cost": "x5",
-					"notes": "Made of semi-precious gems but functions in mana"
-				}
-			],
+			"description": "Wizardly Grimoire (Flame Jet(2))",
+			"value": "200",
+			"weight": "6 lb",
 			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.43 lb"
+				"extended_value": "200",
+				"extended_weight": "6 lb"
 			},
-			"categories": [
-				"Ammunition",
-				"Warheads"
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "a906c696-69cc-48f0-ab37-3b66e20b121f",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Scholarly Power Item Energy",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					}
+				}
 			]
 		}
 	],
@@ -3188,14 +3237,32 @@
 	],
 	"notes": [
 		{
-			"type": "note",
-			"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
-			"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire -> Flame Jet"
-		},
-		{
-			"type": "note",
-			"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
-			"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
+			"type": "note_container",
+			"id": "4b9ab914-543b-4031-8958-178ed6a11649",
+			"text": "Manuals",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
+					"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire -> Flame Jet"
+				},
+				{
+					"type": "note",
+					"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
+					"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
+				},
+				{
+					"type": "note",
+					"id": "943ed466-d27a-4258-968e-ec822e0439cd",
+					"text": "Specific manuals are available on 6 or less.\nAssuming failure, it takes 1d+1 weeks to arrive and a 10% markup"
+				},
+				{
+					"type": "note",
+					"id": "0f1d999f-5acd-4a71-b5ba-a03b427dc996",
+					"text": "TODO:\n* Sensible spells!\n* Writing Equipment?\n* Cheap Healing?"
+				}
+			]
 		},
 		{
 			"type": "note",
