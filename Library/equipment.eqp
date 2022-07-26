@@ -798,6 +798,83 @@
 							"reference": "HT104",
 							"weapons": [
 								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"base": "2"
+									},
+									"strength": "7†",
+									"usage": "Thrust",
+									"usage_notes": "Butt Strike",
+									"reach": "1,2*",
+									"calc": {
+										"level": 0,
+										"parry": "",
+										"block": "",
+										"damage": "thr+2 cr"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Staff"
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "3"
+									},
+									"strength": "9†",
+									"usage": "Stab",
+									"usage_notes": "Bayonet",
+									"reach": "1,2*",
+									"parry": "0",
+									"calc": {
+										"level": 0,
+										"parry": "0",
+										"block": "",
+										"damage": "thr+3 imp"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Spear"
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Staff",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										}
+									]
+								},
+								{
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi",
@@ -1449,7 +1526,7 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "76.75",
+				"extended_value": "216.75",
 				"extended_weight": "20.821 lb"
 			},
 			"open": true,
