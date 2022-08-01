@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 19, 2022, 5:21 PM",
-	"modified_date": "Jul 26, 2022, 7:35 PM",
+	"modified_date": "Aug 1, 2022, 10:04 PM",
 	"profile": {
 		"player_name": "Richard Maw",
 		"name": "Shotgun Mike",
@@ -672,7 +672,7 @@
 			}
 		}
 	],
-	"total_points": 250,
+	"total_points": 255,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -1415,7 +1415,7 @@
 				{
 					"type": "advantage",
 					"id": "26198b16-9721-4b94-a6b9-0a09826e6b7a",
-					"name": "Quirk",
+					"name": "Likes Fungus",
 					"physical": true,
 					"base_points": -1,
 					"calc": {
@@ -3855,45 +3855,6 @@
 						},
 						{
 							"type": "skill",
-							"id": "1c37ad0d-983f-42f9-a03a-f4719aeb2a5e",
-							"name": "Staff",
-							"reference": "B208",
-							"difficulty": "dx/a",
-							"points": 4,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
-							},
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
 							"id": "886b5451-778b-4039-a354-9e02664afd39",
 							"name": "Brawling",
 							"reference": "B182",
@@ -3917,50 +3878,6 @@
 										"compare": "at_least",
 										"qualifier": 2
 									}
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "ba80023d-f246-4650-8809-2c0b611481b6",
-							"name": "Knife",
-							"reference": "B208",
-							"difficulty": "dx/e",
-							"points": 4,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 10,
-								"adjusted_level": 10,
-								"points": -10
-							},
-							"calc": {
-								"level": 16,
-								"rsl": "DX+2"
-							},
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Main-Gauche",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
-									"modifier": -3
-								},
-								{
-									"type": "dx",
-									"modifier": -4
 								}
 							],
 							"categories": [
@@ -4030,6 +3947,50 @@
 						},
 						{
 							"type": "skill",
+							"id": "ba80023d-f246-4650-8809-2c0b611481b6",
+							"name": "Knife",
+							"reference": "B208",
+							"difficulty": "dx/e",
+							"points": 0,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -4,
+								"level": 10,
+								"adjusted_level": 10,
+								"points": -10
+							},
+							"calc": {
+								"level": 10,
+								"rsl": "DX-4"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
 							"id": "9806a051-6a34-4a7f-8b75-e8046d4f1399",
 							"name": "Leadership",
 							"reference": "B204",
@@ -4055,6 +4016,85 @@
 							"categories": [
 								"Military",
 								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"id": "34272dea-d0cd-40a9-97fe-65017b37e88e",
+							"name": "Spear",
+							"reference": "B208",
+							"difficulty": "dx/a",
+							"points": 3,
+							"defaulted_from": {
+								"type": "skill",
+								"name": "Staff",
+								"modifier": -2,
+								"level": 13,
+								"adjusted_level": 13,
+								"points": 1
+							},
+							"calc": {
+								"level": 15,
+								"rsl": "DX+1"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"id": "1c37ad0d-983f-42f9-a03a-f4719aeb2a5e",
+							"name": "Staff",
+							"reference": "B208",
+							"difficulty": "dx/a",
+							"points": 4,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -5,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
+							},
+							"calc": {
+								"level": 15,
+								"rsl": "DX+1"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
 							]
 						},
 						{
@@ -4134,46 +4174,6 @@
 					"name": "Background Skill",
 					"open": true,
 					"children": [
-						{
-							"type": "skill",
-							"id": "9e44c120-d315-4e8e-8255-0ce5668c0974",
-							"name": "Mathematics",
-							"reference": "B207",
-							"specialization": "Applied",
-							"tech_level": "5",
-							"difficulty": "iq/h",
-							"points": 1,
-							"defaulted_from": {
-								"type": "iq",
-								"modifier": -6,
-								"level": 4,
-								"adjusted_level": 4,
-								"points": -4
-							},
-							"calc": {
-								"level": 8,
-								"rsl": "IQ-2"
-							},
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Physics",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Engineer",
-									"modifier": -5
-								}
-							],
-							"categories": [
-								"Natural Science"
-							]
-						},
 						{
 							"type": "skill",
 							"id": "8fc6cc1b-92c2-4983-9f7a-500fb14a3f35",
@@ -4269,6 +4269,46 @@
 							},
 							"categories": [
 								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"id": "9e44c120-d315-4e8e-8255-0ce5668c0974",
+							"name": "Mathematics",
+							"reference": "B207",
+							"specialization": "Applied",
+							"tech_level": "5",
+							"difficulty": "iq/h",
+							"points": 1,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -6,
+								"level": 4,
+								"adjusted_level": 4,
+								"points": -4
+							},
+							"calc": {
+								"level": 8,
+								"rsl": "IQ-2"
+							},
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Physics",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Natural Science"
 							]
 						},
 						{
@@ -4435,8 +4475,8 @@
 					"reach": "C,1",
 					"parry": "0",
 					"calc": {
-						"level": 16,
-						"parry": "12",
+						"level": 10,
+						"parry": "9",
 						"block": "",
 						"damage": "2d-2 cut"
 					},
@@ -4477,8 +4517,8 @@
 					"reach": "C,1",
 					"parry": "0",
 					"calc": {
-						"level": 16,
-						"parry": "12",
+						"level": 10,
+						"parry": "9",
 						"block": "",
 						"damage": "1d imp"
 					},
@@ -4580,8 +4620,8 @@
 					"reach": "1,2*",
 					"parry": "0",
 					"calc": {
-						"level": 13,
-						"parry": "10",
+						"level": 15,
+						"parry": "11",
 						"block": "",
 						"damage": "1d+3 imp"
 					},
@@ -4796,7 +4836,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 10,
+			"quantity": 8,
 			"description": "20-gauge Caplock",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -4812,8 +4852,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "20",
-				"extended_weight": "0.75 lb"
+				"extended_value": "16",
+				"extended_weight": "0.6 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -4856,6 +4896,11 @@
 			"type": "note",
 			"id": "62e32af6-b3ef-4dcd-aff3-9b7833cc72fe",
 			"text": "Area Defense: 19(Skill)/2+3-15+1(Combat Reflexes)+2(Acc)+3(RoF)=3"
+		},
+		{
+			"type": "note",
+			"id": "95444598-7d18-4952-b0a4-366827a02113",
+			"text": "Shotguns and Multiple Projectiles: instead of multiplying RoF multiplies Damage and target DR at 10% of 1/2D range."
 		}
 	],
 	"calc": {
