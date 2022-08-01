@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Jul 26, 2022, 10:18 PM",
+	"modified_date": "Aug 1, 2022, 10:30 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -678,8 +678,58 @@
 			}
 		}
 	],
-	"total_points": 250,
+	"total_points": 255,
 	"advantages": [
+		{
+			"type": "advantage",
+			"id": "13e99d15-8ae2-43ea-8ef1-27c710c1678f",
+			"name": "Treats \"Adventuring Companion\" like a formal title",
+			"physical": true,
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "b3ddfe02-7d58-4a92-8db3-44fa11962471",
+			"name": "Insists on his title being used, except among friends",
+			"physical": true,
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "06b8373a-ae5b-46ec-95d0-444019b69e05",
+			"name": "Quirk",
+			"physical": true,
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "30258b58-04b0-4e95-886f-93dd46506af5",
+			"name": "Sucks up to any kind of formal rank",
+			"physical": true,
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "45f5d913-f54c-4c46-a276-f6429da38353",
+			"name": "Trivial Duty: Write home every week",
+			"physical": true,
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
 		{
 			"type": "advantage",
 			"id": "446c6578-d393-46eb-ba38-0c365d882640",
@@ -791,64 +841,76 @@
 		},
 		{
 			"type": "advantage",
-			"id": "13e99d15-8ae2-43ea-8ef1-27c710c1678f",
-			"name": "\"Adventuring Companion\" is a formal title",
-			"physical": true,
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "b3ddfe02-7d58-4a92-8db3-44fa11962471",
-			"name": "Insists on his title being used, except among friends",
-			"physical": true,
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "30258b58-04b0-4e95-886f-93dd46506af5",
-			"name": "Sucks up to any kind of formal rank",
-			"physical": true,
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "45f5d913-f54c-4c46-a276-f6429da38353",
-			"name": "Quirk",
-			"physical": true,
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "06b8373a-ae5b-46ec-95d0-444019b69e05",
-			"name": "Quirk",
-			"physical": true,
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "69ecc3da-7c79-4f8e-b561-498a305a4236",
-			"name": "Courtesy Rank (Shadow Enclave)",
+			"id": "307b76c8-4edf-43b0-9a95-0d3e5810d746",
+			"name": "Wizard Guild Rank",
 			"physical": true,
 			"levels": "1",
-			"points_per_level": 1,
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "8f91d60a-a767-48f2-a3b6-b6f873cd9c91",
+					"disabled": true,
+					"name": "Replaces Status",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": 5,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "2000ebd2-c4a9-42aa-9b8b-a3bca0126297",
+					"disabled": true,
+					"name": "Courtesy",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": -4,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B29",
+			"calc": {
+				"points": 5
+			},
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "71344097-173c-4dc7-96d7-c7e6bc4761bd",
+			"name": "Shadow Enclave Rank",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "85cb9484-0373-4ea0-9d0d-1fce3f38326c",
+					"disabled": true,
+					"name": "Replaces Status",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": 5,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "d8022c0d-ae24-4efe-a057-51b37ce7aa1d",
+					"name": "Courtesy",
+					"reference": "B29",
+					"cost_type": "points",
+					"cost": -4,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B29",
 			"calc": {
 				"points": 1
-			}
+			},
+			"categories": [
+				"Advantage"
+			]
 		},
 		{
 			"type": "advantage_container",
@@ -862,6 +924,30 @@
 			},
 			"open": true,
 			"children": [
+				{
+					"type": "advantage",
+					"id": "91c995c3-6401-4684-94b6-2f993430eb46",
+					"name": "Decreased Strength",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": -10,
+					"reference": "B14",
+					"calc": {
+						"points": -10
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "st"
+						}
+					],
+					"categories": [
+						"Attribute",
+						"Disadvantage"
+					]
+				},
 				{
 					"type": "advantage",
 					"id": "6a1ff065-c12b-46d2-a9b7-a2af90c907bc",
@@ -898,71 +984,12 @@
 				},
 				{
 					"type": "advantage",
-					"id": "91c995c3-6401-4684-94b6-2f993430eb46",
-					"name": "Decreased Strength",
-					"physical": true,
-					"levels": "1",
-					"points_per_level": -10,
-					"reference": "B14",
-					"calc": {
-						"points": -10
-					},
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"amount": -1,
-							"per_level": true,
-							"attribute": "st"
-						}
-					],
-					"categories": [
-						"Attribute",
-						"Disadvantage"
-					]
-				},
-				{
-					"type": "advantage",
 					"id": "d534fb64-c7f9-4d2c-b9df-04ceb6b5e0b9",
 					"name": "Feature: Cobweb grey or jet black hair",
 					"physical": true,
 					"calc": {
 						"points": 0
 					}
-				},
-				{
-					"type": "advantage",
-					"id": "500851ec-b07c-42a2-af2c-e17440ec479e",
-					"name": "Increased Dexterity",
-					"physical": true,
-					"levels": "1",
-					"points_per_level": 20,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "ea8fb9e1-7ae6-414f-8a44-e525ebb464bf",
-							"disabled": true,
-							"name": "No Fine Manipulators",
-							"cost_type": "percentage",
-							"cost": -40,
-							"affects": "total"
-						}
-					],
-					"reference": "B15",
-					"calc": {
-						"points": 20
-					},
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"amount": 1,
-							"per_level": true,
-							"attribute": "dx"
-						}
-					],
-					"categories": [
-						"Advantage",
-						"Attribute"
-					]
 				},
 				{
 					"type": "advantage",
@@ -1142,21 +1169,10 @@
 					"categories": [
 						"Advantage"
 					]
-				}
-			]
-		},
-		{
-			"type": "advantage_container",
-			"id": "e8f145b5-3d08-4f67-be21-8b6c4abd0bdd",
-			"name": "Scholar",
-			"calc": {
-				"points": 187
-			},
-			"open": true,
-			"children": [
+				},
 				{
 					"type": "advantage",
-					"id": "b00e00d5-3a10-4258-bdbb-677caf90c841",
+					"id": "500851ec-b07c-42a2-af2c-e17440ec479e",
 					"name": "Increased Dexterity",
 					"physical": true,
 					"levels": "1",
@@ -1164,7 +1180,7 @@
 					"modifiers": [
 						{
 							"type": "modifier",
-							"id": "065521a2-6f3a-41b2-b87e-4050221699cc",
+							"id": "ea8fb9e1-7ae6-414f-8a44-e525ebb464bf",
 							"disabled": true,
 							"name": "No Fine Manipulators",
 							"cost_type": "percentage",
@@ -1188,214 +1204,18 @@
 						"Advantage",
 						"Attribute"
 					]
-				},
-				{
-					"type": "advantage",
-					"id": "993af6d8-4bde-419f-bccd-b5b849b67407",
-					"name": "Increased Intelligence",
-					"mental": true,
-					"levels": "5",
-					"points_per_level": 20,
-					"reference": "B15",
-					"calc": {
-						"points": 100
-					},
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"amount": 1,
-							"per_level": true,
-							"attribute": "iq"
-						}
-					],
-					"categories": [
-						"Advantage",
-						"Attribute"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "e04eb19f-f881-4f52-888f-6474d7c80ef1",
-					"name": "Increased Health",
-					"physical": true,
-					"levels": "2",
-					"points_per_level": 10,
-					"reference": "B14",
-					"calc": {
-						"points": 20
-					},
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"amount": 1,
-							"per_level": true,
-							"attribute": "ht"
-						}
-					],
-					"categories": [
-						"Advantage",
-						"Attribute"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "70e4659b-edf4-4fe8-836a-36d334d0592d",
-					"name": "Book-learned Wisdom",
-					"physical": true,
-					"levels": "2",
-					"base_points": 5,
-					"points_per_level": 2,
-					"calc": {
-						"points": 9
-					}
-				},
-				{
-					"type": "advantage",
-					"id": "f02f4346-f572-461a-ac56-3418c39f1b47",
-					"name": "Book-learned Wisdom",
-					"physical": true,
-					"levels": "2",
-					"base_points": 5,
-					"points_per_level": 2,
-					"calc": {
-						"points": 9
-					}
-				},
-				{
-					"type": "advantage",
-					"id": "a6ca658e-cfdc-4652-8c88-ab1eb46d4026",
-					"name": "Eidetic Memory",
-					"mental": true,
-					"base_points": 5,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "466a1a54-d4b7-490c-a392-6fcc7d56087e",
-							"disabled": true,
-							"name": "Photographic",
-							"reference": "B51",
-							"cost_type": "points",
-							"cost": 5,
-							"affects": "total"
-						}
-					],
-					"reference": "B51",
-					"calc": {
-						"points": 5
-					},
-					"categories": [
-						"Advantage"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "77899ce8-f38a-46b4-aa2c-aec0506e4add",
-					"name": "Intuition",
-					"mental": true,
-					"base_points": 15,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "e1d58554-8ab5-43f9-a913-2b81027dfb8b",
-							"disabled": true,
-							"name": "Inspired",
-							"reference": "P56",
-							"cost_type": "percentage",
-							"cost": 100,
-							"affects": "total"
-						}
-					],
-					"reference": "B63,P56",
-					"calc": {
-						"points": 15
-					},
-					"categories": [
-						"Advantage"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "2fef5642-c8e1-4d7e-97bb-79ff0b2b0752",
-					"name": "Wild Talent",
-					"mental": true,
-					"supernatural": true,
-					"levels": "1",
-					"points_per_level": 20,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "76c989ea-40c5-48fa-9974-e38ddf58af8e",
-							"disabled": true,
-							"name": "Retention",
-							"reference": "B99",
-							"cost_type": "percentage",
-							"cost": 25,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "67f1ab09-f16c-4694-a5f8-4e65f799d61f",
-							"disabled": true,
-							"name": "Emergencies Only",
-							"reference": "B100",
-							"cost_type": "percentage",
-							"cost": -30,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "6fe95222-974c-456f-9a27-7b2ea6be7761",
-							"disabled": true,
-							"name": "Focused",
-							"reference": "B99",
-							"cost_type": "percentage",
-							"cost": -20,
-							"affects": "total",
-							"notes": "@Type: Mental, Physical, Magical or Chi@"
-						},
-						{
-							"type": "modifier",
-							"id": "20d45126-4fba-4f6d-a5eb-ac87c0ec5e9b",
-							"name": "No Advantage Requirement",
-							"cost_type": "percentage",
-							"cost": 50,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "2f9d3d8e-69a7-44e8-b15d-8fcc15a0702c",
-							"disabled": true,
-							"name": "External",
-							"reference": "P90",
-							"cost_type": "percentage",
-							"cost": -20,
-							"affects": "total"
-						}
-					],
-					"reference": "B99,P89,MA49",
-					"calc": {
-						"points": 30
-					},
-					"categories": [
-						"Advantage"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "00fd2314-0114-43c6-96de-f6bb6c531329",
-					"name": "Curious",
-					"mental": true,
-					"base_points": -5,
-					"cr": 12,
-					"reference": "B129",
-					"calc": {
-						"points": -5
-					},
-					"notes": "Make a self-control roll when presented with an interesting item or situation",
-					"categories": [
-						"Disadvantage"
-					]
-				},
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"id": "e8f145b5-3d08-4f67-be21-8b6c4abd0bdd",
+			"name": "Scholar",
+			"calc": {
+				"points": 182
+			},
+			"open": true,
+			"children": [
 				{
 					"type": "advantage",
 					"id": "45225802-e8d6-4b61-bed8-552d7c58db57",
@@ -1436,59 +1256,125 @@
 				},
 				{
 					"type": "advantage",
-					"id": "aef2f5cf-ab77-4e87-abb3-a3f6dcc9b854",
-					"name": "Intolerance (Stupid people (IQ 10 or less))",
+					"id": "d5c919f4-9854-4a74-9207-7bdc905764f3",
+					"name": "Jealousy",
 					"mental": true,
-					"modifiers": [
+					"base_points": -10,
+					"reference": "B140",
+					"calc": {
+						"points": -10
+					},
+					"features": [
 						{
-							"type": "modifier",
-							"id": "8e61fffe-5dce-46cf-baa9-f662e14e7985",
-							"name": "Scope: Common",
-							"reference": "B140",
-							"cost_type": "points",
-							"cost": -5,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "d11fca56-c8c1-459a-800a-32dbb8b2cd7a",
-							"disabled": true,
-							"name": "Scope: Occasional",
-							"reference": "B140",
-							"cost_type": "points",
-							"cost": -2,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "e3247f95-5c3f-4735-b8ce-66e532d30cf2",
-							"disabled": true,
-							"name": "Scope: Rare",
-							"reference": "B140",
-							"cost_type": "points",
-							"cost": -1,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "1b9220db-1b03-4d6c-b08e-390a0bb84c4d",
-							"disabled": true,
-							"name": "Scope: Anyone unlike you",
-							"reference": "B140",
-							"cost_type": "points",
-							"cost": -10,
-							"affects": "total"
+							"type": "reaction_bonus",
+							"amount": -2,
+							"situation": "toward those you are jealous of (may be as much as -4, at GM's discretion)"
 						}
 					],
-					"reference": "B140",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "00fd2314-0114-43c6-96de-f6bb6c531329",
+					"name": "Curious",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B129",
+					"calc": {
+						"points": -5
+					},
+					"notes": "Make a self-control roll when presented with an interesting item or situation",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "a33d8614-163b-40ca-895b-8cc33f1965e3",
+					"name": "Xenophilia",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "B162",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "668a81cc-35ef-4fe1-9cbc-638518753253",
+					"name": "Oblivious",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B146",
 					"calc": {
 						"points": -5
 					},
 					"features": [
 						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "diplomacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast-talk"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "intimidation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "savoir-faire"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "streetwise"
+							}
+						},
+						{
 							"type": "reaction_bonus",
 							"amount": -1,
-							"situation": "from victims of your intolerance (may be as much as -5, at GM's discretion)"
+							"situation": "to resist Influence skills: Diplomacy, Fast-Talk, Intimidation, Savoir-Faire, Sex Appeal, and Streetwise"
 						}
 					],
 					"categories": [
@@ -1599,27 +1485,6 @@
 				},
 				{
 					"type": "advantage",
-					"id": "d5c919f4-9854-4a74-9207-7bdc905764f3",
-					"name": "Jealousy",
-					"mental": true,
-					"base_points": -10,
-					"reference": "B140",
-					"calc": {
-						"points": -10
-					},
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"amount": -2,
-							"situation": "toward those you are jealous of (may be as much as -4, at GM's discretion)"
-						}
-					],
-					"categories": [
-						"Disadvantage"
-					]
-				},
-				{
-					"type": "advantage",
 					"id": "f035f5c2-0e0c-4873-b94d-7ebf783555b4",
 					"name": "Skinny",
 					"physical": true,
@@ -1674,77 +1539,137 @@
 				},
 				{
 					"type": "advantage",
-					"id": "668a81cc-35ef-4fe1-9cbc-638518753253",
-					"name": "Oblivious",
+					"id": "a6ca658e-cfdc-4652-8c88-ab1eb46d4026",
+					"name": "Eidetic Memory",
 					"mental": true,
-					"base_points": -5,
-					"reference": "B146",
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "466a1a54-d4b7-490c-a392-6fcc7d56087e",
+							"disabled": true,
+							"name": "Photographic",
+							"reference": "B51",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B51",
 					"calc": {
-						"points": -5
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "70e4659b-edf4-4fe8-836a-36d334d0592d",
+					"name": "Book-learned Wisdom",
+					"physical": true,
+					"levels": "2",
+					"base_points": 5,
+					"points_per_level": 2,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "f02f4346-f572-461a-ac56-3418c39f1b47",
+					"name": "Book-learned Wisdom",
+					"physical": true,
+					"levels": "2",
+					"base_points": 5,
+					"points_per_level": 2,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "77899ce8-f38a-46b4-aa2c-aec0506e4add",
+					"name": "Intuition",
+					"mental": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "e1d58554-8ab5-43f9-a913-2b81027dfb8b",
+							"disabled": true,
+							"name": "Inspired",
+							"reference": "P56",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						}
+					],
+					"reference": "B63,P56",
+					"calc": {
+						"points": 15
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "b00e00d5-3a10-4258-bdbb-677caf90c841",
+					"name": "Increased Dexterity",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "065521a2-6f3a-41b2-b87e-4050221699cc",
+							"disabled": true,
+							"name": "No Fine Manipulators",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						}
+					],
+					"reference": "B15",
+					"calc": {
+						"points": 20
 					},
 					"features": [
 						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "diplomacy"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "fast-talk"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "intimidation"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "starts_with",
-								"qualifier": "savoir-faire"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "sex appeal"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "streetwise"
-							}
-						},
-						{
-							"type": "reaction_bonus",
-							"amount": -1,
-							"situation": "to resist Influence skills: Diplomacy, Fast-Talk, Intimidation, Savoir-Faire, Sex Appeal, and Streetwise"
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "dx"
 						}
 					],
 					"categories": [
-						"Disadvantage"
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "e04eb19f-f881-4f52-888f-6474d7c80ef1",
+					"name": "Increased Health",
+					"physical": true,
+					"levels": "2",
+					"points_per_level": 10,
+					"reference": "B14",
+					"calc": {
+						"points": 20
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "ht"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
 					]
 				},
 				{
@@ -1756,30 +1681,6 @@
 					},
 					"open": true,
 					"children": [
-						{
-							"type": "advantage",
-							"id": "e8d0eab8-a050-4a8d-8ea0-aaed8189952d",
-							"name": "Book-learned Wisdom",
-							"physical": true,
-							"levels": "1",
-							"base_points": 5,
-							"points_per_level": 2,
-							"calc": {
-								"points": 7
-							}
-						},
-						{
-							"type": "advantage",
-							"id": "83045d30-afd3-4391-b11e-5d9a747b89f0",
-							"name": "Book-learned Wisdom",
-							"physical": true,
-							"levels": "1",
-							"base_points": 5,
-							"points_per_level": 2,
-							"calc": {
-								"points": 7
-							}
-						},
 						{
 							"type": "advantage",
 							"id": "00302e6f-9286-43a5-adbc-f7e8fc54624a",
@@ -1924,6 +1825,30 @@
 						},
 						{
 							"type": "advantage",
+							"id": "e8d0eab8-a050-4a8d-8ea0-aaed8189952d",
+							"name": "Book-learned Wisdom",
+							"physical": true,
+							"levels": "1",
+							"base_points": 5,
+							"points_per_level": 2,
+							"calc": {
+								"points": 7
+							}
+						},
+						{
+							"type": "advantage",
+							"id": "83045d30-afd3-4391-b11e-5d9a747b89f0",
+							"name": "Book-learned Wisdom",
+							"physical": true,
+							"levels": "1",
+							"base_points": 5,
+							"points_per_level": 2,
+							"calc": {
+								"points": 7
+							}
+						},
+						{
+							"type": "advantage",
 							"id": "f9660f71-9aa3-4fa5-9c62-adb020a4cf21",
 							"name": "Increased Perception",
 							"mental": true,
@@ -1948,44 +1873,98 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "307b76c8-4edf-43b0-9a95-0d3e5810d746",
-			"name": "Wizard Guild Rank",
-			"physical": true,
-			"levels": "1",
-			"points_per_level": 5,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "8f91d60a-a767-48f2-a3b6-b6f873cd9c91",
-					"disabled": true,
-					"name": "Replaces Status",
-					"reference": "B29",
-					"cost_type": "points",
-					"cost": 5,
-					"affects": "levels_only"
 				},
 				{
-					"type": "modifier",
-					"id": "2000ebd2-c4a9-42aa-9b8b-a3bca0126297",
-					"disabled": true,
-					"name": "Courtesy",
-					"reference": "B29",
-					"cost_type": "points",
-					"cost": -4,
-					"affects": "levels_only"
+					"type": "advantage",
+					"id": "2fef5642-c8e1-4d7e-97bb-79ff0b2b0752",
+					"name": "Wild Talent",
+					"mental": true,
+					"supernatural": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "76c989ea-40c5-48fa-9974-e38ddf58af8e",
+							"disabled": true,
+							"name": "Retention",
+							"reference": "B99",
+							"cost_type": "percentage",
+							"cost": 25,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "67f1ab09-f16c-4694-a5f8-4e65f799d61f",
+							"disabled": true,
+							"name": "Emergencies Only",
+							"reference": "B100",
+							"cost_type": "percentage",
+							"cost": -30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "6fe95222-974c-456f-9a27-7b2ea6be7761",
+							"disabled": true,
+							"name": "Focused",
+							"reference": "B99",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "@Type: Mental, Physical, Magical or Chi@"
+						},
+						{
+							"type": "modifier",
+							"id": "20d45126-4fba-4f6d-a5eb-ac87c0ec5e9b",
+							"name": "No Advantage Requirement",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "2f9d3d8e-69a7-44e8-b15d-8fcc15a0702c",
+							"disabled": true,
+							"name": "External",
+							"reference": "P90",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B99,P89,MA49",
+					"calc": {
+						"points": 30
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "993af6d8-4bde-419f-bccd-b5b849b67407",
+					"name": "Increased Intelligence",
+					"mental": true,
+					"levels": "5",
+					"points_per_level": 20,
+					"reference": "B15",
+					"calc": {
+						"points": 100
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
 				}
-			],
-			"reference": "B29",
-			"calc": {
-				"points": 5
-			},
-			"categories": [
-				"Advantage"
 			]
 		}
 	],
@@ -2276,7 +2255,7 @@
 					"reference": "B216",
 					"tech_level": "5",
 					"difficulty": "iq/a",
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
@@ -2285,8 +2264,8 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 15,
+						"rsl": "IQ+0"
 					},
 					"defaults": [
 						{
@@ -2310,7 +2289,7 @@
 					"reference": "B226",
 					"tech_level": "5",
 					"difficulty": "iq/a",
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
@@ -2319,8 +2298,8 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 15,
+						"rsl": "IQ+0"
 					},
 					"defaults": [
 						{
@@ -2340,12 +2319,29 @@
 				},
 				{
 					"type": "skill",
+					"id": "9991e5f4-7dcc-45b7-a291-99277f0af2fb",
+					"name": "Alchemy",
+					"reference": "B174",
+					"tech_level": "5",
+					"difficulty": "iq/vh",
+					"points": 2,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"categories": [
+						"Natural Science",
+						"Occult/Magical"
+					]
+				},
+				{
+					"type": "skill",
 					"id": "428acd57-b87d-43bb-be6e-b19b11af9b16",
 					"name": "Surgery",
 					"reference": "B223",
 					"tech_level": "5",
 					"difficulty": "iq/vh",
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "skill",
 						"name": "First Aid",
@@ -2355,8 +2351,8 @@
 						"points": -3
 					},
 					"calc": {
-						"level": 12,
-						"rsl": "IQ-3"
+						"level": 13,
+						"rsl": "IQ-2"
 					},
 					"prereqs": {
 						"type": "prereq_list",
@@ -2412,7 +2408,7 @@
 					"name": "Thaumatology",
 					"reference": "B225",
 					"difficulty": "iq/vh",
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -7,
@@ -2421,8 +2417,8 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 12,
-						"rsl": "IQ-3"
+						"level": 13,
+						"rsl": "IQ-2"
 					},
 					"defaults": [
 						{
@@ -2431,23 +2427,6 @@
 						}
 					],
 					"categories": [
-						"Occult/Magical"
-					]
-				},
-				{
-					"type": "skill",
-					"id": "9991e5f4-7dcc-45b7-a291-99277f0af2fb",
-					"name": "Alchemy",
-					"reference": "B174",
-					"tech_level": "5",
-					"difficulty": "iq/vh",
-					"points": 1,
-					"calc": {
-						"level": 12,
-						"rsl": "IQ-3"
-					},
-					"categories": [
-						"Natural Science",
 						"Occult/Magical"
 					]
 				},
@@ -2897,36 +2876,217 @@
 			"type": "spell_container",
 			"id": "cec20da9-7f71-49fc-883d-be0ee75a86b5",
 			"name": "Book-Learned Spells",
-			"open": true
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "947f4d88-22c9-4c04-9d52-37169fcc24b5",
+					"name": "Haste",
+					"reference": "M142",
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/pt",
+					"maintenance_cost": "Half",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"categories": [
+						"Movement"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "10e41bc2-645f-4dea-b86e-12100ecec8ad",
+					"name": "Ignite Fire",
+					"reference": "M72",
+					"difficulty": "iq/h",
+					"college": [
+						"Fire"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-4",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 sec",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"categories": [
+						"Fire"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "22378050-adda-4bc5-9bd8-ee4bdb0ce074",
+					"name": "Light",
+					"reference": "M110",
+					"difficulty": "iq/h",
+					"college": [
+						"Light & Darkness"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1",
+					"maintenance_cost": "1",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"categories": [
+						"Light & Darkness"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "390cfdf8-0d26-45d5-aacf-d259cadcc563",
+					"name": "Purify Air",
+					"reference": "M23",
+					"difficulty": "iq/h",
+					"college": [
+						"Air"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"categories": [
+						"Air"
+					]
+				}
+			]
 		}
 	],
 	"equipment": [
 		{
-			"type": "equipment",
-			"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
+			"type": "equipment_container",
+			"id": "1d792701-c4b4-4998-8704-3d8a5b8d19d8",
 			"equipped": true,
-			"quantity": 10,
-			"description": ".44-40 (10.8x33mmR)",
-			"value": "0.6",
-			"weight": "0.043 lb",
-			"reference": "HT177",
-			"modifiers": [
-				{
-					"type": "eqp_modifier",
-					"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
-					"name": "Shattersand Explosive",
-					"cost_type": "to_original_cost",
-					"cost": "x5",
-					"notes": "Made of semi-precious gems but functions in mana"
-				}
-			],
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "DF1:23",
 			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.43 lb"
+				"extended_value": "129.67",
+				"extended_weight": "5.425 lb"
 			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 40 lbs of gear",
 			"categories": [
-				"Ammunition",
-				"Warheads"
+				"Camping and Survival Gear"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "42d26316-3bf6-4d12-a9b0-e9ef668454b7",
+					"equipped": true,
+					"quantity": 2,
+					"description": "Scholarly Power Item Energy",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"type": "equipment",
+					"id": "84c5e2d4-a8c9-4207-afee-373091e7f94b",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Bandages",
+					"value": "1.67",
+					"weight": "0.167 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "1.67",
+						"extended_weight": "0.167 lb"
+					},
+					"notes": "Basic EQ for First Aid",
+					"categories": [
+						"Medical Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "ccb50364-ef3b-4e80-bf00-c82284240648",
+					"equipped": true,
+					"quantity": 6,
+					"description": ".44-40 (10.8x33mmR)",
+					"value": "0.6",
+					"weight": "0.043 lb",
+					"reference": "HT177",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "ab2f7d04-73c0-444b-ac1f-9f894b49e501",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "18",
+						"extended_weight": "0.258 lb"
+					},
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "177fce9c-9c90-463c-a942-de5be76ca6a1",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Scribe's Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					]
+				}
 			]
 		},
 		{
@@ -3164,69 +3324,54 @@
 					}
 				}
 			]
-		},
-		{
-			"type": "equipment_container",
-			"id": "bfb59e33-b2d6-48d3-9225-c8a89a5114b5",
-			"equipped": true,
-			"description": "Wizardly Grimoire (Flame Jet(2))",
-			"value": "200",
-			"weight": "6 lb",
-			"calc": {
-				"extended_value": "200",
-				"extended_weight": "6 lb"
-			},
-			"open": true,
-			"children": [
-				{
-					"type": "equipment",
-					"id": "a906c696-69cc-48f0-ab37-3b66e20b121f",
-					"equipped": true,
-					"quantity": 3,
-					"description": "Scholarly Power Item Energy",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
-					}
-				}
-			]
 		}
 	],
 	"other_equipment": [
 		{
+			"type": "equipment_container",
+			"id": "c6d5019b-52cd-4192-b12c-c61b75816515",
+			"equipped": true,
+			"description": "Wizardly Grimoire (Light)",
+			"value": "100",
+			"weight": "3 lb",
+			"calc": {
+				"extended_value": "100",
+				"extended_weight": "3 lb"
+			},
+			"open": true
+		},
+		{
 			"type": "equipment",
-			"id": "3b543469-cf99-469c-93ad-c4ea15bafcef",
+			"id": "ef7e23cb-b270-444b-9e63-48112d0a47e1",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Wizardly Grimoire (Purify Air)",
+			"value": "100",
+			"weight": "3 lb",
+			"calc": {
+				"extended_value": "100",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"type": "equipment",
+			"id": "db097ecd-3c12-4b6e-9d36-3544b8eb46f0",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Wizardly Grimoire (Haste)",
+			"value": "100",
+			"weight": "3 lb",
+			"calc": {
+				"extended_value": "100",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"type": "equipment",
+			"id": "218da1b8-f4eb-40c4-8a9c-5922f3443ca1",
 			"equipped": true,
 			"quantity": 1,
 			"description": "Wizardly Grimoire (Ignite Fire)",
-			"value": "100",
-			"weight": "3 lb",
-			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "e4d925d5-2409-4248-b179-305b56958cdb",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Shape Fire)",
-			"value": "100",
-			"weight": "3 lb",
-			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "e09b2aa8-b5e1-44ee-9828-9fe8ff075def",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Light)",
 			"value": "100",
 			"weight": "3 lb",
 			"calc": {
@@ -3244,30 +3389,79 @@
 			"children": [
 				{
 					"type": "note",
-					"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
-					"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire -> Flame Jet"
-				},
-				{
-					"type": "note",
-					"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
-					"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
-				},
-				{
-					"type": "note",
 					"id": "943ed466-d27a-4258-968e-ec822e0439cd",
 					"text": "Specific manuals are available on 6 or less.\nAssuming failure, it takes 1d+1 weeks to arrive and a 10% markup"
 				},
 				{
 					"type": "note",
-					"id": "0f1d999f-5acd-4a71-b5ba-a03b427dc996",
-					"text": "TODO:\n* Sensible spells!\n* Writing Equipment?\n* Cheap Healing?"
+					"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
+					"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire + Create Fire -> Flame Jet"
+				},
+				{
+					"type": "note",
+					"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
+					"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
+				}
+			]
+		},
+		{
+			"type": "note_container",
+			"id": "6476ab4d-8bf6-45cc-9995-b61f136a7ec9",
+			"text": "Shopping list",
+			"open": true,
+			"children": [
+				{
+					"type": "note_container",
+					"id": "2223dbc6-212d-4fff-ba3a-f05701bf031f",
+					"text": "With Money",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"id": "b2174103-d796-47eb-8843-a33ecaa77893",
+							"text": "Better healing supplies!"
+						},
+						{
+							"type": "note",
+							"id": "e0bef470-ca8f-4469-bdf4-796455e0a88a",
+							"text": "Library membership"
+						}
+					]
+				},
+				{
+					"type": "note_container",
+					"id": "99482f3e-2c26-4b7d-91dd-7f9861e70513",
+					"text": "With Points",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"id": "f95657bc-805e-4dc6-aa5c-887f74c71cc4",
+							"text": "Enough Wizard Rank that assistance rolls succeed"
+						},
+						{
+							"type": "note",
+							"id": "caf45d3e-bc8f-467d-9f72-3396c13e302e",
+							"text": "Luck, for rerolling books"
+						},
+						{
+							"type": "note",
+							"id": "8148b685-c38c-428a-bcf4-5923a9ad20bc",
+							"text": "Lifting ST somehow, to carry more gear"
+						},
+						{
+							"type": "note",
+							"id": "b3bab613-f333-4085-aa2d-0c03cdcfd576",
+							"text": "More magery (as racial powerup)"
+						}
+					]
 				}
 			]
 		},
 		{
 			"type": "note",
 			"id": "dc80d589-8422-4594-9d24-e7c8e3f52fcf",
-			"text": "Wizard Rank 1 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (60% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 5 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - irrelevant to actual members."
+			"text": "Wizard Rank 1 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (60% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 5 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - discounted off-template training."
 		}
 	],
 	"calc": {
