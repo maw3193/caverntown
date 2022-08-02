@@ -4024,14 +4024,13 @@
 							"name": "Spear",
 							"reference": "B208",
 							"difficulty": "dx/a",
-							"points": 3,
+							"points": 4,
 							"defaulted_from": {
-								"type": "skill",
-								"name": "Staff",
-								"modifier": -2,
-								"level": 13,
-								"adjusted_level": 13,
-								"points": 1
+								"type": "dx",
+								"modifier": -5,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
 							},
 							"calc": {
 								"level": 15,
@@ -4064,13 +4063,14 @@
 							"name": "Staff",
 							"reference": "B208",
 							"difficulty": "dx/a",
-							"points": 4,
+							"points": 3,
 							"defaulted_from": {
-								"type": "dx",
-								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
+								"type": "skill",
+								"name": "Spear",
+								"modifier": -2,
+								"level": 13,
+								"adjusted_level": 13,
+								"points": 1
 							},
 							"calc": {
 								"level": 15,
