@@ -971,6 +971,34 @@
 						},
 						{
 							"type": "advantage",
+							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
+							"disabled": true,
+							"name": "Enhanced Parry (Area Defense)",
+							"mental": true,
+							"levels": "0",
+							"points_per_level": 5,
+							"reference": "B51,MA43",
+							"calc": {
+								"points": 0
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Area Defense"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
 							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
 							"name": "Enhanced Dodge",
 							"mental": true,
@@ -986,6 +1014,87 @@
 									"attribute": "dodge"
 								}
 							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "70f78351-7696-4d9f-9e81-47f509eec62a",
+							"disabled": true,
+							"name": "Enhanced Time Sense",
+							"mental": true,
+							"exotic": true,
+							"base_points": 45,
+							"reference": "B52,MA44",
+							"calc": {
+								"points": 0
+							},
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Combat Reflexes"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "fast-draw"
+									}
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "dodge"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "parry"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "block"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 2,
+									"attribute": "fright_check"
+								},
+								{
+									"type": "conditional_modifier",
+									"amount": 6,
+									"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun"
+								},
+								{
+									"type": "conditional_modifier",
+									"amount": 1,
+									"situation": "to your side on initiative rolls (+2 if you're the leader)"
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 5,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Area Defense"
+									}
+								}
+							],
+							"notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze",
 							"categories": [
 								"Advantage"
 							]
@@ -3440,6 +3549,20 @@
 					"open": true,
 					"children": [
 						{
+							"type": "technique",
+							"id": "b6f11a52-8f8d-4efe-8e07-b1fd4f6eca25",
+							"name": "Area Defense",
+							"reference": "Gun-Fu:17",
+							"difficulty": "a",
+							"points": 0,
+							"default": {
+								"type": "parry",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -15
+							}
+						},
+						{
 							"type": "skill",
 							"id": "6b5889a8-4dc9-4db2-971c-6e0cb2a6fb69",
 							"name": "Fast-Draw",
@@ -4643,6 +4766,27 @@
 							"type": "skill",
 							"name": "Polearm",
 							"modifier": -4
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": ""
+					},
+					"usage": "Area Defense",
+					"usage_notes": "Gunslinger Acc +2; RoF 12 +3",
+					"calc": {
+						"level": 3,
+						"parry": "",
+						"block": "",
+						"damage": ""
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Area Defense",
+							"modifier": 5
 						}
 					]
 				},
