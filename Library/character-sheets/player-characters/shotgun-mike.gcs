@@ -971,6 +971,34 @@
 						},
 						{
 							"type": "advantage",
+							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
+							"disabled": true,
+							"name": "Enhanced Parry (Area Defense)",
+							"mental": true,
+							"levels": "0",
+							"points_per_level": 5,
+							"reference": "B51,MA43",
+							"calc": {
+								"points": 0
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Area Defense"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
 							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
 							"name": "Enhanced Dodge",
 							"mental": true,
@@ -986,6 +1014,87 @@
 									"attribute": "dodge"
 								}
 							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "70f78351-7696-4d9f-9e81-47f509eec62a",
+							"disabled": true,
+							"name": "Enhanced Time Sense",
+							"mental": true,
+							"exotic": true,
+							"base_points": 45,
+							"reference": "B52,MA44",
+							"calc": {
+								"points": 0
+							},
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Combat Reflexes"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "fast-draw"
+									}
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "dodge"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "parry"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "block"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 2,
+									"attribute": "fright_check"
+								},
+								{
+									"type": "conditional_modifier",
+									"amount": 6,
+									"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun"
+								},
+								{
+									"type": "conditional_modifier",
+									"amount": 1,
+									"situation": "to your side on initiative rolls (+2 if you're the leader)"
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 5,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Area Defense"
+									}
+								}
+							],
+							"notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze",
 							"categories": [
 								"Advantage"
 							]
@@ -3440,6 +3549,20 @@
 					"open": true,
 					"children": [
 						{
+							"type": "technique",
+							"id": "b6f11a52-8f8d-4efe-8e07-b1fd4f6eca25",
+							"name": "Area Defense",
+							"reference": "Gun-Fu:17",
+							"difficulty": "a",
+							"points": 0,
+							"default": {
+								"type": "parry",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -15
+							}
+						},
+						{
 							"type": "skill",
 							"id": "6b5889a8-4dc9-4db2-971c-6e0cb2a6fb69",
 							"name": "Fast-Draw",
@@ -4024,14 +4147,13 @@
 							"name": "Spear",
 							"reference": "B208",
 							"difficulty": "dx/a",
-							"points": 3,
+							"points": 4,
 							"defaulted_from": {
-								"type": "skill",
-								"name": "Staff",
-								"modifier": -2,
-								"level": 13,
-								"adjusted_level": 13,
-								"points": 1
+								"type": "dx",
+								"modifier": -5,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
 							},
 							"calc": {
 								"level": 15,
@@ -4064,13 +4186,14 @@
 							"name": "Staff",
 							"reference": "B208",
 							"difficulty": "dx/a",
-							"points": 4,
+							"points": 3,
 							"defaulted_from": {
-								"type": "dx",
-								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
+								"type": "skill",
+								"name": "Spear",
+								"modifier": -2,
+								"level": 13,
+								"adjusted_level": 13,
+								"points": 1
 							},
 							"calc": {
 								"level": 15,
@@ -4558,11 +4681,10 @@
 			]
 		},
 		{
-			"type": "equipment",
+			"type": "equipment_container",
 			"id": "1b794d3c-a5c4-4e6a-b761-cdb71edd7de7",
 			"equipped": true,
-			"quantity": 1,
-			"description": "Revolving Shotgun, 20G Caplock",
+			"description": "Revolving Shotgun, 20G",
 			"tech_level": "5",
 			"legality_class": "3",
 			"value": "800",
@@ -4643,6 +4765,27 @@
 							"type": "skill",
 							"name": "Polearm",
 							"modifier": -4
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": ""
+					},
+					"usage": "Area Defense",
+					"usage_notes": "Gunslinger Acc +2; RoF 12 +3",
+					"calc": {
+						"level": 3,
+						"parry": "",
+						"block": "",
+						"damage": ""
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Area Defense",
+							"modifier": 5
 						}
 					]
 				},
@@ -4824,20 +4967,58 @@
 				}
 			],
 			"calc": {
-				"extended_value": "800",
+				"extended_value": "810",
 				"extended_weight": "10.9 lb"
 			},
+			"features": [
+				{
+					"type": "contained_weight_reduction",
+					"reduction": "100%"
+				}
+			],
 			"notes": "Malf 16.",
 			"categories": [
 				"Firearms"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "d8807031-e43a-4f66-8f4f-6b1c21a0b19c",
+					"equipped": true,
+					"quantity": 5,
+					"description": "20-gauge",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "b7901752-c25b-4a9e-b7b0-b2c9f432f884",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.375 lb"
+					},
+					"notes": "Powder and shot. Shotshell.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				}
 			]
 		},
 		{
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 8,
-			"description": "20-gauge Caplock",
+			"quantity": 3,
+			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
 			"reference": "HT176",
@@ -4852,10 +5033,29 @@
 				}
 			],
 			"calc": {
-				"extended_value": "16",
-				"extended_weight": "0.6 lb"
+				"extended_value": "6",
+				"extended_weight": "0.225 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
+			"categories": [
+				"Ammunition",
+				"Warheads"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "255cbee1-9c70-48af-a887-495acce7d817",
+			"equipped": true,
+			"quantity": 2,
+			"description": "20-gauge spent cartridge",
+			"value": "0",
+			"weight": "0 lb",
+			"reference": "HT176",
+			"calc": {
+				"extended_value": "0",
+				"extended_weight": "0 lb"
+			},
+			"notes": "Allows reloading for 50% cost",
 			"categories": [
 				"Ammunition",
 				"Warheads"
@@ -4866,7 +5066,7 @@
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
 			"quantity": 5,
-			"description": "20-gauge Caplock Ball",
+			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
 			"reference": "HT176",
