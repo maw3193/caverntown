@@ -1,0 +1,343 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "538f086d-5ca8-4b88-92ec-3eb0ae9dd977",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "047c3ea7-eff9-4658-9155-5d30ca2689ea",
+			"container_type": "race",
+			"name": "Dark Elf",
+			"reference": "DFC2:45",
+			"ancestry": "Human",
+			"calc": {
+				"points": 20
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "e79c4fe1-0d00-4684-b886-72fc17e12643",
+					"name": "Decreased Strength",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": -10,
+					"reference": "B14",
+					"calc": {
+						"points": -10
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "st"
+						}
+					],
+					"categories": [
+						"Attribute",
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "51c50223-15b9-4259-b48e-65f13173b4e8",
+					"name": "Increased Intelligence",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"reference": "B15",
+					"calc": {
+						"points": 20
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "6567e590-9029-417c-ba95-c7e01c1872de",
+					"name": "Magery",
+					"mental": true,
+					"supernatural": true,
+					"levels": "0",
+					"base_points": 5,
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "c527eef3-ef25-406d-9476-23bde9cb3cf0",
+							"disabled": true,
+							"name": "Dance",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "71f1d167-7108-42e8-802b-2a713f74bfc3",
+							"disabled": true,
+							"name": "Dark-Aspected",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "f1e4decc-4c09-4383-8d52-418ec026f8e2",
+							"disabled": true,
+							"name": "Day-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "7b8cb848-ff2a-41f1-a621-3f253257db7e",
+							"disabled": true,
+							"name": "Musical",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "25daa326-37ed-48aa-bc04-380bfd720fcc",
+							"disabled": true,
+							"name": "Night-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "822bc58f-134c-4e95-9cdf-8f258e1a767e",
+							"disabled": true,
+							"name": "One College",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only",
+							"notes": "@College@"
+						},
+						{
+							"type": "modifier",
+							"id": "4d600648-d263-4089-867a-8db3e907fb03",
+							"disabled": true,
+							"name": "Solitary",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "cfe4f522-9393-4bd6-b759-e09a5dbba511",
+							"disabled": true,
+							"name": "Song",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B66",
+					"calc": {
+						"points": 5
+					},
+					"features": [
+						{
+							"type": "spell_bonus",
+							"amount": 1,
+							"per_level": true,
+							"match": "all_colleges"
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "bdb3b83a-e988-46f7-a0da-e4cbb3783be1",
+					"name": "Night Vision",
+					"physical": true,
+					"levels": "5",
+					"points_per_level": 1,
+					"reference": "B71,P87",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "1533cf6c-6032-4cd9-9bdc-4fbc59a77e29",
+					"name": "Talent (Dark Gift)",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "22053166-63ae-433d-93d8-74be3e341dec",
+							"disabled": true,
+							"name": "Alternate Benefit",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "@Alternate Benefit@"
+						},
+						{
+							"type": "modifier",
+							"id": "14003eb9-f903-4f8d-855f-02e7ac60a9bc",
+							"disabled": true,
+							"name": "Alternative Cost",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B89",
+					"calc": {
+						"points": 5
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Alchemy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Hazardous Materials"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Hidden Lore"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Occultism"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thaumatology"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": 1,
+							"per_level": true,
+							"situation": "When negotiating with Evil supernatural beings"
+						}
+					],
+					"notes": "Up to 3 more levels may be bought during play",
+					"categories": [
+						"Advantage",
+						"Talent"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "6b817d91-e0ce-4397-ad21-f218691d2d46",
+					"name": "Callous",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B125",
+					"calc": {
+						"points": -5
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "teaching"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "from past victims and anyone with Empathy"
+						},
+						{
+							"type": "conditional_modifier",
+							"amount": 1,
+							"situation": "to Interrogation and Intimidation rolls when you use threats or torture"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "ca86de18-05ff-4834-b798-2b93a72bb5b0",
+					"name": "Feature: Jet-black skin with cobweb-gray or white hair – or cobwebby\nwhite skin with jet-black hair.",
+					"physical": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			]
+		}
+	]
+}

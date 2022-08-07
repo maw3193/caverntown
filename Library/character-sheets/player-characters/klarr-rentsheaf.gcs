@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 1, 2022, 10:30 PM",
+	"modified_date": "Aug 7, 2022, 4:07 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -914,10 +914,10 @@
 		},
 		{
 			"type": "advantage_container",
-			"id": "355a2271-9857-42ff-8202-181e5e241355",
+			"id": "c920e691-555b-40c1-b251-ca12a0f5c0f6",
 			"container_type": "race",
-			"name": "Shadow Elf",
-			"reference": "DF3:7",
+			"name": "Dark Elf",
+			"reference": "DFC2:45",
 			"ancestry": "Human",
 			"calc": {
 				"points": 20
@@ -926,7 +926,7 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "91c995c3-6401-4684-94b6-2f993430eb46",
+					"id": "9d8f19ab-b99b-4d5f-96d1-b361f55f0029",
 					"name": "Decreased Strength",
 					"physical": true,
 					"levels": "1",
@@ -950,50 +950,31 @@
 				},
 				{
 					"type": "advantage",
-					"id": "6a1ff065-c12b-46d2-a9b7-a2af90c907bc",
-					"name": "Callous",
+					"id": "63a29961-8ff7-4b80-827c-c668affdb934",
+					"name": "Increased Intelligence",
 					"mental": true,
-					"base_points": -5,
-					"reference": "B125",
+					"levels": "1",
+					"points_per_level": 20,
+					"reference": "B15",
 					"calc": {
-						"points": -5
+						"points": 20
 					},
 					"features": [
 						{
-							"type": "skill_bonus",
-							"amount": -3,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "psychology"
-							}
-						},
-						{
-							"type": "skill_bonus",
-							"amount": -3,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "teaching"
-							}
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
 						}
 					],
 					"categories": [
-						"Disadvantage"
+						"Advantage",
+						"Attribute"
 					]
 				},
 				{
 					"type": "advantage",
-					"id": "d534fb64-c7f9-4d2c-b9df-04ceb6b5e0b9",
-					"name": "Feature: Cobweb grey or jet black hair",
-					"physical": true,
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"type": "advantage",
-					"id": "1fb7e9a1-fbe0-4ee7-9592-b89466b71531",
+					"id": "d94d5a0c-58ad-4193-b6c1-002294a0c89f",
 					"name": "Magery",
 					"mental": true,
 					"supernatural": true,
@@ -1003,7 +984,7 @@
 					"modifiers": [
 						{
 							"type": "modifier",
-							"id": "65759019-5f68-4d93-9899-be7b9d24f101",
+							"id": "1b14fee6-a3ad-4b7f-aec6-02794944db23",
 							"disabled": true,
 							"name": "Dance",
 							"cost_type": "percentage",
@@ -1012,7 +993,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "f32df619-ee4f-4997-8a5a-9479a0ffea89",
+							"id": "66e35797-c3ec-4594-b482-a3fde2bc1cd4",
 							"disabled": true,
 							"name": "Dark-Aspected",
 							"cost_type": "percentage",
@@ -1021,7 +1002,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "0d92b21f-21cc-4a86-8e86-54444281123a",
+							"id": "0cccc833-8dfa-4583-b597-cb22bb202de7",
 							"disabled": true,
 							"name": "Day-Aspected",
 							"cost_type": "percentage",
@@ -1030,7 +1011,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "23c981a4-ee7f-41ff-a4c1-3aad3431f551",
+							"id": "761044c0-7acd-47ee-afe4-46c4e05ff817",
 							"disabled": true,
 							"name": "Musical",
 							"cost_type": "percentage",
@@ -1039,7 +1020,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "ba0f505d-3949-403f-8124-01a7e2d9f402",
+							"id": "7b7e3305-29ae-486e-9bac-2cf5d9e9211b",
 							"disabled": true,
 							"name": "Night-Aspected",
 							"cost_type": "percentage",
@@ -1048,7 +1029,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "aaa70a19-5c3f-40e1-9df2-bd8563a3361c",
+							"id": "074b7a57-652a-41b3-8139-c1ce237d89d6",
 							"disabled": true,
 							"name": "One College",
 							"cost_type": "percentage",
@@ -1058,7 +1039,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "5c6ae445-77fe-499d-aff1-6e6ed1ef6ec0",
+							"id": "50703634-a06d-4d7a-88ad-f6eca2b1a349",
 							"disabled": true,
 							"name": "Solitary",
 							"cost_type": "percentage",
@@ -1067,7 +1048,7 @@
 						},
 						{
 							"type": "modifier",
-							"id": "05592722-a9fe-4c1b-9e1c-dbca32adc2c9",
+							"id": "94e1bbd7-03bd-4b28-b2d3-32cf0bcb2a6d",
 							"disabled": true,
 							"name": "Song",
 							"cost_type": "percentage",
@@ -1095,36 +1076,6 @@
 								"compare": "is",
 								"qualifier": "thaumatology"
 							}
-						},
-						{
-							"type": "spell_bonus",
-							"amount": -1,
-							"per_level": true,
-							"match": "college_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Clerical"
-							}
-						},
-						{
-							"type": "spell_bonus",
-							"amount": -1,
-							"per_level": true,
-							"match": "college_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Druid"
-							}
-						},
-						{
-							"type": "spell_bonus",
-							"amount": -1,
-							"per_level": true,
-							"match": "college_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Unholy"
-							}
 						}
 					],
 					"categories": [
@@ -1133,77 +1084,167 @@
 				},
 				{
 					"type": "advantage",
-					"id": "fc7b7c7f-42e3-49d4-96a3-5d0ebf9e8a55",
-					"name": "Silence",
+					"id": "ff48b87a-54ef-45fe-98d9-b4122a70c195",
+					"name": "Night Vision",
 					"physical": true,
-					"exotic": true,
-					"levels": "2",
+					"levels": "5",
+					"points_per_level": 1,
+					"reference": "B71,P87",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "89807409-8a87-4def-ad5a-94fa96cf85ce",
+					"name": "Talent (Dark Gift)",
+					"mental": true,
+					"levels": "1",
 					"points_per_level": 5,
 					"modifiers": [
 						{
 							"type": "modifier",
-							"id": "0264ffef-eb78-45e0-b926-74313bf5507b",
+							"id": "5b5f2409-8327-4283-b158-f5c9d1652838",
 							"disabled": true,
-							"name": "Dynamic",
-							"reference": "P76",
+							"name": "Alternate Benefit",
 							"cost_type": "percentage",
-							"cost": 40,
-							"affects": "total"
+							"cost": 0,
+							"affects": "total",
+							"notes": "@Alternate Benefit@"
+						},
+						{
+							"type": "modifier",
+							"id": "0eed470b-b1c2-4e70-bff9-b4c838a1d468",
+							"disabled": true,
+							"name": "Alternative Cost",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "levels_only"
 						}
 					],
-					"reference": "B85",
+					"reference": "B89",
 					"calc": {
-						"points": 10
+						"points": 5
 					},
 					"features": [
 						{
 							"type": "skill_bonus",
-							"amount": 2,
+							"amount": 1,
+							"per_level": true,
 							"selection_type": "skills_with_name",
 							"name": {
 								"compare": "is",
-								"qualifier": "stealth"
+								"qualifier": "Alchemy"
 							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Hazardous Materials"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Hidden Lore"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Occultism"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thaumatology"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": 1,
+							"per_level": true,
+							"situation": "When negotiating with Evil supernatural beings"
 						}
 					],
+					"notes": "Up to 3 more levels may be bought during play",
 					"categories": [
-						"Advantage"
+						"Advantage",
+						"Talent"
 					]
 				},
 				{
 					"type": "advantage",
-					"id": "500851ec-b07c-42a2-af2c-e17440ec479e",
-					"name": "Increased Dexterity",
-					"physical": true,
-					"levels": "1",
-					"points_per_level": 20,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "ea8fb9e1-7ae6-414f-8a44-e525ebb464bf",
-							"disabled": true,
-							"name": "No Fine Manipulators",
-							"cost_type": "percentage",
-							"cost": -40,
-							"affects": "total"
-						}
-					],
-					"reference": "B15",
+					"id": "f275e1cd-eec8-46ce-afbe-1ae0256d4709",
+					"name": "Callous",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B125",
 					"calc": {
-						"points": 20
+						"points": -5
 					},
 					"features": [
 						{
-							"type": "attribute_bonus",
+							"type": "skill_bonus",
+							"amount": -3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "teaching"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "from past victims and anyone with Empathy"
+						},
+						{
+							"type": "conditional_modifier",
 							"amount": 1,
-							"per_level": true,
-							"attribute": "dx"
+							"situation": "to Interrogation and Intimidation rolls when you use threats or torture"
 						}
 					],
 					"categories": [
-						"Advantage",
-						"Attribute"
+						"Disadvantage"
 					]
+				},
+				{
+					"type": "advantage",
+					"id": "a85d8040-070e-4ab1-938c-50c0cc523636",
+					"name": "Feature: Jet-black skin with cobweb-gray or white hair – or cobwebby\nwhite skin with jet-black hair.",
+					"physical": true,
+					"calc": {
+						"points": 0
+					}
 				}
 			]
 		},
@@ -1618,7 +1659,7 @@
 					"id": "b00e00d5-3a10-4258-bdbb-677caf90c841",
 					"name": "Increased Dexterity",
 					"physical": true,
-					"levels": "1",
+					"levels": "2",
 					"points_per_level": 20,
 					"modifiers": [
 						{
@@ -1633,7 +1674,7 @@
 					],
 					"reference": "B15",
 					"calc": {
-						"points": 20
+						"points": 40
 					},
 					"features": [
 						{
@@ -1946,11 +1987,11 @@
 					"id": "993af6d8-4bde-419f-bccd-b5b849b67407",
 					"name": "Increased Intelligence",
 					"mental": true,
-					"levels": "5",
+					"levels": "4",
 					"points_per_level": 20,
 					"reference": "B15",
 					"calc": {
-						"points": 100
+						"points": 80
 					},
 					"features": [
 						{
@@ -2030,8 +2071,8 @@
 					"difficulty": "iq/a",
 					"points": 2,
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 16,
+						"rsl": "IQ+1"
 					},
 					"categories": [
 						"Knowledge"
@@ -2046,8 +2087,8 @@
 					"difficulty": "iq/a",
 					"points": 2,
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 16,
+						"rsl": "IQ+1"
 					},
 					"categories": [
 						"Knowledge"
@@ -2062,8 +2103,8 @@
 					"difficulty": "iq/a",
 					"points": 2,
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 16,
+						"rsl": "IQ+1"
 					},
 					"categories": [
 						"Knowledge"
@@ -2326,8 +2367,8 @@
 					"difficulty": "iq/vh",
 					"points": 2,
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"categories": [
 						"Natural Science",
@@ -2417,8 +2458,8 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"defaults": [
 						{
@@ -2668,8 +2709,8 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "DX+1"
+						"level": 11,
+						"rsl": "DX-1"
 					},
 					"defaults": [
 						{
