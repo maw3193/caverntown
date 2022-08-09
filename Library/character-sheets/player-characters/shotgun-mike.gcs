@@ -3597,6 +3597,30 @@
 							]
 						},
 						{
+							"type": "technique",
+							"id": "5b8c8c94-3a5f-401d-8728-02efa4139bd0",
+							"name": "Fast-Firing",
+							"reference": "GF27",
+							"difficulty": "h",
+							"points": 3,
+							"calc": {
+								"level": 19,
+								"rsl": "+0"
+							},
+							"default": {
+								"type": "skill",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -2
+							},
+							"notes": "Using Gunslinger halved penalty",
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat",
+								"Technique"
+							]
+						},
+						{
 							"type": "skill",
 							"id": "128dcb38-d9c7-415a-b0e2-1560db44a1fa",
 							"name": "Guns",
@@ -3928,6 +3952,30 @@
 							"categories": [
 								"Combat/Weapon",
 								"Ranged Combat"
+							]
+						},
+						{
+							"type": "technique",
+							"id": "59fa7420-e5f1-4a9e-a599-5435ef0fe0a5",
+							"name": "Quick-Shot",
+							"reference": "GF29",
+							"difficulty": "a",
+							"points": 0,
+							"calc": {
+								"level": 16,
+								"rsl": "-3"
+							},
+							"limit": 0,
+							"default": {
+								"type": "skill",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -3
+							},
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat",
+								"Technique"
 							]
 						}
 					]
