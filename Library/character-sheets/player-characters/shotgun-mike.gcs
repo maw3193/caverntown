@@ -1537,7 +1537,7 @@
 				{
 					"type": "advantage",
 					"id": "4f043b1d-e862-4ecf-b650-6e35073fbaad",
-					"name": "Quirk",
+					"name": "Refers to Shotguns as Skeleton Keys",
 					"physical": true,
 					"base_points": -1,
 					"calc": {
