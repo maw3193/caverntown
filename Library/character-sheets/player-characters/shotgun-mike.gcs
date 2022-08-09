@@ -5058,6 +5058,24 @@
 						"Ammunition",
 						"Warheads"
 					]
+				},
+				{
+					"type": "equipment",
+					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
+					"equipped": true,
+					"description": "20-gauge spent cartridge",
+					"value": "0",
+					"weight": "0 lb",
+					"reference": "HT176",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Allows reloading for 50% cost",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
 				}
 			]
 		},
@@ -5065,7 +5083,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 3,
+			"quantity": 1,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5081,8 +5099,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "6",
-				"extended_weight": "0.225 lb"
+				"extended_value": "2",
+				"extended_weight": "0.075 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5094,7 +5112,7 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
-			"quantity": 2,
+			"quantity": 4,
 			"description": "20-gauge spent cartridge",
 			"value": "0",
 			"weight": "0 lb",
