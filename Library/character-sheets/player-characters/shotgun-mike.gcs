@@ -4822,9 +4822,9 @@
 						"type": ""
 					},
 					"usage": "Area Defense",
-					"usage_notes": "Gunslinger Acc +2; RoF 12 +3",
+					"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
 					"calc": {
-						"level": 3,
+						"level": 5,
 						"parry": "",
 						"block": "",
 						"damage": ""
@@ -4833,7 +4833,7 @@
 						{
 							"type": "skill",
 							"name": "Area Defense",
-							"modifier": 5
+							"modifier": 7
 						}
 					]
 				},
