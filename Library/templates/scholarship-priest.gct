@@ -1,0 +1,5168 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "3b6ee233-6122-4141-a784-da6f21a1fe3a",
+	"spells": [
+		{
+			"type": "spell_container",
+			"id": "3eac17a0-c7eb-4f0d-85f8-f9d1c022057e",
+			"name": "Power Investiture 1",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "b7f1d510-3a73-4ef0-9b61-2c045bba3b33",
+					"name": "Armor",
+					"reference": "M167",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2 per DR",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "43b631f7-0a0c-461c-9efe-2f5cbce8cbf3",
+					"name": "Aura",
+					"reference": "M101",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "9dbcf5cb-d95b-4eaf-943f-78d9b6acd540",
+					"name": "Body-Reading",
+					"reference": "M88",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "-",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "6755b0e2-d01c-47a3-ae96-8b5909f9919c",
+					"name": "Bravery",
+					"reference": "M134",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e6d642ab-3f44-4b66-9dca-06ca6c9eb9f7",
+					"name": "Cleansing",
+					"reference": "M94",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/4/6",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "97d12f3d-0dc9-40c7-9a55-9460dd51ea69",
+					"name": "Coolness",
+					"reference": "M187",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "1",
+					"casting_time": "10 sec",
+					"duration": "1 hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "86fad46b-740d-4bde-8599-e855ac45e9d7",
+					"name": "Detect Magic",
+					"reference": "M101",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "5 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "b4b42cc1-081f-4b90-baac-ebfed39fe290",
+					"name": "Detect Poison",
+					"reference": "M166",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area-Info",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "-",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "de8c59ba-a8a7-4bdc-966e-90f7a5a9db51",
+					"name": "Final Rest",
+					"reference": "M89",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "10 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "35ff52dd-19a8-4884-8bf7-f352ab50a39a",
+					"name": "Lend Energy",
+					"reference": "M89",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fd42d687-1342-40d2-b1a0-c0840528ceed",
+					"name": "Lend Vitality",
+					"reference": "M89",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 Hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4e7e1c6e-a4bb-45a5-b806-2522025e5f80",
+					"name": "Light",
+					"reference": "M110",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1",
+					"maintenance_cost": "1",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "688005a6-9b7c-4646-9b31-7d6e691ba895",
+					"name": "Purify Air",
+					"reference": "M23",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "9a5f19e0-fe0e-4cac-b0ba-ec95055a6f62",
+					"name": "Purify Water",
+					"reference": "M184",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "1/gal",
+					"maintenance_cost": "-",
+					"casting_time": "5-10/gal#",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "65c5bdaa-598d-4fa8-9f81-e9d8b33109e1",
+					"name": "Recover Energy",
+					"reference": "M89",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "0",
+					"maintenance_cost": "0",
+					"casting_time": "1 sec",
+					"duration": "Special",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "a0d79ecc-69fc-480c-9311-1ad8ceb54c86",
+					"name": "Sense Life",
+					"reference": "M45",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info/Area",
+					"casting_cost": "1/2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "b4385c76-25bd-4b5b-85ae-766f8353aa2d",
+					"name": "Sense Spirit",
+					"reference": "M149",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info/Area",
+					"casting_cost": "1/2 (min 1)",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "18c85268-8bf6-4dd2-8051-ce124239373d",
+					"name": "Shield",
+					"reference": "M167",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2 per DB",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fcbdfc21-6cee-4213-a165-2e0427bac683",
+					"name": "Silence",
+					"reference": "M171",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "9d3f8a30-ad5b-46f5-98ee-4cef1a1b1122",
+					"name": "Stop Bleeding",
+					"reference": "M91",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1 or 10",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "db4b46ee-3fa9-44cd-b95b-78bb5beb07bf",
+					"name": "Test Food",
+					"reference": "M77",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "1 or 3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "688e80f5-357b-4124-bbb5-a464d48217b3",
+					"name": "Umbrella",
+					"reference": "M185",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1",
+					"maintenance_cost": "1",
+					"casting_time": "2 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2bfc0209-8275-4110-b7fe-c0608adc95d5",
+					"name": "Warmth",
+					"reference": "M74",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "1",
+					"casting_time": "10 sec",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "11a40f19-b920-473c-8c1a-825f8e711ecd",
+					"name": "Watchdog",
+					"reference": "M167",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "Same",
+					"casting_time": "10 sec",
+					"duration": "10 hrs",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "04483a7e-557e-4c2b-9c4c-9e4700a8e5be",
+					"name": "Seeker",
+					"reference": "M105",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"id": "1a8ef30a-6806-4809-900d-635fb9345ce2",
+			"name": "Power Investiture 2",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "27d1a824-abbd-4630-881b-d2f80b59f40d",
+					"name": "Borrow Language",
+					"reference": "M46",
+					"difficulty": "iq/h",
+					"college": [
+						"Communication & Empathy"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "1",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Communication & Empathy"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "1d82352a-d455-4ff7-a009-dd8c7f4175a4",
+					"name": "Trace",
+					"reference": "M106",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "1",
+					"casting_time": "1 min",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "6541db1c-5ce7-452d-95df-63b2114dc2c9",
+					"name": "History",
+					"reference": "M106",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "Varies",
+					"casting_time": "1 sec/pt",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d96fe1ca-7990-4610-838d-d448e37194a7",
+					"name": "Thunderclap",
+					"reference": "M171",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e6c81ee5-4d3b-4954-98b5-e88da82dd8df",
+					"name": "Might",
+					"reference": "M37",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/+ST",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fd34014c-4c5d-41a5-8d8e-d7a78d2614ef",
+					"name": "Minor healing",
+					"reference": "M91",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "349f6867-5ea9-49f8-97f8-8b2ceccd2bc7",
+					"name": "Share Vitality",
+					"reference": "M90",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "None",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec/HP",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e373ff5f-7293-45dc-8b4b-daf164c5cfda",
+					"name": "Vigor",
+					"reference": "M37",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/+HT",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2571c799-759f-4fde-af0e-0fabc54ba4d3",
+					"name": "Wisdom",
+					"reference": "M135",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4/pt of IQ",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "1d28a3fd-d79c-49ef-87ab-fb3e605127f5",
+					"name": "Awaken",
+					"reference": "M90",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "7c22192b-3b23-4cdb-bcf9-a4443440b8b7",
+					"name": "Clean",
+					"reference": "M116",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "9d3c5189-24aa-4816-a558-c0276a9dcc69",
+					"name": "Command",
+					"reference": "M136",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Blocking",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "5024cd19-1d81-4ea1-ba7e-b258baa1609a",
+					"name": "Compel Truth",
+					"reference": "M47",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "5 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f77b13c9-9e15-4aa5-b8f9-2d1191253b99",
+					"name": "Continual Light",
+					"reference": "M110",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2 moon, 4 torch, 6 day",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "2d days",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "65af465a-7c35-4f46-aab7-1a58b0940be6",
+					"name": "Create Water",
+					"reference": "M184",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/gal",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "29b3ff01-3dc1-4901-900f-c2cfd8a3b35d",
+					"name": "Glow",
+					"reference": "M112",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "Varies",
+					"duration": "2d days",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "a100800f-bad3-48e3-b67f-58518842c9c1",
+					"name": "Peaceful Sleep",
+					"reference": "M138",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "8 hrs",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4f5cb54f-5c3f-4b83-939e-3ee2715f11bd",
+					"name": "Relieve Sickness",
+					"reference": "M90",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d75d20e8-020b-46c9-b41d-8a04984d3e15",
+					"name": "Remove Contagion",
+					"reference": "M90",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "6c4622ea-67b4-4fec-850e-ba94fd56b6fe",
+					"name": "Resist Acid",
+					"reference": "M190",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2 or 6",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "87c12e3a-8501-4bad-a708-0006eb94150f",
+					"name": "Resist Fire",
+					"reference": "M74",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2#",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "cac370ef-95ba-4d7b-8935-5ce27a621636",
+					"name": "Restore Memory",
+					"reference": "M92",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "8c3a7c12-ebdf-49f3-9441-f62884a11f01",
+					"name": "Restore Sight",
+					"reference": "M92",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Half",
+					"casting_time": "5 sec",
+					"duration": "1 hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "721061d9-2b0d-4f42-8b48-64f7f2e6b70d",
+					"name": "Soilproof",
+					"reference": "M116",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "1",
+					"casting_time": "2 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "94cbbd6d-f5a4-4f42-8800-6083b9c03a33",
+					"name": "Stop Spasm",
+					"reference": "M35",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fe0c0e3d-4e41-4db9-8f70-2f92e8902bf6",
+					"name": "Truthsayer",
+					"reference": "M45",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "45adbf31-5619-4902-be12-cc4e415329ba",
+					"name": "Wall of Light",
+					"reference": "M113",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1-3",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"id": "df992dc5-cb63-43cf-9285-70488565c19a",
+			"name": "Power Investiture 3",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "acd4c12b-ff01-4116-9e76-05119de7d905",
+					"name": "Resist Cold",
+					"reference": "M74",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "79b7311e-9c5a-407f-a336-790ac27a7307",
+					"name": "Resist Disease",
+					"reference": "M90",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "3",
+					"casting_time": "10 sec",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "bd1050e2-6d0b-47bb-b995-3dcbecefa5f3",
+					"name": "Resist Lightning",
+					"reference": "M196",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "1",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d737abc5-b0ea-449e-a0f7-99969971882a",
+					"name": "Resist Pain",
+					"reference": "M38",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "c7c9b485-0c49-4a71-ab26-8d7abdd814bc",
+					"name": "Resist Poison",
+					"reference": "M91",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "3",
+					"casting_time": "10 sec",
+					"duration": "1 Hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f8c18c1a-e6b1-4063-b011-e1799e8b53f8",
+					"name": "Resist Pressure",
+					"reference": "M169",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "b51a2d2a-a619-4130-bd16-f94d3bc059cc",
+					"name": "Memorize",
+					"reference": "M105",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge",
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "1 day",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge",
+						"Mind Control"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "065cdb4b-d73c-4d85-992c-56d8c6c73e76",
+					"name": "Ancient History",
+					"reference": "M106",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "1 min/pt",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "66dccf20-b4e3-489d-a4e1-0f922e0eeef5",
+					"name": "Turn Zombie",
+					"reference": "M152",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "4 sec",
+					"duration": "Turned undead will avoid caster for 1 day",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "783df251-15a4-44c3-bb8d-642d26ef1dee",
+					"name": "Healing Slumber",
+					"reference": "M94",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "6 or 10",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "Up to 8 hrs",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f8fd645d-1837-4455-a2b8-b30f03b0341f",
+					"name": "Major Healing",
+					"reference": "M91",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-4",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "0f76cd1c-b19f-48aa-933b-993bdc72fed0",
+					"name": "Restore Hearing",
+					"reference": "M92",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Half",
+					"casting_time": "5 sec",
+					"duration": "1 Hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d542b3db-280a-4518-a99b-a1ad08d79cfc",
+					"name": "Restore Speech",
+					"reference": "M93",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "5",
+					"maintenance_cost": "3",
+					"casting_time": "5 sec",
+					"duration": "1 Hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "7a704b48-49ef-4bbc-a299-1ae5d11a5186",
+					"name": "Divination: Astrology",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2089556c-1024-4014-8ce8-ef13626fc84b",
+					"name": "Divination: Augury",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "898fcdb9-e265-4ab2-b8d8-48503cdcbc36",
+					"name": "Divination: Cartomancy",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e4d0a398-8b16-4f44-852f-afbabc3ddf01",
+					"name": "Divination: Crystal-Gazing",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e4fb7135-bbc2-4750-a0a6-5956bf68d11e",
+					"name": "Divination: Dactylomancy",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "03b2d869-0db4-4148-9919-f86bd041b6c7",
+					"name": "Divination: Extispicy",
+					"reference": "M108",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "22a7c6a3-4214-4648-9bb7-4d565c273a13",
+					"name": "Divination: Gastromancy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f8882f95-c2aa-4eda-92be-dc10a6ed5a23",
+					"name": "Divination: Geomancy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d995a263-6ea6-4002-bda7-209a1a18cc2c",
+					"name": "Divination: Lecanomancy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "07b2d5ec-fda4-4338-a7c1-cc4c7122909e",
+					"name": "Divination: Numerology",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "19644bee-0ea2-4538-8f16-5bc444fb824e",
+					"name": "Divination: Oneiromancy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f735aa8a-3530-427f-904e-3ec7c467f275",
+					"name": "Divination: Physiognomy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d1ca068c-6817-4fc9-85d0-958ae66bace2",
+					"name": "Divination: Pyromancy",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fbd34387-d9d5-4c0e-b691-0bc0988104b9",
+					"name": "Divination: Sortilege",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f6ce3260-9be1-44d2-8d32-554e545beaf6",
+					"name": "Divination: Symbol-Casting",
+					"reference": "M109",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4da34c4c-93a4-493e-8e8f-e0d5725e3314",
+					"name": "Gift of Letters",
+					"reference": "M46",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "fe861830-c0cf-4e97-b8a5-2e5f0d50c627",
+					"name": "Affect Spirits",
+					"reference": "M151",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "3f9d3d4f-8040-4989-8f34-0f31171d10e4",
+					"name": "Astral Vision",
+					"reference": "M105",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "8a861506-a27e-40da-a00d-51eb481049a3",
+					"name": "Breathe Water",
+					"reference": "M189",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "0fa09fc0-f9e3-407a-8541-8e028a3d00bc",
+					"name": "Command Spirit (@spirit@)",
+					"reference": "M153",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1 per 10 CP",
+					"maintenance_cost": "Half",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "c6fa6241-ce28-4c08-bd69-1014dfa068fe",
+					"name": "Create Food",
+					"reference": "M79",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4a8ee874-61f8-45d1-ac36-7e2488f7c452",
+					"name": "Dispel Possession",
+					"reference": "M49",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "f1403df7-8a2e-4acd-a938-2170c3b1e65d",
+					"name": "Magic Resistance",
+					"reference": "M123",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-5",
+					"maintenance_cost": "Same",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e92b136f-2179-47d5-b270-5bb10b27bb51",
+					"name": "Neutralize Poison",
+					"reference": "M92",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "5",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "443c11a3-de3d-47cf-9c37-ef4dc2899e7b",
+					"name": "Oath",
+					"reference": "M138",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d6c79858-dcab-467f-b901-9641f5b5b641",
+					"name": "Repel Spirits",
+					"reference": "M158",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "4",
+					"maintenance_cost": "Half",
+					"casting_time": "10 sec",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2d913a4f-f70b-493c-aa31-6fec5b540639",
+					"name": "See Secrets",
+					"reference": "M107",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "5",
+					"maintenance_cost": "2",
+					"casting_time": "5 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "517132e6-a130-4e60-b25e-927c709c5a15",
+					"name": "Strengthen Will",
+					"reference": "M136",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt of Will increase",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "44defa53-99fe-4069-9639-f1db51db8bf5",
+					"name": "Sunlight",
+					"reference": "M114",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 3
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"id": "809ded1f-e359-4353-af4b-d5e693b5985a",
+			"name": "Power Investiture 4",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "5911c63d-eaf7-4268-8039-d62c456e7f05",
+					"name": "Recall",
+					"reference": "M106",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge",
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "1 day",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge",
+						"Mind Control"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "6b8a4400-726a-4b99-b81d-247aee5b2c94",
+					"name": "Prehistory",
+					"reference": "M106",
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr/pt",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "c694246a-753f-4802-bbdb-62acb4c5c405",
+					"name": "Cure Disease",
+					"reference": "M91",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "10 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "8fd0960e-9d3b-4f8d-95ae-f7f0b44cd355",
+					"name": "Flaming Weapon",
+					"reference": "M75",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "1",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"notes": "+2 points burn damage from attacks with melee weapon",
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "39db89ed-ab6d-48aa-aff4-e4abdbee977c",
+					"name": "Great Healing",
+					"reference": "M91",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "9fb6a484-65d9-425d-a115-dd7ca2828b6b",
+					"name": "Relieve Madness",
+					"reference": "M92",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "821e2762-73a0-4ffe-93d6-372af3ef0ba8",
+					"name": "Relieve Paralysis",
+					"reference": "M93",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Same",
+					"casting_time": "10 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "89d0e8f3-78fd-49eb-83f5-ad085f99202b",
+					"name": "Restoration",
+					"reference": "M93",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "15",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "d96132c5-a7c7-4ed1-87cf-22ffb354a025",
+					"name": "Stone to Flesh",
+					"reference": "M53",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "5 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4a002eac-8ffe-4c12-90fd-fa4af61eb950",
+					"name": "Stop Paralysis",
+					"reference": "M93",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1 or 2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "66ea4e23-db42-4208-a589-e26e1e7fcb8e",
+					"name": "Sunbolt",
+					"reference": "M114",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Missile",
+					"casting_cost": "1-3xMagery",
+					"maintenance_cost": "-",
+					"casting_time": "1-3 sec",
+					"duration": "Instant",
+					"points": 1,
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "imp/point",
+								"base": "1d-1"
+							},
+							"accuracy": "2",
+							"range": "75/150",
+							"calc": {
+								"level": 0,
+								"range": "75/150",
+								"damage": "1d-1 imp/point"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Innate Attack",
+									"specialization": "Beam"
+								}
+							]
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "09c5a62f-c852-469d-a1fc-162276035b1f",
+					"name": "Astral Block",
+					"reference": "M159",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Half",
+					"casting_time": "2 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "98d52837-872e-4fc5-aae8-37625cfd9046",
+					"name": "Banish",
+					"reference": "M156",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "1 per 10 CP",
+					"maintenance_cost": "-",
+					"casting_time": "5 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "546aa311-d4b3-4874-82d4-09761536edae",
+					"name": "Cleansing",
+					"reference": "M94",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/4/6",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2d392736-455d-46a6-99f8-7de9e5624db4",
+					"name": "Continual Sunlight",
+					"reference": "M114",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "2d days",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "0f8714ab-3c57-49bc-8f82-d3a7391a7ee9",
+					"name": "Dispel Magic",
+					"reference": "M126",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "sec=cost",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "753f743c-6e0f-4ad4-83a1-00a8afb73998",
+					"name": "Essential Food",
+					"reference": "M79",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3 or 5",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "Indefinite",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "23fdda47-19c0-4325-9191-c493114d89c6",
+					"name": "Gift of Tongues",
+					"reference": "M46",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "96e64626-3b49-49a5-8fcc-1c93b1881436",
+					"name": "Instant Neutralize Poison",
+					"reference": "M92",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "8",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4e9eb28e-408c-42a4-9b2b-ac365f014c4e",
+					"name": "Monk's Banquet",
+					"reference": "M79",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "6",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "24 hrs",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "dab082b1-d97a-4159-8f38-0499791c17f5",
+					"name": "Suspend Curse",
+					"reference": "M125",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "10",
+					"maintenance_cost": "10",
+					"casting_time": "1 min",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2000bd69-ee5f-4b95-b5f6-889c75b9e005",
+					"name": "Vigil",
+					"reference": "M138",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "8",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 night",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"id": "50107b1d-31fc-4255-8efc-dea26f09b7a3",
+			"name": "Power Investiture 5",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "a815a10d-6509-46fb-a1bc-ad8f7ec81720",
+					"name": "Lend Skill",
+					"reference": "M47",
+					"difficulty": "iq/h",
+					"college": [
+						"Communication & Empathy"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"which": "iq",
+								"combined_with": "iq",
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 11
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Communication & Empathy"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "28564c22-9e1a-4e81-8025-41baf45a81a7",
+					"name": "Instant Restoration",
+					"reference": "M93",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "50",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "173bc5d0-ba3a-4847-b875-79e88aef640f",
+					"name": "Regeneration",
+					"reference": "M93",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "5316e173-10ea-4db8-855c-5935c28877f2",
+					"name": "Bless",
+					"reference": "M129",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "10/50/500",
+					"maintenance_cost": "-",
+					"casting_time": "min=cost",
+					"duration": "Varies",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "7b4b5319-b7c7-4a90-8aa2-f5ca1b03e3a9",
+					"name": "Curse",
+					"reference": "M129",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3/10/20",
+					"maintenance_cost": "-",
+					"casting_time": "2/4/6 sec",
+					"duration": "Varies",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "4ba0bc12-bf09-4afb-9240-19577cbdb757",
+					"name": "Entrap Spirit",
+					"reference": "M157",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Varies",
+					"casting_time": "1 sec",
+					"duration": "5 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e607a0a0-6c12-45f9-8209-4bf68441b215",
+					"name": "Pentagram",
+					"reference": "M124",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "1/sq foot",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec/sq foot",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "2204b776-b6bc-498b-88b9-fff09b84689a",
+					"name": "Remove Curse",
+					"reference": "M126",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "ffad550c-136a-44de-8158-d08fd5613e76",
+					"name": "Storm",
+					"reference": "M195",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1/50",
+					"maintenance_cost": "Same",
+					"casting_time": "1 min",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "a307a287-bad6-4160-8b0d-7962e7aec437",
+					"name": "Suspend Mana",
+					"reference": "M125",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "5",
+					"maintenance_cost": "-",
+					"casting_time": "10 min",
+					"duration": "Varies",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"id": "ff89f26b-d67c-4909-865a-bf114a9529f0",
+			"name": "Power Investiture 6",
+			"categories": [
+				"Clerical"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"id": "15947d54-510f-478c-bc89-f12850227f12",
+					"name": "Borrow Skill",
+					"reference": "M47",
+					"difficulty": "iq/h",
+					"college": [
+						"Communication & Empathy"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "3",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Communication & Empathy"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "1281a345-a03d-490d-8fe3-d3d55f7c6021",
+					"name": "Bind Spirit (@Spirit@)",
+					"reference": "M158",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "5 min",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "80bc71a7-663d-48d7-97ca-4da2d1145944",
+					"name": "Drain Mana",
+					"reference": "M127",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "10",
+					"maintenance_cost": "-",
+					"casting_time": "1 hr",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "ce205fca-04d3-476c-8b3e-3e66538803af",
+					"name": "Planar Summons (Divine Servitor)",
+					"reference": "M82",
+					"difficulty": "iq/h",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "20#",
+					"maintenance_cost": "-",
+					"casting_time": "5 min",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "ea8d8ff9-dc03-45a3-b9d3-7c468e158d5e",
+					"name": "Instant Regeneration",
+					"reference": "M93",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "80",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "e65bb88f-64cd-4332-b2f3-05031f213e77",
+					"name": "Resurrection",
+					"reference": "M94",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "300",
+					"maintenance_cost": "-",
+					"casting_time": "2 Hours",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "3d0a4876-be48-4c91-a1bb-1255004dd051",
+					"name": "Sanctuary",
+					"reference": "M86",
+					"difficulty": "iq/vh",
+					"college": [
+						"Clerical"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "5",
+					"maintenance_cost": "Same",
+					"casting_time": "10 sec",
+					"duration": "1 hr",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Power Investiture"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Clerical"
+					]
+				}
+			]
+		}
+	]
+}
