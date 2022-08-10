@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 19, 2022, 5:21 PM",
-	"modified_date": "Aug 1, 2022, 10:04 PM",
+	"modified_date": "Aug 9, 2022, 7:32 PM",
 	"profile": {
 		"player_name": "Richard Maw",
 		"name": "Shotgun Mike",
@@ -672,7 +672,7 @@
 			}
 		}
 	],
-	"total_points": 255,
+	"total_points": 259,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -1537,7 +1537,7 @@
 				{
 					"type": "advantage",
 					"id": "4f043b1d-e862-4ecf-b650-6e35073fbaad",
-					"name": "Quirk",
+					"name": "Refers to Shotguns as Skeleton Keys",
 					"physical": true,
 					"base_points": -1,
 					"calc": {
@@ -3597,6 +3597,30 @@
 							]
 						},
 						{
+							"type": "technique",
+							"id": "5b8c8c94-3a5f-401d-8728-02efa4139bd0",
+							"name": "Fast-Firing",
+							"reference": "GF27",
+							"difficulty": "h",
+							"points": 3,
+							"calc": {
+								"level": 19,
+								"rsl": "+0"
+							},
+							"default": {
+								"type": "skill",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -2
+							},
+							"notes": "Using Gunslinger halved penalty",
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat",
+								"Technique"
+							]
+						},
+						{
 							"type": "skill",
 							"id": "128dcb38-d9c7-415a-b0e2-1560db44a1fa",
 							"name": "Guns",
@@ -3928,6 +3952,30 @@
 							"categories": [
 								"Combat/Weapon",
 								"Ranged Combat"
+							]
+						},
+						{
+							"type": "technique",
+							"id": "59fa7420-e5f1-4a9e-a599-5435ef0fe0a5",
+							"name": "Quick-Shot",
+							"reference": "GF29",
+							"difficulty": "a",
+							"points": 0,
+							"calc": {
+								"level": 16,
+								"rsl": "-3"
+							},
+							"limit": 0,
+							"default": {
+								"type": "skill",
+								"name": "Guns",
+								"specialization": "Shotgun",
+								"modifier": -3
+							},
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat",
+								"Technique"
 							]
 						}
 					]
@@ -4774,9 +4822,9 @@
 						"type": ""
 					},
 					"usage": "Area Defense",
-					"usage_notes": "Gunslinger Acc +2; RoF 12 +3",
+					"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
 					"calc": {
-						"level": 3,
+						"level": 5,
 						"parry": "",
 						"block": "",
 						"damage": ""
@@ -4785,7 +4833,7 @@
 						{
 							"type": "skill",
 							"name": "Area Defense",
-							"modifier": 5
+							"modifier": 7
 						}
 					]
 				},
@@ -5010,6 +5058,24 @@
 						"Ammunition",
 						"Warheads"
 					]
+				},
+				{
+					"type": "equipment",
+					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
+					"equipped": true,
+					"description": "20-gauge spent cartridge",
+					"value": "0",
+					"weight": "0 lb",
+					"reference": "HT176",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Allows reloading for 50% cost",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
 				}
 			]
 		},
@@ -5017,7 +5083,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 3,
+			"quantity": 1,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5033,8 +5099,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "6",
-				"extended_weight": "0.225 lb"
+				"extended_value": "2",
+				"extended_weight": "0.075 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5046,7 +5112,7 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
-			"quantity": 2,
+			"quantity": 4,
 			"description": "20-gauge spent cartridge",
 			"value": "0",
 			"weight": "0 lb",
