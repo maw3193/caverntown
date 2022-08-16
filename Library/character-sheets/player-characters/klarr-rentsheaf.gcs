@@ -17,7 +17,7 @@
 		"show_difficulty": false,
 		"show_advantage_modifier_adj": false,
 		"show_equipment_modifier_adj": false,
-		"show_spell_adj": true,
+		"show_spell_adj": false,
 		"use_title_in_footer": false,
 		"page": {
 			"paper_size": "na-letter",
@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 7, 2022, 4:07 PM",
+	"modified_date": "Aug 16, 2022, 10:35 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -678,7 +678,7 @@
 			}
 		}
 	],
-	"total_points": 255,
+	"total_points": 262,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -703,7 +703,7 @@
 		{
 			"type": "advantage",
 			"id": "06b8373a-ae5b-46ec-95d0-444019b69e05",
-			"name": "Quirk",
+			"name": "Bad at recognising when he's being insulted",
 			"physical": true,
 			"base_points": -1,
 			"calc": {
@@ -3029,7 +3029,7 @@
 			"weight": "3 lb",
 			"reference": "DF1:23",
 			"calc": {
-				"extended_value": "129.67",
+				"extended_value": "503",
 				"extended_weight": "5.425 lb"
 			},
 			"prereqs": {
@@ -3052,19 +3052,6 @@
 			],
 			"open": true,
 			"children": [
-				{
-					"type": "equipment",
-					"id": "42d26316-3bf6-4d12-a9b0-e9ef668454b7",
-					"equipped": true,
-					"quantity": 2,
-					"description": "Scholarly Power Item Energy",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
-					}
-				},
 				{
 					"type": "equipment",
 					"id": "84c5e2d4-a8c9-4207-afee-373091e7f94b",
@@ -3112,10 +3099,9 @@
 					]
 				},
 				{
-					"type": "equipment",
+					"type": "equipment_container",
 					"id": "177fce9c-9c90-463c-a942-de5be76ca6a1",
 					"equipped": true,
-					"quantity": 1,
 					"description": "Scribe's Kit",
 					"value": "50",
 					"weight": "2 lb",
@@ -3126,7 +3112,36 @@
 					},
 					"categories": [
 						"Writing Equipment"
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "42d26316-3bf6-4d12-a9b0-e9ef668454b7",
+							"equipped": true,
+							"quantity": 2,
+							"description": "Scholarly Power Item Energy",
+							"value": "0",
+							"weight": "0 lb",
+							"calc": {
+								"extended_value": "0",
+								"extended_weight": "0 lb"
+							}
+						}
 					]
+				},
+				{
+					"type": "equipment",
+					"id": "88699cb4-143b-49d6-950e-220a4c65a6a6",
+					"equipped": true,
+					"quantity": 1,
+					"description": "C-notes",
+					"value": "373.33",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "373.33",
+						"extended_weight": "0 lb"
+					}
 				}
 			]
 		},
