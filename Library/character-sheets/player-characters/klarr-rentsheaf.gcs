@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 16, 2022, 10:35 PM",
+	"modified_date": "Aug 18, 2022, 9:32 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -678,7 +678,7 @@
 			}
 		}
 	],
-	"total_points": 262,
+	"total_points": 267,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -3330,7 +3330,7 @@
 				}
 			],
 			"calc": {
-				"extended_value": "490",
+				"extended_value": "500",
 				"extended_weight": "9.545 lb"
 			},
 			"categories": [
@@ -3370,8 +3370,21 @@
 					"type": "equipment",
 					"id": "9a105e24-de07-45af-86f8-eef364db8b3b",
 					"equipped": true,
-					"quantity": 5,
+					"quantity": 2,
 					"description": "Magical Power Item Energy",
+					"value": "5",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"type": "equipment",
+					"id": "857cd867-147b-403d-b7c8-1a6bba73ddbb",
+					"equipped": true,
+					"quantity": 5,
+					"description": "Max Magical Power Item Energy",
 					"value": "5",
 					"weight": "0 lb",
 					"calc": {
@@ -3474,13 +3487,13 @@
 					"children": [
 						{
 							"type": "note",
-							"id": "b2174103-d796-47eb-8843-a33ecaa77893",
-							"text": "Better healing supplies!"
+							"id": "e0bef470-ca8f-4469-bdf4-796455e0a88a",
+							"text": "Library membership, $1000"
 						},
 						{
 							"type": "note",
-							"id": "e0bef470-ca8f-4469-bdf4-796455e0a88a",
-							"text": "Library membership"
+							"id": "528a9769-a179-40b4-ab15-ea37e85dc6f0",
+							"text": "An Alchemy workshop, $2000"
 						}
 					]
 				},
