@@ -4040,6 +4040,43 @@
 						},
 						{
 							"type": "skill",
+							"id": "0384c460-5d44-4926-b8c8-f57053e8ed58",
+							"name": "Armoury",
+							"reference": "B178",
+							"specialization": "Small Arms",
+							"tech_level": "5",
+							"difficulty": "iq/a",
+							"points": 2,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -5,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"calc": {
+								"level": 10,
+								"rsl": "IQ+0"
+							},
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"specialization": "Small Arms",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Military",
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
 							"id": "886b5451-778b-4039-a354-9e02664afd39",
 							"name": "Brawling",
 							"reference": "B182",
@@ -5029,7 +5066,7 @@
 				}
 			],
 			"calc": {
-				"extended_value": "804",
+				"extended_value": "810",
 				"extended_weight": "10.9 lb"
 			},
 			"features": [
@@ -5048,7 +5085,7 @@
 					"type": "equipment",
 					"id": "d8807031-e43a-4f66-8f4f-6b1c21a0b19c",
 					"equipped": true,
-					"quantity": 1,
+					"quantity": 2,
 					"description": "20-gauge",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5064,8 +5101,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.075 lb"
+						"extended_value": "4",
+						"extended_weight": "0.15 lb"
 					},
 					"notes": "Powder and shot. Shotshell.",
 					"categories": [
@@ -5077,7 +5114,7 @@
 					"type": "equipment",
 					"id": "770c592c-fba6-4fa5-8a5f-ad73dae2e38d",
 					"equipped": true,
-					"quantity": 1,
+					"quantity": 3,
 					"description": "20-gauge Ball",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5093,8 +5130,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.075 lb"
+						"extended_value": "6",
+						"extended_weight": "0.225 lb"
 					},
 					"notes": "Powder and Ball",
 					"categories": [
@@ -5106,7 +5143,6 @@
 					"type": "equipment",
 					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
 					"equipped": true,
-					"quantity": 3,
 					"description": "20-gauge spent cartridge",
 					"value": "0",
 					"weight": "0 lb",
@@ -5127,6 +5163,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
+			"quantity": 8,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5142,8 +5179,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "0",
-				"extended_weight": "0 lb"
+				"extended_value": "16",
+				"extended_weight": "0.6 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5155,7 +5192,6 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
-			"quantity": 8,
 			"description": "20-gauge spent cartridge",
 			"value": "0",
 			"weight": "0 lb",
@@ -5202,6 +5238,31 @@
 	],
 	"other_equipment": [
 		{
+			"type": "equipment",
+			"id": "4e4cf603-c4a5-4709-8fa4-640827294a49",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Reloading toolkit (20-gauge)",
+			"tech_level": "5",
+			"value": "100",
+			"weight": "2 lb",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "074e630c-08d2-460a-ad93-11a8a09dc644",
+					"name": "Gnomish tool surplus",
+					"cost_type": "to_original_cost",
+					"cost": "-10%",
+					"notes": "Discount doesn't apply selling outside Caverntown"
+				}
+			],
+			"calc": {
+				"extended_value": "90",
+				"extended_weight": "2 lb"
+			},
+			"notes": "Allows reloading spent cartridges for 50% cost and handloading match-grade ammo"
+		},
+		{
 			"type": "equipment_container",
 			"id": "e16c4ae6-3e5d-43a9-8833-0f9e7b702bb5",
 			"equipped": true,
@@ -5209,8 +5270,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "362",
-				"extended_weight": "0.012 lb"
+				"extended_value": "261",
+				"extended_weight": "0.008 lb"
 			},
 			"open": true,
 			"children": [
@@ -5218,13 +5279,13 @@
 					"type": "equipment",
 					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
 					"equipped": true,
-					"quantity": 2,
+					"quantity": 1,
 					"description": "$1 C-note",
 					"value": "1",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.004 lb"
+						"extended_value": "1",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5269,13 +5330,12 @@
 					"type": "equipment",
 					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
 					"equipped": true,
-					"quantity": 1,
 					"description": "$100 C-note",
 					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "100",
-						"extended_weight": "0.002 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
