@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 18, 2022, 9:32 PM",
+	"modified_date": "Aug 20, 2022, 5:30 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -1297,21 +1297,23 @@
 				},
 				{
 					"type": "advantage",
-					"id": "d5c919f4-9854-4a74-9207-7bdc905764f3",
-					"name": "Jealousy",
+					"id": "6981aba7-871a-4d1e-bf56-40aa7dbce3f1",
+					"name": "Selfish",
 					"mental": true,
-					"base_points": -10,
-					"reference": "B140",
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B153",
 					"calc": {
-						"points": -10
+						"points": -5
 					},
 					"features": [
 						{
 							"type": "reaction_bonus",
-							"amount": -2,
-							"situation": "toward those you are jealous of (may be as much as -4, at GM's discretion)"
+							"amount": -3,
+							"situation": "from others when your Selfishness surfaces"
 						}
 					],
+					"notes": "Make a self-control roll whenever you experience a clear social slight or “snub.” On a failure, you lash out at the offending party just as if you had Bad Temper.",
 					"categories": [
 						"Disadvantage"
 					]
@@ -1418,6 +1420,51 @@
 							"situation": "to resist Influence skills: Diplomacy, Fast-Talk, Intimidation, Savoir-Faire, Sex Appeal, and Streetwise"
 						}
 					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "f7be8d71-d92c-4fd9-9a78-61da1630ccf1",
+					"name": "Odious Personal Habit",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "bd949ed7-1326-4b75-847d-110f4f19ad98",
+							"name": "-1 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "1eeab0eb-6b56-4ddd-82ea-40350e9e2938",
+							"disabled": true,
+							"name": "-2 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "e534187a-d37e-4d31-811e-7b7e1716f4e4",
+							"disabled": true,
+							"name": "-3 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						}
+					],
+					"reference": "B22",
+					"calc": {
+						"points": -5
+					},
+					"notes": "Sarcasm",
 					"categories": [
 						"Disadvantage"
 					]
