@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 19, 2022, 5:21 PM",
-	"modified_date": "Aug 9, 2022, 7:32 PM",
+	"modified_date": "Aug 20, 2022, 3:17 PM",
 	"profile": {
 		"player_name": "Richard Maw",
 		"name": "Shotgun Mike",
@@ -672,7 +672,7 @@
 			}
 		}
 	],
-	"total_points": 259,
+	"total_points": 267,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -680,7 +680,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 200
+				"points": 201
 			},
 			"open": true,
 			"children": [
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 95
+						"points": 96
 					},
 					"open": true,
 					"children": [
@@ -894,6 +894,20 @@
 							"calc": {
 								"points": 1
 							}
+						},
+						{
+							"type": "advantage",
+							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
+							"name": "Lightning Fingers (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "GF20",
+							"calc": {
+								"points": 1
+							},
+							"categories": [
+								"Perk"
+							]
 						},
 						{
 							"type": "advantage",
@@ -4026,6 +4040,43 @@
 						},
 						{
 							"type": "skill",
+							"id": "0384c460-5d44-4926-b8c8-f57053e8ed58",
+							"name": "Armoury",
+							"reference": "B178",
+							"specialization": "Small Arms",
+							"tech_level": "5",
+							"difficulty": "iq/a",
+							"points": 2,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -5,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"calc": {
+								"level": 10,
+								"rsl": "IQ+0"
+							},
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"specialization": "Small Arms",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Military",
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
 							"id": "886b5451-778b-4039-a354-9e02664afd39",
 							"name": "Brawling",
 							"reference": "B182",
@@ -5034,7 +5085,7 @@
 					"type": "equipment",
 					"id": "d8807031-e43a-4f66-8f4f-6b1c21a0b19c",
 					"equipped": true,
-					"quantity": 5,
+					"quantity": 2,
 					"description": "20-gauge",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5050,10 +5101,39 @@
 						}
 					],
 					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.375 lb"
+						"extended_value": "4",
+						"extended_weight": "0.15 lb"
 					},
 					"notes": "Powder and shot. Shotshell.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "770c592c-fba6-4fa5-8a5f-ad73dae2e38d",
+					"equipped": true,
+					"quantity": 3,
+					"description": "20-gauge Ball",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "4279fb41-254c-4dc1-8147-d0e89b9d2cbb",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "6",
+						"extended_weight": "0.225 lb"
+					},
+					"notes": "Powder and Ball",
 					"categories": [
 						"Ammunition",
 						"Warheads"
@@ -5083,7 +5163,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 1,
+			"quantity": 8,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5099,8 +5179,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "2",
-				"extended_weight": "0.075 lb"
+				"extended_value": "16",
+				"extended_weight": "0.6 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5112,7 +5192,6 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
-			"quantity": 4,
 			"description": "20-gauge spent cartridge",
 			"value": "0",
 			"weight": "0 lb",
@@ -5131,7 +5210,7 @@
 			"type": "equipment",
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
-			"quantity": 5,
+			"quantity": 2,
 			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5147,13 +5226,200 @@
 				}
 			],
 			"calc": {
-				"extended_value": "10",
-				"extended_weight": "0.375 lb"
+				"extended_value": "4",
+				"extended_weight": "0.15 lb"
 			},
 			"notes": "Powder and Ball",
 			"categories": [
 				"Ammunition",
 				"Warheads"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "442a9f2d-83b2-418b-b6c6-84a275191c54",
+			"equipped": true,
+			"description": "Cartridge Bandoleer",
+			"tech_level": "5",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "HT54",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "13b3c9ac-932f-4d50-abba-b77111b69c56",
+					"name": "Cornucopia (20-gauge) Enchantment",
+					"cost_type": "to_original_cost",
+					"cost": "+100"
+				}
+			],
+			"calc": {
+				"extended_value": "115",
+				"extended_weight": "1 lb"
+			},
+			"notes": "Holds 50 rounds.",
+			"categories": [
+				"General Equipment"
+			],
+			"open": true
+		}
+	],
+	"other_equipment": [
+		{
+			"type": "equipment",
+			"id": "4e4cf603-c4a5-4709-8fa4-640827294a49",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Reloading toolkit (20-gauge)",
+			"tech_level": "5",
+			"value": "100",
+			"weight": "2 lb",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "074e630c-08d2-460a-ad93-11a8a09dc644",
+					"name": "Gnomish tool surplus",
+					"cost_type": "to_original_cost",
+					"cost": "-10%",
+					"notes": "Discount doesn't apply selling outside Caverntown"
+				}
+			],
+			"calc": {
+				"extended_value": "90",
+				"extended_weight": "2 lb"
+			},
+			"notes": "Allows reloading spent cartridges for 50% cost and handloading match-grade ammo"
+		},
+		{
+			"type": "equipment_container",
+			"id": "e16c4ae6-3e5d-43a9-8833-0f9e7b702bb5",
+			"equipped": true,
+			"description": "Money",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "146",
+				"extended_weight": "0.012 lb"
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$001 C-note",
+					"value": "1",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "1",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0bebc67f-8e0b-4617-a555-66b6990f721e",
+					"equipped": true,
+					"quantity": 2,
+					"description": "$010 C-note",
+					"value": "10",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "20",
+						"extended_weight": "0.004 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0e7e8896-ac70-46f8-a55c-68f99cc0ee55",
+					"equipped": true,
+					"description": "$050 C-note",
+					"value": "50",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
+					"equipped": true,
+					"description": "$200 C-note",
+					"value": "200",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$100 C-note",
+					"value": "100",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "100",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$005 C-note",
+					"value": "5",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$020 C-note",
+					"value": "20",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "20",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				}
 			]
 		}
 	],
