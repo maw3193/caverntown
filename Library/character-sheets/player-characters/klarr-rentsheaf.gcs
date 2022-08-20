@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 20, 2022, 5:30 PM",
+	"modified_date": "Aug 20, 2022, 7:21 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -605,7 +605,7 @@
 			"attr_id": "per",
 			"adj": 0,
 			"calc": {
-				"value": 17,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -613,7 +613,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 17,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -621,7 +621,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 17,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -629,7 +629,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 17,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -637,7 +637,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 17,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -1653,6 +1653,98 @@
 				},
 				{
 					"type": "advantage",
+					"id": "d652edad-f660-4fea-9e6c-3fce563a4ea4",
+					"name": "Energy Reserve (Scholarly)",
+					"physical": true,
+					"exotic": true,
+					"levels": "1",
+					"points_per_level": 3,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "12a9bd56-1462-4eed-9cd8-1cdabbbdc62e",
+							"disabled": true,
+							"name": "Abilities Only",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "4f4896f9-7b8f-4503-aaca-d5c4a1216989",
+							"disabled": true,
+							"name": "One Power",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "ad541d21-01d8-41a4-a451-e439705a6910",
+							"disabled": true,
+							"name": "Slow Recharge",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "1/hour"
+						},
+						{
+							"type": "modifier",
+							"id": "695ac3de-9ef2-4659-91fa-cd57985db486",
+							"disabled": true,
+							"name": "Slow Recharge",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "1/day"
+						},
+						{
+							"type": "modifier",
+							"id": "c759fd9b-2853-4b2e-9a5a-004b39a93349",
+							"disabled": true,
+							"name": "Special Recharge",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -70,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "be757046-1018-4f01-8db3-40980d909781",
+							"disabled": true,
+							"name": "Special Recharge",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total",
+							"notes": "1/s bleed"
+						},
+						{
+							"type": "modifier",
+							"id": "7e40c1f1-3b23-4dcb-ad59-ac95376fcbb8",
+							"disabled": true,
+							"name": "Stunts Only",
+							"reference": "P119",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total"
+						}
+					],
+					"reference": "P119",
+					"calc": {
+						"points": 3
+					},
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
 					"id": "70e4659b-edf4-4fe8-836a-36d334d0592d",
 					"name": "Book-learned Wisdom",
 					"physical": true,
@@ -1761,206 +1853,182 @@
 					]
 				},
 				{
-					"type": "advantage_container",
-					"id": "fee0f3d7-902f-45d0-9af5-54979f57c7dd",
-					"name": "30 points from...",
-					"calc": {
-						"points": 29
-					},
-					"open": true,
-					"children": [
+					"type": "advantage",
+					"id": "00302e6f-9286-43a5-adbc-f7e8fc54624a",
+					"name": "Absolute Direction",
+					"mental": true,
+					"physical": true,
+					"base_points": 5,
+					"modifiers": [
 						{
-							"type": "advantage",
-							"id": "00302e6f-9286-43a5-adbc-f7e8fc54624a",
-							"name": "Absolute Direction",
-							"mental": true,
-							"physical": true,
-							"base_points": 5,
-							"modifiers": [
-								{
-									"type": "modifier",
-									"id": "03fed6de-af7e-4135-b272-a3a0d0d542fb",
-									"disabled": true,
-									"name": "Requires signal",
-									"reference": "B34",
-									"cost_type": "percentage",
-									"cost": -20,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "3100d07e-e521-4ac2-a9b8-06237e087299",
-									"disabled": true,
-									"name": "3D Spatial Sense",
-									"reference": "B34",
-									"cost_type": "points",
-									"cost": 5,
-									"affects": "total",
-									"features": [
-										{
-											"type": "skill_bonus",
-											"amount": 1,
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "starts_with",
-												"qualifier": "piloting"
-											}
-										},
-										{
-											"type": "skill_bonus",
-											"amount": 2,
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "aerobatics"
-											}
-										},
-										{
-											"type": "skill_bonus",
-											"amount": 2,
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "free fall"
-											}
-										},
-										{
-											"type": "skill_bonus",
-											"amount": 2,
-											"selection_type": "skills_with_name",
-											"specialization": {
-												"compare": "is",
-												"qualifier": "hyperspace"
-											},
-											"name": {
-												"compare": "is",
-												"qualifier": "navigation"
-											}
-										},
-										{
-											"type": "skill_bonus",
-											"amount": 2,
-											"selection_type": "skills_with_name",
-											"specialization": {
-												"compare": "is",
-												"qualifier": "space"
-											},
-											"name": {
-												"compare": "is",
-												"qualifier": "navigation"
-											}
-										}
-									]
-								}
-							],
+							"type": "modifier",
+							"id": "03fed6de-af7e-4135-b272-a3a0d0d542fb",
+							"disabled": true,
+							"name": "Requires signal",
 							"reference": "B34",
-							"calc": {
-								"points": 5
-							},
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "3100d07e-e521-4ac2-a9b8-06237e087299",
+							"disabled": true,
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
 							"features": [
 								{
 									"type": "skill_bonus",
-									"amount": 3,
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "body sense"
-									}
-								},
-								{
-									"type": "skill_bonus",
-									"amount": 3,
-									"selection_type": "skills_with_name",
-									"specialization": {
-										"compare": "is",
-										"qualifier": "air"
-									},
-									"name": {
-										"compare": "is",
-										"qualifier": "navigation"
-									}
-								},
-								{
-									"type": "skill_bonus",
-									"amount": 3,
-									"selection_type": "skills_with_name",
-									"specialization": {
-										"compare": "is",
-										"qualifier": "land"
-									},
-									"name": {
-										"compare": "is",
-										"qualifier": "navigation"
-									}
-								},
-								{
-									"type": "skill_bonus",
-									"amount": 3,
-									"selection_type": "skills_with_name",
-									"specialization": {
-										"compare": "is",
-										"qualifier": "sea"
-									},
-									"name": {
-										"compare": "is",
-										"qualifier": "navigation"
-									}
-								}
-							],
-							"categories": [
-								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "e8d0eab8-a050-4a8d-8ea0-aaed8189952d",
-							"name": "Book-learned Wisdom",
-							"physical": true,
-							"levels": "1",
-							"base_points": 5,
-							"points_per_level": 2,
-							"calc": {
-								"points": 7
-							}
-						},
-						{
-							"type": "advantage",
-							"id": "83045d30-afd3-4391-b11e-5d9a747b89f0",
-							"name": "Book-learned Wisdom",
-							"physical": true,
-							"levels": "1",
-							"base_points": 5,
-							"points_per_level": 2,
-							"calc": {
-								"points": 7
-							}
-						},
-						{
-							"type": "advantage",
-							"id": "f9660f71-9aa3-4fa5-9c62-adb020a4cf21",
-							"name": "Increased Perception",
-							"mental": true,
-							"physical": true,
-							"levels": "2",
-							"points_per_level": 5,
-							"reference": "B16",
-							"calc": {
-								"points": 10
-							},
-							"features": [
-								{
-									"type": "attribute_bonus",
 									"amount": 1,
-									"per_level": true,
-									"attribute": "per"
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									},
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									},
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									}
 								}
-							],
-							"categories": [
-								"Advantage",
-								"Attribute"
 							]
 						}
+					],
+					"reference": "B34",
+					"calc": {
+						"points": 5
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							},
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							},
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							},
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
 					]
+				},
+				{
+					"type": "advantage",
+					"id": "e8d0eab8-a050-4a8d-8ea0-aaed8189952d",
+					"name": "Book-learned Wisdom",
+					"physical": true,
+					"levels": "1",
+					"base_points": 5,
+					"points_per_level": 2,
+					"calc": {
+						"points": 7
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "83045d30-afd3-4391-b11e-5d9a747b89f0",
+					"name": "Book-learned Wisdom",
+					"physical": true,
+					"levels": "1",
+					"base_points": 5,
+					"points_per_level": 2,
+					"calc": {
+						"points": 7
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "ac5a2ee1-d944-4d80-8796-1a3cd654f4be",
+					"name": "Book-learned Wisdom",
+					"physical": true,
+					"levels": "1",
+					"base_points": 5,
+					"points_per_level": 2,
+					"calc": {
+						"points": 7
+					}
 				},
 				{
 					"type": "advantage",
@@ -2338,10 +2406,9 @@
 				},
 				{
 					"type": "skill",
-					"id": "70352aa5-5c29-4b55-b3ac-4e4950f8dc1b",
-					"name": "Prospecting",
-					"reference": "B216",
-					"tech_level": "5",
+					"id": "185b95f5-cea8-4257-9ab6-c655b713d7e4",
+					"name": "Occultism",
+					"reference": "B212",
 					"difficulty": "iq/a",
 					"points": 2,
 					"defaulted_from": {
@@ -2352,22 +2419,17 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 16,
+						"rsl": "IQ+1"
 					},
 					"defaults": [
 						{
 							"type": "iq",
 							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Geology",
-							"modifier": -4
 						}
 					],
 					"categories": [
-						"Outdoor/Exploration"
+						"Occult/Magical"
 					]
 				},
 				{
@@ -2652,12 +2714,12 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -5,
-						"level": 12,
-						"adjusted_level": 12,
-						"points": -12
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"calc": {
-						"level": 16,
+						"level": 14,
 						"rsl": "Per-1"
 					},
 					"defaults": [
@@ -2688,12 +2750,12 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -4,
-						"level": 13,
-						"adjusted_level": 13,
-						"points": -13
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
 					},
 					"calc": {
-						"level": 17,
+						"level": 15,
 						"rsl": "Per+0"
 					},
 					"defaults": [
@@ -2716,12 +2778,12 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -5,
-						"level": 12,
-						"adjusted_level": 12,
-						"points": -12
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"calc": {
-						"level": 16,
+						"level": 14,
 						"rsl": "Per-1"
 					},
 					"defaults": [
@@ -2738,6 +2800,37 @@
 					"categories": [
 						"Police",
 						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"id": "9980fcc1-78d6-40ba-9837-4be7a9eb1451",
+					"name": "Climbing",
+					"reference": "B183",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "dx/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "DX-1"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Criminal/Street",
+						"Outdoor/Exploration"
 					]
 				},
 				{
@@ -2820,134 +2913,39 @@
 				},
 				{
 					"type": "skill",
-					"id": "e9c034fe-3897-41cf-a641-7defccd43238",
-					"name": "Navigation",
-					"reference": "B211",
-					"specialization": "Land",
-					"tech_level": "5",
-					"difficulty": "iq/a",
+					"id": "aaf26c6e-3c99-4b22-8080-694bf9c0ac68",
+					"name": "Savoir-Faire",
+					"reference": "B218,MA59",
+					"specialization": "High Society",
+					"difficulty": "iq/e",
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Cartography",
+						"type": "iq",
 						"modifier": -4,
 						"level": 11,
 						"adjusted_level": 11,
 						"points": -11
 					},
 					"calc": {
-						"level": 17,
-						"rsl": "IQ+2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"defaults": [
 						{
 							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Cartography",
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Mathematics",
-							"specialization": "Surveying",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Navigation",
-							"specialization": "Air",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Navigation",
-							"specialization": "Sea",
+							"name": "Savoir-Faire",
+							"specialization": "Servant",
 							"modifier": -2
 						}
 					],
 					"categories": [
-						"Outdoor/Exploration",
-						"Technical",
-						"Vehicle"
-					]
-				},
-				{
-					"type": "skill",
-					"id": "03dade6a-aaa8-4d9f-a3dc-c755dc8fb52f",
-					"name": "Survival",
-					"reference": "B223",
-					"specialization": "Subterranean",
-					"difficulty": "per/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -5,
-						"level": 12,
-						"adjusted_level": 12,
-						"points": -12
-					},
-					"calc": {
-						"level": 16,
-						"rsl": "Per-1"
-					},
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Naturalist",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Bank",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Deep Ocean Vent",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Fresh-Water Lake",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Open Ocean",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Reef",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "River/Stream",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"specialization": "Tropical Lagoon",
-							"modifier": -4
-						}
-					],
-					"categories": [
-						"Outdoor/Exploration"
+						"Business",
+						"Knowledge",
+						"Social"
 					]
 				}
 			]
