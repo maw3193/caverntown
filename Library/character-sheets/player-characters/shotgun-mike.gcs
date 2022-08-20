@@ -680,7 +680,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 200
+				"points": 201
 			},
 			"open": true,
 			"children": [
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 95
+						"points": 96
 					},
 					"open": true,
 					"children": [
@@ -894,6 +894,20 @@
 							"calc": {
 								"points": 1
 							}
+						},
+						{
+							"type": "advantage",
+							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
+							"name": "Lightning Fingers (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "GF20",
+							"calc": {
+								"points": 1
+							},
+							"categories": [
+								"Perk"
+							]
 						},
 						{
 							"type": "advantage",
