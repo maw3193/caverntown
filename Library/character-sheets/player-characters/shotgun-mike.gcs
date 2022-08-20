@@ -5234,6 +5234,34 @@
 				"Ammunition",
 				"Warheads"
 			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "442a9f2d-83b2-418b-b6c6-84a275191c54",
+			"equipped": true,
+			"description": "Cartridge Bandoleer",
+			"tech_level": "5",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "HT54",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "13b3c9ac-932f-4d50-abba-b77111b69c56",
+					"name": "Cornucopia (20-gauge) Enchantment",
+					"cost_type": "to_original_cost",
+					"cost": "+100"
+				}
+			],
+			"calc": {
+				"extended_value": "115",
+				"extended_weight": "1 lb"
+			},
+			"notes": "Holds 50 rounds.",
+			"categories": [
+				"General Equipment"
+			],
+			"open": true
 		}
 	],
 	"other_equipment": [
@@ -5270,8 +5298,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "261",
-				"extended_weight": "0.008 lb"
+				"extended_value": "146",
+				"extended_weight": "0.012 lb"
 			},
 			"open": true,
 			"children": [
@@ -5280,7 +5308,7 @@
 					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
 					"equipped": true,
 					"quantity": 1,
-					"description": "$1 C-note",
+					"description": "$001 C-note",
 					"value": "1",
 					"weight": "0.002 lb",
 					"calc": {
@@ -5296,13 +5324,13 @@
 					"type": "equipment",
 					"id": "0bebc67f-8e0b-4617-a555-66b6990f721e",
 					"equipped": true,
-					"quantity": 1,
-					"description": "$10 C-note",
+					"quantity": 2,
+					"description": "$010 C-note",
 					"value": "10",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.002 lb"
+						"extended_value": "20",
+						"extended_weight": "0.004 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5313,25 +5341,8 @@
 					"type": "equipment",
 					"id": "0e7e8896-ac70-46f8-a55c-68f99cc0ee55",
 					"equipped": true,
-					"quantity": 1,
-					"description": "$50 C-note",
+					"description": "$050 C-note",
 					"value": "50",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
-					"equipped": true,
-					"description": "$100 C-note",
-					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
 						"extended_value": "0",
@@ -5346,12 +5357,62 @@
 					"type": "equipment",
 					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
 					"equipped": true,
-					"quantity": 1,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "200",
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$100 C-note",
+					"value": "100",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "100",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$005 C-note",
+					"value": "5",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$020 C-note",
+					"value": "20",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "20",
 						"extended_weight": "0.002 lb"
 					},
 					"categories": [
