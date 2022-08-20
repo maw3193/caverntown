@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 96
+						"points": 93
 					},
 					"open": true,
 					"children": [
@@ -882,31 +882,6 @@
 							},
 							"categories": [
 								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "958d02b4-c365-4ba4-92fc-663dea86fb98",
-							"name": "Area Defense (Guns (Shotgun))",
-							"physical": true,
-							"base_points": 1,
-							"reference": "Gun-Fu:17",
-							"calc": {
-								"points": 1
-							}
-						},
-						{
-							"type": "advantage",
-							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
-							"name": "Lightning Fingers (Guns (Shotgun))",
-							"physical": true,
-							"base_points": 1,
-							"reference": "GF20",
-							"calc": {
-								"points": 1
-							},
-							"categories": [
-								"Perk"
 							]
 						},
 						{
@@ -1257,17 +1232,6 @@
 							"categories": [
 								"Advantage"
 							]
-						},
-						{
-							"type": "advantage",
-							"id": "03fcb869-f38d-4ea3-9d8b-630a3678600e",
-							"name": "Scattergun",
-							"physical": true,
-							"base_points": 1,
-							"reference": "Gun-Fu:21",
-							"calc": {
-								"points": 1
-							}
 						}
 					]
 				},
@@ -1386,6 +1350,53 @@
 							"categories": [
 								"Disadvantage"
 							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"id": "135dd024-fbab-42b9-8443-4d60c849a660",
+					"name": "Class Perks",
+					"calc": {
+						"points": 3
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"id": "958d02b4-c365-4ba4-92fc-663dea86fb98",
+							"name": "Area Defense (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "Gun-Fu:17",
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"type": "advantage",
+							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
+							"name": "Lightning Fingers (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "GF20",
+							"calc": {
+								"points": 1
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "03fcb869-f38d-4ea3-9d8b-630a3678600e",
+							"name": "Scattergun",
+							"physical": true,
+							"base_points": 1,
+							"reference": "Gun-Fu:21",
+							"calc": {
+								"points": 1
+							}
 						}
 					]
 				}
