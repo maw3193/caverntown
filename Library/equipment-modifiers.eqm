@@ -10,6 +10,15 @@
 			"cost_type": "to_original_cost",
 			"cost": "x5",
 			"notes": "Made of semi-precious gems but functions in mana"
+		},
+		{
+			"type": "eqp_modifier",
+			"id": "00898ec6-6b7b-4908-bf88-a27409c71bd2",
+			"name": "Cheap (Firearm)",
+			"reference": "AtE1:32",
+			"cost_type": "to_original_cost",
+			"cost": "-0.6",
+			"notes": "-1 Acc (must be done manually), -1 HT (usually 11), -1 Malf (usually 16)"
 		}
 	]
 }
