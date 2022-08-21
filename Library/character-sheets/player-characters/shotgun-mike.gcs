@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 19, 2022, 5:21 PM",
-	"modified_date": "Aug 20, 2022, 3:17 PM",
+	"modified_date": "Aug 21, 2022, 8:52 PM",
 	"profile": {
 		"player_name": "Richard Maw",
 		"name": "Shotgun Mike",
@@ -960,6 +960,27 @@
 						},
 						{
 							"type": "advantage",
+							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
+							"name": "Enhanced Dodge",
+							"mental": true,
+							"base_points": 15,
+							"reference": "B51",
+							"calc": {
+								"points": 15
+							},
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "dodge"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
 							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
 							"disabled": true,
 							"name": "Enhanced Parry (Area Defense)",
@@ -980,27 +1001,6 @@
 										"compare": "is",
 										"qualifier": "Area Defense"
 									}
-								}
-							],
-							"categories": [
-								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
-							"name": "Enhanced Dodge",
-							"mental": true,
-							"base_points": 15,
-							"reference": "B51",
-							"calc": {
-								"points": 15
-							},
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"amount": 1,
-									"attribute": "dodge"
 								}
 							],
 							"categories": [
@@ -1575,7 +1575,7 @@
 				{
 					"type": "advantage",
 					"id": "ab46ed8b-ef37-4f75-8126-465d89aacbbf",
-					"name": "Quirk",
+					"name": "Undecided Quirk",
 					"physical": true,
 					"base_points": -1,
 					"calc": {
