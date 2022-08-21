@@ -5155,8 +5155,8 @@
 					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
 					"equipped": true,
 					"description": "20-gauge spent cartridge",
-					"value": "0",
-					"weight": "0 lb",
+					"value": "0.08",
+					"weight": "0.2 lb",
 					"reference": "HT176",
 					"calc": {
 						"extended_value": "0",
@@ -5204,8 +5204,8 @@
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
 			"description": "20-gauge spent cartridge",
-			"value": "0",
-			"weight": "0 lb",
+			"value": "0.08",
+			"weight": "0.2 lb",
 			"reference": "HT176",
 			"calc": {
 				"extended_value": "0",
