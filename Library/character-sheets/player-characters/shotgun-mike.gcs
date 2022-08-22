@@ -362,7 +362,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 4
 						}
 					}
 				},
@@ -4815,6 +4815,70 @@
 			]
 		},
 		{
+			"type": "equipment",
+			"id": "e64e87d1-d42b-4043-8c09-116f44b42299",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Leather Helmet",
+			"value": "38",
+			"weight": "3 lb",
+			"reference": "DFA108",
+			"calc": {
+				"extended_value": "38",
+				"extended_weight": "3 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "skull"
+				}
+			],
+			"categories": [
+				"Armor",
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "69fff33f-19bf-4a4f-94da-c1518bb8303c",
+			"equipped": true,
+			"description": "Helmet Lamp",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"calc": {
+				"extended_value": "102",
+				"extended_weight": "2 lb"
+			},
+			"notes": "Uses 1 pt of oil per 12 hours, 5 yd.",
+			"categories": [
+				"Adventure-Wear",
+				"Light Sources"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "b680a6db-c22b-4a4d-af10-68e914ba9b8e",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Oil, Lantern, 1 Pint",
+					"tech_level": "2",
+					"value": "2",
+					"weight": "1 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "1 lb"
+					},
+					"categories": [
+						"Light Sources"
+					]
+				}
+			]
+		},
+		{
 			"type": "equipment_container",
 			"id": "1b794d3c-a5c4-4e6a-b761-cdb71edd7de7",
 			"equipped": true,
@@ -5296,6 +5360,24 @@
 	"other_equipment": [
 		{
 			"type": "equipment",
+			"id": "e301cd8d-b9c6-41da-9613-2d9a2191575a",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Oil, Lantern, 1 Pint",
+			"tech_level": "2",
+			"value": "2",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"calc": {
+				"extended_value": "2",
+				"extended_weight": "1 lb"
+			},
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "4e4cf603-c4a5-4709-8fa4-640827294a49",
 			"equipped": true,
 			"quantity": 1,
@@ -5327,8 +5409,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "146",
-				"extended_weight": "0.012 lb"
+				"extended_value": "4",
+				"extended_weight": "0.006 lb"
 			},
 			"open": true,
 			"children": [
@@ -5336,13 +5418,29 @@
 					"type": "equipment",
 					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
 					"equipped": true,
-					"quantity": 1,
+					"quantity": 2,
 					"description": "$001 C-note",
 					"value": "1",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "1",
-						"extended_weight": "0.002 lb"
+						"extended_value": "2",
+						"extended_weight": "0.004 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
+					"equipped": true,
+					"description": "$005 C-note",
+					"value": "5",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5353,13 +5451,28 @@
 					"type": "equipment",
 					"id": "0bebc67f-8e0b-4617-a555-66b6990f721e",
 					"equipped": true,
-					"quantity": 2,
 					"description": "$010 C-note",
 					"value": "10",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "20",
-						"extended_weight": "0.004 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
+					"equipped": true,
+					"description": "$020 C-note",
+					"value": "20",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5372,6 +5485,22 @@
 					"equipped": true,
 					"description": "$050 C-note",
 					"value": "50",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"equipped": true,
+					"description": "$100 C-note",
+					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
 						"extended_value": "0",
@@ -5400,48 +5529,14 @@
 				},
 				{
 					"type": "equipment",
-					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"id": "9bf581fb-6814-4d2c-8bb7-09683796f93b",
 					"equipped": true,
 					"quantity": 1,
-					"description": "$100 C-note",
-					"value": "100",
+					"description": "$002 C-note",
+					"value": "2",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "100",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
-					"equipped": true,
-					"quantity": 1,
-					"description": "$005 C-note",
-					"value": "5",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
-					"equipped": true,
-					"quantity": 1,
-					"description": "$020 C-note",
-					"value": "20",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "20",
+						"extended_value": "2",
 						"extended_weight": "0.002 lb"
 					},
 					"categories": [
