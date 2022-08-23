@@ -362,7 +362,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 4
 						}
 					}
 				},
@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 19, 2022, 5:21 PM",
-	"modified_date": "Aug 20, 2022, 3:17 PM",
+	"modified_date": "Aug 21, 2022, 8:52 PM",
 	"profile": {
 		"player_name": "Richard Maw",
 		"name": "Shotgun Mike",
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 96
+						"points": 93
 					},
 					"open": true,
 					"children": [
@@ -882,31 +882,6 @@
 							},
 							"categories": [
 								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "958d02b4-c365-4ba4-92fc-663dea86fb98",
-							"name": "Area Defense (Guns (Shotgun))",
-							"physical": true,
-							"base_points": 1,
-							"reference": "Gun-Fu:17",
-							"calc": {
-								"points": 1
-							}
-						},
-						{
-							"type": "advantage",
-							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
-							"name": "Lightning Fingers (Guns (Shotgun))",
-							"physical": true,
-							"base_points": 1,
-							"reference": "GF20",
-							"calc": {
-								"points": 1
-							},
-							"categories": [
-								"Perk"
 							]
 						},
 						{
@@ -985,6 +960,27 @@
 						},
 						{
 							"type": "advantage",
+							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
+							"name": "Enhanced Dodge",
+							"mental": true,
+							"base_points": 15,
+							"reference": "B51",
+							"calc": {
+								"points": 15
+							},
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "dodge"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
 							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
 							"disabled": true,
 							"name": "Enhanced Parry (Area Defense)",
@@ -1005,27 +1001,6 @@
 										"compare": "is",
 										"qualifier": "Area Defense"
 									}
-								}
-							],
-							"categories": [
-								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
-							"name": "Enhanced Dodge",
-							"mental": true,
-							"base_points": 15,
-							"reference": "B51",
-							"calc": {
-								"points": 15
-							},
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"amount": 1,
-									"attribute": "dodge"
 								}
 							],
 							"categories": [
@@ -1257,17 +1232,6 @@
 							"categories": [
 								"Advantage"
 							]
-						},
-						{
-							"type": "advantage",
-							"id": "03fcb869-f38d-4ea3-9d8b-630a3678600e",
-							"name": "Scattergun",
-							"physical": true,
-							"base_points": 1,
-							"reference": "Gun-Fu:21",
-							"calc": {
-								"points": 1
-							}
 						}
 					]
 				},
@@ -1386,6 +1350,53 @@
 							"categories": [
 								"Disadvantage"
 							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"id": "135dd024-fbab-42b9-8443-4d60c849a660",
+					"name": "Class Perks",
+					"calc": {
+						"points": 3
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"id": "958d02b4-c365-4ba4-92fc-663dea86fb98",
+							"name": "Area Defense (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "Gun-Fu:17",
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"type": "advantage",
+							"id": "7a496fab-3860-4309-a86e-d66aa6269a0d",
+							"name": "Lightning Fingers (Guns (Shotgun))",
+							"physical": true,
+							"base_points": 1,
+							"reference": "GF20",
+							"calc": {
+								"points": 1
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "03fcb869-f38d-4ea3-9d8b-630a3678600e",
+							"name": "Scattergun",
+							"physical": true,
+							"base_points": 1,
+							"reference": "Gun-Fu:21",
+							"calc": {
+								"points": 1
+							}
 						}
 					]
 				}
@@ -1564,7 +1575,7 @@
 				{
 					"type": "advantage",
 					"id": "ab46ed8b-ef37-4f75-8126-465d89aacbbf",
-					"name": "Quirk",
+					"name": "Undecided Quirk",
 					"physical": true,
 					"base_points": -1,
 					"calc": {
@@ -3563,433 +3574,441 @@
 					"open": true,
 					"children": [
 						{
-							"type": "technique",
-							"id": "b6f11a52-8f8d-4efe-8e07-b1fd4f6eca25",
-							"name": "Area Defense",
-							"reference": "Gun-Fu:17",
-							"difficulty": "a",
-							"points": 0,
-							"default": {
-								"type": "parry",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -15
-							}
-						},
-						{
-							"type": "skill",
-							"id": "6b5889a8-4dc9-4db2-971c-6e0cb2a6fb69",
-							"name": "Fast-Draw",
-							"reference": "B194",
-							"specialization": "Ammo",
-							"difficulty": "dx/e",
-							"points": 2,
-							"calc": {
-								"level": 16,
-								"rsl": "DX+2"
-							},
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "1476ba68-9344-4397-9018-c314cc6bdc3c",
-							"name": "Fast-Draw",
-							"reference": "B194",
-							"specialization": "Long Arm",
-							"difficulty": "dx/e",
-							"points": 2,
-							"calc": {
-								"level": 16,
-								"rsl": "DX+2"
-							},
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "technique",
-							"id": "5b8c8c94-3a5f-401d-8728-02efa4139bd0",
-							"name": "Fast-Firing",
-							"reference": "GF27",
-							"difficulty": "h",
-							"points": 3,
-							"calc": {
-								"level": 19,
-								"rsl": "+0"
-							},
-							"default": {
-								"type": "skill",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -2
-							},
-							"notes": "Using Gunslinger halved penalty",
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat",
-								"Technique"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "128dcb38-d9c7-415a-b0e2-1560db44a1fa",
-							"name": "Guns",
-							"reference": "B198",
-							"specialization": "Musket",
-							"tech_level": "5",
-							"difficulty": "dx/e",
-							"points": 0,
-							"defaulted_from": {
-								"type": "skill",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -2,
-								"level": 17,
-								"adjusted_level": 17,
-								"points": 8
-							},
-							"calc": {
-								"level": 17,
-								"rsl": "DX+3"
-							},
-							"defaults": [
+							"type": "skill_container",
+							"id": "90c2476d-8280-4b58-8979-01e60c628e9e",
+							"name": "Combat Skills",
+							"open": true,
+							"children": [
 								{
-									"type": "dx",
-									"modifier": -4
+									"type": "technique",
+									"id": "b6f11a52-8f8d-4efe-8e07-b1fd4f6eca25",
+									"name": "Area Defense",
+									"reference": "Gun-Fu:17",
+									"difficulty": "a",
+									"points": 0,
+									"default": {
+										"type": "parry",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -15
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Grenade Launcher",
-									"modifier": -4
+									"id": "6b5889a8-4dc9-4db2-971c-6e0cb2a6fb69",
+									"name": "Fast-Draw",
+									"reference": "B194",
+									"specialization": "Ammo",
+									"difficulty": "dx/e",
+									"points": 2,
+									"calc": {
+										"level": 16,
+										"rsl": "DX+2"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Gyroc",
-									"modifier": -4
+									"id": "1476ba68-9344-4397-9018-c314cc6bdc3c",
+									"name": "Fast-Draw",
+									"reference": "B194",
+									"specialization": "Long Arm",
+									"difficulty": "dx/e",
+									"points": 2,
+									"calc": {
+										"level": 16,
+										"rsl": "DX+2"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "technique",
+									"id": "5b8c8c94-3a5f-401d-8728-02efa4139bd0",
+									"name": "Fast-Firing",
+									"reference": "GF27",
+									"difficulty": "h",
+									"points": 3,
+									"calc": {
+										"level": 19,
+										"rsl": "+0"
+									},
+									"default": {
+										"type": "skill",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -2
+									},
+									"notes": "Using Gunslinger halved penalty",
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat",
+										"Technique"
+									]
 								},
 								{
 									"type": "skill",
+									"id": "128dcb38-d9c7-415a-b0e2-1560db44a1fa",
 									"name": "Guns",
-									"specialization": "Light Anti-Armor Weapon",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Machine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Rifle",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Shotgun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Submachine Gun",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "89ba6aca-b448-45f7-b27f-f2d5df9aa9c9",
-							"name": "Guns",
-							"reference": "B198",
-							"specialization": "Pistol",
-							"tech_level": "5",
-							"difficulty": "dx/e",
-							"points": 0,
-							"defaulted_from": {
-								"type": "skill",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -2,
-								"level": 17,
-								"adjusted_level": 17,
-								"points": 8
-							},
-							"calc": {
-								"level": 17,
-								"rsl": "DX+3"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Grenade Launcher",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Gyroc",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Anti-Armor Weapon",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Machine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
+									"reference": "B198",
 									"specialization": "Musket",
-									"modifier": -2
+									"tech_level": "5",
+									"difficulty": "dx/e",
+									"points": 0,
+									"defaulted_from": {
+										"type": "skill",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -2,
+										"level": 17,
+										"adjusted_level": 17,
+										"points": 8
+									},
+									"calc": {
+										"level": 17,
+										"rsl": "DX+3"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
+									"id": "89ba6aca-b448-45f7-b27f-f2d5df9aa9c9",
+									"name": "Guns",
+									"reference": "B198",
 									"specialization": "Pistol",
-									"modifier": -4
+									"tech_level": "5",
+									"difficulty": "dx/e",
+									"points": 0,
+									"defaulted_from": {
+										"type": "skill",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -2,
+										"level": 17,
+										"adjusted_level": 17,
+										"points": 8
+									},
+									"calc": {
+										"level": 17,
+										"rsl": "DX+3"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Beam Weapons",
+											"specialization": "Pistol",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
 								},
 								{
 									"type": "skill",
+									"id": "4eb5c929-59f3-4dd8-904a-238922fd0836",
 									"name": "Guns",
+									"reference": "B198",
 									"specialization": "Rifle",
-									"modifier": -2
+									"tech_level": "5",
+									"difficulty": "dx/e",
+									"points": 0,
+									"defaulted_from": {
+										"type": "skill",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -2,
+										"level": 17,
+										"adjusted_level": 17,
+										"points": 8
+									},
+									"calc": {
+										"level": 17,
+										"rsl": "DX+3"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Beam Weapons",
+											"specialization": "Rifle",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
 								},
 								{
 									"type": "skill",
+									"id": "d58a0167-e5ea-4e3f-b31e-c2741ac6a5eb",
 									"name": "Guns",
+									"reference": "B198",
 									"specialization": "Shotgun",
-									"modifier": -2
+									"tech_level": "5",
+									"difficulty": "dx/e",
+									"points": 16,
+									"defaulted_from": {
+										"type": "dx",
+										"modifier": -4,
+										"level": 10,
+										"adjusted_level": 10,
+										"points": -10
+									},
+									"calc": {
+										"level": 19,
+										"rsl": "DX+5"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
 								},
 								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Submachine Gun",
-									"modifier": -2
+									"type": "technique",
+									"id": "59fa7420-e5f1-4a9e-a599-5435ef0fe0a5",
+									"name": "Quick-Shot",
+									"reference": "GF29",
+									"difficulty": "a",
+									"points": 0,
+									"calc": {
+										"level": 16,
+										"rsl": "-3"
+									},
+									"limit": 0,
+									"default": {
+										"type": "skill",
+										"name": "Guns",
+										"specialization": "Shotgun",
+										"modifier": -3
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat",
+										"Technique"
+									]
 								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "4eb5c929-59f3-4dd8-904a-238922fd0836",
-							"name": "Guns",
-							"reference": "B198",
-							"specialization": "Rifle",
-							"tech_level": "5",
-							"difficulty": "dx/e",
-							"points": 0,
-							"defaulted_from": {
-								"type": "skill",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -2,
-								"level": 17,
-								"adjusted_level": 17,
-								"points": 8
-							},
-							"calc": {
-								"level": 17,
-								"rsl": "DX+3"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Grenade Launcher",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Gyroc",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Anti-Armor Weapon",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Machine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Musket",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Beam Weapons",
-									"specialization": "Rifle",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Shotgun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Submachine Gun",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "d58a0167-e5ea-4e3f-b31e-c2741ac6a5eb",
-							"name": "Guns",
-							"reference": "B198",
-							"specialization": "Shotgun",
-							"tech_level": "5",
-							"difficulty": "dx/e",
-							"points": 16,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 10,
-								"adjusted_level": 10,
-								"points": -10
-							},
-							"calc": {
-								"level": 19,
-								"rsl": "DX+5"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Grenade Launcher",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Gyroc",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Anti-Armor Weapon",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Light Machine Gun",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Musket",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Rifle",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Guns",
-									"specialization": "Submachine Gun",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
-						},
-						{
-							"type": "technique",
-							"id": "59fa7420-e5f1-4a9e-a599-5435ef0fe0a5",
-							"name": "Quick-Shot",
-							"reference": "GF29",
-							"difficulty": "a",
-							"points": 0,
-							"calc": {
-								"level": 16,
-								"rsl": "-3"
-							},
-							"limit": 0,
-							"default": {
-								"type": "skill",
-								"name": "Guns",
-								"specialization": "Shotgun",
-								"modifier": -3
-							},
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat",
-								"Technique"
 							]
 						}
 					]
@@ -4000,6 +4019,204 @@
 					"name": "Secondary Skill",
 					"open": true,
 					"children": [
+						{
+							"type": "skill_container",
+							"id": "732acfa2-8552-46a5-8acc-d09dc15ed362",
+							"name": "Combat Skills",
+							"open": true,
+							"children": [
+								{
+									"type": "skill",
+									"id": "886b5451-778b-4039-a354-9e02664afd39",
+									"name": "Brawling",
+									"reference": "B182",
+									"difficulty": "dx/e",
+									"points": 2,
+									"calc": {
+										"level": 15,
+										"rsl": "DX+1"
+									},
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Brawling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"id": "ba80023d-f246-4650-8809-2c0b611481b6",
+									"name": "Knife",
+									"reference": "B208",
+									"difficulty": "dx/e",
+									"points": 0,
+									"defaulted_from": {
+										"type": "dx",
+										"modifier": -4,
+										"level": 10,
+										"adjusted_level": 10,
+										"points": -10
+									},
+									"calc": {
+										"level": 10,
+										"rsl": "DX-4"
+									},
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"id": "34272dea-d0cd-40a9-97fe-65017b37e88e",
+									"name": "Spear",
+									"reference": "B208",
+									"difficulty": "dx/a",
+									"points": 4,
+									"defaulted_from": {
+										"type": "dx",
+										"modifier": -5,
+										"level": 9,
+										"adjusted_level": 9,
+										"points": -9
+									},
+									"calc": {
+										"level": 15,
+										"rsl": "DX+1"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Staff",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"id": "1c37ad0d-983f-42f9-a03a-f4719aeb2a5e",
+									"name": "Staff",
+									"reference": "B208",
+									"difficulty": "dx/a",
+									"points": 3,
+									"defaulted_from": {
+										"type": "skill",
+										"name": "Spear",
+										"modifier": -2,
+										"level": 13,
+										"adjusted_level": 13,
+										"points": 1
+									},
+									"calc": {
+										"level": 15,
+										"rsl": "DX+1"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"id": "7057fa1e-4721-47ef-b76f-200b1802f9b2",
+									"name": "Throwing",
+									"reference": "B226",
+									"difficulty": "dx/a",
+									"points": 2,
+									"defaulted_from": {
+										"type": "dx",
+										"modifier": -3,
+										"level": 11,
+										"adjusted_level": 11,
+										"points": -11
+									},
+									"calc": {
+										"level": 14,
+										"rsl": "DX+0"
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Dropping",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Athletic",
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								}
+							]
+						},
 						{
 							"type": "skill",
 							"id": "890400ee-a920-45c3-bafd-c80c9dd8e327",
@@ -4077,38 +4294,6 @@
 						},
 						{
 							"type": "skill",
-							"id": "886b5451-778b-4039-a354-9e02664afd39",
-							"name": "Brawling",
-							"reference": "B182",
-							"difficulty": "dx/e",
-							"points": 2,
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"features": [
-								{
-									"type": "weapon_bonus",
-									"amount": 1,
-									"per_level": true,
-									"selection_type": "weapons_with_required_skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Brawling"
-									},
-									"level": {
-										"compare": "at_least",
-										"qualifier": 2
-									}
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
 							"id": "d8497c6d-1736-4749-820e-ae57c3bb97ce",
 							"name": "Climbing",
 							"reference": "B183",
@@ -4169,50 +4354,6 @@
 						},
 						{
 							"type": "skill",
-							"id": "ba80023d-f246-4650-8809-2c0b611481b6",
-							"name": "Knife",
-							"reference": "B208",
-							"difficulty": "dx/e",
-							"points": 0,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 10,
-								"adjusted_level": 10,
-								"points": -10
-							},
-							"calc": {
-								"level": 10,
-								"rsl": "DX-4"
-							},
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Main-Gauche",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
-									"modifier": -3
-								},
-								{
-									"type": "dx",
-									"modifier": -4
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
 							"id": "9806a051-6a34-4a7f-8b75-e8046d4f1399",
 							"name": "Leadership",
 							"reference": "B204",
@@ -4238,85 +4379,6 @@
 							"categories": [
 								"Military",
 								"Social"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "34272dea-d0cd-40a9-97fe-65017b37e88e",
-							"name": "Spear",
-							"reference": "B208",
-							"difficulty": "dx/a",
-							"points": 4,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
-							},
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Staff",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "1c37ad0d-983f-42f9-a03a-f4719aeb2a5e",
-							"name": "Staff",
-							"reference": "B208",
-							"difficulty": "dx/a",
-							"points": 3,
-							"defaulted_from": {
-								"type": "skill",
-								"name": "Spear",
-								"modifier": -2,
-								"level": 13,
-								"adjusted_level": 13,
-								"points": 1
-							},
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -2
-								}
-							],
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
 							]
 						},
 						{
@@ -4352,41 +4414,6 @@
 								"Military",
 								"Police"
 							]
-						},
-						{
-							"type": "skill",
-							"id": "7057fa1e-4721-47ef-b76f-200b1802f9b2",
-							"name": "Throwing",
-							"reference": "B226",
-							"difficulty": "dx/a",
-							"points": 2,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -3,
-								"level": 11,
-								"adjusted_level": 11,
-								"points": -11
-							},
-							"calc": {
-								"level": 14,
-								"rsl": "DX+0"
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Dropping",
-									"modifier": -4
-								}
-							],
-							"categories": [
-								"Athletic",
-								"Combat/Weapon",
-								"Ranged Combat"
-							]
 						}
 					]
 				},
@@ -4396,6 +4423,48 @@
 					"name": "Background Skill",
 					"open": true,
 					"children": [
+						{
+							"type": "skill_container",
+							"id": "050957e5-9580-46de-af28-2c5146e80d3a",
+							"name": "Combat Skills",
+							"open": true,
+							"children": [
+								{
+									"type": "skill",
+									"id": "393358b9-8c71-449b-9adc-27b42aa9221b",
+									"name": "Fast-Draw",
+									"reference": "B194,MA56",
+									"specialization": "Knife",
+									"difficulty": "dx/e",
+									"points": 1,
+									"calc": {
+										"level": 15,
+										"rsl": "DX+1"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"id": "362fb3fe-38b8-46d0-bacc-bf3688c13a9c",
+									"name": "Fast-Draw",
+									"reference": "B194,MA56",
+									"specialization": "Pistol",
+									"difficulty": "dx/e",
+									"points": 1,
+									"calc": {
+										"level": 15,
+										"rsl": "DX+1"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								}
+							]
+						},
 						{
 							"type": "skill",
 							"id": "8fc6cc1b-92c2-4983-9f7a-500fb14a3f35",
@@ -4442,40 +4511,6 @@
 							"categories": [
 								"Design/Invention",
 								"Engineer"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "393358b9-8c71-449b-9adc-27b42aa9221b",
-							"name": "Fast-Draw",
-							"reference": "B194,MA56",
-							"specialization": "Knife",
-							"difficulty": "dx/e",
-							"points": 1,
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"categories": [
-								"Combat/Weapon",
-								"Melee Combat"
-							]
-						},
-						{
-							"type": "skill",
-							"id": "362fb3fe-38b8-46d0-bacc-bf3688c13a9c",
-							"name": "Fast-Draw",
-							"reference": "B194,MA56",
-							"specialization": "Pistol",
-							"difficulty": "dx/e",
-							"points": 1,
-							"calc": {
-								"level": 15,
-								"rsl": "DX+1"
-							},
-							"categories": [
-								"Combat/Weapon",
-								"Ranged Combat"
 							]
 						},
 						{
@@ -4780,6 +4815,70 @@
 			]
 		},
 		{
+			"type": "equipment",
+			"id": "e64e87d1-d42b-4043-8c09-116f44b42299",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Leather Helmet",
+			"value": "38",
+			"weight": "3 lb",
+			"reference": "DFA108",
+			"calc": {
+				"extended_value": "38",
+				"extended_weight": "3 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "skull"
+				}
+			],
+			"categories": [
+				"Armor",
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "69fff33f-19bf-4a4f-94da-c1518bb8303c",
+			"equipped": true,
+			"description": "Helmet Lamp",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"calc": {
+				"extended_value": "102",
+				"extended_weight": "2 lb"
+			},
+			"notes": "Uses 1 pt of oil per 12 hours, 5 yd.",
+			"categories": [
+				"Adventure-Wear",
+				"Light Sources"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "b680a6db-c22b-4a4d-af10-68e914ba9b8e",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Oil, Lantern, 1 Pint",
+					"tech_level": "2",
+					"value": "2",
+					"weight": "1 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "1 lb"
+					},
+					"categories": [
+						"Light Sources"
+					]
+				}
+			]
+		},
+		{
 			"type": "equipment_container",
 			"id": "1b794d3c-a5c4-4e6a-b761-cdb71edd7de7",
 			"equipped": true,
@@ -4787,7 +4886,7 @@
 			"tech_level": "5",
 			"legality_class": "3",
 			"value": "800",
-			"weight": "10.9 lb",
+			"weight": "10.525 lb",
 			"reference": "HT104",
 			"weapons": [
 				{
@@ -5069,12 +5168,6 @@
 				"extended_value": "810",
 				"extended_weight": "10.9 lb"
 			},
-			"features": [
-				{
-					"type": "contained_weight_reduction",
-					"reduction": "100%"
-				}
-			],
 			"notes": "Malf 16.",
 			"categories": [
 				"Firearms"
@@ -5144,8 +5237,8 @@
 					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
 					"equipped": true,
 					"description": "20-gauge spent cartridge",
-					"value": "0",
-					"weight": "0 lb",
+					"value": "0.08",
+					"weight": "0.2 lb",
 					"reference": "HT176",
 					"calc": {
 						"extended_value": "0",
@@ -5193,8 +5286,8 @@
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
 			"description": "20-gauge spent cartridge",
-			"value": "0",
-			"weight": "0 lb",
+			"value": "0.08",
+			"weight": "0.2 lb",
 			"reference": "HT176",
 			"calc": {
 				"extended_value": "0",
@@ -5267,6 +5360,24 @@
 	"other_equipment": [
 		{
 			"type": "equipment",
+			"id": "e301cd8d-b9c6-41da-9613-2d9a2191575a",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Oil, Lantern, 1 Pint",
+			"tech_level": "2",
+			"value": "2",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"calc": {
+				"extended_value": "2",
+				"extended_weight": "1 lb"
+			},
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "4e4cf603-c4a5-4709-8fa4-640827294a49",
 			"equipped": true,
 			"quantity": 1,
@@ -5298,8 +5409,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "146",
-				"extended_weight": "0.012 lb"
+				"extended_value": "4",
+				"extended_weight": "0.006 lb"
 			},
 			"open": true,
 			"children": [
@@ -5307,13 +5418,29 @@
 					"type": "equipment",
 					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
 					"equipped": true,
-					"quantity": 1,
+					"quantity": 2,
 					"description": "$001 C-note",
 					"value": "1",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "1",
-						"extended_weight": "0.002 lb"
+						"extended_value": "2",
+						"extended_weight": "0.004 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
+					"equipped": true,
+					"description": "$005 C-note",
+					"value": "5",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5324,13 +5451,28 @@
 					"type": "equipment",
 					"id": "0bebc67f-8e0b-4617-a555-66b6990f721e",
 					"equipped": true,
-					"quantity": 2,
 					"description": "$010 C-note",
 					"value": "10",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "20",
-						"extended_weight": "0.004 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
+					"equipped": true,
+					"description": "$020 C-note",
+					"value": "20",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5343,6 +5485,22 @@
 					"equipped": true,
 					"description": "$050 C-note",
 					"value": "50",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"equipped": true,
+					"description": "$100 C-note",
+					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
 						"extended_value": "0",
@@ -5371,48 +5529,14 @@
 				},
 				{
 					"type": "equipment",
-					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
+					"id": "9bf581fb-6814-4d2c-8bb7-09683796f93b",
 					"equipped": true,
 					"quantity": 1,
-					"description": "$100 C-note",
-					"value": "100",
+					"description": "$002 C-note",
+					"value": "2",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "100",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
-					"equipped": true,
-					"quantity": 1,
-					"description": "$005 C-note",
-					"value": "5",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
-					"equipped": true,
-					"quantity": 1,
-					"description": "$020 C-note",
-					"value": "20",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "20",
+						"extended_value": "2",
 						"extended_weight": "0.002 lb"
 					},
 					"categories": [
