@@ -227,6 +227,29 @@
 							"reference": "HT91",
 							"weapons": [
 								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"usage": "Pistol-Whip",
+									"calc": {
+										"level": 0,
+										"parry": "",
+										"block": "",
+										"damage": "thr cr"
+									},
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									]
+								},
+								{
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi+",
@@ -335,6 +358,31 @@
 							"weight": "2.5 lb",
 							"reference": "HT95",
 							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"base": "1"
+									},
+									"usage": "Pistol-Whip",
+									"reach": "C",
+									"calc": {
+										"level": 0,
+										"parry": "",
+										"block": "",
+										"damage": "thr+1 cr"
+									},
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									]
+								},
 								{
 									"type": "ranged_weapon",
 									"damage": {
