@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 23, 2022, 9:21 AM",
+	"modified_date": "Aug 24, 2022, 7:43 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -2582,10 +2582,10 @@
 				},
 				{
 					"type": "skill",
-					"id": "2e1f4681-45ab-4a3f-9ca7-9516aaeb1ec4",
+					"id": "5d84271b-e360-4b80-83d1-767006199dc1",
 					"name": "Guns",
 					"reference": "B198",
-					"specialization": "Rifle",
+					"specialization": "Pistol",
 					"tech_level": "5",
 					"difficulty": "dx/e",
 					"points": 4,
@@ -2637,15 +2637,15 @@
 						},
 						{
 							"type": "skill",
-							"name": "Guns",
+							"name": "Beam Weapons",
 							"specialization": "Pistol",
-							"modifier": -2
+							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Beam Weapons",
+							"name": "Guns",
 							"specialization": "Rifle",
-							"modifier": -4
+							"modifier": -2
 						},
 						{
 							"type": "skill",
@@ -2667,11 +2667,11 @@
 				},
 				{
 					"type": "skill",
-					"id": "6bdf0b54-3eb3-40d9-afa6-034a26830702",
-					"name": "Staff",
-					"reference": "B208",
+					"id": "c4a9b11b-abb0-41a9-a202-e001e2ff9ef8",
+					"name": "Shortsword",
+					"reference": "B209",
 					"difficulty": "dx/a",
-					"points": 12,
+					"points": 8,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -5,
@@ -2680,8 +2680,72 @@
 						"points": -7
 					},
 					"calc": {
-						"level": 15,
-						"rsl": "DX+3"
+						"level": 14,
+						"rsl": "DX+2"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Jitte/Sai",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Knife",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Smallsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Tonfa",
+							"modifier": -3
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"id": "2dee18c1-862f-411d-a283-179b9ad29b28",
+					"name": "Cloak",
+					"reference": "B184",
+					"difficulty": "dx/a",
+					"points": 4,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "DX+1"
 					},
 					"defaults": [
 						{
@@ -2690,13 +2754,13 @@
 						},
 						{
 							"type": "skill",
-							"name": "Polearm",
+							"name": "Net",
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Spear",
-							"modifier": -2
+							"name": "Shield",
+							"modifier": -4
 						}
 					],
 					"categories": [
@@ -2966,30 +3030,6 @@
 			"children": [
 				{
 					"type": "spell",
-					"id": "947f4d88-22c9-4c04-9d52-37169fcc24b5",
-					"name": "Haste",
-					"reference": "M142",
-					"difficulty": "iq/h",
-					"college": [
-						"Movement"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2/pt",
-					"maintenance_cost": "Half",
-					"casting_time": "2 sec",
-					"duration": "1 min",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
-					},
-					"categories": [
-						"Movement"
-					]
-				},
-				{
-					"type": "spell",
 					"id": "10e41bc2-645f-4dea-b86e-12100ecec8ad",
 					"name": "Ignite Fire",
 					"reference": "M72",
@@ -3003,7 +3043,7 @@
 					"maintenance_cost": "Same",
 					"casting_time": "1 sec",
 					"duration": "1 sec",
-					"points": 1,
+					"points": 0,
 					"calc": {
 						"level": 13,
 						"rsl": "IQ-2"
@@ -3014,50 +3054,228 @@
 				},
 				{
 					"type": "spell",
-					"id": "22378050-adda-4bc5-9bd8-ee4bdb0ce074",
-					"name": "Light",
-					"reference": "M110",
+					"id": "564237a9-d504-4a56-912c-0bcf023ed852",
+					"name": "Seek Fire",
+					"reference": "M72",
 					"difficulty": "iq/h",
 					"college": [
-						"Light & Darkness"
+						"Fire"
 					],
 					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1",
-					"maintenance_cost": "1",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
-					},
-					"categories": [
-						"Light & Darkness"
-					]
-				},
-				{
-					"type": "spell",
-					"id": "390cfdf8-0d26-45d5-aacf-d259cadcc563",
-					"name": "Purify Air",
-					"reference": "M23",
-					"difficulty": "iq/h",
-					"college": [
-						"Air"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Area",
+					"spell_class": "Info",
 					"casting_cost": "1",
 					"maintenance_cost": "-",
 					"casting_time": "1 sec",
 					"duration": "Instant",
-					"points": 1,
+					"points": 0,
 					"calc": {
 						"level": 13,
 						"rsl": "IQ-2"
 					},
 					"categories": [
-						"Air"
+						"Fire"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "b2e14cfd-7046-4fd5-94d3-51e8927639ae",
+					"name": "Create Fire",
+					"reference": "M72",
+					"difficulty": "iq/h",
+					"college": [
+						"Fire"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 0,
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "burn",
+								"base": "1d-1"
+							},
+							"usage": "Area",
+							"reach": "Special",
+							"parry": "No",
+							"calc": {
+								"level": 0,
+								"parry": "No",
+								"block": "",
+								"damage": "1d-1 burn"
+							}
+						}
+					],
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "seek fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "ignite fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Fire"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "ae985347-df79-430a-a6c8-b0f1e6a413bc",
+					"name": "Shape Fire",
+					"reference": "M72",
+					"difficulty": "iq/h",
+					"college": [
+						"Fire"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 0,
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "ignite fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Fire"
+					]
+				},
+				{
+					"type": "spell",
+					"id": "ad127a3b-85a5-4bfb-8888-d674ae1f0f4f",
+					"name": "Flame Jet",
+					"reference": "M73",
+					"difficulty": "iq/h",
+					"college": [
+						"Fire"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 sec",
+					"points": 0,
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "burn/point",
+								"base": "1d"
+							},
+							"usage": "Jet",
+							"reach": "1/point",
+							"parry": "No",
+							"calc": {
+								"level": 8,
+								"parry": "No",
+								"block": "",
+								"damage": "1d burn/point"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Innate Attack",
+									"specialization": "Beam"
+								}
+							]
+						}
+					],
+					"calc": {
+						"level": 13,
+						"rsl": "IQ-2"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "create fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "shape fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Fire"
 					]
 				}
 			]
@@ -3087,8 +3305,8 @@
 					"parry": "0",
 					"block": "No",
 					"calc": {
-						"level": 8,
-						"parry": "9",
+						"level": 14,
+						"parry": "12",
 						"block": "No",
 						"damage": "1d-2 cut"
 					},
@@ -3129,8 +3347,8 @@
 					"parry": "0",
 					"block": "No",
 					"calc": {
-						"level": 8,
-						"parry": "9",
+						"level": 14,
+						"parry": "12",
 						"block": "No",
 						"damage": "1d-2 imp"
 					},
@@ -3278,6 +3496,354 @@
 		},
 		{
 			"type": "equipment",
+			"id": "3e27ec31-dfe4-485b-b489-c582a082b8e2",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Cloth, Padded",
+			"tech_level": "0",
+			"value": "0",
+			"weight": "0 lb",
+			"reference": "LT103",
+			"modifiers": [
+				{
+					"type": "eqp_modifier",
+					"id": "da66023f-ca6d-436c-a262-b3399d82bb17",
+					"disabled": true,
+					"name": "Head",
+					"cost_type": "to_original_cost",
+					"cost": "+15",
+					"weight_type": "to_original_weight",
+					"weight": "+1.8 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						}
+					],
+					"notes": "Don time: 5 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "55a67e21-31bb-4b38-b91b-cb594959daf2",
+					"name": "Skull",
+					"cost_type": "to_original_cost",
+					"cost": "+10",
+					"weight_type": "to_original_weight",
+					"weight": "+1.2 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						}
+					],
+					"notes": "Don time: 3 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "cb1d0e68-9701-4e21-9ed3-5ad3a62a8ba3",
+					"disabled": true,
+					"name": "Face",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						}
+					],
+					"notes": "Don time: 2 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "50098537-aca2-4445-9668-adf97ce72cb4",
+					"disabled": true,
+					"name": "Neck",
+					"cost_type": "to_original_cost",
+					"cost": "+2.5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.3 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "neck"
+						}
+					],
+					"notes": "Don time: 1 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "7537fcb6-bf0d-4fa5-a763-9640e1b65ec6",
+					"name": "Torso",
+					"cost_type": "to_original_cost",
+					"cost": "+50",
+					"weight_type": "to_original_weight",
+					"weight": "+6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
+						}
+					],
+					"notes": "Roll 1d; on 1, the vitals are hit.; Don time: 15 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "5b54af9d-8e26-4bc4-a6cf-4ae14590f268",
+					"disabled": true,
+					"name": "Chest",
+					"reference": "LT102",
+					"cost_type": "to_original_cost",
+					"cost": "+37.5",
+					"weight_type": "to_original_weight",
+					"weight": "+4.5 lb",
+					"notes": "Hit location 9-10. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "15c2e3d9-3efa-4de9-aa59-0ad7fd4d1706",
+					"disabled": true,
+					"name": "Abdomen",
+					"reference": "LT102",
+					"cost_type": "to_original_cost",
+					"cost": "+37.5",
+					"weight_type": "to_original_weight",
+					"weight": "+4.5 lb",
+					"notes": "Hit location 11. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "5350630f-c347-4739-a07c-b9a2ed402364",
+					"disabled": true,
+					"name": "Groin",
+					"cost_type": "to_original_cost",
+					"cost": "+2.5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.3 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "groin"
+						}
+					],
+					"notes": "Don time: 1 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "0213477d-be25-40a0-a2f0-aa6cf5a1d8ab",
+					"disabled": true,
+					"name": "Arms",
+					"cost_type": "to_original_cost",
+					"cost": "+25",
+					"weight_type": "to_original_weight",
+					"weight": "+3 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arm"
+						}
+					],
+					"notes": "Don time: 8 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "e871f102-13d8-491d-988b-d204bde5c994",
+					"disabled": true,
+					"name": "Shoulders",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.6 lb",
+					"notes": "Roll 1d; on 6, the armor is hit.; Don time: 2 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "9b22d805-97f2-4ae5-950e-8137c45eae89",
+					"disabled": true,
+					"name": "Upper Arms",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.6 lb",
+					"notes": "Roll 1d; on 5, the armor is hit.; Don time: 2 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "4faa11b2-7667-4c05-8c96-e85ab0532683",
+					"disabled": true,
+					"name": "Elbows",
+					"cost_type": "to_original_cost",
+					"cost": "+2.5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.3 lb",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "0b81c6d6-9ed1-4094-b19c-b1d2418b0c82",
+					"disabled": true,
+					"name": "Forearms",
+					"cost_type": "to_original_cost",
+					"cost": "+12.5",
+					"weight_type": "to_original_weight",
+					"weight": "+1.5 lb",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 4 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "d3831891-bcff-4ed2-b517-c38211263088",
+					"disabled": true,
+					"name": "Hands",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "hand"
+						}
+					],
+					"notes": "Don time: 2 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "b8b33c36-4186-48f6-80bc-354ada211d95",
+					"disabled": true,
+					"name": "Legs",
+					"cost_type": "to_original_cost",
+					"cost": "+50",
+					"weight_type": "to_original_weight",
+					"weight": "+6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "leg"
+						}
+					],
+					"notes": "Don time: 15 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "07bda4cb-7f85-4e2d-ad5b-a8559e72c770",
+					"disabled": true,
+					"name": "Thighs",
+					"cost_type": "to_original_cost",
+					"cost": "+22.5",
+					"weight_type": "to_original_weight",
+					"weight": "+2.7 lb",
+					"notes": "Roll 1d; on 5-6, the armor is hit.; Don time: 7 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "9de214dc-51a6-4c4e-8d43-66cd290c551a",
+					"disabled": true,
+					"name": "Knees",
+					"cost_type": "to_original_cost",
+					"cost": "+2.5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.3 lb",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "ba73b80c-015a-4f39-aac0-eab92e8bd7e9",
+					"disabled": true,
+					"name": "Shins",
+					"cost_type": "to_original_cost",
+					"cost": "+25",
+					"weight_type": "to_original_weight",
+					"weight": "+3 lb",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 8 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "fcd369b7-0804-4df6-924f-978a9d519cd8",
+					"disabled": true,
+					"name": "Feet",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_original_weight",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "foot"
+						}
+					],
+					"notes": "Don time: 2 secs."
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "e0b827fd-91e3-451a-8b5d-31281d5e7939",
+					"disabled": true,
+					"name": "@Covers only half (front only, one arm, etc)@",
+					"reference": "LT100",
+					"cost_type": "to_base_cost",
+					"cost": "x0.5",
+					"weight_type": "to_base_weight",
+					"weight": "x0.5"
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "b0dfb304-06ae-4c2d-92cd-d29515d6fb8a",
+					"name": "Fortify 1 (skull)",
+					"reference": "DF1:30",
+					"cost_type": "to_final_cost",
+					"cost": "+2.5",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "01e407e5-3c23-472a-ba4e-9ddebecee4ea",
+					"name": "Fortify 1 (torso)",
+					"reference": "DF1:30",
+					"cost_type": "to_final_cost",
+					"cost": "+25",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "87.5",
+				"extended_weight": "7.2 lb"
+			},
+			"notes": "DR 1; Flexible, susceptible to blunt trauma; Holdout: -1."
+		},
+		{
+			"type": "equipment",
 			"id": "84998055-d2aa-4811-b3ff-635c407cf4e6",
 			"equipped": true,
 			"quantity": 1,
@@ -3297,9 +3863,9 @@
 					"parry": "No",
 					"block": "+0",
 					"calc": {
-						"level": 0,
+						"level": 11,
 						"parry": "No",
-						"block": "0",
+						"block": "11",
 						"damage": "-"
 					},
 					"defaults": [
@@ -3322,7 +3888,7 @@
 					"shots": "T(1)",
 					"bulk": "-6",
 					"calc": {
-						"level": 7,
+						"level": 13,
 						"range": "2",
 						"damage": "Special"
 					},
@@ -3383,8 +3949,8 @@
 			"weight": "3 lb",
 			"reference": "DF1:23",
 			"calc": {
-				"extended_value": "636.5",
-				"extended_weight": "12.592 lb"
+				"extended_value": "949",
+				"extended_weight": "15.392 lb"
 			},
 			"prereqs": {
 				"type": "prereq_list",
@@ -3406,6 +3972,83 @@
 			],
 			"open": true,
 			"children": [
+				{
+					"type": "equipment_container",
+					"id": "67ee8d08-3ca5-43fc-90db-431472aafce8",
+					"equipped": true,
+					"description": "Fire Magic for No-Hopers (Wizardly Grimoire of Ignite Fire, Shape Fire, Seek Fire, Create Fire, Flame Jet)",
+					"value": "500",
+					"weight": "12 lb",
+					"calc": {
+						"extended_value": "500",
+						"extended_weight": "12 lb"
+					},
+					"features": [
+						{
+							"type": "spell_point_bonus",
+							"amount": 1,
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Ignite Fire"
+							}
+						},
+						{
+							"type": "spell_point_bonus",
+							"amount": 1,
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shape Fire"
+							}
+						},
+						{
+							"type": "spell_point_bonus",
+							"amount": 1,
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Seek Fire"
+							}
+						},
+						{
+							"type": "spell_point_bonus",
+							"amount": 1,
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Create Fire"
+							}
+						},
+						{
+							"type": "spell_point_bonus",
+							"amount": 1,
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flame Jet"
+							}
+						}
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "b9bc5b16-cbb1-4fee-9de2-3581ec36de5c",
+							"equipped": true,
+							"quantity": 1,
+							"description": "Scholarly Power Item Energy",
+							"value": "0",
+							"weight": "0 lb",
+							"uses": 6,
+							"max_uses": 6,
+							"calc": {
+								"extended_value": "0",
+								"extended_weight": "0 lb"
+							}
+						}
+					]
+				},
 				{
 					"type": "equipment",
 					"id": "8cf263ad-ad41-40ec-a124-d3900613a1f6",
@@ -3453,386 +4096,6 @@
 					]
 				},
 				{
-					"type": "equipment_container",
-					"id": "177fce9c-9c90-463c-a942-de5be76ca6a1",
-					"equipped": true,
-					"description": "Scribe's Kit",
-					"value": "50",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "2 lb"
-					},
-					"categories": [
-						"Writing Equipment"
-					],
-					"open": true,
-					"children": [
-						{
-							"type": "equipment",
-							"id": "42d26316-3bf6-4d12-a9b0-e9ef668454b7",
-							"equipped": true,
-							"quantity": 2,
-							"description": "Scholarly Power Item Energy",
-							"value": "0",
-							"weight": "0 lb",
-							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
-							}
-						}
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "3e27ec31-dfe4-485b-b489-c582a082b8e2",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cloth, Padded",
-					"tech_level": "0",
-					"value": "0",
-					"weight": "0 lb",
-					"reference": "LT103",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "da66023f-ca6d-436c-a262-b3399d82bb17",
-							"disabled": true,
-							"name": "Head",
-							"cost_type": "to_original_cost",
-							"cost": "+15",
-							"weight_type": "to_original_weight",
-							"weight": "+1.8 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "skull"
-								},
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "face"
-								}
-							],
-							"notes": "Don time: 5 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "55a67e21-31bb-4b38-b91b-cb594959daf2",
-							"name": "Skull",
-							"cost_type": "to_original_cost",
-							"cost": "+10",
-							"weight_type": "to_original_weight",
-							"weight": "+1.2 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "skull"
-								}
-							],
-							"notes": "Don time: 3 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "cb1d0e68-9701-4e21-9ed3-5ad3a62a8ba3",
-							"disabled": true,
-							"name": "Face",
-							"cost_type": "to_original_cost",
-							"cost": "+5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.6 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "face"
-								}
-							],
-							"notes": "Don time: 2 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "50098537-aca2-4445-9668-adf97ce72cb4",
-							"disabled": true,
-							"name": "Neck",
-							"cost_type": "to_original_cost",
-							"cost": "+2.5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.3 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "neck"
-								}
-							],
-							"notes": "Don time: 1 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "7537fcb6-bf0d-4fa5-a763-9640e1b65ec6",
-							"name": "Torso",
-							"cost_type": "to_original_cost",
-							"cost": "+50",
-							"weight_type": "to_original_weight",
-							"weight": "+6 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "torso"
-								},
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "vitals"
-								}
-							],
-							"notes": "Roll 1d; on 1, the vitals are hit.; Don time: 15 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "5b54af9d-8e26-4bc4-a6cf-4ae14590f268",
-							"disabled": true,
-							"name": "Chest",
-							"reference": "LT102",
-							"cost_type": "to_original_cost",
-							"cost": "+37.5",
-							"weight_type": "to_original_weight",
-							"weight": "+4.5 lb",
-							"notes": "Hit location 9-10. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "15c2e3d9-3efa-4de9-aa59-0ad7fd4d1706",
-							"disabled": true,
-							"name": "Abdomen",
-							"reference": "LT102",
-							"cost_type": "to_original_cost",
-							"cost": "+37.5",
-							"weight_type": "to_original_weight",
-							"weight": "+4.5 lb",
-							"notes": "Hit location 11. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "5350630f-c347-4739-a07c-b9a2ed402364",
-							"disabled": true,
-							"name": "Groin",
-							"cost_type": "to_original_cost",
-							"cost": "+2.5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.3 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "groin"
-								}
-							],
-							"notes": "Don time: 1 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "0213477d-be25-40a0-a2f0-aa6cf5a1d8ab",
-							"disabled": true,
-							"name": "Arms",
-							"cost_type": "to_original_cost",
-							"cost": "+25",
-							"weight_type": "to_original_weight",
-							"weight": "+3 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "arm"
-								}
-							],
-							"notes": "Don time: 8 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "e871f102-13d8-491d-988b-d204bde5c994",
-							"disabled": true,
-							"name": "Shoulders",
-							"cost_type": "to_original_cost",
-							"cost": "+5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.6 lb",
-							"notes": "Roll 1d; on 6, the armor is hit.; Don time: 2 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "9b22d805-97f2-4ae5-950e-8137c45eae89",
-							"disabled": true,
-							"name": "Upper Arms",
-							"cost_type": "to_original_cost",
-							"cost": "+5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.6 lb",
-							"notes": "Roll 1d; on 5, the armor is hit.; Don time: 2 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "4faa11b2-7667-4c05-8c96-e85ab0532683",
-							"disabled": true,
-							"name": "Elbows",
-							"cost_type": "to_original_cost",
-							"cost": "+2.5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.3 lb",
-							"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "0b81c6d6-9ed1-4094-b19c-b1d2418b0c82",
-							"disabled": true,
-							"name": "Forearms",
-							"cost_type": "to_original_cost",
-							"cost": "+12.5",
-							"weight_type": "to_original_weight",
-							"weight": "+1.5 lb",
-							"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 4 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "d3831891-bcff-4ed2-b517-c38211263088",
-							"disabled": true,
-							"name": "Hands",
-							"cost_type": "to_original_cost",
-							"cost": "+5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.6 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "hand"
-								}
-							],
-							"notes": "Don time: 2 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "b8b33c36-4186-48f6-80bc-354ada211d95",
-							"disabled": true,
-							"name": "Legs",
-							"cost_type": "to_original_cost",
-							"cost": "+50",
-							"weight_type": "to_original_weight",
-							"weight": "+6 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "leg"
-								}
-							],
-							"notes": "Don time: 15 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "07bda4cb-7f85-4e2d-ad5b-a8559e72c770",
-							"disabled": true,
-							"name": "Thighs",
-							"cost_type": "to_original_cost",
-							"cost": "+22.5",
-							"weight_type": "to_original_weight",
-							"weight": "+2.7 lb",
-							"notes": "Roll 1d; on 5-6, the armor is hit.; Don time: 7 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "9de214dc-51a6-4c4e-8d43-66cd290c551a",
-							"disabled": true,
-							"name": "Knees",
-							"cost_type": "to_original_cost",
-							"cost": "+2.5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.3 lb",
-							"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "ba73b80c-015a-4f39-aac0-eab92e8bd7e9",
-							"disabled": true,
-							"name": "Shins",
-							"cost_type": "to_original_cost",
-							"cost": "+25",
-							"weight_type": "to_original_weight",
-							"weight": "+3 lb",
-							"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 8 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "fcd369b7-0804-4df6-924f-978a9d519cd8",
-							"disabled": true,
-							"name": "Feet",
-							"cost_type": "to_original_cost",
-							"cost": "+5",
-							"weight_type": "to_original_weight",
-							"weight": "+0.6 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "foot"
-								}
-							],
-							"notes": "Don time: 2 secs."
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "e0b827fd-91e3-451a-8b5d-31281d5e7939",
-							"disabled": true,
-							"name": "@Covers only half (front only, one arm, etc)@",
-							"reference": "LT100",
-							"cost_type": "to_base_cost",
-							"cost": "x0.5",
-							"weight_type": "to_base_weight",
-							"weight": "x0.5"
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "b0dfb304-06ae-4c2d-92cd-d29515d6fb8a",
-							"name": "Fortify 1 (skull)",
-							"reference": "DF1:30",
-							"cost_type": "to_final_cost",
-							"cost": "+2.5",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "skull"
-								}
-							]
-						},
-						{
-							"type": "eqp_modifier",
-							"id": "01e407e5-3c23-472a-ba4e-9ddebecee4ea",
-							"name": "Fortify 1 (torso)",
-							"reference": "DF1:30",
-							"cost_type": "to_final_cost",
-							"cost": "+25",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"amount": 1,
-									"location": "torso"
-								}
-							]
-						}
-					],
-					"calc": {
-						"extended_value": "87.5",
-						"extended_weight": "7.2 lb"
-					},
-					"notes": "DR 1; Flexible, susceptible to blunt trauma; Holdout: -1."
-				},
-				{
 					"type": "equipment",
 					"id": "88699cb4-143b-49d6-950e-220a4c65a6a6",
 					"equipped": true,
@@ -3851,10 +4114,10 @@
 					"equipped": true,
 					"quantity": 1,
 					"description": "C-notes",
-					"value": "51.5",
+					"value": "1.5",
 					"weight": "0 lb",
 					"calc": {
-						"extended_value": "51.5",
+						"extended_value": "1.5",
 						"extended_weight": "0 lb"
 					}
 				}
@@ -3870,7 +4133,7 @@
 			"weight": "0 lb",
 			"reference": "HT154",
 			"calc": {
-				"extended_value": "258.5",
+				"extended_value": "243.5",
 				"extended_weight": "2.5 lb"
 			},
 			"notes": "-6 to hit. DR 2. HP 2.",
@@ -3904,7 +4167,7 @@
 							"bulk": "-2",
 							"recoil": "3",
 							"calc": {
-								"level": 11,
+								"level": 13,
 								"range": "120/1,300",
 								"damage": "2d-1 pi+"
 							},
@@ -3991,7 +4254,7 @@
 						}
 					],
 					"calc": {
-						"extended_value": "257.5",
+						"extended_value": "242.5",
 						"extended_weight": "2.5 lb"
 					},
 					"features": [
@@ -4041,21 +4304,10 @@
 							"description": "Magical Power Item Energy",
 							"value": "5",
 							"weight": "0 lb",
+							"uses": 2,
+							"max_uses": 3,
 							"calc": {
 								"extended_value": "10",
-								"extended_weight": "0 lb"
-							}
-						},
-						{
-							"type": "equipment",
-							"id": "857cd867-147b-403d-b7c8-1a6bba73ddbb",
-							"equipped": true,
-							"quantity": 3,
-							"description": "Max Magical Power Item Energy",
-							"value": "5",
-							"weight": "0 lb",
-							"calc": {
-								"extended_value": "15",
 								"extended_weight": "0 lb"
 							}
 						}
@@ -4067,55 +4319,73 @@
 	"other_equipment": [
 		{
 			"type": "equipment_container",
-			"id": "c6d5019b-52cd-4192-b12c-c61b75816515",
+			"id": "85645bce-22b0-4214-9622-402a7c4cc88f",
 			"equipped": true,
-			"description": "Wizardly Grimoire (Light)",
-			"value": "100",
-			"weight": "3 lb",
+			"description": "Gear to get",
+			"value": "0",
+			"weight": "0 lb",
 			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
+				"extended_value": "350",
+				"extended_weight": "0 lb"
 			},
-			"open": true
-		},
-		{
-			"type": "equipment",
-			"id": "ef7e23cb-b270-444b-9e63-48112d0a47e1",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Purify Air)",
-			"value": "100",
-			"weight": "3 lb",
-			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "db097ecd-3c12-4b6e-9d36-3544b8eb46f0",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Haste)",
-			"value": "100",
-			"weight": "3 lb",
-			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "218da1b8-f4eb-40c4-8a9c-5922f3443ca1",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Wizardly Grimoire (Ignite Fire)",
-			"value": "100",
-			"weight": "3 lb",
-			"calc": {
-				"extended_value": "100",
-				"extended_weight": "3 lb"
-			}
+			"features": [
+				{
+					"type": "contained_weight_reduction",
+					"reduction": "100%"
+				}
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"id": "e7a787de-06b0-4abd-8bbb-b8029bce9b19",
+					"equipped": true,
+					"description": "Quick-Release Backpack",
+					"value": "300",
+					"weight": "3 lb",
+					"reference": "DF1:25",
+					"calc": {
+						"extended_value": "300",
+						"extended_weight": "3 lb"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "40 lb"
+								}
+							}
+						]
+					},
+					"notes": "40 lb. Drop as Free Action. Fragile items break on 1 on 1d.",
+					"categories": [
+						"Adventure-Wear"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment_container",
+					"id": "ac373309-9a54-4740-bd73-b4dbd0509e4d",
+					"equipped": true,
+					"description": "Scribe's Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					],
+					"open": true
+				}
+			]
 		}
 	],
 	"notes": [
@@ -4157,12 +4427,22 @@
 						{
 							"type": "note",
 							"id": "e0bef470-ca8f-4469-bdf4-796455e0a88a",
-							"text": "Library membership, $1000"
+							"text": "Lightened Armour, $55"
 						},
 						{
 							"type": "note",
 							"id": "528a9769-a179-40b4-ab15-ea37e85dc6f0",
 							"text": "An Alchemy workshop, $2000"
+						},
+						{
+							"type": "note",
+							"id": "ed1400af-72d3-4d8a-a120-481debe836a2",
+							"text": "Library membership, $1000"
+						},
+						{
+							"type": "note",
+							"id": "979fe329-4cc5-4013-adf1-c698b01d2aa5",
+							"text": "Quick-release backpack, $300"
 						}
 					]
 				},
