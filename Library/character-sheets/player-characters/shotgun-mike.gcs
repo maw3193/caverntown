@@ -672,7 +672,7 @@
 			}
 		}
 	],
-	"total_points": 267,
+	"total_points": 283,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -680,7 +680,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 201
+				"points": 231
 			},
 			"open": true,
 			"children": [
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 93
+						"points": 123
 					},
 					"open": true,
 					"children": [
@@ -887,12 +887,13 @@
 						{
 							"type": "advantage",
 							"id": "e0d35d36-0c1a-4dab-a707-1aee6c7df8bd",
+							"disabled": true,
 							"name": "Combat Reflexes",
 							"mental": true,
 							"base_points": 15,
 							"reference": "B43",
 							"calc": {
-								"points": 15
+								"points": 0
 							},
 							"prereqs": {
 								"type": "prereq_list",
@@ -982,7 +983,6 @@
 						{
 							"type": "advantage",
 							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
-							"disabled": true,
 							"name": "Enhanced Parry (Area Defense)",
 							"mental": true,
 							"levels": "0",
@@ -1010,14 +1010,13 @@
 						{
 							"type": "advantage",
 							"id": "70f78351-7696-4d9f-9e81-47f509eec62a",
-							"disabled": true,
 							"name": "Enhanced Time Sense",
 							"mental": true,
 							"exotic": true,
 							"base_points": 45,
 							"reference": "B52,MA44",
 							"calc": {
-								"points": 0
+								"points": 45
 							},
 							"prereqs": {
 								"type": "prereq_list",
@@ -1615,7 +1614,7 @@
 				{
 					"type": "advantage",
 					"id": "40128ae0-6b64-47be-9a4a-cd1799851420",
-					"name": "Dependency (Deathliness or Mana)",
+					"name": "Dependency (High Deathliness or Mana)",
 					"physical": true,
 					"exotic": true,
 					"modifiers": [
@@ -3586,6 +3585,10 @@
 									"reference": "Gun-Fu:17",
 									"difficulty": "a",
 									"points": 0,
+									"calc": {
+										"level": 3,
+										"rsl": "-10"
+									},
 									"default": {
 										"type": "parry",
 										"name": "Guns",
@@ -4974,7 +4977,7 @@
 					"usage": "Area Defense",
 					"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
 					"calc": {
-						"level": 5,
+						"level": 10,
 						"parry": "",
 						"block": "",
 						"damage": ""
@@ -5165,8 +5168,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "810",
-				"extended_weight": "10.9 lb"
+				"extended_value": "802",
+				"extended_weight": "10.6 lb"
 			},
 			"notes": "Malf 16.",
 			"categories": [
@@ -5178,7 +5181,6 @@
 					"type": "equipment",
 					"id": "d8807031-e43a-4f66-8f4f-6b1c21a0b19c",
 					"equipped": true,
-					"quantity": 2,
 					"description": "20-gauge",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5194,8 +5196,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "4",
-						"extended_weight": "0.15 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"notes": "Powder and shot. Shotshell.",
 					"categories": [
@@ -5207,7 +5209,7 @@
 					"type": "equipment",
 					"id": "770c592c-fba6-4fa5-8a5f-ad73dae2e38d",
 					"equipped": true,
-					"quantity": 3,
+					"quantity": 1,
 					"description": "20-gauge Ball",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5223,8 +5225,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "6",
-						"extended_weight": "0.225 lb"
+						"extended_value": "2",
+						"extended_weight": "0.075 lb"
 					},
 					"notes": "Powder and Ball",
 					"categories": [
@@ -5256,7 +5258,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 8,
+			"quantity": 3,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5272,8 +5274,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "16",
-				"extended_weight": "0.6 lb"
+				"extended_value": "6",
+				"extended_weight": "0.225 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5285,13 +5287,14 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
+			"quantity": 11,
 			"description": "20-gauge spent cartridge",
 			"value": "0.08",
 			"weight": "0.2 lb",
 			"reference": "HT176",
 			"calc": {
-				"extended_value": "0",
-				"extended_weight": "0 lb"
+				"extended_value": "0.88",
+				"extended_weight": "2.2 lb"
 			},
 			"notes": "Allows reloading for 50% cost",
 			"categories": [
@@ -5303,7 +5306,6 @@
 			"type": "equipment",
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
-			"quantity": 2,
 			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5319,8 +5321,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "4",
-				"extended_weight": "0.15 lb"
+				"extended_value": "0",
+				"extended_weight": "0 lb"
 			},
 			"notes": "Powder and Ball",
 			"categories": [
@@ -5433,6 +5435,23 @@
 				},
 				{
 					"type": "equipment",
+					"id": "9bf581fb-6814-4d2c-8bb7-09683796f93b",
+					"equipped": true,
+					"quantity": 1,
+					"description": "$002 C-note",
+					"value": "2",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
 					"id": "83e5dfc0-5929-463e-a3f4-e69e2f38fe1f",
 					"equipped": true,
 					"description": "$005 C-note",
@@ -5526,33 +5545,11 @@
 						"C-note",
 						"Money"
 					]
-				},
-				{
-					"type": "equipment",
-					"id": "9bf581fb-6814-4d2c-8bb7-09683796f93b",
-					"equipped": true,
-					"quantity": 1,
-					"description": "$002 C-note",
-					"value": "2",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
 				}
 			]
 		}
 	],
 	"notes": [
-		{
-			"type": "note",
-			"id": "62e32af6-b3ef-4dcd-aff3-9b7833cc72fe",
-			"text": "Area Defense: 19(Skill)/2+3-15+1(Combat Reflexes)+2(Acc)+3(RoF)=3"
-		},
 		{
 			"type": "note",
 			"id": "95444598-7d18-4952-b0a4-366827a02113",
