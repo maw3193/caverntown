@@ -672,7 +672,7 @@
 			}
 		}
 	],
-	"total_points": 267,
+	"total_points": 283,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -680,7 +680,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 201
+				"points": 231
 			},
 			"open": true,
 			"children": [
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 93
+						"points": 123
 					},
 					"open": true,
 					"children": [
@@ -887,12 +887,13 @@
 						{
 							"type": "advantage",
 							"id": "e0d35d36-0c1a-4dab-a707-1aee6c7df8bd",
+							"disabled": true,
 							"name": "Combat Reflexes",
 							"mental": true,
 							"base_points": 15,
 							"reference": "B43",
 							"calc": {
-								"points": 15
+								"points": 0
 							},
 							"prereqs": {
 								"type": "prereq_list",
@@ -982,7 +983,6 @@
 						{
 							"type": "advantage",
 							"id": "3c3031dd-7eb9-4d63-8100-3abd2d35acea",
-							"disabled": true,
 							"name": "Enhanced Parry (Area Defense)",
 							"mental": true,
 							"levels": "0",
@@ -1010,14 +1010,13 @@
 						{
 							"type": "advantage",
 							"id": "70f78351-7696-4d9f-9e81-47f509eec62a",
-							"disabled": true,
 							"name": "Enhanced Time Sense",
 							"mental": true,
 							"exotic": true,
 							"base_points": 45,
 							"reference": "B52,MA44",
 							"calc": {
-								"points": 0
+								"points": 45
 							},
 							"prereqs": {
 								"type": "prereq_list",
@@ -3586,6 +3585,10 @@
 									"reference": "Gun-Fu:17",
 									"difficulty": "a",
 									"points": 0,
+									"calc": {
+										"level": 3,
+										"rsl": "-10"
+									},
 									"default": {
 										"type": "parry",
 										"name": "Guns",
@@ -4974,7 +4977,7 @@
 					"usage": "Area Defense",
 					"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
 					"calc": {
-						"level": 5,
+						"level": 10,
 						"parry": "",
 						"block": "",
 						"damage": ""
@@ -5547,11 +5550,6 @@
 		}
 	],
 	"notes": [
-		{
-			"type": "note",
-			"id": "62e32af6-b3ef-4dcd-aff3-9b7833cc72fe",
-			"text": "Area Defense: 19(Skill)/2+3-15+1(Combat Reflexes)+2(Acc)+3(RoF)=3"
-		},
 		{
 			"type": "note",
 			"id": "95444598-7d18-4952-b0a4-366827a02113",
