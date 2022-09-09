@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Aug 24, 2022, 7:43 PM",
+	"modified_date": "Sep 9, 2022, 11:00 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -678,7 +678,7 @@
 			}
 		}
 	],
-	"total_points": 267,
+	"total_points": 283,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -844,7 +844,7 @@
 			"id": "307b76c8-4edf-43b0-9a95-0d3e5810d746",
 			"name": "Wizard Guild Rank",
 			"physical": true,
-			"levels": "1",
+			"levels": "2",
 			"points_per_level": 5,
 			"modifiers": [
 				{
@@ -870,7 +870,7 @@
 			],
 			"reference": "B29",
 			"calc": {
-				"points": 5
+				"points": 10
 			},
 			"categories": [
 				"Advantage"
@@ -920,7 +920,7 @@
 			"reference": "DFC2:45",
 			"ancestry": "Human",
 			"calc": {
-				"points": 20
+				"points": 35
 			},
 			"open": true,
 			"children": [
@@ -978,7 +978,7 @@
 					"name": "Magery",
 					"mental": true,
 					"supernatural": true,
-					"levels": "0",
+					"levels": "1",
 					"base_points": 5,
 					"points_per_level": 10,
 					"modifiers": [
@@ -1058,7 +1058,7 @@
 					],
 					"reference": "B66",
 					"calc": {
-						"points": 5
+						"points": 15
 					},
 					"features": [
 						{
@@ -1102,7 +1102,7 @@
 					"id": "89807409-8a87-4def-ad5a-94fa96cf85ce",
 					"name": "Talent (Dark Gift)",
 					"mental": true,
-					"levels": "1",
+					"levels": "2",
 					"points_per_level": 5,
 					"modifiers": [
 						{
@@ -1127,7 +1127,7 @@
 					],
 					"reference": "B89",
 					"calc": {
-						"points": 5
+						"points": 10
 					},
 					"features": [
 						{
@@ -2126,6 +2126,36 @@
 	],
 	"skills": [
 		{
+			"type": "skill",
+			"id": "cfcbce28-bf61-4bb5-b854-320884a23136",
+			"name": "Hazardous Materials",
+			"reference": "B199",
+			"specialization": "Magical",
+			"tech_level": "5",
+			"difficulty": "iq/a",
+			"points": 0,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-3"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
 			"type": "skill_container",
 			"id": "ee073ced-c3a2-4873-8e23-fdd11a8ddc4b",
 			"name": "Scholar",
@@ -2184,7 +2214,7 @@
 					"reference": "B199,MA57",
 					"specialization": "Magical Writings",
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"calc": {
 						"level": 16,
 						"rsl": "IQ+1"
@@ -2200,7 +2230,7 @@
 					"reference": "B199,MA57",
 					"specialization": "Demons",
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"calc": {
 						"level": 16,
 						"rsl": "IQ+1"
@@ -2216,7 +2246,7 @@
 					"reference": "B199,MA57",
 					"specialization": "Undead",
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"calc": {
 						"level": 16,
 						"rsl": "IQ+1"
@@ -2410,7 +2440,7 @@
 					"name": "Occultism",
 					"reference": "B212",
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
@@ -2474,10 +2504,10 @@
 					"reference": "B174",
 					"tech_level": "5",
 					"difficulty": "iq/vh",
-					"points": 2,
+					"points": 20,
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 20,
+						"rsl": "IQ+5"
 					},
 					"categories": [
 						"Natural Science",
@@ -2558,7 +2588,7 @@
 					"name": "Thaumatology",
 					"reference": "B225",
 					"difficulty": "iq/vh",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -7,
@@ -2567,8 +2597,8 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 15,
+						"rsl": "IQ+0"
 					},
 					"defaults": [
 						{
@@ -2882,7 +2912,7 @@
 						"points": -7
 					},
 					"calc": {
-						"level": 10,
+						"level": 8,
 						"rsl": "DX-1"
 					},
 					"defaults": [
@@ -2913,7 +2943,7 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 10,
+						"level": 8,
 						"rsl": "DX-1"
 					},
 					"defaults": [
@@ -3045,8 +3075,8 @@
 					"duration": "1 sec",
 					"points": 0,
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"categories": [
 						"Fire"
@@ -3069,8 +3099,8 @@
 					"duration": "Instant",
 					"points": 0,
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"categories": [
 						"Fire"
@@ -3111,8 +3141,8 @@
 						}
 					],
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"prereqs": {
 						"type": "prereq_list",
@@ -3167,8 +3197,8 @@
 					"duration": "1 min",
 					"points": 0,
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"prereqs": {
 						"type": "prereq_list",
@@ -3239,8 +3269,8 @@
 						}
 					],
 					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
+						"level": 14,
+						"rsl": "IQ-1"
 					},
 					"prereqs": {
 						"type": "prereq_list",
@@ -3390,8 +3420,8 @@
 					"parry": "0F",
 					"block": "No",
 					"calc": {
-						"level": 6,
-						"parry": "7F",
+						"level": 4,
+						"parry": "5F",
 						"block": "No",
 						"damage": "1d-2 cut"
 					},
@@ -3438,8 +3468,8 @@
 					"parry": "0F",
 					"block": "No",
 					"calc": {
-						"level": 6,
-						"parry": "7F",
+						"level": 4,
+						"parry": "5F",
 						"block": "No",
 						"damage": "1d-2 imp"
 					},
@@ -3941,16 +3971,15 @@
 		},
 		{
 			"type": "equipment_container",
-			"id": "1d792701-c4b4-4998-8704-3d8a5b8d19d8",
+			"id": "4d1db104-d18a-487e-8637-6d844dbed894",
 			"equipped": true,
-			"description": "Backpack, Small",
-			"tech_level": "1",
-			"value": "60",
+			"description": "Quick-Release Backpack",
+			"value": "300",
 			"weight": "3 lb",
-			"reference": "DF1:23",
+			"reference": "DF1:25",
 			"calc": {
-				"extended_value": "949",
-				"extended_weight": "15.392 lb"
+				"extended_value": "3880.75",
+				"extended_weight": "17.392 lb"
 			},
 			"prereqs": {
 				"type": "prereq_list",
@@ -3966,9 +3995,9 @@
 					}
 				]
 			},
-			"notes": "Holds 40 lbs of gear",
+			"notes": "40 lb. Drop as Free Action. Fragile items break on 1 on 1d.",
 			"categories": [
-				"Camping and Survival Gear"
+				"Adventure-Wear"
 			],
 			"open": true,
 			"children": [
@@ -4097,27 +4126,45 @@
 				},
 				{
 					"type": "equipment",
+					"id": "eaf0ff08-ddc3-4613-82f9-1ca758060577",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Wizards Guild library card",
+					"value": "1000",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "1000",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Valid until day 365"
+				},
+				{
+					"type": "equipment_container",
+					"id": "ae8fd992-1b82-4bdf-a663-bb33801f2faf",
+					"equipped": true,
+					"description": "Scribe's Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment",
 					"id": "88699cb4-143b-49d6-950e-220a4c65a6a6",
 					"equipped": true,
 					"quantity": 1,
 					"description": "C-notes",
-					"value": "373.33",
+					"value": "2016.58",
 					"weight": "0 lb",
 					"calc": {
-						"extended_value": "373.33",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"type": "equipment",
-					"id": "9c787ca4-0675-488c-9d86-72c51969570d",
-					"equipped": true,
-					"quantity": 1,
-					"description": "C-notes",
-					"value": "1.5",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "1.5",
+						"extended_value": "2016.58",
 						"extended_weight": "0 lb"
 					}
 				}
@@ -4314,9 +4361,50 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "equipment",
+			"id": "d5443fa3-e337-4dfd-809d-24aeccfa0934",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Scrounged Backpack Alchemy Lab",
+			"value": "500",
+			"weight": "15 lb",
+			"reference": "DF1:26",
+			"calc": {
+				"extended_value": "500",
+				"extended_weight": "15 lb"
+			},
+			"notes": "Basic EQ to identify, -2 to brew.",
+			"categories": [
+				"Esoteric Supplies"
+			]
 		}
 	],
 	"other_equipment": [
+		{
+			"type": "equipment",
+			"id": "c0dfd91e-3fa9-4243-bfd4-0c6d4bf21630",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Library Memorisation: Alchemy",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "0",
+				"extended_weight": "0 lb"
+			},
+			"features": [
+				{
+					"type": "skill_point_bonus",
+					"amount": 4,
+					"name": {
+						"compare": "is",
+						"qualifier": "Alchemy"
+					}
+				}
+			]
+		},
 		{
 			"type": "equipment_container",
 			"id": "85645bce-22b0-4214-9622-402a7c4cc88f",
@@ -4325,7 +4413,7 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "350",
+				"extended_value": "0",
 				"extended_weight": "0 lb"
 			},
 			"features": [
@@ -4334,58 +4422,7 @@
 					"reduction": "100%"
 				}
 			],
-			"open": true,
-			"children": [
-				{
-					"type": "equipment_container",
-					"id": "e7a787de-06b0-4abd-8bbb-b8029bce9b19",
-					"equipped": true,
-					"description": "Quick-Release Backpack",
-					"value": "300",
-					"weight": "3 lb",
-					"reference": "DF1:25",
-					"calc": {
-						"extended_value": "300",
-						"extended_weight": "3 lb"
-					},
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "40 lb"
-								}
-							}
-						]
-					},
-					"notes": "40 lb. Drop as Free Action. Fragile items break on 1 on 1d.",
-					"categories": [
-						"Adventure-Wear"
-					],
-					"open": true
-				},
-				{
-					"type": "equipment_container",
-					"id": "ac373309-9a54-4740-bd73-b4dbd0509e4d",
-					"equipped": true,
-					"description": "Scribe's Kit",
-					"value": "50",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "2 lb"
-					},
-					"categories": [
-						"Writing Equipment"
-					],
-					"open": true
-				}
-			]
+			"open": true
 		}
 	],
 	"notes": [
@@ -4433,16 +4470,6 @@
 							"type": "note",
 							"id": "528a9769-a179-40b4-ab15-ea37e85dc6f0",
 							"text": "An Alchemy workshop, $2000"
-						},
-						{
-							"type": "note",
-							"id": "ed1400af-72d3-4d8a-a120-481debe836a2",
-							"text": "Library membership, $1000"
-						},
-						{
-							"type": "note",
-							"id": "979fe329-4cc5-4013-adf1-c698b01d2aa5",
-							"text": "Quick-release backpack, $300"
 						}
 					]
 				},
@@ -4479,7 +4506,7 @@
 		{
 			"type": "note",
 			"id": "dc80d589-8422-4594-9d24-e7c8e3f52fcf",
-			"text": "Wizard Rank 1 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (60% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 5 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - discounted off-template training."
+			"text": "Wizard Rank 2 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (80% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 7 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - discounted off-template training."
 		}
 	],
 	"calc": {
