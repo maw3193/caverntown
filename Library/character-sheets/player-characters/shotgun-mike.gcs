@@ -1615,7 +1615,7 @@
 				{
 					"type": "advantage",
 					"id": "40128ae0-6b64-47be-9a4a-cd1799851420",
-					"name": "Dependency (Deathliness or Mana)",
+					"name": "Dependency (High Deathliness or Mana)",
 					"physical": true,
 					"exotic": true,
 					"modifiers": [
