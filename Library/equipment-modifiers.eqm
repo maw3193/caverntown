@@ -19,6 +19,13 @@
 			"cost_type": "to_base_cost",
 			"cost": "-0.6 CF",
 			"notes": "-1 Acc (must be done manually), -1 HT (usually 11), -1 Malf (usually 16)"
+		},
+		{
+			"type": "eqp_modifier",
+			"id": "38ee3322-81c8-4665-978f-dcce03b09942",
+			"name": "Orcish",
+			"reference": "DFRPGMI2:8",
+			"notes": "Inflicts +1 point of injury; If visible, carrier is treated as if they have Social Stigma (Savage)"
 		}
 	]
 }
