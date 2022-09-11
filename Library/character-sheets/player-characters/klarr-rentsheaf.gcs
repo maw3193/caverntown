@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 24, 2022, 12:35 AM",
-	"modified_date": "Sep 9, 2022, 11:00 PM",
+	"modified_date": "Sep 11, 2022, 10:21 PM",
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -2912,7 +2912,7 @@
 						"points": -7
 					},
 					"calc": {
-						"level": 8,
+						"level": 10,
 						"rsl": "DX-1"
 					},
 					"defaults": [
@@ -2943,7 +2943,7 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 8,
+						"level": 10,
 						"rsl": "DX-1"
 					},
 					"defaults": [
@@ -3420,8 +3420,8 @@
 					"parry": "0F",
 					"block": "No",
 					"calc": {
-						"level": 4,
-						"parry": "5F",
+						"level": 6,
+						"parry": "7F",
 						"block": "No",
 						"damage": "1d-2 cut"
 					},
@@ -3468,8 +3468,8 @@
 					"parry": "0F",
 					"block": "No",
 					"calc": {
-						"level": 4,
-						"parry": "5F",
+						"level": 6,
+						"parry": "7F",
 						"block": "No",
 						"damage": "1d-2 imp"
 					},
@@ -3537,7 +3537,7 @@
 			"modifiers": [
 				{
 					"type": "eqp_modifier",
-					"id": "da66023f-ca6d-436c-a262-b3399d82bb17",
+					"id": "469f7af2-f5b4-4e93-bb69-e1fc87b33780",
 					"disabled": true,
 					"name": "Head",
 					"cost_type": "to_original_cost",
@@ -3560,7 +3560,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "55a67e21-31bb-4b38-b91b-cb594959daf2",
+					"id": "affd57cd-a438-40da-85f4-bda74ae55fc9",
 					"name": "Skull",
 					"cost_type": "to_original_cost",
 					"cost": "+10",
@@ -3577,7 +3577,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "cb1d0e68-9701-4e21-9ed3-5ad3a62a8ba3",
+					"id": "1fa50698-82a1-40fb-bd88-599af3cc3b35",
 					"disabled": true,
 					"name": "Face",
 					"cost_type": "to_original_cost",
@@ -3595,7 +3595,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "50098537-aca2-4445-9668-adf97ce72cb4",
+					"id": "265fea63-7fdb-4c26-9ac8-d74980487e81",
 					"disabled": true,
 					"name": "Neck",
 					"cost_type": "to_original_cost",
@@ -3613,7 +3613,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "7537fcb6-bf0d-4fa5-a763-9640e1b65ec6",
+					"id": "35c99b72-6ebe-4a35-b7e0-4773c2864538",
 					"name": "Torso",
 					"cost_type": "to_original_cost",
 					"cost": "+50",
@@ -3635,7 +3635,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "5b54af9d-8e26-4bc4-a6cf-4ae14590f268",
+					"id": "c890d507-0e70-4ba4-a2ed-0f7f8cddd8b2",
 					"disabled": true,
 					"name": "Chest",
 					"reference": "LT102",
@@ -3647,7 +3647,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "15c2e3d9-3efa-4de9-aa59-0ad7fd4d1706",
+					"id": "ced83147-314f-4294-b833-ab16cd5834ac",
 					"disabled": true,
 					"name": "Abdomen",
 					"reference": "LT102",
@@ -3659,7 +3659,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "5350630f-c347-4739-a07c-b9a2ed402364",
+					"id": "b13ed207-e761-487a-8fe1-ea2240132c4e",
 					"disabled": true,
 					"name": "Groin",
 					"cost_type": "to_original_cost",
@@ -3677,7 +3677,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "0213477d-be25-40a0-a2f0-aa6cf5a1d8ab",
+					"id": "92e4440d-acab-44d8-a51b-05205c35e81b",
 					"disabled": true,
 					"name": "Arms",
 					"cost_type": "to_original_cost",
@@ -3695,7 +3695,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "e871f102-13d8-491d-988b-d204bde5c994",
+					"id": "33879684-76c0-4191-8e6d-1e57ddb8d09e",
 					"disabled": true,
 					"name": "Shoulders",
 					"cost_type": "to_original_cost",
@@ -3706,7 +3706,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "9b22d805-97f2-4ae5-950e-8137c45eae89",
+					"id": "f69154d4-5ddc-4eb5-b43e-39701fc924b7",
 					"disabled": true,
 					"name": "Upper Arms",
 					"cost_type": "to_original_cost",
@@ -3717,7 +3717,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "4faa11b2-7667-4c05-8c96-e85ab0532683",
+					"id": "311d632e-1a04-42bf-92b6-735fb2807bd9",
 					"disabled": true,
 					"name": "Elbows",
 					"cost_type": "to_original_cost",
@@ -3728,7 +3728,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "0b81c6d6-9ed1-4094-b19c-b1d2418b0c82",
+					"id": "43436cc0-2e1a-4e81-a640-3d4b8c29401e",
 					"disabled": true,
 					"name": "Forearms",
 					"cost_type": "to_original_cost",
@@ -3739,7 +3739,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "d3831891-bcff-4ed2-b517-c38211263088",
+					"id": "da990862-0fbe-4ccb-a905-097d79e521ed",
 					"disabled": true,
 					"name": "Hands",
 					"cost_type": "to_original_cost",
@@ -3757,7 +3757,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "b8b33c36-4186-48f6-80bc-354ada211d95",
+					"id": "4dc1799b-ddd3-4810-854d-5f51aa781f49",
 					"disabled": true,
 					"name": "Legs",
 					"cost_type": "to_original_cost",
@@ -3775,7 +3775,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "07bda4cb-7f85-4e2d-ad5b-a8559e72c770",
+					"id": "974c550f-b817-47a4-bdba-6405fe5aa8cc",
 					"disabled": true,
 					"name": "Thighs",
 					"cost_type": "to_original_cost",
@@ -3786,7 +3786,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "9de214dc-51a6-4c4e-8d43-66cd290c551a",
+					"id": "737fa1bc-7f82-4792-8020-94d0113cc44a",
 					"disabled": true,
 					"name": "Knees",
 					"cost_type": "to_original_cost",
@@ -3797,7 +3797,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "ba73b80c-015a-4f39-aac0-eab92e8bd7e9",
+					"id": "764d243c-eb84-4fa1-bb4c-150495be4b89",
 					"disabled": true,
 					"name": "Shins",
 					"cost_type": "to_original_cost",
@@ -3808,7 +3808,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "fcd369b7-0804-4df6-924f-978a9d519cd8",
+					"id": "e23b27ab-b501-4937-bab0-f7707e5e6963",
 					"disabled": true,
 					"name": "Feet",
 					"cost_type": "to_original_cost",
@@ -3826,7 +3826,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "e0b827fd-91e3-451a-8b5d-31281d5e7939",
+					"id": "2072bfca-fade-4a23-a05b-5779799d4ea5",
 					"disabled": true,
 					"name": "@Covers only half (front only, one arm, etc)@",
 					"reference": "LT100",
@@ -3837,7 +3837,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "b0dfb304-06ae-4c2d-92cd-d29515d6fb8a",
+					"id": "223fe5f1-affa-4062-922d-57a44f888dd4",
 					"name": "Fortify 1 (skull)",
 					"reference": "DF1:30",
 					"cost_type": "to_final_cost",
@@ -3852,7 +3852,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"id": "01e407e5-3c23-472a-ba4e-9ddebecee4ea",
+					"id": "4e5be531-728c-4701-9b4d-32cde592d566",
 					"name": "Fortify 1 (torso)",
 					"reference": "DF1:30",
 					"cost_type": "to_final_cost",
@@ -3864,11 +3864,29 @@
 							"location": "torso"
 						}
 					]
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "6742c7d8-ac57-4849-870c-6ea37d296213",
+					"name": "Lighten  -25% (Skull)",
+					"cost_type": "to_original_cost",
+					"cost": "+5",
+					"weight_type": "to_final_weight",
+					"weight": "-0.3 lb"
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "49ac1ec0-ca8c-4e9f-b1bd-7b5b97d448e7",
+					"name": "Lighten -25% (Torso)",
+					"cost_type": "to_original_cost",
+					"cost": "+50",
+					"weight_type": "to_original_weight",
+					"weight": "-1.5 lb"
 				}
 			],
 			"calc": {
-				"extended_value": "87.5",
-				"extended_weight": "7.2 lb"
+				"extended_value": "142.5",
+				"extended_weight": "5.4 lb"
 			},
 			"notes": "DR 1; Flexible, susceptible to blunt trauma; Holdout: -1."
 		},
@@ -3971,14 +3989,14 @@
 		},
 		{
 			"type": "equipment_container",
-			"id": "4d1db104-d18a-487e-8637-6d844dbed894",
+			"id": "723878ed-312b-4bdc-b69c-c6a65e4b5369",
 			"equipped": true,
 			"description": "Quick-Release Backpack",
 			"value": "300",
 			"weight": "3 lb",
 			"reference": "DF1:25",
 			"calc": {
-				"extended_value": "3880.75",
+				"extended_value": "2725.75",
 				"extended_weight": "17.392 lb"
 			},
 			"prereqs": {
@@ -4003,7 +4021,24 @@
 			"children": [
 				{
 					"type": "equipment_container",
-					"id": "67ee8d08-3ca5-43fc-90db-431472aafce8",
+					"id": "d03bcae6-31d5-4183-91cb-502af76f3703",
+					"equipped": true,
+					"description": "Scribe's Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment_container",
+					"id": "99fa156f-8e5f-4707-b5ec-bf0ea12583a5",
 					"equipped": true,
 					"description": "Fire Magic for No-Hopers (Wizardly Grimoire of Ignite Fire, Shape Fire, Seek Fire, Create Fire, Flame Jet)",
 					"value": "500",
@@ -4063,7 +4098,7 @@
 					"children": [
 						{
 							"type": "equipment",
-							"id": "b9bc5b16-cbb1-4fee-9de2-3581ec36de5c",
+							"id": "0881e5bb-ebbb-4439-9a97-74afaaad1d00",
 							"equipped": true,
 							"quantity": 1,
 							"description": "Scholarly Power Item Energy",
@@ -4080,7 +4115,7 @@
 				},
 				{
 					"type": "equipment",
-					"id": "8cf263ad-ad41-40ec-a124-d3900613a1f6",
+					"id": "b8e5f573-525c-4fe1-852c-a5dec1cbef0b",
 					"equipped": true,
 					"quantity": 5,
 					"description": ".45 (11.43x28mmR)",
@@ -4090,7 +4125,7 @@
 					"modifiers": [
 						{
 							"type": "eqp_modifier",
-							"id": "51980a92-2da2-4c56-8388-a6e4057ccd50",
+							"id": "9f365db4-c136-45dc-a7f3-99541c98b3c6",
 							"name": "Shattersand Explosive",
 							"cost_type": "to_original_cost",
 							"cost": "x5",
@@ -4108,7 +4143,7 @@
 				},
 				{
 					"type": "equipment",
-					"id": "84c5e2d4-a8c9-4207-afee-373091e7f94b",
+					"id": "42849d28-6060-42a9-a4c4-2fd59a24e340",
 					"equipped": true,
 					"quantity": 1,
 					"description": "Bandages",
@@ -4126,7 +4161,7 @@
 				},
 				{
 					"type": "equipment",
-					"id": "eaf0ff08-ddc3-4613-82f9-1ca758060577",
+					"id": "de7b4bfa-1ac5-4378-841a-d216bff22d81",
 					"equipped": true,
 					"quantity": 1,
 					"description": "Wizards Guild library card",
@@ -4139,32 +4174,15 @@
 					"notes": "Valid until day 365"
 				},
 				{
-					"type": "equipment_container",
-					"id": "ae8fd992-1b82-4bdf-a663-bb33801f2faf",
-					"equipped": true,
-					"description": "Scribe's Kit",
-					"value": "50",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "2 lb"
-					},
-					"categories": [
-						"Writing Equipment"
-					],
-					"open": true
-				},
-				{
 					"type": "equipment",
-					"id": "88699cb4-143b-49d6-950e-220a4c65a6a6",
+					"id": "808bb56e-1bf1-4ca2-aa58-5a5c364bb0cb",
 					"equipped": true,
 					"quantity": 1,
 					"description": "C-notes",
-					"value": "2016.58",
+					"value": "861.58",
 					"weight": "0 lb",
 					"calc": {
-						"extended_value": "2016.58",
+						"extended_value": "861.58",
 						"extended_weight": "0 lb"
 					}
 				}
@@ -4361,10 +4379,12 @@
 					]
 				}
 			]
-		},
+		}
+	],
+	"other_equipment": [
 		{
 			"type": "equipment",
-			"id": "d5443fa3-e337-4dfd-809d-24aeccfa0934",
+			"id": "cf63a09e-b07f-4191-9634-d117fc860af3",
 			"equipped": true,
 			"quantity": 1,
 			"description": "Scrounged Backpack Alchemy Lab",
@@ -4379,9 +4399,72 @@
 			"categories": [
 				"Esoteric Supplies"
 			]
-		}
-	],
-	"other_equipment": [
+		},
+		{
+			"type": "equipment_container",
+			"id": "c52b5e03-90d5-4f15-955f-f198777c2a7d",
+			"equipped": true,
+			"description": "What do your elf-eyes see? (Wizardly Grimoire of Detect Magic, Mage Sight, Light, Mage Light)",
+			"value": "400",
+			"weight": "12 lb",
+			"calc": {
+				"extended_value": "400",
+				"extended_weight": "12 lb"
+			},
+			"features": [
+				{
+					"type": "spell_point_bonus",
+					"amount": 1,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Detect Magic"
+					}
+				},
+				{
+					"type": "spell_point_bonus",
+					"amount": 1,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mage Sight"
+					}
+				},
+				{
+					"type": "spell_point_bonus",
+					"amount": 1,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Light"
+					}
+				},
+				{
+					"type": "spell_point_bonus",
+					"amount": 1,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mage Light"
+					}
+				}
+			],
+			"notes": "Ordered, arrives Day 14",
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"id": "8ad79fb5-f5a0-4d18-a504-8ed04bd211c0",
+			"equipped": true,
+			"description": "Dialogue with the Six-Armed Goddess (Textbook of Spoken Demontongue)",
+			"value": "100",
+			"weight": "6 lb",
+			"calc": {
+				"extended_value": "100",
+				"extended_weight": "6 lb"
+			},
+			"open": true
+		},
 		{
 			"type": "equipment",
 			"id": "c0dfd91e-3fa9-4243-bfd4-0c6d4bf21630",
@@ -4439,13 +4522,8 @@
 				},
 				{
 					"type": "note",
-					"id": "91f680a1-db54-41d3-9e5e-4f1bc8669f4c",
-					"text": "what low-prerequisite spells are worth it?\nPurify Air\nHaste -> Grease\nLight\nIgnite Fire -> Shape Fire + Create Fire -> Flame Jet"
-				},
-				{
-					"type": "note",
 					"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
-					"text": "What mental skills should go in books?\nTextbook on Lockpicking (2) $100\nTextbook on Merchant (2) $50"
+					"text": "Other books:\n* \"Housekeeping for the dedicated Servant\" Grimoire of Haste, Hinder, Grease, Great Haste $400 12lbs\n* \"Lazy Lockpicking\" Grimoire of Apportation, Locksmith, Lockmaster $300 9lbs\n* \"Stick your pick in it!\" Textbook of Lockpicking $100 6lbs\n* \"Touch, lick or stand near?\" Textbook of Hazardous Materials (Magical) $50 6lbs\n* \"Ia! Ia! Atoep Fhtagn!\" Textbook of Spoken Elder Tongue $100 6lbs\n* \"Diabolical Runes\" Textbook of Written Demontongue $100 6lbs\n* \"Uruk glob ishi krimp shar-kuk\" Textbook of Spoken Orcish $50 6lbs\n* \"Poring over Ancient texts\" Textbook of Written Ancient $100 6lbs\n* \"Destroy the Brain and other helpful advice\" Primer of Physiology (Undead) $50 3lbs\n* \"He's a ballchinian, and other demonic weak-spots\" Primer of Physiology (Demon) $50 3lbs"
 				}
 			]
 		},
@@ -4461,11 +4539,6 @@
 					"text": "With Money",
 					"open": true,
 					"children": [
-						{
-							"type": "note",
-							"id": "e0bef470-ca8f-4469-bdf4-796455e0a88a",
-							"text": "Lightened Armour, $55"
-						},
 						{
 							"type": "note",
 							"id": "528a9769-a179-40b4-ab15-ea37e85dc6f0",
