@@ -654,10 +654,10 @@
 		{
 			"attr_id": "fp",
 			"adj": 0,
-			"damage": 0,
+			"damage": 2,
 			"calc": {
 				"value": 13,
-				"current": 13,
+				"current": 11,
 				"points": 0
 			}
 		},
@@ -4891,8 +4891,8 @@
 			"weight": "1 lb",
 			"reference": "HT154",
 			"calc": {
-				"extended_value": "1410",
-				"extended_weight": "11.525 lb"
+				"extended_value": "1410.08",
+				"extended_weight": "11.725 lb"
 			},
 			"categories": [
 				"Firearm Accessories"
@@ -5197,8 +5197,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "1400",
-						"extended_weight": "10.525 lb"
+						"extended_value": "1400.08",
+						"extended_weight": "10.725 lb"
 					},
 					"notes": "Malf 16.",
 					"categories": [
@@ -5266,13 +5266,14 @@
 							"type": "equipment",
 							"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
 							"equipped": true,
+							"quantity": 1,
 							"description": "20-gauge spent cartridge",
 							"value": "0.08",
 							"weight": "0.2 lb",
 							"reference": "HT176",
 							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
+								"extended_value": "0.08",
+								"extended_weight": "0.2 lb"
 							},
 							"notes": "Allows reloading for 50% cost",
 							"categories": [
@@ -5294,8 +5295,8 @@
 			"weight": "1 lb",
 			"reference": "HT154",
 			"calc": {
-				"extended_value": "1410",
-				"extended_weight": "11.525 lb"
+				"extended_value": "1418.08",
+				"extended_weight": "12.025 lb"
 			},
 			"categories": [
 				"Firearm Accessories"
@@ -5600,8 +5601,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "1400",
-						"extended_weight": "10.525 lb"
+						"extended_value": "1408.08",
+						"extended_weight": "11.025 lb"
 					},
 					"notes": "Malf 16.",
 					"categories": [
@@ -5641,6 +5642,7 @@
 							"type": "equipment",
 							"id": "7ddcc2a6-0cd7-4393-8876-13d359e94c47",
 							"equipped": true,
+							"quantity": 4,
 							"description": "20-gauge Ball",
 							"value": "0.4",
 							"weight": "0.075 lb",
@@ -5656,8 +5658,8 @@
 								}
 							],
 							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
+								"extended_value": "8",
+								"extended_weight": "0.3 lb"
 							},
 							"notes": "Powder and Ball",
 							"categories": [
@@ -5669,13 +5671,14 @@
 							"type": "equipment",
 							"id": "a0ed8ac7-385c-472f-b4b4-5557b467ee03",
 							"equipped": true,
+							"quantity": 1,
 							"description": "20-gauge spent cartridge",
 							"value": "0.08",
 							"weight": "0.2 lb",
 							"reference": "HT176",
 							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
+								"extended_value": "0.08",
+								"extended_weight": "0.2 lb"
 							},
 							"notes": "Allows reloading for 50% cost",
 							"categories": [
@@ -5691,7 +5694,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 20,
+			"quantity": 15,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5707,8 +5710,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "40",
-				"extended_weight": "1.5 lb"
+				"extended_value": "30",
+				"extended_weight": "1.125 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5720,13 +5723,14 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
+			"quantity": 5,
 			"description": "20-gauge spent cartridge",
 			"value": "0.08",
 			"weight": "0.2 lb",
 			"reference": "HT176",
 			"calc": {
-				"extended_value": "0",
-				"extended_weight": "0 lb"
+				"extended_value": "0.4",
+				"extended_weight": "1 lb"
 			},
 			"notes": "Allows reloading for 50% cost",
 			"categories": [
@@ -5738,7 +5742,7 @@
 			"type": "equipment",
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
-			"quantity": 20,
+			"quantity": 14,
 			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5754,8 +5758,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "40",
-				"extended_weight": "1.5 lb"
+				"extended_value": "28",
+				"extended_weight": "1.05 lb"
 			},
 			"notes": "Powder and Ball",
 			"categories": [
