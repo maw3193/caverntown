@@ -5844,8 +5844,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "280",
-				"extended_weight": "0.008 lb"
+				"extended_value": "130",
+				"extended_weight": "0.006 lb"
 			},
 			"open": true,
 			"children": [
@@ -5935,25 +5935,8 @@
 					"type": "equipment",
 					"id": "0e7e8896-ac70-46f8-a55c-68f99cc0ee55",
 					"equipped": true,
-					"quantity": 1,
 					"description": "$050 C-note",
 					"value": "50",
-					"weight": "0.002 lb",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.002 lb"
-					},
-					"categories": [
-						"C-note",
-						"Money"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
-					"equipped": true,
-					"description": "$100 C-note",
-					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
 						"extended_value": "0",
@@ -5966,15 +5949,31 @@
 				},
 				{
 					"type": "equipment",
-					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
+					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
 					"equipped": true,
 					"quantity": 1,
+					"description": "$100 C-note",
+					"value": "100",
+					"weight": "0.002 lb",
+					"calc": {
+						"extended_value": "100",
+						"extended_weight": "0.002 lb"
+					},
+					"categories": [
+						"C-note",
+						"Money"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
+					"equipped": true,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "200",
-						"extended_weight": "0.002 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
