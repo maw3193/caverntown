@@ -639,7 +639,7 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 8,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -647,7 +647,7 @@
 			"attr_id": "basic_move",
 			"adj": 0,
 			"calc": {
-				"value": 8,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -680,7 +680,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 231
+				"points": 236
 			},
 			"open": true,
 			"children": [
@@ -689,7 +689,7 @@
 					"id": "9728bca5-4a44-4460-abb6-c8967a973e00",
 					"name": "Attributes",
 					"calc": {
-						"points": 155
+						"points": 175
 					},
 					"open": true,
 					"children": [
@@ -698,11 +698,11 @@
 							"id": "edc16481-d42c-41ea-9716-2b4dc450ebd5",
 							"name": "Increased Basic Speed",
 							"physical": true,
-							"levels": "1",
+							"levels": "5",
 							"points_per_level": 5,
 							"reference": "B17",
 							"calc": {
-								"points": 5
+								"points": 25
 							},
 							"features": [
 								{
@@ -866,7 +866,7 @@
 					"id": "9ad1082d-d311-426c-8591-e96f437f2d8d",
 					"name": "Class Advantage",
 					"calc": {
-						"points": 123
+						"points": 108
 					},
 					"open": true,
 					"children": [
@@ -962,12 +962,13 @@
 						{
 							"type": "advantage",
 							"id": "78e30b30-681e-4838-bf75-0575b816a4b5",
+							"disabled": true,
 							"name": "Enhanced Dodge",
 							"mental": true,
 							"base_points": 15,
 							"reference": "B51",
 							"calc": {
-								"points": 15
+								"points": 0
 							},
 							"features": [
 								{
@@ -6002,9 +6003,9 @@
 		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
 		"move": [
-			8,
-			6,
-			4,
+			9,
+			7,
+			5,
 			3,
 			1
 		],
@@ -6015,7 +6016,7 @@
 			10,
 			9
 		],
-		"dodge_bonus": 2,
+		"dodge_bonus": 1,
 		"block_bonus": 1,
 		"parry_bonus": 1
 	}
