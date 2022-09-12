@@ -5411,8 +5411,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "4",
-				"extended_weight": "0.006 lb"
+				"extended_value": "2885",
+				"extended_weight": "0.04 lb"
 			},
 			"open": true,
 			"children": [
@@ -5420,13 +5420,13 @@
 					"type": "equipment",
 					"id": "6d402974-ae06-4f18-93f3-1de6eac71692",
 					"equipped": true,
-					"quantity": 2,
+					"quantity": 1,
 					"description": "$001 C-note",
 					"value": "1",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.004 lb"
+						"extended_value": "1",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5437,13 +5437,13 @@
 					"type": "equipment",
 					"id": "9bf581fb-6814-4d2c-8bb7-09683796f93b",
 					"equipped": true,
-					"quantity": 1,
+					"quantity": 2,
 					"description": "$002 C-note",
 					"value": "2",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.002 lb"
+						"extended_value": "4",
+						"extended_weight": "0.004 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5470,12 +5470,13 @@
 					"type": "equipment",
 					"id": "0bebc67f-8e0b-4617-a555-66b6990f721e",
 					"equipped": true,
+					"quantity": 1,
 					"description": "$010 C-note",
 					"value": "10",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
+						"extended_value": "10",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5486,12 +5487,13 @@
 					"type": "equipment",
 					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
 					"equipped": true,
+					"quantity": 1,
 					"description": "$020 C-note",
 					"value": "20",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
+						"extended_value": "20",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5502,12 +5504,13 @@
 					"type": "equipment",
 					"id": "0e7e8896-ac70-46f8-a55c-68f99cc0ee55",
 					"equipped": true,
+					"quantity": 1,
 					"description": "$050 C-note",
 					"value": "50",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
+						"extended_value": "50",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5534,12 +5537,13 @@
 					"type": "equipment",
 					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
 					"equipped": true,
+					"quantity": 14,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
+						"extended_value": "2800",
+						"extended_weight": "0.028 lb"
 					},
 					"categories": [
 						"C-note",
