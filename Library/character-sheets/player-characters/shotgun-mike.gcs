@@ -4891,7 +4891,7 @@
 			"weight": "1 lb",
 			"reference": "HT154",
 			"calc": {
-				"extended_value": "810",
+				"extended_value": "1410",
 				"extended_weight": "11.525 lb"
 			},
 			"categories": [
@@ -4993,9 +4993,9 @@
 								"type": ""
 							},
 							"usage": "Area Defense",
-							"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
+							"usage_notes": "Gunslinger Acc +4; Fast-Firing +2 RoF 28 +5",
 							"calc": {
-								"level": 10,
+								"level": 12,
 								"parry": "",
 								"block": "",
 								"damage": ""
@@ -5004,7 +5004,7 @@
 								{
 									"type": "skill",
 									"name": "Area Defense",
-									"modifier": 7
+									"modifier": 9
 								}
 							]
 						},
@@ -5016,7 +5016,7 @@
 							},
 							"strength": "11†",
 							"usage_notes": "Match grade",
-							"accuracy": "3",
+							"accuracy": "4",
 							"range": "40/800",
 							"rate_of_fire": "2x7",
 							"shots": "5(10i)",
@@ -5105,7 +5105,7 @@
 							},
 							"strength": "11†",
 							"usage_notes": "Match grade",
-							"accuracy": "3",
+							"accuracy": "4",
 							"range": "100/1200",
 							"rate_of_fire": "2",
 							"shots": "5(10i)",
@@ -5187,8 +5187,17 @@
 							]
 						}
 					],
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "6572a6f6-e299-41b4-babe-3503f9584be2",
+							"name": "Fine (Accurate)",
+							"cost_type": "to_original_cost",
+							"cost": "+75%"
+						}
+					],
 					"calc": {
-						"extended_value": "800",
+						"extended_value": "1400",
 						"extended_weight": "10.525 lb"
 					},
 					"notes": "Malf 16.",
@@ -5285,7 +5294,7 @@
 			"weight": "1 lb",
 			"reference": "HT154",
 			"calc": {
-				"extended_value": "810",
+				"extended_value": "1410",
 				"extended_weight": "11.525 lb"
 			},
 			"categories": [
@@ -5387,9 +5396,9 @@
 								"type": ""
 							},
 							"usage": "Area Defense",
-							"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
+							"usage_notes": "Gunslinger Acc +4; Fast-Firing +2 RoF 28 +5",
 							"calc": {
-								"level": 10,
+								"level": 12,
 								"parry": "",
 								"block": "",
 								"damage": ""
@@ -5398,7 +5407,7 @@
 								{
 									"type": "skill",
 									"name": "Area Defense",
-									"modifier": 7
+									"modifier": 9
 								}
 							]
 						},
@@ -5410,7 +5419,7 @@
 							},
 							"strength": "11†",
 							"usage_notes": "Match grade",
-							"accuracy": "3",
+							"accuracy": "4",
 							"range": "40/800",
 							"rate_of_fire": "2x7",
 							"shots": "5(10i)",
@@ -5499,7 +5508,7 @@
 							},
 							"strength": "11†",
 							"usage_notes": "Match grade",
-							"accuracy": "3",
+							"accuracy": "4",
 							"range": "100/1200",
 							"rate_of_fire": "2",
 							"shots": "5(10i)",
@@ -5581,8 +5590,17 @@
 							]
 						}
 					],
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "38c54128-0e74-47f1-8814-3295380710b5",
+							"name": "Fine (Accurate)",
+							"cost_type": "to_original_cost",
+							"cost": "+75%"
+						}
+					],
 					"calc": {
-						"extended_value": "800",
+						"extended_value": "1400",
 						"extended_weight": "10.525 lb"
 					},
 					"notes": "Malf 16.",
@@ -5826,8 +5844,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "1480",
-				"extended_weight": "0.02 lb"
+				"extended_value": "280",
+				"extended_weight": "0.008 lb"
 			},
 			"open": true,
 			"children": [
@@ -5950,13 +5968,13 @@
 					"type": "equipment",
 					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
 					"equipped": true,
-					"quantity": 7,
+					"quantity": 1,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "1400",
-						"extended_weight": "0.014 lb"
+						"extended_value": "200",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
