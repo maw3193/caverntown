@@ -5015,7 +5015,8 @@
 								"base": "1d"
 							},
 							"strength": "11†",
-							"accuracy": "2",
+							"usage_notes": "Match grade",
+							"accuracy": "3",
 							"range": "40/800",
 							"rate_of_fire": "2x7",
 							"shots": "5(10i)",
@@ -5103,7 +5104,8 @@
 								"base": "4d"
 							},
 							"strength": "11†",
-							"accuracy": "2",
+							"usage_notes": "Match grade",
+							"accuracy": "3",
 							"range": "100/1200",
 							"rate_of_fire": "2",
 							"shots": "5(10i)",
@@ -5407,7 +5409,8 @@
 								"base": "1d"
 							},
 							"strength": "11†",
-							"accuracy": "2",
+							"usage_notes": "Match grade",
+							"accuracy": "3",
 							"range": "40/800",
 							"rate_of_fire": "2x7",
 							"shots": "5(10i)",
@@ -5495,7 +5498,8 @@
 								"base": "4d"
 							},
 							"strength": "11†",
-							"accuracy": "2",
+							"usage_notes": "Match grade",
+							"accuracy": "3",
 							"range": "100/1200",
 							"rate_of_fire": "2",
 							"shots": "5(10i)",
@@ -5669,7 +5673,7 @@
 			"type": "equipment",
 			"id": "8ed1aef9-7dc5-4205-9d3a-17e537b9030b",
 			"equipped": true,
-			"quantity": 3,
+			"quantity": 20,
 			"description": "20-gauge",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5685,8 +5689,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "6",
-				"extended_weight": "0.225 lb"
+				"extended_value": "40",
+				"extended_weight": "1.5 lb"
 			},
 			"notes": "Powder and shot. Shotshell.",
 			"categories": [
@@ -5698,14 +5702,13 @@
 			"type": "equipment",
 			"id": "255cbee1-9c70-48af-a887-495acce7d817",
 			"equipped": true,
-			"quantity": 11,
 			"description": "20-gauge spent cartridge",
 			"value": "0.08",
 			"weight": "0.2 lb",
 			"reference": "HT176",
 			"calc": {
-				"extended_value": "0.88",
-				"extended_weight": "2.2 lb"
+				"extended_value": "0",
+				"extended_weight": "0 lb"
 			},
 			"notes": "Allows reloading for 50% cost",
 			"categories": [
@@ -5717,7 +5720,7 @@
 			"type": "equipment",
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
-			"quantity": 1,
+			"quantity": 20,
 			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5733,8 +5736,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "2",
-				"extended_weight": "0.075 lb"
+				"extended_value": "40",
+				"extended_weight": "1.5 lb"
 			},
 			"notes": "Powder and Ball",
 			"categories": [
@@ -5823,7 +5826,7 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "1560",
+				"extended_value": "1480",
 				"extended_weight": "0.02 lb"
 			},
 			"open": true,
@@ -5897,12 +5900,13 @@
 					"type": "equipment",
 					"id": "94cc6815-7ed1-4fa5-8ca7-406429499852",
 					"equipped": true,
+					"quantity": 1,
 					"description": "$020 C-note",
 					"value": "20",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "0",
-						"extended_weight": "0 lb"
+						"extended_value": "20",
+						"extended_weight": "0.002 lb"
 					},
 					"categories": [
 						"C-note",
@@ -5930,13 +5934,12 @@
 					"type": "equipment",
 					"id": "0e5df37e-9051-4fb7-830e-70f438f52192",
 					"equipped": true,
-					"quantity": 1,
 					"description": "$100 C-note",
 					"value": "100",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "100",
-						"extended_weight": "0.002 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"categories": [
 						"C-note",
