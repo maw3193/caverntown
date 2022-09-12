@@ -5411,8 +5411,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "2800",
-				"extended_weight": "0.028 lb"
+				"extended_value": "2400",
+				"extended_weight": "0.024 lb"
 			},
 			"open": true,
 			"children": [
@@ -5532,13 +5532,13 @@
 					"type": "equipment",
 					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
 					"equipped": true,
-					"quantity": 14,
+					"quantity": 12,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "2800",
-						"extended_weight": "0.028 lb"
+						"extended_value": "2400",
+						"extended_weight": "0.024 lb"
 					},
 					"categories": [
 						"C-note",
