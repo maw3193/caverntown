@@ -5168,8 +5168,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "802",
-				"extended_weight": "10.6 lb"
+				"extended_value": "800",
+				"extended_weight": "10.525 lb"
 			},
 			"notes": "Malf 16.",
 			"categories": [
@@ -5209,7 +5209,6 @@
 					"type": "equipment",
 					"id": "770c592c-fba6-4fa5-8a5f-ad73dae2e38d",
 					"equipped": true,
-					"quantity": 1,
 					"description": "20-gauge Ball",
 					"value": "0.4",
 					"weight": "0.075 lb",
@@ -5225,8 +5224,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.075 lb"
+						"extended_value": "0",
+						"extended_weight": "0 lb"
 					},
 					"notes": "Powder and Ball",
 					"categories": [
@@ -5237,6 +5236,378 @@
 				{
 					"type": "equipment",
 					"id": "bfc2c5fa-8440-4655-a236-2a0a72ade3f6",
+					"equipped": true,
+					"description": "20-gauge spent cartridge",
+					"value": "0.08",
+					"weight": "0.2 lb",
+					"reference": "HT176",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Allows reloading for 50% cost",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "18ed7265-eee2-474a-9fad-a25ddc0de881",
+			"equipped": true,
+			"description": "Revolving Shotgun, 20G",
+			"tech_level": "5",
+			"legality_class": "3",
+			"value": "800",
+			"weight": "10.525 lb",
+			"reference": "HT104",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Thrust",
+					"usage_notes": "Butt Strike",
+					"reach": "1,2*",
+					"calc": {
+						"level": 15,
+						"parry": "",
+						"block": "",
+						"damage": "1d+2 cr"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Staff"
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Spear",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "3"
+					},
+					"strength": "9†",
+					"usage": "Stab",
+					"usage_notes": "Bayonet",
+					"reach": "1,2*",
+					"parry": "0",
+					"calc": {
+						"level": 15,
+						"parry": "11",
+						"block": "",
+						"damage": "1d+3 imp"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Spear"
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": ""
+					},
+					"usage": "Area Defense",
+					"usage_notes": "Gunslinger Acc +2; Fast-Firing +2 RoF 28 +5",
+					"calc": {
+						"level": 10,
+						"parry": "",
+						"block": "",
+						"damage": ""
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Area Defense",
+							"modifier": 7
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "1d"
+					},
+					"strength": "11†",
+					"accuracy": "2",
+					"range": "40/800",
+					"rate_of_fire": "2x7",
+					"shots": "5(10i)",
+					"bulk": "-6",
+					"recoil": "1",
+					"calc": {
+						"level": 19,
+						"range": "40/800",
+						"damage": "1d pi"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi++",
+						"base": "4d"
+					},
+					"strength": "11†",
+					"accuracy": "2",
+					"range": "100/1200",
+					"rate_of_fire": "2",
+					"shots": "5(10i)",
+					"bulk": "-6",
+					"recoil": "5",
+					"calc": {
+						"level": 19,
+						"range": "100/1200",
+						"damage": "4d pi++"
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "800",
+				"extended_weight": "10.525 lb"
+			},
+			"notes": "Malf 16.",
+			"categories": [
+				"Firearms"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "0f8ee337-0d66-4b26-a428-6cf49e88f1a9",
+					"equipped": true,
+					"description": "20-gauge",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "0d0f4b1f-48c3-4cff-a69e-f78d13bf2a7b",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Powder and shot. Shotshell.",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "7ddcc2a6-0cd7-4393-8876-13d359e94c47",
+					"equipped": true,
+					"description": "20-gauge Ball",
+					"value": "0.4",
+					"weight": "0.075 lb",
+					"reference": "HT176",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "f92e9c29-c097-4b6d-afd4-399d6b3559a5",
+							"name": "Shattersand Explosive",
+							"cost_type": "to_original_cost",
+							"cost": "x5",
+							"notes": "Made of semi-precious gems but functions in mana"
+						}
+					],
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Powder and Ball",
+					"categories": [
+						"Ammunition",
+						"Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "a0ed8ac7-385c-472f-b4b4-5557b467ee03",
 					"equipped": true,
 					"description": "20-gauge spent cartridge",
 					"value": "0.08",
@@ -5306,6 +5677,7 @@
 			"type": "equipment",
 			"id": "d56bb399-24fe-47c2-876f-ab998617b0fb",
 			"equipped": true,
+			"quantity": 1,
 			"description": "20-gauge Ball",
 			"value": "0.4",
 			"weight": "0.075 lb",
@@ -5321,8 +5693,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": "0",
-				"extended_weight": "0 lb"
+				"extended_value": "2",
+				"extended_weight": "0.075 lb"
 			},
 			"notes": "Powder and Ball",
 			"categories": [
@@ -5411,8 +5783,8 @@
 			"value": "0",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "2400",
-				"extended_weight": "0.024 lb"
+				"extended_value": "1600",
+				"extended_weight": "0.016 lb"
 			},
 			"open": true,
 			"children": [
@@ -5532,13 +5904,13 @@
 					"type": "equipment",
 					"id": "40c2b692-3dbe-4388-b22a-2a6cffc04c0a",
 					"equipped": true,
-					"quantity": 12,
+					"quantity": 8,
 					"description": "$200 C-note",
 					"value": "200",
 					"weight": "0.002 lb",
 					"calc": {
-						"extended_value": "2400",
-						"extended_weight": "0.024 lb"
+						"extended_value": "1600",
+						"extended_weight": "0.016 lb"
 					},
 					"categories": [
 						"C-note",
