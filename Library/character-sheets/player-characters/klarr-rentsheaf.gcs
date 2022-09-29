@@ -2,7 +2,7 @@
 	"type": "character",
 	"version": 4,
 	"id": "2df35eee-ebdd-4008-9dd9-e5b3ef7e7b10",
-	"total_points": 287,
+	"total_points": 292,
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -4445,7 +4445,7 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2022-09-14T14:50:00+01:00",
+	"modified_date": "2022-09-29T21:33:03+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
