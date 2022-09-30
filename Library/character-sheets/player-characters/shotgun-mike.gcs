@@ -4618,13 +4618,12 @@
 								"Ammunition",
 								"Warheads"
 							],
-							"quantity": 1,
 							"value": 0.08,
 							"weight": "0.2 lb",
 							"equipped": true,
 							"calc": {
-								"extended_value": 0.08,
-								"extended_weight": "0.2 lb"
+								"extended_value": 0,
+								"extended_weight": "0 lb"
 							}
 						}
 					],
@@ -4926,8 +4925,8 @@
 					],
 					"equipped": true,
 					"calc": {
-						"extended_value": 1400.08,
-						"extended_weight": "10.725 lb"
+						"extended_value": 1400,
+						"extended_weight": "10.525 lb"
 					}
 				}
 			],
@@ -4942,8 +4941,8 @@
 			"weight": "1 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 1410.08,
-				"extended_weight": "11.725 lb"
+				"extended_value": 1410,
+				"extended_weight": "11.525 lb"
 			}
 		},
 		{
@@ -5002,13 +5001,13 @@
 									"cost": "x5"
 								}
 							],
-							"quantity": 4,
+							"quantity": 1,
 							"value": 0.4,
 							"weight": "0.075 lb",
 							"equipped": true,
 							"calc": {
-								"extended_value": 8,
-								"extended_weight": "0.3 lb"
+								"extended_value": 2,
+								"extended_weight": "0.075 lb"
 							}
 						},
 						{
@@ -5021,13 +5020,13 @@
 								"Ammunition",
 								"Warheads"
 							],
-							"quantity": 1,
+							"quantity": 4,
 							"value": 0.08,
 							"weight": "0.2 lb",
 							"equipped": true,
 							"calc": {
-								"extended_value": 0.08,
-								"extended_weight": "0.2 lb"
+								"extended_value": 0.32,
+								"extended_weight": "0.8 lb"
 							}
 						}
 					],
@@ -5329,8 +5328,8 @@
 					],
 					"equipped": true,
 					"calc": {
-						"extended_value": 1408.08,
-						"extended_weight": "11.025 lb"
+						"extended_value": 1402.32,
+						"extended_weight": "11.4 lb"
 					}
 				}
 			],
@@ -5345,8 +5344,8 @@
 			"weight": "1 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 1418.08,
-				"extended_weight": "12.025 lb"
+				"extended_value": 1412.32,
+				"extended_weight": "12.4 lb"
 			}
 		},
 		{
@@ -5387,13 +5386,13 @@
 				"Ammunition",
 				"Warheads"
 			],
-			"quantity": 5,
+			"quantity": 6,
 			"value": 0.08,
 			"weight": "0.2 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 0.4,
-				"extended_weight": "1 lb"
+				"extended_value": 0.48,
+				"extended_weight": "1.2 lb"
 			}
 		},
 		{
