@@ -5001,13 +5001,13 @@
 									"cost": "x5"
 								}
 							],
-							"quantity": 1,
+							"quantity": 5,
 							"value": 0.4,
 							"weight": "0.075 lb",
 							"equipped": true,
 							"calc": {
-								"extended_value": 2,
-								"extended_weight": "0.075 lb"
+								"extended_value": 10,
+								"extended_weight": "0.375 lb"
 							}
 						},
 						{
@@ -5020,13 +5020,12 @@
 								"Ammunition",
 								"Warheads"
 							],
-							"quantity": 4,
 							"value": 0.08,
 							"weight": "0.2 lb",
 							"equipped": true,
 							"calc": {
-								"extended_value": 0.32,
-								"extended_weight": "0.8 lb"
+								"extended_value": 0,
+								"extended_weight": "0 lb"
 							}
 						}
 					],
@@ -5328,8 +5327,8 @@
 					],
 					"equipped": true,
 					"calc": {
-						"extended_value": 1402.32,
-						"extended_weight": "11.4 lb"
+						"extended_value": 1410,
+						"extended_weight": "10.9 lb"
 					}
 				}
 			],
@@ -5344,8 +5343,8 @@
 			"weight": "1 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 1412.32,
-				"extended_weight": "12.4 lb"
+				"extended_value": 1420,
+				"extended_weight": "11.9 lb"
 			}
 		},
 		{
@@ -5386,13 +5385,13 @@
 				"Ammunition",
 				"Warheads"
 			],
-			"quantity": 6,
+			"quantity": 10,
 			"value": 0.08,
 			"weight": "0.2 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 0.48,
-				"extended_weight": "1.2 lb"
+				"extended_value": 0.8,
+				"extended_weight": "2 lb"
 			}
 		},
 		{
@@ -5414,13 +5413,13 @@
 					"cost": "x5"
 				}
 			],
-			"quantity": 14,
+			"quantity": 10,
 			"value": 0.4,
 			"weight": "0.075 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 28,
-				"extended_weight": "1.05 lb"
+				"extended_value": 20,
+				"extended_weight": "0.75 lb"
 			}
 		},
 		{
