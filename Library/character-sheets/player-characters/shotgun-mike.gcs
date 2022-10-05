@@ -466,7 +466,7 @@
 			"attr_id": "dx",
 			"adj": 0,
 			"calc": {
-				"value": 15,
+				"value": 16,
 				"points": 0
 			}
 		},
@@ -599,7 +599,7 @@
 								"Attribute",
 								"Physical"
 							],
-							"levels": 4,
+							"levels": 3,
 							"points_per_level": 5,
 							"features": [
 								{
@@ -610,7 +610,7 @@
 								}
 							],
 							"calc": {
-								"points": 20
+								"points": 15
 							}
 						},
 						{
@@ -632,7 +632,7 @@
 									"disabled": true
 								}
 							],
-							"levels": 5,
+							"levels": 6,
 							"points_per_level": 20,
 							"features": [
 								{
@@ -643,7 +643,7 @@
 								}
 							],
 							"calc": {
-								"points": 100
+								"points": 120
 							}
 						},
 						{
@@ -749,7 +749,7 @@
 					],
 					"name": "Attributes",
 					"calc": {
-						"points": 190
+						"points": 205
 					}
 				},
 				{
@@ -1201,7 +1201,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 251
+				"points": 266
 			}
 		},
 		{
@@ -1235,7 +1235,7 @@
 						}
 					],
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"parry": "No",
 						"block": "No",
 						"damage": "1d-1 cr"
@@ -1270,8 +1270,8 @@
 						}
 					],
 					"calc": {
-						"level": 15,
-						"parry": "11",
+						"level": 16,
+						"parry": "12",
 						"damage": "1d-1 cr"
 					}
 				},
@@ -1306,7 +1306,7 @@
 						}
 					],
 					"calc": {
-						"level": 13,
+						"level": 14,
 						"parry": "No",
 						"damage": "1d cr"
 					}
@@ -3252,7 +3252,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 16,
+										"level": 17,
 										"rsl": "DX+1"
 									}
 								},
@@ -3270,7 +3270,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 16,
+										"level": 17,
 										"rsl": "DX+1"
 									}
 								},
@@ -3287,7 +3287,7 @@
 										"Weapon"
 									],
 									"difficulty": "h",
-									"points": 3,
+									"points": 1,
 									"default": {
 										"type": "skill",
 										"name": "Guns",
@@ -3295,8 +3295,8 @@
 										"modifier": -2
 									},
 									"calc": {
-										"level": 19,
-										"rsl": "+0"
+										"level": 17,
+										"rsl": "-2"
 									}
 								},
 								{
@@ -3319,7 +3319,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 4
+										"points": 2
 									},
 									"defaults": [
 										{
@@ -3377,7 +3377,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+2"
+										"rsl": "DX+1"
 									}
 								},
 								{
@@ -3400,7 +3400,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 4
+										"points": 2
 									},
 									"defaults": [
 										{
@@ -3464,7 +3464,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+2"
+										"rsl": "DX+1"
 									}
 								},
 								{
@@ -3487,7 +3487,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 4
+										"points": 2
 									},
 									"defaults": [
 										{
@@ -3551,7 +3551,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+2"
+										"rsl": "DX+1"
 									}
 								},
 								{
@@ -3567,13 +3567,13 @@
 									"specialization": "Shotgun",
 									"tech_level": "5",
 									"difficulty": "dx/e",
-									"points": 12,
+									"points": 8,
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -4,
-										"level": 11,
-										"adjusted_level": 11,
-										"points": -11
+										"level": 12,
+										"adjusted_level": 12,
+										"points": -12
 									},
 									"defaults": [
 										{
@@ -3631,7 +3631,7 @@
 									],
 									"calc": {
 										"level": 19,
-										"rsl": "DX+4"
+										"rsl": "DX+3"
 									}
 								},
 								{
@@ -3687,9 +3687,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -6,
-										"level": 9,
-										"adjusted_level": 9,
-										"points": -9
+										"level": 10,
+										"adjusted_level": 10,
+										"points": -10
 									},
 									"defaults": [
 										{
@@ -3708,7 +3708,7 @@
 										}
 									],
 									"calc": {
-										"level": 13,
+										"level": 14,
 										"rsl": "DX-2"
 									}
 								},
@@ -3741,7 +3741,7 @@
 										}
 									],
 									"calc": {
-										"level": 15,
+										"level": 16,
 										"rsl": "DX+0"
 									}
 								},
@@ -3759,9 +3759,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -4,
-										"level": 11,
-										"adjusted_level": 11,
-										"points": -11
+										"level": 12,
+										"adjusted_level": 12,
+										"points": -12
 									},
 									"defaults": [
 										{
@@ -3785,7 +3785,7 @@
 										}
 									],
 									"calc": {
-										"level": 11,
+										"level": 12,
 										"rsl": "DX-4"
 									}
 								},
@@ -3804,9 +3804,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -5,
-										"level": 10,
-										"adjusted_level": 10,
-										"points": -10
+										"level": 11,
+										"adjusted_level": 11,
+										"points": -11
 									},
 									"defaults": [
 										{
@@ -3825,7 +3825,7 @@
 										}
 									],
 									"calc": {
-										"level": 16,
+										"level": 17,
 										"rsl": "DX+1"
 									}
 								},
@@ -3840,13 +3840,12 @@
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 1,
 									"defaulted_from": {
 										"type": "skill",
 										"name": "Spear",
 										"modifier": -2,
-										"level": 14,
-										"adjusted_level": 14,
+										"level": 15,
+										"adjusted_level": 15,
 										"points": 1
 									},
 									"defaults": [
@@ -3867,7 +3866,7 @@
 									],
 									"calc": {
 										"level": 15,
-										"rsl": "DX+0"
+										"rsl": "DX-1"
 									}
 								},
 								{
@@ -3886,9 +3885,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -3,
-										"level": 12,
-										"adjusted_level": 12,
-										"points": -12
+										"level": 13,
+										"adjusted_level": 13,
+										"points": -13
 									},
 									"defaults": [
 										{
@@ -3902,7 +3901,7 @@
 										}
 									],
 									"calc": {
-										"level": 14,
+										"level": 15,
 										"rsl": "DX-1"
 									}
 								}
@@ -3965,9 +3964,9 @@
 							"defaulted_from": {
 								"type": "dx",
 								"modifier": -5,
-								"level": 10,
-								"adjusted_level": 10,
-								"points": -10
+								"level": 11,
+								"adjusted_level": 11,
+								"points": -11
 							},
 							"defaults": [
 								{
@@ -3976,7 +3975,7 @@
 								}
 							],
 							"calc": {
-								"level": 14,
+								"level": 15,
 								"rsl": "DX-1"
 							}
 						},
@@ -4100,7 +4099,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 16,
+										"level": 17,
 										"rsl": "DX+1"
 									}
 								},
@@ -4118,7 +4117,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 16,
+										"level": 17,
 										"rsl": "DX+1"
 									}
 								}
@@ -4185,7 +4184,7 @@
 							"difficulty": "dx/e",
 							"points": 1,
 							"calc": {
-								"level": 15,
+								"level": 16,
 								"rsl": "DX+0"
 							}
 						},
@@ -4311,9 +4310,9 @@
 							"defaulted_from": {
 								"type": "dx",
 								"modifier": -5,
-								"level": 10,
-								"adjusted_level": 10,
-								"points": -10
+								"level": 11,
+								"adjusted_level": 11,
+								"points": -11
 							},
 							"defaults": [
 								{
@@ -4326,7 +4325,7 @@
 								}
 							],
 							"calc": {
-								"level": 14,
+								"level": 15,
 								"rsl": "DX-1"
 							}
 						}
@@ -4426,8 +4425,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"parry": "9",
+						"level": 12,
+						"parry": "10",
 						"damage": "2d-2 cut"
 					}
 				},
@@ -4468,8 +4467,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"parry": "9",
+						"level": 12,
+						"parry": "10",
 						"damage": "1d imp"
 					}
 				}
@@ -4719,7 +4718,7 @@
 								}
 							],
 							"calc": {
-								"level": 16,
+								"level": 17,
 								"parry": "12",
 								"damage": "1d+3 imp"
 							}
@@ -5121,7 +5120,7 @@
 								}
 							],
 							"calc": {
-								"level": 16,
+								"level": 17,
 								"parry": "12",
 								"damage": "1d+3 imp"
 							}
