@@ -450,7 +450,8 @@
 		"modifiers_display": "inline",
 		"notes_display": "inline",
 		"skill_level_adj_display": "tooltip",
-		"show_spell_adj": true
+		"show_spell_adj": true,
+		"exclude_unspent_points_from_total": false
 	},
 	"attributes": [
 		{
@@ -465,7 +466,7 @@
 			"attr_id": "dx",
 			"adj": 0,
 			"calc": {
-				"value": 14,
+				"value": 15,
 				"points": 0
 			}
 		},
@@ -598,7 +599,7 @@
 								"Attribute",
 								"Physical"
 							],
-							"levels": 5,
+							"levels": 4,
 							"points_per_level": 5,
 							"features": [
 								{
@@ -609,7 +610,7 @@
 								}
 							],
 							"calc": {
-								"points": 25
+								"points": 20
 							}
 						},
 						{
@@ -631,7 +632,7 @@
 									"disabled": true
 								}
 							],
-							"levels": 4,
+							"levels": 5,
 							"points_per_level": 20,
 							"features": [
 								{
@@ -642,7 +643,7 @@
 								}
 							],
 							"calc": {
-								"points": 80
+								"points": 100
 							}
 						},
 						{
@@ -748,7 +749,7 @@
 					],
 					"name": "Attributes",
 					"calc": {
-						"points": 175
+						"points": 190
 					}
 				},
 				{
@@ -1200,7 +1201,7 @@
 			"name": "Musketeer",
 			"reference": "PY36:17",
 			"calc": {
-				"points": 236
+				"points": 251
 			}
 		},
 		{
@@ -3249,10 +3250,10 @@
 									],
 									"specialization": "Ammo",
 									"difficulty": "dx/e",
-									"points": 2,
+									"points": 1,
 									"calc": {
 										"level": 16,
-										"rsl": "DX+2"
+										"rsl": "DX+1"
 									}
 								},
 								{
@@ -3267,10 +3268,10 @@
 									],
 									"specialization": "Long Arm",
 									"difficulty": "dx/e",
-									"points": 2,
+									"points": 1,
 									"calc": {
 										"level": 16,
-										"rsl": "DX+2"
+										"rsl": "DX+1"
 									}
 								},
 								{
@@ -3318,7 +3319,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 8
+										"points": 4
 									},
 									"defaults": [
 										{
@@ -3376,7 +3377,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+3"
+										"rsl": "DX+2"
 									}
 								},
 								{
@@ -3399,7 +3400,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 8
+										"points": 4
 									},
 									"defaults": [
 										{
@@ -3463,7 +3464,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+3"
+										"rsl": "DX+2"
 									}
 								},
 								{
@@ -3486,7 +3487,7 @@
 										"modifier": -2,
 										"level": 17,
 										"adjusted_level": 17,
-										"points": 8
+										"points": 4
 									},
 									"defaults": [
 										{
@@ -3550,7 +3551,7 @@
 									],
 									"calc": {
 										"level": 17,
-										"rsl": "DX+3"
+										"rsl": "DX+2"
 									}
 								},
 								{
@@ -3566,13 +3567,13 @@
 									"specialization": "Shotgun",
 									"tech_level": "5",
 									"difficulty": "dx/e",
-									"points": 16,
+									"points": 12,
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -4,
-										"level": 10,
-										"adjusted_level": 10,
-										"points": -10
+										"level": 11,
+										"adjusted_level": 11,
+										"points": -11
 									},
 									"defaults": [
 										{
@@ -3630,7 +3631,7 @@
 									],
 									"calc": {
 										"level": 19,
-										"rsl": "DX+5"
+										"rsl": "DX+4"
 									}
 								},
 								{
@@ -3674,6 +3675,44 @@
 							"open": true,
 							"children": [
 								{
+									"id": "890400ee-a920-45c3-bafd-c80c9dd8e327",
+									"type": "skill",
+									"name": "Acrobatics",
+									"reference": "B174",
+									"tags": [
+										"Athletic"
+									],
+									"difficulty": "dx/h",
+									"points": 1,
+									"defaulted_from": {
+										"type": "dx",
+										"modifier": -6,
+										"level": 9,
+										"adjusted_level": 9,
+										"points": -9
+									},
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Aerobatics",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Aquabatics",
+											"modifier": -4
+										}
+									],
+									"calc": {
+										"level": 13,
+										"rsl": "DX-2"
+									}
+								},
+								{
 									"id": "886b5451-778b-4039-a354-9e02664afd39",
 									"type": "skill",
 									"name": "Brawling",
@@ -3684,7 +3723,7 @@
 										"Weapon"
 									],
 									"difficulty": "dx/e",
-									"points": 2,
+									"points": 1,
 									"features": [
 										{
 											"type": "weapon_bonus",
@@ -3703,7 +3742,7 @@
 									],
 									"calc": {
 										"level": 15,
-										"rsl": "DX+1"
+										"rsl": "DX+0"
 									}
 								},
 								{
@@ -3720,9 +3759,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -4,
-										"level": 10,
-										"adjusted_level": 10,
-										"points": -10
+										"level": 11,
+										"adjusted_level": 11,
+										"points": -11
 									},
 									"defaults": [
 										{
@@ -3746,7 +3785,7 @@
 										}
 									],
 									"calc": {
-										"level": 10,
+										"level": 11,
 										"rsl": "DX-4"
 									}
 								},
@@ -3765,9 +3804,9 @@
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -5,
-										"level": 9,
-										"adjusted_level": 9,
-										"points": -9
+										"level": 10,
+										"adjusted_level": 10,
+										"points": -10
 									},
 									"defaults": [
 										{
@@ -3786,7 +3825,7 @@
 										}
 									],
 									"calc": {
-										"level": 15,
+										"level": 16,
 										"rsl": "DX+1"
 									}
 								},
@@ -3801,13 +3840,13 @@
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 3,
+									"points": 1,
 									"defaulted_from": {
 										"type": "skill",
 										"name": "Spear",
 										"modifier": -2,
-										"level": 13,
-										"adjusted_level": 13,
+										"level": 14,
+										"adjusted_level": 14,
 										"points": 1
 									},
 									"defaults": [
@@ -3828,7 +3867,7 @@
 									],
 									"calc": {
 										"level": 15,
-										"rsl": "DX+1"
+										"rsl": "DX+0"
 									}
 								},
 								{
@@ -3843,13 +3882,13 @@
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 2,
+									"points": 1,
 									"defaulted_from": {
 										"type": "dx",
 										"modifier": -3,
-										"level": 11,
-										"adjusted_level": 11,
-										"points": -11
+										"level": 12,
+										"adjusted_level": 12,
+										"points": -12
 									},
 									"defaults": [
 										{
@@ -3864,49 +3903,11 @@
 									],
 									"calc": {
 										"level": 14,
-										"rsl": "DX+0"
+										"rsl": "DX-1"
 									}
 								}
 							],
 							"name": "Combat Skills"
-						},
-						{
-							"id": "890400ee-a920-45c3-bafd-c80c9dd8e327",
-							"type": "skill",
-							"name": "Acrobatics",
-							"reference": "B174",
-							"tags": [
-								"Athletic"
-							],
-							"difficulty": "dx/h",
-							"points": 2,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -6,
-								"level": 8,
-								"adjusted_level": 8,
-								"points": -8
-							},
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Aerobatics",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Aquabatics",
-									"modifier": -4
-								}
-							],
-							"calc": {
-								"level": 13,
-								"rsl": "DX-1"
-							}
 						},
 						{
 							"id": "0384c460-5d44-4926-b8c8-f57053e8ed58",
@@ -3959,14 +3960,14 @@
 								"Street"
 							],
 							"difficulty": "dx/a",
-							"points": 2,
+							"points": 1,
 							"encumbrance_penalty_multiplier": 1,
 							"defaulted_from": {
 								"type": "dx",
 								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
+								"level": 10,
+								"adjusted_level": 10,
+								"points": -10
 							},
 							"defaults": [
 								{
@@ -3976,7 +3977,7 @@
 							],
 							"calc": {
 								"level": 14,
-								"rsl": "DX+0"
+								"rsl": "DX-1"
 							}
 						},
 						{
@@ -4099,7 +4100,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 15,
+										"level": 16,
 										"rsl": "DX+1"
 									}
 								},
@@ -4117,7 +4118,7 @@
 									"difficulty": "dx/e",
 									"points": 1,
 									"calc": {
-										"level": 15,
+										"level": 16,
 										"rsl": "DX+1"
 									}
 								}
@@ -4184,7 +4185,7 @@
 							"difficulty": "dx/e",
 							"points": 1,
 							"calc": {
-								"level": 14,
+								"level": 15,
 								"rsl": "DX+0"
 							}
 						},
@@ -4310,9 +4311,9 @@
 							"defaulted_from": {
 								"type": "dx",
 								"modifier": -5,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
+								"level": 10,
+								"adjusted_level": 10,
+								"points": -10
 							},
 							"defaults": [
 								{
@@ -4325,7 +4326,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 14,
 								"rsl": "DX-1"
 							}
 						}
@@ -4425,7 +4426,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"parry": "9",
 						"damage": "2d-2 cut"
 					}
@@ -4467,7 +4468,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"parry": "9",
 						"damage": "1d imp"
 					}
@@ -4718,8 +4719,8 @@
 								}
 							],
 							"calc": {
-								"level": 15,
-								"parry": "11",
+								"level": 16,
+								"parry": "12",
 								"damage": "1d+3 imp"
 							}
 						},
@@ -5120,8 +5121,8 @@
 								}
 							],
 							"calc": {
-								"level": 15,
-								"parry": "11",
+								"level": 16,
+								"parry": "12",
 								"damage": "1d+3 imp"
 							}
 						},
