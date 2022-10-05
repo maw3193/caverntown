@@ -5386,13 +5386,13 @@
 				"Ammunition",
 				"Warheads"
 			],
-			"quantity": 10,
+			"quantity": 11,
 			"value": 0.08,
 			"weight": "0.2 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 0.8,
-				"extended_weight": "2 lb"
+				"extended_value": 0.88,
+				"extended_weight": "2.2 lb"
 			}
 		},
 		{
@@ -5414,13 +5414,13 @@
 					"cost": "x5"
 				}
 			],
-			"quantity": 10,
+			"quantity": 9,
 			"value": 0.4,
 			"weight": "0.075 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 20,
-				"extended_weight": "0.75 lb"
+				"extended_value": 18,
+				"extended_weight": "0.675 lb"
 			}
 		},
 		{
