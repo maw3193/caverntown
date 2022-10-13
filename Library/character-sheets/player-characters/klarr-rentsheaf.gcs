@@ -4451,6 +4451,11 @@
 							"text": "More Dark Gift [5], only [1] after recycling Alchemy"
 						},
 						{
+							"id": "ec4f5874-580e-4b3f-b8b6-f2434af6b094",
+							"type": "note",
+							"text": "Serendipity! [15]"
+						},
+						{
 							"id": "caf45d3e-bc8f-467d-9f72-3396c13e302e",
 							"type": "note",
 							"text": "Luck, for rerolling books [15]"
@@ -4521,7 +4526,7 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2022-10-13T22:43:49+01:00",
+	"modified_date": "2022-10-13T22:46:29+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
