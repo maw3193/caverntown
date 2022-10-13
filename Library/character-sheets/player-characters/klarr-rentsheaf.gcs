@@ -2,7 +2,7 @@
 	"type": "character",
 	"version": 4,
 	"id": "2df35eee-ebdd-4008-9dd9-e5b3ef7e7b10",
-	"total_points": 292,
+	"total_points": 302,
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -457,7 +457,8 @@
 		"user_description_display": "tooltip",
 		"modifiers_display": "inline",
 		"notes_display": "inline",
-		"skill_level_adj_display": "tooltip"
+		"skill_level_adj_display": "tooltip",
+		"exclude_unspent_points_from_total": false
 	},
 	"attributes": [
 		{
@@ -789,6 +790,7 @@
 			],
 			"levels": 2,
 			"points_per_level": 5,
+			"can_level": true,
 			"calc": {
 				"points": 10
 			}
@@ -825,6 +827,7 @@
 			],
 			"levels": 1,
 			"points_per_level": 5,
+			"can_level": true,
 			"calc": {
 				"points": 1
 			}
@@ -854,6 +857,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": -10
 					}
@@ -878,6 +882,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 20
 					}
@@ -980,6 +985,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 15
 					}
@@ -995,6 +1001,7 @@
 					],
 					"levels": 5,
 					"points_per_level": 1,
+					"can_level": true,
 					"calc": {
 						"points": 5
 					}
@@ -1087,6 +1094,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 10
 					}
@@ -1616,6 +1624,7 @@
 					],
 					"levels": 1,
 					"points_per_level": 3,
+					"can_level": true,
 					"calc": {
 						"points": 3
 					}
@@ -1630,6 +1639,7 @@
 					"base_points": 5,
 					"levels": 2,
 					"points_per_level": 2,
+					"can_level": true,
 					"calc": {
 						"points": 9
 					}
@@ -1644,6 +1654,7 @@
 					"base_points": 5,
 					"levels": 2,
 					"points_per_level": 2,
+					"can_level": true,
 					"calc": {
 						"points": 9
 					}
@@ -1701,6 +1712,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 40
 					}
@@ -1725,6 +1737,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 20
 					}
@@ -1878,6 +1891,7 @@
 					"base_points": 5,
 					"levels": 1,
 					"points_per_level": 2,
+					"can_level": true,
 					"calc": {
 						"points": 7
 					}
@@ -1892,6 +1906,7 @@
 					"base_points": 5,
 					"levels": 1,
 					"points_per_level": 2,
+					"can_level": true,
 					"calc": {
 						"points": 7
 					}
@@ -1906,6 +1921,7 @@
 					"base_points": 5,
 					"levels": 1,
 					"points_per_level": 2,
+					"can_level": true,
 					"calc": {
 						"points": 7
 					}
@@ -1963,6 +1979,7 @@
 					],
 					"levels": 1,
 					"points_per_level": 20,
+					"can_level": true,
 					"calc": {
 						"points": 30
 					}
@@ -1987,6 +2004,7 @@
 							"per_level": true
 						}
 					],
+					"can_level": true,
 					"calc": {
 						"points": 80
 					}
@@ -4382,7 +4400,12 @@
 						{
 							"id": "528a9769-a179-40b4-ab15-ea37e85dc6f0",
 							"type": "note",
-							"text": "An Alchemy workshop, $2000"
+							"text": "An Alchemy workshop, $2k"
+						},
+						{
+							"id": "23be634f-0257-49c1-b826-9ddee47d0fc5",
+							"type": "note",
+							"text": "Weight Management:\n* Bottomless Backpack, $20k, 200lb capacity, 100lb weightless.\n* Lighten Burden -50% $12k\n* Bottomless Purse $12010, 9lb capacity, 6lbs weightless.\n* Belt of Might +1 $30k"
 						}
 					],
 					"text": "With Money"
@@ -4401,6 +4424,11 @@
 							"id": "f95657bc-805e-4dc6-aa5c-887f74c71cc4",
 							"type": "note",
 							"text": "Enough Wizard Rank that assistance rolls succeed [5]"
+						},
+						{
+							"id": "d8248966-f30f-40c4-a8d5-992932487af3",
+							"type": "note",
+							"text": "More Dark Gift [5], only [1] after recycling Alchemy"
 						},
 						{
 							"id": "caf45d3e-bc8f-467d-9f72-3396c13e302e",
@@ -4423,14 +4451,42 @@
 							"text": "Crank Stealth by a *lot*"
 						},
 						{
+							"id": "e2803e45-f78b-41d9-a337-8b65fc1bd843",
+							"type": "note_container",
+							"open": true,
+							"children": [
+								{
+									"id": "8318b6e1-b418-4811-92ce-12d5e2d164a3",
+									"type": "note",
+									"text": "14 Stealth and 14 Acrobatics lets elves get Light Walk (walk over fragile surfaces, and half of margin of success to Stealth)"
+								},
+								{
+									"id": "f4771c12-03ce-4a4f-9ea6-fae3e24cb1dd",
+									"type": "note",
+									"text": "Get 4 points in Stealth, 2 in Climbing and Traps"
+								},
+								{
+									"id": "c251fb88-3771-46bd-90d2-236a463aeb0d",
+									"type": "note",
+									"text": "Spend 14 points and $1120 on Flexibility, High Manual Dexterity, Forced Entry, Lockpicking, Pickpocket and Filch"
+								},
+								{
+									"id": "632a4ed5-41ee-42e2-8236-52164f448cf8",
+									"type": "note",
+									"text": "Save up 30 points to get +2 DX, -0.5 Basic Speed, and qualify as a Thief"
+								},
+								{
+									"id": "e0c9f0de-6e55-4506-8bf7-8f79654e59d6",
+									"type": "note",
+									"text": "Serendipity, Backstabbing and Acrobatics are now on-template!"
+								}
+							],
+							"text": "Get Elfier"
+						},
+						{
 							"id": "8148b685-c38c-428a-bcf4-5923a9ad20bc",
 							"type": "note",
 							"text": "Lifting ST somehow, to carry more gear"
-						},
-						{
-							"id": "d8248966-f30f-40c4-a8d5-992932487af3",
-							"type": "note",
-							"text": "More Dark Gift [5], only [1] after recycling Alchemy"
 						}
 					],
 					"text": "With Points"
@@ -4445,7 +4501,7 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2022-09-29T21:33:03+01:00",
+	"modified_date": "2022-10-11T12:34:20+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
