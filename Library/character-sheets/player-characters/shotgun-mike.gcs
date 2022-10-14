@@ -3287,7 +3287,7 @@
 										"Weapon"
 									],
 									"difficulty": "h",
-									"points": 1,
+									"points": 3,
 									"default": {
 										"type": "skill",
 										"name": "Guns",
@@ -3295,8 +3295,8 @@
 										"modifier": -2
 									},
 									"calc": {
-										"level": 17,
-										"rsl": "-2"
+										"level": 19,
+										"rsl": "+0"
 									}
 								},
 								{
@@ -3646,6 +3646,7 @@
 										"Weapon"
 									],
 									"difficulty": "a",
+									"points": 3,
 									"default": {
 										"type": "skill",
 										"name": "Guns",
@@ -3654,8 +3655,8 @@
 									},
 									"limit": 0,
 									"calc": {
-										"level": 16,
-										"rsl": "-3"
+										"level": 19,
+										"rsl": "+0"
 									}
 								}
 							],
