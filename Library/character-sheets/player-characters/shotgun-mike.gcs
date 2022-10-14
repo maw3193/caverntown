@@ -4619,7 +4619,7 @@
 								"Warheads"
 							],
 							"value": 0.08,
-							"weight": "0.2 lb",
+							"weight": "0.0375 lb",
 							"equipped": true,
 							"calc": {
 								"extended_value": 0,
@@ -5021,7 +5021,7 @@
 								"Warheads"
 							],
 							"value": 0.08,
-							"weight": "0.2 lb",
+							"weight": "0.0375 lb",
 							"equipped": true,
 							"calc": {
 								"extended_value": 0,
@@ -5387,11 +5387,11 @@
 			],
 			"quantity": 11,
 			"value": 0.08,
-			"weight": "0.2 lb",
+			"weight": "0.0375 lb",
 			"equipped": true,
 			"calc": {
 				"extended_value": 0.88,
-				"extended_weight": "2.2 lb"
+				"extended_weight": "0.4125 lb"
 			}
 		},
 		{
