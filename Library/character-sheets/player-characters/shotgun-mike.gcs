@@ -609,6 +609,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 15
 							}
@@ -642,6 +643,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 120
 							}
@@ -666,6 +668,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 30
 							}
@@ -691,6 +694,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 10
 							}
@@ -742,6 +746,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 30
 							}
@@ -807,6 +812,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 0
 							}
@@ -954,6 +960,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 3
 							}
@@ -1408,6 +1415,7 @@
 					],
 					"levels": 3,
 					"points_per_level": -1,
+					"can_level": true,
 					"calc": {
 						"points": -3
 					}
@@ -2696,6 +2704,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 10
 							}
@@ -2876,6 +2885,7 @@
 									"per_level": true
 								}
 							],
+							"can_level": true,
 							"calc": {
 								"points": 20
 							}
@@ -3084,6 +3094,7 @@
 							],
 							"levels": 10,
 							"points_per_level": 1,
+							"can_level": true,
 							"calc": {
 								"points": 10
 							}
@@ -5650,7 +5661,7 @@
 		}
 	],
 	"created_date": "2022-07-19T17:21:00+01:00",
-	"modified_date": "2022-09-12T22:17:00+01:00",
+	"modified_date": "2022-10-14T20:51:50+01:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
