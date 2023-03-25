@@ -4094,10 +4094,10 @@
 					"type": "equipment",
 					"description": "C-notes",
 					"quantity": 1,
-					"value": 561.58,
+					"value": 6284.33,
 					"equipped": true,
 					"calc": {
-						"extended_value": 561.58,
+						"extended_value": 6284.33,
 						"extended_weight": "0 lb"
 					}
 				}
@@ -4127,7 +4127,7 @@
 			},
 			"equipped": true,
 			"calc": {
-				"extended_value": 2425.75,
+				"extended_value": 8148.5,
 				"extended_weight": "17.392 lb"
 			}
 		},
