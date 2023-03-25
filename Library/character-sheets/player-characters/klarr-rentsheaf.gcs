@@ -2,7 +2,19 @@
 	"type": "character",
 	"version": 4,
 	"id": "2df35eee-ebdd-4008-9dd9-e5b3ef7e7b10",
-	"total_points": 302,
+	"total_points": 324,
+	"points_record": [
+		{
+			"when": "2023-03-23T22:59:30Z",
+			"points": 5,
+			"reason": "Point total at end of rat-men 2"
+		},
+		{
+			"when": "2022-10-29T22:00:05+01:00",
+			"points": 319,
+			"reason": "Points Awarded"
+		}
+	],
 	"profile": {
 		"player_name": "Jonathan",
 		"name": "K'Larr Rentsheaf",
@@ -965,7 +977,7 @@
 						}
 					],
 					"base_points": 5,
-					"levels": 1,
+					"levels": 3,
 					"points_per_level": 10,
 					"features": [
 						{
@@ -987,7 +999,7 @@
 					],
 					"can_level": true,
 					"calc": {
-						"points": 15
+						"points": 35
 					}
 				},
 				{
@@ -1160,7 +1172,7 @@
 			"ancestry": "Human",
 			"container_type": "race",
 			"calc": {
-				"points": 35
+				"points": 55
 			}
 		},
 		{
@@ -2034,6 +2046,56 @@
 			"calc": {
 				"points": 182
 			}
+		},
+		{
+			"id": "b8574f46-73cb-4216-9bd4-e87bbc9558fa",
+			"type": "trait",
+			"name": "Luck",
+			"reference": "B66,P59",
+			"notes": "Usable once per hour of play",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"modifiers": [
+				{
+					"id": "b5f2c667-bec1-442e-9ef9-f051a6c31510",
+					"type": "modifier",
+					"name": "Active",
+					"reference": "B66",
+					"cost": -40,
+					"disabled": true
+				},
+				{
+					"id": "d9965ee9-527e-4933-95ef-ef8a02ed7683",
+					"type": "modifier",
+					"name": "Aspected",
+					"reference": "B66",
+					"notes": "@Aspect@",
+					"cost": -20,
+					"disabled": true
+				},
+				{
+					"id": "67318c7d-d090-4012-a955-0d1a36052c27",
+					"type": "modifier",
+					"name": "Defensive",
+					"reference": "B66",
+					"cost": -20,
+					"disabled": true
+				},
+				{
+					"id": "4f41a545-c80c-4754-bf3c-93b9662beef2",
+					"type": "modifier",
+					"name": "Wishing",
+					"reference": "P59",
+					"cost": 100,
+					"disabled": true
+				}
+			],
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
 		}
 	],
 	"skills": [
@@ -2523,8 +2585,8 @@
 						}
 					],
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -2540,7 +2602,7 @@
 					"specialization": "Pistol",
 					"tech_level": "5",
 					"difficulty": "dx/e",
-					"points": 4,
+					"points": 16,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -4,
@@ -2609,8 +2671,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"rsl": "DX+2"
+						"level": 17,
+						"rsl": "DX+5"
 					}
 				},
 				{
@@ -2624,7 +2686,7 @@
 						"Weapon"
 					],
 					"difficulty": "dx/a",
-					"points": 8,
+					"points": 4,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -5,
@@ -2674,8 +2736,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"rsl": "DX+2"
+						"level": 13,
+						"rsl": "DX+1"
 					}
 				},
 				{
@@ -2689,7 +2751,7 @@
 						"Weapon"
 					],
 					"difficulty": "dx/a",
-					"points": 4,
+					"points": 2,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -5,
@@ -2714,8 +2776,8 @@
 						}
 					],
 					"calc": {
-						"level": 13,
-						"rsl": "DX+1"
+						"level": 12,
+						"rsl": "DX+0"
 					}
 				},
 				{
@@ -3002,8 +3064,8 @@
 					"casting_time": "1 sec",
 					"duration": "1 sec",
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 16,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3025,8 +3087,8 @@
 					"casting_time": "1 sec",
 					"duration": "Instant",
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 16,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3097,8 +3159,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 16,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3139,8 +3201,8 @@
 						]
 					},
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 16,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3223,8 +3285,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
+						"level": 16,
+						"rsl": "IQ+1"
 					}
 				}
 			],
@@ -3293,8 +3355,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"parry": "12",
+						"level": 13,
+						"parry": "11",
 						"block": "No",
 						"damage": "1d-2 cut"
 					}
@@ -3336,8 +3398,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"parry": "12",
+						"level": 13,
+						"parry": "11",
 						"block": "No",
 						"damage": "1d-2 imp"
 					}
@@ -3841,7 +3903,7 @@
 						}
 					],
 					"calc": {
-						"level": 13,
+						"level": 12,
 						"range": "2",
 						"damage": "Special"
 					}
@@ -4227,7 +4289,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 16,
 								"range": "120/1,300",
 								"damage": "2d-1 pi+"
 							}
@@ -4466,6 +4528,29 @@
 							"text": "Some of my most commonly-used spells"
 						},
 						{
+							"id": "7f7abb89-5f1c-4840-8d73-d868044fb3f1",
+							"type": "note_container",
+							"open": true,
+							"children": [
+								{
+									"id": "a92f08af-6cbe-4bc5-a39d-c181b0ef0a02",
+									"type": "note",
+									"text": "Bossy (10 spells): Seek Earth, Shape Earth, Earth to Stone, Create Earth, Sound, Simple Illusion, Complex Illusion, Perfect Illusion, Create Object, Create Servant"
+								},
+								{
+									"id": "28c27c75-4a17-4ef1-8ea3-8840b440d1a4",
+									"type": "note",
+									"text": "Good Sharer (3 spells): Lend Energy, Recover Energy, Share Energy"
+								},
+								{
+									"id": "827a749e-a601-4f00-8b43-f6caaebc741a",
+									"type": "note",
+									"text": "Give Me Your Organs(7): Good Sharer, Steal Energy, Steal Vitality, Apportation, Evisceration"
+								}
+							],
+							"text": "At least 22 points in spells so I qualify as Wizard"
+						},
+						{
 							"id": "d015fb2c-1768-4444-a9c6-e08afad63273",
 							"type": "note",
 							"text": "Skills: Hazardous Materials (Magical), better Surgery, more Hidden Lore"
@@ -4526,7 +4611,7 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2022-10-13T22:46:29+01:00",
+	"modified_date": "2023-03-25T20:36:55Z",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
