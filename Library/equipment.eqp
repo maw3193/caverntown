@@ -1,20 +1,24 @@
 {
 	"type": "equipment_list",
-	"version": 2,
-	"id": "8d2d7538-cb7d-4647-a385-ba4e482f5f61",
+	"version": 4,
 	"rows": [
 		{
-			"type": "equipment",
 			"id": "c7f7e0a3-e9c7-4157-b828-3f1845af1176",
-			"quantity": 1,
+			"type": "equipment",
 			"description": "Shattersand Bomb, Small",
+			"reference": "B277",
+			"notes": "Impact explosion",
 			"tech_level": "5",
 			"legality_class": "2",
-			"value": "16",
+			"tags": [
+				"Missile Weapon"
+			],
+			"quantity": 1,
+			"value": 16,
 			"weight": "2.2 lb",
-			"reference": "B277",
 			"weapons": [
 				{
+					"id": "478a8236-1772-40ae-adfc-50afe7ba4b82",
 					"type": "ranged_weapon",
 					"damage": {
 						"type": "cr ex",
@@ -22,46 +26,42 @@
 						"fragmentation": "1d-4",
 						"fragmentation_type": "cut"
 					},
-					"accuracy": "0",
 					"range": "x2.5",
 					"rate_of_fire": "1",
 					"shots": "1",
-					"bulk": "0",
-					"recoil": "0",
-					"calc": {
-						"level": 0,
-						"range": "x2.5",
-						"damage": "1d cr ex [1d-4 cut]"
-					},
 					"defaults": [
 						{
 							"type": "skill",
 							"name": "Throwing"
 						}
-					]
+					],
+					"calc": {
+						"damage": "1d cr ex [1d-4 cut]"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": "16",
+				"extended_value": 16,
 				"extended_weight": "2.2 lb"
-			},
-			"notes": "Impact explosion",
-			"categories": [
-				"Missile Weapon"
-			]
+			}
 		},
 		{
-			"type": "equipment",
 			"id": "bf555dd4-e35f-4cab-a01b-2e1eaa0f1160",
-			"quantity": 1,
+			"type": "equipment",
 			"description": "Shattersand Bomb, Medium",
+			"reference": "B277",
+			"notes": "Impact explosion",
 			"tech_level": "5",
 			"legality_class": "2",
-			"value": "49",
+			"tags": [
+				"Missile Weapon"
+			],
+			"quantity": 1,
+			"value": 49,
 			"weight": "5.7 lb",
-			"reference": "B277",
 			"weapons": [
 				{
+					"id": "e6db9186-3201-40c1-a7db-73acc412392d",
 					"type": "ranged_weapon",
 					"damage": {
 						"type": "cr ex",
@@ -69,46 +69,42 @@
 						"fragmentation": "1d-2",
 						"fragmentation_type": "cut"
 					},
-					"accuracy": "0",
 					"range": "x1.2",
 					"rate_of_fire": "1",
 					"shots": "1",
-					"bulk": "0",
-					"recoil": "0",
-					"calc": {
-						"level": 0,
-						"range": "x1.2",
-						"damage": "2d cr ex [1d-2 cut]"
-					},
 					"defaults": [
 						{
 							"type": "skill",
 							"name": "Throwing"
 						}
-					]
+					],
+					"calc": {
+						"damage": "2d cr ex [1d-2 cut]"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": "49",
+				"extended_value": 49,
 				"extended_weight": "5.7 lb"
-			},
-			"notes": "Impact explosion",
-			"categories": [
-				"Missile Weapon"
-			]
+			}
 		},
 		{
-			"type": "equipment",
 			"id": "ec0fc4af-1982-434d-aa05-e2cf210e8e6a",
-			"quantity": 1,
+			"type": "equipment",
 			"description": "Shattersand Bomb, Large",
+			"reference": "B277",
+			"notes": "Impact explosion",
 			"tech_level": "5",
 			"legality_class": "2",
-			"value": "97",
+			"tags": [
+				"Missile Weapon"
+			],
+			"quantity": 1,
+			"value": 97,
 			"weight": "10.1 lb",
-			"reference": "B277",
 			"weapons": [
 				{
+					"id": "1853d7cf-8031-40a6-aa1c-63c5172b9bc6",
 					"type": "ranged_weapon",
 					"damage": {
 						"type": "cr ex",
@@ -116,46 +112,42 @@
 						"fragmentation": "1d",
 						"fragmentation_type": "cut"
 					},
-					"accuracy": "0",
 					"range": "x0.8",
 					"rate_of_fire": "1",
 					"shots": "1",
-					"bulk": "0",
-					"recoil": "0",
-					"calc": {
-						"level": 0,
-						"range": "x0.8",
-						"damage": "3d cr ex [1d cut]"
-					},
 					"defaults": [
 						{
 							"type": "skill",
 							"name": "Throwing"
 						}
-					]
+					],
+					"calc": {
+						"damage": "3d cr ex [1d cut]"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": "97",
+				"extended_value": 97,
 				"extended_weight": "10.1 lb"
-			},
-			"notes": "Impact explosion",
-			"categories": [
-				"Missile Weapon"
-			]
+			}
 		},
 		{
-			"type": "equipment",
 			"id": "aad82811-2abd-46fd-858a-06625888c89c",
-			"quantity": 1,
+			"type": "equipment",
 			"description": "Shattersand Bomb, Huge",
+			"reference": "B277",
+			"notes": "Impact explosion",
 			"tech_level": "5",
 			"legality_class": "2",
-			"value": "160",
+			"tags": [
+				"Missile Weapon"
+			],
+			"quantity": 1,
+			"value": 160,
 			"weight": "15.2 lb",
-			"reference": "B277",
 			"weapons": [
 				{
+					"id": "b64dd44a-2d15-42be-bf68-c7d9372ae1a4",
 					"type": "ranged_weapon",
 					"damage": {
 						"type": "cr ex",
@@ -163,82 +155,57 @@
 						"fragmentation": "1d+1",
 						"fragmentation_type": "cut"
 					},
-					"accuracy": "0",
 					"range": "x0.7",
 					"rate_of_fire": "1",
 					"shots": "1",
-					"bulk": "0",
-					"recoil": "0",
-					"calc": {
-						"level": 0,
-						"range": "x0.7",
-						"damage": "4d cr ex [1d+1 cut]"
-					},
 					"defaults": [
 						{
 							"type": "skill",
 							"name": "Throwing"
 						}
-					]
+					],
+					"calc": {
+						"damage": "4d cr ex [1d+1 cut]"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": "160",
+				"extended_value": 160,
 				"extended_weight": "15.2 lb"
-			},
-			"notes": "Impact explosion",
-			"categories": [
-				"Missile Weapon"
-			]
+			}
 		},
 		{
-			"type": "equipment_container",
 			"id": "69183862-345c-4d91-843d-dd3be783a523",
-			"description": "Firearms",
-			"value": "0",
-			"weight": "0 lb",
-			"calc": {
-				"extended_value": "43900",
-				"extended_weight": "1555.1 lb"
-			},
-			"open": true,
+			"type": "equipment_container",
 			"children": [
 				{
-					"type": "equipment_container",
 					"id": "70ee9258-545b-4e34-93be-3ce5b6b54120",
-					"description": "Pistols",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "680",
-						"extended_weight": "2.9 lb"
-					},
+					"type": "equipment_container",
 					"open": true,
 					"children": [
 						{
-							"type": "equipment",
 							"id": "a5adfa7b-4aae-4b3e-863b-feabb2f5dbac",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Double Pistol, .44",
+							"reference": "HT91",
+							"notes": "No lanyard ring. Malf 16.",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "130",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 130,
 							"weight": "0.4 lb",
-							"reference": "HT91",
 							"weapons": [
 								{
+									"id": "c73d7d54-16f5-4617-90b2-7566771de7e5",
 									"type": "melee_weapon",
 									"damage": {
 										"type": "cr",
 										"st": "thr"
 									},
 									"usage": "Pistol-Whip",
-									"calc": {
-										"level": 0,
-										"parry": "",
-										"block": "",
-										"damage": "thr cr"
-									},
 									"defaults": [
 										{
 											"type": "dx"
@@ -247,9 +214,13 @@
 											"type": "skill",
 											"name": "Brawling"
 										}
-									]
+									],
+									"calc": {
+										"damage": "thr cr"
+									}
 								},
 								{
+									"id": "ae892ec0-219b-49ab-8c94-0bb36faf1317",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi+",
@@ -262,11 +233,6 @@
 									"shots": "1(20)",
 									"bulk": "-1",
 									"recoil": "3",
-									"calc": {
-										"level": 0,
-										"range": "50/550",
-										"damage": "2d-1 pi+"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -335,30 +301,33 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "2d-1 pi+"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "130",
+								"extended_value": 130,
 								"extended_weight": "0.4 lb"
-							},
-							"notes": "No lanyard ring. Malf 16.",
-							"categories": [
-								"Firearms"
-							]
+							}
 						},
 						{
-							"type": "equipment",
 							"id": "6d98a69e-1a00-438e-b6a4-c95229c14c36",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Revolver, .45",
+							"reference": "HT95",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "550",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 550,
 							"weight": "2.5 lb",
-							"reference": "HT95",
 							"weapons": [
 								{
+									"id": "8d073d02-1f80-4176-9588-cfac803cb939",
 									"type": "melee_weapon",
 									"damage": {
 										"type": "cr",
@@ -367,12 +336,6 @@
 									},
 									"usage": "Pistol-Whip",
 									"reach": "C",
-									"calc": {
-										"level": 0,
-										"parry": "",
-										"block": "",
-										"damage": "thr+1 cr"
-									},
 									"defaults": [
 										{
 											"type": "dx"
@@ -381,9 +344,13 @@
 											"type": "skill",
 											"name": "Brawling"
 										}
-									]
+									],
+									"calc": {
+										"damage": "thr+1 cr"
+									}
 								},
 								{
+									"id": "ad338cf7-35f0-403e-8024-2111438cc0ec",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi+",
@@ -396,11 +363,6 @@
 									"shots": "6(2i)",
 									"bulk": "-2",
 									"recoil": "3",
-									"calc": {
-										"level": 0,
-										"range": "120/1,300",
-										"damage": "2d-1 pi+"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -469,43 +431,47 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "2d-1 pi+"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "550",
+								"extended_value": 550,
 								"extended_weight": "2.5 lb"
-							},
-							"categories": [
-								"Firearms"
-							]
+							}
 						}
-					]
+					],
+					"description": "Pistols",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 680,
+						"extended_weight": "2.9 lb"
+					}
 				},
 				{
-					"type": "equipment_container",
 					"id": "36eb54c0-085d-4808-8e67-0c69ca7b3401",
-					"description": "Rifles",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "4170",
-						"extended_weight": "28.9 lb"
-					},
+					"type": "equipment_container",
 					"open": true,
 					"children": [
 						{
-							"type": "equipment",
 							"id": "7bc48c89-6874-4e91-99ae-656719de6427",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Elephant Rifle, 8-bore",
+							"reference": "HT120",
+							"notes": "Lacks sling swivels.",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "3000",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 3000,
 							"weight": "12 lb",
-							"reference": "HT120",
 							"weapons": [
 								{
+									"id": "ba594107-1358-4904-b5e7-dea27b0b9a44",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi++",
@@ -518,11 +484,6 @@
 									"shots": "2(3i)",
 									"bulk": "-5",
 									"recoil": "7",
-									"calc": {
-										"level": 0,
-										"range": "180/1,800",
-										"damage": "6d+2 pi++"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -591,30 +552,33 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "6d+2 pi++"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "3000",
+								"extended_value": 3000,
 								"extended_weight": "12 lb"
-							},
-							"notes": "Lacks sling swivels.",
-							"categories": [
-								"Firearms"
-							]
+							}
 						},
 						{
-							"type": "equipment",
 							"id": "35c909c1-0305-45e6-9750-97efca8f17d9",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Lever-Action Rifle, .44-40",
+							"reference": "HT120",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "420",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 420,
 							"weight": "8.9 lb",
-							"reference": "HT120",
 							"weapons": [
 								{
+									"id": "1e5fd01e-03ca-46bc-9972-84e55ed5c48d",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi+",
@@ -627,11 +591,6 @@
 									"shots": "15+1(2i)",
 									"bulk": "-5",
 									"recoil": "2",
-									"calc": {
-										"level": 0,
-										"range": "300/2,200",
-										"damage": "3d+1 pi+"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -700,29 +659,34 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "3d+1 pi+"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "420",
+								"extended_value": 420,
 								"extended_weight": "8.9 lb"
-							},
-							"categories": [
-								"Firearms"
-							]
+							}
 						},
 						{
-							"type": "equipment",
 							"id": "acbc703c-7319-49c4-8501-d1d19efb1466",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Light Lever-Action Rifle, .38 Volcanic",
+							"reference": "HT120",
+							"notes": "Malf 16.",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "750",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 750,
 							"weight": "8 lb",
-							"reference": "HT120",
 							"weapons": [
 								{
+									"id": "217c16a7-04a8-4154-b219-dc8a739249dd",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi",
@@ -735,11 +699,6 @@
 									"shots": "25+1(3i)",
 									"bulk": "-5",
 									"recoil": "2",
-									"calc": {
-										"level": 0,
-										"range": "70/800",
-										"damage": "2d-1 pi"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -808,44 +767,47 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "2d-1 pi"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "750",
+								"extended_value": 750,
 								"extended_weight": "8 lb"
-							},
-							"notes": "Malf 16.",
-							"categories": [
-								"Firearms"
-							]
+							}
 						}
-					]
+					],
+					"description": "Rifles",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 4170,
+						"extended_weight": "28.9 lb"
+					}
 				},
 				{
-					"type": "equipment_container",
 					"id": "b03e7c71-3842-4c09-9b5e-39e97f6c9ddc",
-					"description": "Shotguns",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "1050",
-						"extended_weight": "18.3 lb"
-					},
+					"type": "equipment_container",
 					"open": true,
 					"children": [
 						{
-							"type": "equipment",
 							"id": "f743d11f-7add-4848-9db1-1e09ba544bbe",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Revolving Shotgun, 20G",
+							"reference": "HT104",
+							"notes": "Malf 16.",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "800",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 800,
 							"weight": "10.9 lb",
-							"reference": "HT104",
 							"weapons": [
 								{
+									"id": "28bf4b5d-9caf-4fdc-9ba7-2ba6f5e78b87",
 									"type": "melee_weapon",
 									"damage": {
 										"type": "cr",
@@ -855,13 +817,7 @@
 									"strength": "7†",
 									"usage": "Thrust",
 									"usage_notes": "Butt Strike",
-									"reach": "1,2*",
-									"calc": {
-										"level": 0,
-										"parry": "",
-										"block": "",
-										"damage": "thr+2 cr"
-									},
+									"reach": "1-2*",
 									"defaults": [
 										{
 											"type": "skill",
@@ -881,9 +837,13 @@
 											"name": "Polearm",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "thr+2 cr"
+									}
 								},
 								{
+									"id": "a8fec3b2-b0e4-423d-b656-317fff94086f",
 									"type": "melee_weapon",
 									"damage": {
 										"type": "imp",
@@ -893,14 +853,8 @@
 									"strength": "9†",
 									"usage": "Stab",
 									"usage_notes": "Bayonet",
-									"reach": "1,2*",
+									"reach": "1-2*",
 									"parry": "0",
-									"calc": {
-										"level": 0,
-										"parry": "0",
-										"block": "",
-										"damage": "thr+3 imp"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -920,9 +874,13 @@
 											"name": "Polearm",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "thr+3 imp"
+									}
 								},
 								{
+									"id": "3caa9800-4a82-4a54-8977-717117d5f39c",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi",
@@ -935,11 +893,6 @@
 									"shots": "5(10i)",
 									"bulk": "-6",
 									"recoil": "1",
-									"calc": {
-										"level": 0,
-										"range": "40/800",
-										"damage": "1d pi"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1008,9 +961,13 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "1d pi"
+									}
 								},
 								{
+									"id": "98a8dde8-246f-4fd0-9c57-5f304f6befe1",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi++",
@@ -1018,16 +975,11 @@
 									},
 									"strength": "11†",
 									"accuracy": "2",
-									"range": "100/1200",
+									"range": "100/1,200",
 									"rate_of_fire": "2",
 									"shots": "5(10i)",
 									"bulk": "-6",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "100/1200",
-										"damage": "4d pi++"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1096,30 +1048,34 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "4d pi++"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "800",
+								"extended_value": 800,
 								"extended_weight": "10.9 lb"
-							},
-							"notes": "Malf 16.",
-							"categories": [
-								"Firearms"
-							]
+							}
 						},
 						{
-							"type": "equipment",
 							"id": "4f9eccea-3234-43d3-9863-309b2cdde062",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Double-Barrel Shotgun, 12G 2.5\"",
+							"reference": "HT104",
+							"notes": "Both barrels can be fired simultaneously at no penalty",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "250",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 250,
 							"weight": "7.4 lb",
-							"reference": "HT104",
 							"weapons": [
 								{
+									"id": "a0b8be57-ca83-43fc-9e86-9e059432ba3c",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi",
@@ -1132,11 +1088,6 @@
 									"shots": "2(4i)",
 									"bulk": "-6",
 									"recoil": "1",
-									"calc": {
-										"level": 0,
-										"range": "40/800",
-										"damage": "1d+1 pi"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1205,9 +1156,13 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "1d+1 pi"
+									}
 								},
 								{
+									"id": "3477d79d-fd0a-41d1-8a1f-62f270cf6c73",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi++",
@@ -1215,16 +1170,11 @@
 									},
 									"strength": "10†",
 									"accuracy": "3",
-									"range": "110/2200",
+									"range": "110/2,200",
 									"rate_of_fire": "2",
 									"shots": "2(4i)",
 									"bulk": "-6",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "110/2200",
-										"damage": "3d+2 pi++"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1293,44 +1243,47 @@
 											"specialization": "Light Anti-Armor Weapon",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "3d+2 pi++"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "250",
+								"extended_value": 250,
 								"extended_weight": "7.4 lb"
-							},
-							"notes": "Both barrels can be fired simultaneously at no penalty",
-							"categories": [
-								"Firearms"
-							]
+							}
 						}
-					]
+					],
+					"description": "Shotguns",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 1050,
+						"extended_weight": "18.3 lb"
+					}
 				},
 				{
-					"type": "equipment_container",
 					"id": "49e89d79-cb83-467c-9653-a920430d3b5c",
-					"description": "Machine Guns",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "16000",
-						"extended_weight": "200 lb"
-					},
+					"type": "equipment_container",
 					"open": true,
 					"children": [
 						{
-							"type": "equipment",
 							"id": "1ae737ca-d967-4355-bb80-d35d1432b322",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Gatling Gun, .45-70",
+							"reference": "HT128",
+							"notes": "Malf 15.",
 							"tech_level": "5",
 							"legality_class": "2",
-							"value": "16000",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 16000,
 							"weight": "200 lb",
-							"reference": "HT128",
 							"weapons": [
 								{
+									"id": "18b8e676-1921-42ad-a873-bd3846044929",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi+",
@@ -1343,11 +1296,6 @@
 									"shots": "40(5)",
 									"bulk": "-10",
 									"recoil": "2",
-									"calc": {
-										"level": 0,
-										"range": "470/3,000",
-										"damage": "4d+1 pi+"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1363,44 +1311,46 @@
 											"name": "Gunner",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "4d+1 pi+"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "16000",
+								"extended_value": 16000,
 								"extended_weight": "200 lb"
-							},
-							"notes": "Malf 15.",
-							"categories": [
-								"Firearms"
-							]
+							}
 						}
-					]
+					],
+					"description": "Machine Guns",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 16000,
+						"extended_weight": "200 lb"
+					}
 				},
 				{
-					"type": "equipment_container",
 					"id": "c1b5c567-63aa-46aa-9acd-f929c4dc1185",
-					"description": "Cannon",
-					"value": "0",
-					"weight": "0 lb",
-					"calc": {
-						"extended_value": "22000",
-						"extended_weight": "1305 lb"
-					},
+					"type": "equipment_container",
 					"open": true,
 					"children": [
 						{
-							"type": "equipment",
 							"id": "d2c5aa8c-0722-438b-bfa7-5261645e2cea",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "Harpoon Gun, 1.5\"",
+							"reference": "HT140",
 							"tech_level": "5",
 							"legality_class": "3",
-							"value": "2000",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 2000,
 							"weight": "75 lb",
-							"reference": "HT140",
 							"weapons": [
 								{
+									"id": "1c74130b-2d88-44c6-bb94-85ef93678f85",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "imp",
@@ -1414,11 +1364,6 @@
 									"shots": "1(20)",
 									"bulk": "-8",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "30/120",
-										"damage": "5dx2 imp"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1429,9 +1374,13 @@
 											"type": "iq",
 											"modifier": -5
 										}
-									]
+									],
+									"calc": {
+										"damage": "5dx2 imp"
+									}
 								},
 								{
+									"id": "2482d70b-7a12-41a0-958d-ecd63e29dee0",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "imp",
@@ -1445,11 +1394,6 @@
 									"shots": "1(20)",
 									"bulk": "-8",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "30/120",
-										"damage": "5dx2 imp"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1465,29 +1409,33 @@
 											"name": "Gunner",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "5dx2 imp"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "2000",
+								"extended_value": 2000,
 								"extended_weight": "75 lb"
-							},
-							"categories": [
-								"Firearms"
-							]
+							}
 						},
 						{
-							"type": "equipment",
 							"id": "0893f931-e6f1-4864-887c-2556f1e78c84",
-							"quantity": 1,
+							"type": "equipment",
 							"description": "12-pounder Cannon",
+							"reference": "HT140",
 							"tech_level": "5",
 							"legality_class": "1",
-							"value": "20000",
-							"weight": "1230 lb",
-							"reference": "HT140",
+							"tags": [
+								"Firearms"
+							],
+							"quantity": 1,
+							"value": 20000,
+							"weight": "1,230 lb",
 							"weapons": [
 								{
+									"id": "ac3c9239-f7fa-47b4-9ec7-bdd874256dd9",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi++",
@@ -1501,11 +1449,6 @@
 									"shots": "1(30)",
 									"bulk": "-13",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "400/2,000",
-										"damage": "6dx5 pi++"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1516,9 +1459,13 @@
 											"type": "iq",
 											"modifier": -5
 										}
-									]
+									],
+									"calc": {
+										"damage": "6dx5 pi++"
+									}
 								},
 								{
+									"id": "676008e1-e0e3-4426-8610-237b95f1aa46",
 									"type": "ranged_weapon",
 									"damage": {
 										"type": "pi++",
@@ -1532,11 +1479,6 @@
 									"shots": "1(30)",
 									"bulk": "-13",
 									"recoil": "5",
-									"calc": {
-										"level": 0,
-										"range": "400/2,000",
-										"damage": "6dx5 pi++"
-									},
 									"defaults": [
 										{
 											"type": "skill",
@@ -1552,365 +1494,616 @@
 											"name": "Gunner",
 											"modifier": -4
 										}
-									]
+									],
+									"calc": {
+										"damage": "6dx5 pi++"
+									}
 								}
 							],
 							"calc": {
-								"extended_value": "20000",
-								"extended_weight": "1230 lb"
-							},
-							"categories": [
-								"Firearms"
-							]
+								"extended_value": 20000,
+								"extended_weight": "1,230 lb"
+							}
 						}
-					]
+					],
+					"description": "Cannon",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 22000,
+						"extended_weight": "1,305 lb"
+					}
 				}
-			]
+			],
+			"description": "Firearms",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 43900,
+				"extended_weight": "1,555.1 lb"
+			}
 		},
 		{
-			"type": "equipment_container",
 			"id": "016bc94a-9732-4112-b4df-9c62eacdc163",
-			"description": "Ammunition",
-			"value": "0",
-			"weight": "0 lb",
-			"calc": {
-				"extended_value": "216.75",
-				"extended_weight": "20.821 lb"
-			},
+			"type": "equipment_container",
 			"open": true,
 			"children": [
 				{
-					"type": "equipment",
 					"id": "3090c463-9616-41f2-99fb-8e70ef0667f0",
-					"quantity": 1,
+					"type": "equipment",
 					"description": ".44 (Deringer)",
-					"value": "0.2",
-					"weight": "0.022 lb",
 					"reference": "HT176",
+					"notes": "Powder and shot.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "da5a6eb7-9633-41f1-8cc5-b3f791c2b920",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 0.2,
+					"weight": "0.022 lb",
 					"calc": {
-						"extended_value": "1",
+						"extended_value": 1,
 						"extended_weight": "0.022 lb"
-					},
-					"notes": "Powder and shot.",
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "bfc74535-bbcb-42b0-99c1-3ce0de64488e",
-					"quantity": 1,
+					"type": "equipment",
 					"description": ".45 (11.43x28mmR)",
-					"value": "0.5",
-					"weight": "0.045 lb",
 					"reference": "HT176",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "9083dad2-8315-42c3-ae0b-e63d9c2d1a24",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 0.5,
+					"weight": "0.045 lb",
 					"calc": {
-						"extended_value": "2.5",
+						"extended_value": 2.5,
 						"extended_weight": "0.045 lb"
-					},
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "d3962807-5160-4a5a-9a1e-0024e0486e1a",
-					"quantity": 1,
+					"type": "equipment",
 					"description": ".45-70 (11.43x53mmR)",
-					"value": "1",
-					"weight": "0.086 lb",
 					"reference": "HT177",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "5e5d0628-80d3-4f49-bcb8-9f012c139bb1",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 1,
+					"weight": "0.086 lb",
 					"calc": {
-						"extended_value": "5",
+						"extended_value": 5,
 						"extended_weight": "0.086 lb"
-					},
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "fd1db65c-3c66-49e9-83bb-a5452d893729",
-					"quantity": 1,
+					"type": "equipment",
 					"description": "8-bore (21.2x70mmR)",
-					"value": "4",
-					"weight": "0.26 lb",
 					"reference": "HT177",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "5e8b5113-d07d-4d7d-9162-75bf7e2a6e3d",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 4,
+					"weight": "0.26 lb",
 					"calc": {
-						"extended_value": "20",
+						"extended_value": 20,
 						"extended_weight": "0.26 lb"
-					},
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "a3b6573f-d2ab-4e0c-860e-258d4422f45c",
-					"quantity": 1,
+					"type": "equipment",
 					"description": ".44-40 (10.8x33mmR)",
-					"value": "0.6",
-					"weight": "0.043 lb",
 					"reference": "HT177",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "d9608390-0a77-4f24-964a-590cf0aee3d4",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 0.6,
+					"weight": "0.043 lb",
 					"calc": {
-						"extended_value": "3",
+						"extended_value": 3,
 						"extended_weight": "0.043 lb"
-					},
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "3809e4a3-99ec-4519-8d53-744a18e7f1c0",
-					"quantity": 1,
+					"type": "equipment",
 					"description": ".38 Volcanic",
-					"value": "0.25",
-					"weight": "0.015 lb",
 					"reference": "HT177",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
 					"modifiers": [
 						{
-							"type": "eqp_modifier",
 							"id": "abd4a3c3-a5ac-4ace-a0aa-d7f9d466354a",
+							"type": "eqp_modifier",
 							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
 						}
 					],
+					"quantity": 1,
+					"value": 0.25,
+					"weight": "0.015 lb",
 					"calc": {
-						"extended_value": "1.25",
+						"extended_value": 1.25,
 						"extended_weight": "0.015 lb"
-					},
-					"categories": [
-						"Ammunition",
-						"Warheads"
-					]
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "36705712-fd3e-4de0-9f3e-67416cc9a72b",
-					"quantity": 1,
+					"type": "equipment",
 					"description": "20-gauge",
-					"value": "0.4",
-					"weight": "0.075 lb",
 					"reference": "HT176",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "9f12189f-1c40-43d6-b56f-8c206390ce3a",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
-						}
-					],
-					"calc": {
-						"extended_value": "2",
-						"extended_weight": "0.075 lb"
-					},
 					"notes": "Powder and shot. Shotshell.",
-					"categories": [
+					"tags": [
 						"Ammunition",
 						"Warheads"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "acc0aef0-b165-45eb-b666-1030fe82b4dd",
+					],
+					"modifiers": [
+						{
+							"id": "9f12189f-1c40-43d6-b56f-8c206390ce3a",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
 					"quantity": 1,
-					"description": "20-gauge Ball",
-					"value": "0.4",
+					"value": 0.4,
 					"weight": "0.075 lb",
-					"reference": "HT176",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "1e5879b6-a22e-442e-a701-0644d1d01b46",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
-						}
-					],
 					"calc": {
-						"extended_value": "2",
+						"extended_value": 2,
 						"extended_weight": "0.075 lb"
-					},
+					}
+				},
+				{
+					"id": "acc0aef0-b165-45eb-b666-1030fe82b4dd",
+					"type": "equipment",
+					"description": "20-gauge Ball",
+					"reference": "HT176",
 					"notes": "Powder and Ball",
-					"categories": [
+					"tags": [
 						"Ammunition",
 						"Warheads"
-					]
+					],
+					"modifiers": [
+						{
+							"id": "1e5879b6-a22e-442e-a701-0644d1d01b46",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
+					"quantity": 1,
+					"value": 0.4,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2,
+						"extended_weight": "0.075 lb"
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "20c4095b-b6e1-44e0-b7a7-9407119b8314",
-					"quantity": 1,
+					"type": "equipment",
 					"description": "12-gauge 2.5\" (18.5x63mmR)",
-					"value": "0.5",
-					"weight": "0.1 lb",
 					"reference": "HT176",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "4a6f1136-c6af-4739-a49f-36e7d36c3b82",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
-						}
-					],
-					"calc": {
-						"extended_value": "2.5",
-						"extended_weight": "0.1 lb"
-					},
 					"notes": "Light cased. Shotshell.",
-					"categories": [
+					"tags": [
 						"Ammunition",
 						"Warheads"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "e00372a7-87ba-4bd7-aba7-ddc0db6c531c",
+					],
+					"modifiers": [
+						{
+							"id": "4a6f1136-c6af-4739-a49f-36e7d36c3b82",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
 					"quantity": 1,
-					"description": "12-gauge 2.5\" (18.5x63mmR) Ball",
-					"value": "0.5",
+					"value": 0.5,
 					"weight": "0.1 lb",
-					"reference": "HT176",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "c2ad02be-5bc2-411d-8a13-6f90d950ea06",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
-						}
-					],
 					"calc": {
-						"extended_value": "2.5",
+						"extended_value": 2.5,
 						"extended_weight": "0.1 lb"
-					},
+					}
+				},
+				{
+					"id": "e00372a7-87ba-4bd7-aba7-ddc0db6c531c",
+					"type": "equipment",
+					"description": "12-gauge 2.5\" (18.5x63mmR) Ball",
+					"reference": "HT176",
 					"notes": "Light Cased. Ball.",
-					"categories": [
+					"tags": [
 						"Ammunition",
 						"Warheads"
-					]
+					],
+					"modifiers": [
+						{
+							"id": "c2ad02be-5bc2-411d-8a13-6f90d950ea06",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
+					"quantity": 1,
+					"value": 0.5,
+					"weight": "0.1 lb",
+					"calc": {
+						"extended_value": 2.5,
+						"extended_weight": "0.1 lb"
+					}
 				},
 				{
-					"type": "equipment",
 					"id": "f6d3f8eb-2295-49b7-8898-5cf7165cb865",
-					"quantity": 1,
+					"type": "equipment",
 					"description": "1.5\" Harpoon",
-					"value": "10",
-					"weight": "5 lb",
 					"reference": "HT177",
-					"modifiers": [
-						{
-							"type": "eqp_modifier",
-							"id": "2d6cd281-3ace-4770-9157-a2ffb7f59f95",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
-						}
-					],
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "5 lb"
-					},
 					"notes": "Powder and harpoon. Typically used with a 30yd 1\" rope.",
-					"categories": [
+					"tags": [
 						"Ammunition",
 						"Warheads"
+					],
+					"modifiers": [
+						{
+							"id": "2d6cd281-3ace-4770-9157-a2ffb7f59f95",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
+					"quantity": 1,
+					"value": 10,
+					"weight": "5 lb",
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "d90263c1-0e02-4ae2-85dd-1ae1f8798269",
+					"type": "equipment",
+					"description": "12-pounder Cannonlock",
+					"reference": "HT177",
+					"notes": "Powder and shot.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"modifiers": [
+						{
+							"id": "26f645fe-7c6c-448f-b7d2-e43edb5eca21",
+							"type": "eqp_modifier",
+							"name": "Shattersand Explosive",
+							"notes": "Made of semi-precious gems but functions in mana",
+							"cost": "x5"
+						}
+					],
+					"quantity": 1,
+					"value": 25,
+					"weight": "15 lb",
+					"calc": {
+						"extended_value": 125,
+						"extended_weight": "15 lb"
+					}
+				}
+			],
+			"description": "Ammunition",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 216.75,
+				"extended_weight": "20.821 lb"
+			}
+		},
+		{
+			"id": "c2741c91-bb11-4045-8785-27770ca92f54",
+			"type": "equipment",
+			"description": "Amulet of Secrets of Life",
+			"legality_class": "4",
+			"modifiers": [
+				{
+					"id": "c2386ff1-2e53-4f93-a5d3-19aab4dfb987",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Charm 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Charm",
+							"amount": 2
+						}
 					]
 				},
 				{
-					"type": "equipment",
-					"id": "d90263c1-0e02-4ae2-85dd-1ae1f8798269",
-					"quantity": 1,
-					"description": "12-pounder Cannonlock",
-					"value": "25",
-					"weight": "15 lb",
-					"reference": "HT177",
-					"modifiers": [
+					"id": "b0c45f2c-a01c-4b2d-8bd8-0977a98b3c30",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Dream Viewing 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
 						{
-							"type": "eqp_modifier",
-							"id": "26f645fe-7c6c-448f-b7d2-e43edb5eca21",
-							"name": "Shattersand Explosive",
-							"cost_type": "to_original_cost",
-							"cost": "x5",
-							"notes": "Made of semi-precious gems but functions in mana"
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Dream Viewing",
+							"amount": 2
 						}
-					],
-					"calc": {
-						"extended_value": "125",
-						"extended_weight": "15 lb"
-					},
-					"notes": "Powder and shot.",
-					"categories": [
-						"Ammunition",
-						"Warheads"
+					]
+				},
+				{
+					"id": "850ed399-0648-411a-8374-e2f0e3a3ece5",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Enslave 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Enslave",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "1e89889a-6f5d-4f23-bd9a-db1422fa6fdc",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Geas 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Geas",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "89f46749-5601-40f6-a070-662f86f74f01",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Loyalty 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Loyalty",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "5045bf89-b0e4-4910-a88b-a9bdba836e93",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Reading 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Reading",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "4c817e07-a7fd-4e8f-a584-e1131ca7af1f",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Search 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Search",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "0f6807c9-9162-4a3b-a95f-c02df6b7a649",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Possession 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Possession",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "9eef6f28-a1bb-4647-ada4-0162def5e5df",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Suggestion 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Suggestion",
+							"amount": 2
+						}
 					]
 				}
-			]
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 900,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "ff5d61a9-d9df-4083-8725-486784848fbb",
+			"type": "equipment",
+			"description": "Amulet of Secrets of the Grave",
+			"legality_class": "4",
+			"modifiers": [
+				{
+					"id": "bf5815c7-43a8-4790-8260-a496e07c1f6b",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Bind Spirit 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Bind Spirit",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "5c74268e-f8b9-41d0-8391-a977e4e5ccc5",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Command Spirit 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Command Spirit",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "cbc17f06-6368-4108-bddb-dde267ae0d0f",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Control Zombie 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Control Zombie",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "a5b22286-be52-4112-9e8a-2da5946455f9",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Dream Viewing 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Dream Viewing",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "31e3d92f-a244-4d10-8d5e-740d2147b619",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Reading 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Reading",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "6a6d76eb-7f7b-4942-a0de-e320c2575ece",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Search 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Search",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "2e8692b8-6625-479a-bf23-d7cd100e5740",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Possession 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Possession",
+							"amount": 2
+						}
+					]
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 700,
+				"extended_weight": "0 lb"
+			}
 		}
 	]
 }
