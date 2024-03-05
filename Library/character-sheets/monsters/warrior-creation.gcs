@@ -1,0 +1,1627 @@
+{
+	"type": "character",
+	"version": 4,
+	"id": "02cd8e36-1180-4617-a029-bd779f6fd8c8",
+	"total_points": 150,
+	"points_record": [
+		{
+			"when": "2023-08-23T17:50:59+01:00",
+			"points": 150,
+			"reason": "Initial points"
+		}
+	],
+	"profile": {
+		"name": "Warrior Creation",
+		"birthday": " 19",
+		"eyes": "Blue",
+		"hair": "Brown",
+		"skin": "Olive",
+		"handedness": "Right",
+		"height": "5'7\"",
+		"weight": "117 lb",
+		"player_name": "Jonathan Maw",
+		"tech_level": "3"
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"traits skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		],
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"attribute_base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"attribute_base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"attribute_base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"attribute_base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"name": "Will",
+				"attribute_base": "$iq",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"attribute_base": "$will",
+				"cost_per_point": 2
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"name": "Per",
+				"full_name": "Perception",
+				"attribute_base": "$iq",
+				"cost_per_point": 5
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"attribute_base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"attribute_base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste \u0026 Smell",
+				"attribute_base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"attribute_base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"attribute_base": "($dx+$ht)/4",
+				"cost_per_point": 20
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"attribute_base": "floor($basic_speed)",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"attribute_base": "$ht",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"state": "Unconscious",
+						"expression": "-$fp",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Collapse",
+						"expression": "0",
+						"explanation": "Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\nEach FP you lose below 0 also causes 1 HP of injury\nMove, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tired",
+						"expression": "ceil($fp/3)-1",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tiring",
+						"expression": "$fp-1"
+					},
+					{
+						"state": "Rested",
+						"expression": "$fp"
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"attribute_base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"state": "Dead",
+						"expression": "round(-$hp*5)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #4",
+						"expression": "round(-$hp*4)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-4 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #3",
+						"expression": "round(-$hp*3)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-3 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #2",
+						"expression": "round(-$hp*2)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-2 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #1",
+						"expression": "-$hp",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-1 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Collapse",
+						"expression": "0",
+						"explanation": "Roll vs. HT every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Reeling",
+						"expression": "ceil($hp/3)-1",
+						"explanation": "Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Wounded",
+						"expression": "$hp-1"
+					},
+					{
+						"state": "Healthy",
+						"expression": "$hp"
+					}
+				]
+			}
+		],
+		"body_type": {
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"hit_penalty": -9,
+					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 11
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 5
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 5
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"show_spell_adj": true,
+		"exclude_unspent_points_from_total": false
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 6,
+			"calc": {
+				"value": 16,
+				"points": 60
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 40
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 6,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 6,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"calc": {
+				"value": 16,
+				"current": 16,
+				"points": 0
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "6d1c760c-6baa-45e7-96d6-1d4fdc5d4618",
+			"type": "trait",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "137d6335-2eaf-4695-9316-0b2031d94e96",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"level": 12,
+						"parry": "No",
+						"block": "No",
+						"damage": "1d cr"
+					}
+				},
+				{
+					"id": "f7fae024-c60c-4971-a73e-9ac71c9e20d5",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"level": 12,
+						"parry": "9",
+						"damage": "1d cr"
+					}
+				},
+				{
+					"id": "3c63668b-c283-4d82-bdc9-df1925f7a4bf",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 10,
+						"parry": "No",
+						"damage": "1d+1 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "ccd39d32-e2ce-4dc2-9127-74a5b2b71b14",
+			"type": "skill",
+			"name": "Staff",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 16,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Polearm",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Spear",
+					"modifier": -2
+				}
+			],
+			"calc": {
+				"level": 16,
+				"rsl": "DX+4"
+			}
+		},
+		{
+			"id": "0bbb66c3-a370-4331-9ccd-d2c86e6a2c22",
+			"type": "skill",
+			"name": "Two-Handed Flail",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/h",
+			"points": 20,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Flail",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Kusari",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Two-Handed Axe/Mace",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 16,
+				"rsl": "DX+4"
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "53eafd24-05b9-46ab-ada5-8b53efae3eba",
+			"type": "equipment",
+			"description": "Flail",
+			"reference": "B274",
+			"tech_level": "2",
+			"tags": [
+				"Melee Weapon"
+			],
+			"quantity": 1,
+			"value": 100,
+			"weight": "8 lb",
+			"weapons": [
+				{
+					"id": "1a94f309-2b9e-408b-84a6-2fb25a56ea70",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "4"
+					},
+					"strength": "13†",
+					"usage": "Swung",
+					"usage_notes": "Attempts to parry this weapon are at -4 and fencing weapons may not parry it at all; attempts to block this weapon are at -2",
+					"reach": "1,2*",
+					"parry": "0U",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Flail"
+						},
+						{
+							"type": "skill",
+							"name": "Flail",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Kusari",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "11U",
+						"block": "No",
+						"damage": "2d+6 cr"
+					}
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "8 lb"
+			}
+		},
+		{
+			"id": "b7070c1c-31ce-4651-8416-9d3d0cb57475",
+			"type": "equipment",
+			"description": "Quarterstaff",
+			"reference": "B273",
+			"tech_level": "0",
+			"tags": [
+				"Melee Weapon"
+			],
+			"quantity": 1,
+			"value": 10,
+			"weight": "4 lb",
+			"weapons": [
+				{
+					"id": "ad65dc1c-caf5-4c71-a880-84587832d8ea",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Swung",
+					"usage_notes": "Staff",
+					"reach": "1,2",
+					"parry": "+2",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "13",
+						"block": "No",
+						"damage": "2d+4 cr"
+					}
+				},
+				{
+					"id": "0f333350-cfd8-4fba-a202-b2bf19773be5",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Thrust",
+					"usage_notes": "Staff",
+					"reach": "1,2",
+					"parry": "+2",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "13",
+						"block": "No",
+						"damage": "1d+3 cr"
+					}
+				},
+				{
+					"id": "cbc835a1-cf24-479a-bd41-0e8a7b4b8c37",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "2"
+					},
+					"strength": "9†",
+					"usage": "Swung",
+					"usage_notes": "Two-Handed Sword",
+					"reach": "1,2",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Sword"
+						},
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 7,
+						"parry": "6",
+						"block": "No",
+						"damage": "2d+4 cr"
+					}
+				},
+				{
+					"id": "3cb8cfdd-ea36-4144-b25e-406f4a105764",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "1"
+					},
+					"strength": "9†",
+					"usage": "Thrust",
+					"usage_notes": "Two-Handed Sword",
+					"reach": "2",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Sword"
+						},
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 7,
+						"parry": "6",
+						"block": "No",
+						"damage": "1d+2 cr"
+					}
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 10,
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "39d8d578-ac38-41ee-8715-7e780597e7be",
+			"type": "equipment",
+			"description": "Plate, Heavy",
+			"reference": "LT108",
+			"notes": "DR 9; Holdout: -9.",
+			"tech_level": "4",
+			"modifiers": [
+				{
+					"id": "2f50b007-28e2-4ada-b3c7-dd6c263da20b",
+					"type": "eqp_modifier",
+					"name": "Head",
+					"notes": "Don time: 14 secs.",
+					"disabled": true,
+					"cost": "+1200",
+					"weight": "+9.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "skull",
+							"amount": 9
+						},
+						{
+							"type": "dr_bonus",
+							"location": "face",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "42c2c269-328b-4cb0-845b-c020007d498c",
+					"type": "eqp_modifier",
+					"name": "Skull",
+					"notes": "Don time: 9 secs.",
+					"cost": "+800",
+					"weight": "+6.4 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "skull",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "97a959e9-097b-4a2c-afad-fb20560c8b26",
+					"type": "eqp_modifier",
+					"name": "Face",
+					"notes": "Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+400",
+					"weight": "+3.2 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "face",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "623a1460-a767-40fe-a175-36b7670e078f",
+					"type": "eqp_modifier",
+					"name": "Neck",
+					"notes": "Don time: 3 secs.",
+					"disabled": true,
+					"cost": "+200",
+					"weight": "+1.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "neck",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "18e1aefc-20ae-4c86-8d52-d8c8bab688c3",
+					"type": "eqp_modifier",
+					"name": "Torso",
+					"notes": "Roll 1d; on 1, the vitals are hit.; Don time: 45 secs.",
+					"disabled": true,
+					"cost": "+4000",
+					"weight": "+32 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "torso",
+							"amount": 9
+						},
+						{
+							"type": "dr_bonus",
+							"location": "vitals",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "8f59ecf4-a39e-4a4f-b7dd-626cfe142f09",
+					"type": "eqp_modifier",
+					"name": "Chest",
+					"reference": "LT102",
+					"notes": "Hit location 9-10. Roll 1d; on 1, the vitals are hit.; Don time: 34 secs.",
+					"disabled": true,
+					"cost": "+3000",
+					"weight": "+24 lb"
+				},
+				{
+					"id": "54fee43d-1cbb-4b03-bac1-0ed38674732b",
+					"type": "eqp_modifier",
+					"name": "Abdomen",
+					"reference": "LT102",
+					"notes": "Hit location 11. Roll 1d; on 1, the vitals are hit.; Don time: 34 secs.",
+					"disabled": true,
+					"cost": "+3000",
+					"weight": "+24 lb"
+				},
+				{
+					"id": "2353e00c-bb74-44c5-b289-52073dcc648e",
+					"type": "eqp_modifier",
+					"name": "Groin",
+					"notes": "Don time: 3 secs.",
+					"disabled": true,
+					"cost": "+200",
+					"weight": "+1.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "groin",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "fb87adc9-4f77-4927-a163-ef4e6627d600",
+					"type": "eqp_modifier",
+					"name": "Arms",
+					"notes": "Don time: 23 secs.",
+					"disabled": true,
+					"cost": "+2000",
+					"weight": "+16 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "arm",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "35f3f7d9-ca56-4aa0-9119-adcf834d6670",
+					"type": "eqp_modifier",
+					"name": "Shoulders",
+					"notes": "Roll 1d; on 6, the armor is hit.; Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+400",
+					"weight": "+3.2 lb"
+				},
+				{
+					"id": "11312663-ba33-4c85-b681-a8ea8eb0a042",
+					"type": "eqp_modifier",
+					"name": "Upper Arms",
+					"notes": "Roll 1d; on 5, the armor is hit.; Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+400",
+					"weight": "+3.2 lb"
+				},
+				{
+					"id": "50023238-b3a9-4c2c-a35b-265f87c853dc",
+					"type": "eqp_modifier",
+					"name": "Elbows",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 3 secs.",
+					"disabled": true,
+					"cost": "+200",
+					"weight": "+1.6 lb"
+				},
+				{
+					"id": "254a8bc0-cc2c-44db-aa70-4c82c7bd3f7a",
+					"type": "eqp_modifier",
+					"name": "Forearms",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 12 secs.",
+					"disabled": true,
+					"cost": "+1000",
+					"weight": "+8 lb"
+				},
+				{
+					"id": "7872adff-b2f6-46e7-b010-53c976467022",
+					"type": "eqp_modifier",
+					"name": "Hands",
+					"notes": "Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+400",
+					"weight": "+3.2 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "hand",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "a095d2f5-e802-472f-82c5-f0a43c30831a",
+					"type": "eqp_modifier",
+					"name": "Legs",
+					"notes": "Don time: 45 secs.",
+					"disabled": true,
+					"cost": "+4000",
+					"weight": "+32 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "leg",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "58287190-f876-4438-a2b7-6becdb9f3a75",
+					"type": "eqp_modifier",
+					"name": "Thighs",
+					"notes": "Roll 1d; on 5-6, the armor is hit.; Don time: 21 secs.",
+					"disabled": true,
+					"cost": "+1800",
+					"weight": "+14.4 lb"
+				},
+				{
+					"id": "a1a88c15-3e17-4b93-a44a-c33e24144ac3",
+					"type": "eqp_modifier",
+					"name": "Knees",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 3 secs.",
+					"disabled": true,
+					"cost": "+200",
+					"weight": "+1.6 lb"
+				},
+				{
+					"id": "c44cdf5c-557c-4b48-af10-b16afd8ddc73",
+					"type": "eqp_modifier",
+					"name": "Shins",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 23 secs.",
+					"disabled": true,
+					"cost": "+2000",
+					"weight": "+16 lb"
+				},
+				{
+					"id": "fce83b63-7369-4b2d-b012-16680e24bd73",
+					"type": "eqp_modifier",
+					"name": "Feet",
+					"notes": "Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+400",
+					"weight": "+3.2 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "foot",
+							"amount": 9
+						}
+					]
+				},
+				{
+					"id": "eed641f5-ab53-4b18-8628-6bcfbe056989",
+					"type": "eqp_modifier",
+					"name": "@Covers only half (front only, one arm, etc)@",
+					"reference": "LT100",
+					"cost_type": "to_base_cost",
+					"weight_type": "to_base_weight",
+					"disabled": true,
+					"cost": "x0.5",
+					"weight": "x0.5"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 800,
+				"extended_weight": "6.4 lb"
+			}
+		},
+		{
+			"id": "ed687816-865d-403f-b23b-cfd039ae3d7e",
+			"type": "equipment",
+			"description": "Heavy Mail Cuirass",
+			"reference": "LT107",
+			"notes": "DR 5; Flexible, susceptible to blunt trauma; -2 DR vs. crushing; Holdout: -2.",
+			"tech_level": "2",
+			"modifiers": [
+				{
+					"id": "b73ece92-1525-4e7a-ae61-eb3b2ecec19a",
+					"type": "eqp_modifier",
+					"name": "Head",
+					"notes": "Don time: 5 secs.",
+					"disabled": true,
+					"cost": "+360",
+					"weight": "+5.4 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "skull",
+							"amount": 5
+						},
+						{
+							"type": "dr_bonus",
+							"location": "face",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "e443573f-5d63-472b-87bd-3abb2aa6efe5",
+					"type": "eqp_modifier",
+					"name": "Skull",
+					"notes": "Don time: 3 secs.",
+					"disabled": true,
+					"cost": "+240",
+					"weight": "+3.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "skull",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "d3b127c5-7a9b-4bf9-b88a-8c58650ec526",
+					"type": "eqp_modifier",
+					"name": "Face",
+					"notes": "Don time: 2 secs.",
+					"disabled": true,
+					"cost": "+120",
+					"weight": "+1.8 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "face",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "a5740c02-c717-410e-b025-535930df5c8f",
+					"type": "eqp_modifier",
+					"name": "Neck",
+					"notes": "Don time: 1 secs.",
+					"disabled": true,
+					"cost": "+60",
+					"weight": "+0.9 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "neck",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "c98d5355-3e37-428c-8a2a-d0255ae5c0a3",
+					"type": "eqp_modifier",
+					"name": "Torso",
+					"notes": "Roll 1d; on 1, the vitals are hit.; Don time: 15 secs.",
+					"cost": "+1200",
+					"weight": "+18 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "torso",
+							"amount": 5
+						},
+						{
+							"type": "dr_bonus",
+							"location": "vitals",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "1f97fbdc-75d0-4ca3-8724-7a8b39e6a366",
+					"type": "eqp_modifier",
+					"name": "Chest",
+					"reference": "LT102",
+					"notes": "Hit location 9-10. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs.",
+					"disabled": true,
+					"cost": "+900",
+					"weight": "+13.5 lb"
+				},
+				{
+					"id": "7b4564fb-b923-4be6-b6c1-20f1065c6c02",
+					"type": "eqp_modifier",
+					"name": "Abdomen",
+					"reference": "LT102",
+					"notes": "Hit location 11. Roll 1d; on 1, the vitals are hit.; Don time: 12 secs.",
+					"disabled": true,
+					"cost": "+900",
+					"weight": "+13.5 lb"
+				},
+				{
+					"id": "d3d053d2-dfd1-44c4-b133-e5fa753d53b3",
+					"type": "eqp_modifier",
+					"name": "Groin",
+					"notes": "Don time: 1 secs.",
+					"disabled": true,
+					"cost": "+60",
+					"weight": "+0.9 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "groin",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "9fa204d5-eb1a-4af5-8450-397065943e6d",
+					"type": "eqp_modifier",
+					"name": "Arms",
+					"notes": "Don time: 8 secs.",
+					"disabled": true,
+					"cost": "+600",
+					"weight": "+9 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "arm",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "8e6026d5-2076-4d2e-bfa3-140be8ed97d9",
+					"type": "eqp_modifier",
+					"name": "Shoulders",
+					"notes": "Roll 1d; on 6, the armor is hit.; Don time: 2 secs.",
+					"disabled": true,
+					"cost": "+120",
+					"weight": "+1.8 lb"
+				},
+				{
+					"id": "480a7767-b941-4ded-9c04-afd4b30f04e0",
+					"type": "eqp_modifier",
+					"name": "Upper Arms",
+					"notes": "Roll 1d; on 5, the armor is hit.; Don time: 2 secs.",
+					"disabled": true,
+					"cost": "+120",
+					"weight": "+1.8 lb"
+				},
+				{
+					"id": "f9036d74-981c-416d-9822-9efd7a9eb8da",
+					"type": "eqp_modifier",
+					"name": "Elbows",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs.",
+					"disabled": true,
+					"cost": "+60",
+					"weight": "+0.9 lb"
+				},
+				{
+					"id": "5d5755e6-e038-4ba1-862b-3af62a9b951a",
+					"type": "eqp_modifier",
+					"name": "Forearms",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 4 secs.",
+					"disabled": true,
+					"cost": "+300",
+					"weight": "+4.5 lb"
+				},
+				{
+					"id": "87ce6349-e46e-4260-9937-a9e28bd4fa0a",
+					"type": "eqp_modifier",
+					"name": "Hands",
+					"notes": "Don time: 2 secs.",
+					"disabled": true,
+					"cost": "+120",
+					"weight": "+1.8 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "hand",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "f5ac3532-40cc-47d6-a595-d364bf855b2d",
+					"type": "eqp_modifier",
+					"name": "Legs",
+					"notes": "Don time: 15 secs.",
+					"disabled": true,
+					"cost": "+1200",
+					"weight": "+18 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "leg",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "87cf4ba3-8705-429d-8a67-75aa982ab579",
+					"type": "eqp_modifier",
+					"name": "Thighs",
+					"notes": "Roll 1d; on 5-6, the armor is hit.; Don time: 7 secs.",
+					"disabled": true,
+					"cost": "+540",
+					"weight": "+8.1 lb"
+				},
+				{
+					"id": "ca37e5b3-802a-42f9-a99a-495e2cf9a3eb",
+					"type": "eqp_modifier",
+					"name": "Knees",
+					"notes": "Roll 1d; on 4, the armor is hit.; Don time: 1 secs.",
+					"disabled": true,
+					"cost": "+60",
+					"weight": "+0.9 lb"
+				},
+				{
+					"id": "9afc5ab6-574a-4c6c-8e3e-8ab03bd86545",
+					"type": "eqp_modifier",
+					"name": "Shins",
+					"notes": "Roll 1d; on 1-3, the armor is hit.; Don time: 8 secs.",
+					"disabled": true,
+					"cost": "+600",
+					"weight": "+9 lb"
+				},
+				{
+					"id": "215c2ad9-0044-4960-935c-72b488c585a7",
+					"type": "eqp_modifier",
+					"name": "Feet",
+					"notes": "Don time: 2 secs.",
+					"disabled": true,
+					"cost": "+120",
+					"weight": "+1.8 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "foot",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "140081ba-06f5-46a8-bf2c-47982937c853",
+					"type": "eqp_modifier",
+					"name": "@Covers only half (front only, one arm, etc)@",
+					"reference": "LT100",
+					"cost_type": "to_base_cost",
+					"weight_type": "to_base_weight",
+					"disabled": true,
+					"cost": "x0.5",
+					"weight": "x0.5"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1200,
+				"extended_weight": "18 lb"
+			}
+		}
+	],
+	"created_date": "2023-08-23T17:50:59+01:00",
+	"modified_date": "2023-08-23T18:26:30+01:00",
+	"calc": {
+		"swing": "2d+2",
+		"thrust": "1d+1",
+		"basic_lift": "51 lb",
+		"move": [
+			6,
+			4,
+			3,
+			2,
+			1
+		],
+		"dodge": [
+			9,
+			8,
+			7,
+			6,
+			5
+		]
+	}
+}
