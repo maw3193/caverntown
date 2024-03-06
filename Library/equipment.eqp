@@ -2156,6 +2156,36 @@
 						"extended_value": 100,
 						"extended_weight": "2 lb"
 					}
+				},
+				{
+					"id": "89929e6b-82b5-48bb-bbe1-d3a936e2aa6c",
+					"type": "equipment",
+					"description": "Clothing may be bought with Giant Spider Silk without being subject to availability rolls",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "2e1398e7-0c44-4ac3-a868-967e882db0d2",
+					"type": "equipment",
+					"description": "Wizard Eyeglasses",
+					"reference": "LT42",
+					"notes": "mundane value $100; Wearer can see things as if they have Mage Sight, except cannot see auras (e.g. can see magelight and magic marks)",
+					"tech_level": "3",
+					"tags": [
+						"Personal Gear"
+					],
+					"quantity": 1,
+					"value": 5000,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 5000,
+						"extended_weight": "0.25 lb"
+					}
 				}
 			],
 			"description": "Shadow Elf Equipment",
@@ -2163,8 +2193,185 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 37100,
-				"extended_weight": "2.02 lb"
+				"extended_value": 42100,
+				"extended_weight": "2.27 lb"
+			}
+		},
+		{
+			"id": "51b44e8a-2fa5-4a45-8999-21bda9908a94",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "efee1af6-bbbd-4bfa-b8fa-9f4e5802c13d",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Dark One First Aid Kit",
+					"reference": "HT221",
+					"notes": "First-aid heals 1d-1 injury in 20 minutes; -5 to skill unless the user has Elder Gift; Contains lichens, needles and ampoules of vapour",
+					"tech_level": "6",
+					"tags": [
+						"Emergency Equipment"
+					],
+					"quantity": 1,
+					"value": 10,
+					"weight": "1 lb",
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "1 lb"
+					}
+				}
+			],
+			"description": "Dark One Equipment",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 10,
+				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "0542d738-473f-4d06-a9a0-65f3a4e7cea4",
+			"type": "equipment",
+			"description": "Monocle of Analyze Heredity",
+			"reference": "LT42",
+			"tech_level": "3",
+			"tags": [
+				"Personal Gear"
+			],
+			"quantity": 1,
+			"value": 5000,
+			"weight": "0.125 lb",
+			"calc": {
+				"extended_value": 5000,
+				"extended_weight": "0.125 lb"
+			}
+		},
+		{
+			"id": "0ffd1e65-86f8-4865-b718-f9309ba48088",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "71046ae3-25e5-49bd-80cc-74fe690fb2c1",
+					"type": "equipment",
+					"description": "Dungeon Torpedo",
+					"reference": "DFT2:8",
+					"notes": "Quasi-living vehicle; Digs a 1yd-wide tunnel through rock and earth; Opaque, must navigate by dead reckoning",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 30000,
+					"weight": "200 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 30000,
+						"extended_weight": "200 lb"
+					}
+				},
+				{
+					"id": "2993a64f-12a6-4bf6-947f-66f9c42c828b",
+					"type": "equipment",
+					"description": "Walking Chair",
+					"notes": "Semi-living vehicle; has move 3 and must be fed 3 meals a day",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 3000,
+					"weight": "150 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 3000,
+						"extended_weight": "150 lb"
+					}
+				},
+				{
+					"id": "6ae530a3-9429-406c-a0b7-3de6e2c99c1c",
+					"type": "equipment",
+					"description": "Air Wine",
+					"reference": "DFCSM:37",
+					"notes": "provides Doesn't Breathe for 4 hours, but roll against HT or -1 to IQ due to intoxication",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 1550,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 1550,
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "29deb1e1-95f7-4c49-ad68-4e9584948a2a",
+					"type": "equipment",
+					"description": "Alkazyme",
+					"reference": "DFCSM:37",
+					"notes": "variant of Alkahest that doesn't dissolve living matter",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 1800,
+					"weight": "1 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 1800,
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "02737f87-675b-47ed-a643-aca426b10ce5",
+					"type": "equipment",
+					"description": "Hardener",
+					"reference": "DFCSM:37",
+					"notes": "Doubles natural DR and provides +2 HT vs crippling injuries for 3d+10 minutes",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 2400,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 2400,
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "9c59e4b7-7353-4e9f-aa4e-077c3c893946",
+					"type": "equipment",
+					"description": "Shaking Fluid",
+					"reference": "DFCSM:37",
+					"notes": "Liquid reacts with the air to cause gentle vibrations in the air for 12 hours, visible to those with Vibration Sense",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 25,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 25,
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "cc2eb1af-bdee-401a-8e98-ccc8da0f1257",
+					"type": "equipment",
+					"description": "Stickfinger",
+					"reference": "DFCSM:37",
+					"notes": "grants Clinging and Ham-Fisted if extremities aren't covered, move at 1/4 move with just hands or feet, 1/2 move with hands and feet",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 3000,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 3000,
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"description": "Coleopteran Equipment",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 41775,
+				"extended_weight": "353 lb"
 			}
 		}
 	]
