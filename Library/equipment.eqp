@@ -1854,255 +1854,317 @@
 			}
 		},
 		{
-			"id": "c2741c91-bb11-4045-8785-27770ca92f54",
-			"type": "equipment",
-			"description": "Amulet of Secrets of Life",
-			"legality_class": "4",
-			"modifiers": [
+			"id": "f81643e9-e255-4641-9073-bfb25933e213",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
 				{
-					"id": "c2386ff1-2e53-4f93-a5d3-19aab4dfb987",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Charm 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+					"id": "c2741c91-bb11-4045-8785-27770ca92f54",
+					"type": "equipment",
+					"description": "Amulet of Secrets of Life",
+					"legality_class": "4",
+					"modifiers": [
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Charm",
-							"amount": 2
+							"id": "c2386ff1-2e53-4f93-a5d3-19aab4dfb987",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Charm 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Charm",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "b0c45f2c-a01c-4b2d-8bd8-0977a98b3c30",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Dream Viewing 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Dream Viewing",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "850ed399-0648-411a-8374-e2f0e3a3ece5",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Enslave 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Enslave",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "1e89889a-6f5d-4f23-bd9a-db1422fa6fdc",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Geas 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Geas",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "89f46749-5601-40f6-a070-662f86f74f01",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Loyalty 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Loyalty",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "5045bf89-b0e4-4910-a88b-a9bdba836e93",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Mind-Reading 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Mind-Reading",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "4c817e07-a7fd-4e8f-a584-e1131ca7af1f",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Mind-Search 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Mind-Search",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "0f6807c9-9162-4a3b-a95f-c02df6b7a649",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Possession 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Possession",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "9eef6f28-a1bb-4647-ada4-0162def5e5df",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Suggestion 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Suggestion",
+									"amount": 2
+								}
+							]
 						}
-					]
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 900,
+						"extended_weight": "0 lb"
+					}
 				},
 				{
-					"id": "b0c45f2c-a01c-4b2d-8bd8-0977a98b3c30",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Dream Viewing 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+					"id": "ff5d61a9-d9df-4083-8725-486784848fbb",
+					"type": "equipment",
+					"description": "Amulet of Secrets of the Grave",
+					"legality_class": "4",
+					"modifiers": [
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Dream Viewing",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "850ed399-0648-411a-8374-e2f0e3a3ece5",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Enslave 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "bf5815c7-43a8-4790-8260-a496e07c1f6b",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Bind Spirit 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Bind Spirit",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Enslave",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "1e89889a-6f5d-4f23-bd9a-db1422fa6fdc",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Geas 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "5c74268e-f8b9-41d0-8391-a977e4e5ccc5",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Command Spirit 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Command Spirit",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Geas",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "89f46749-5601-40f6-a070-662f86f74f01",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Loyalty 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "cbc17f06-6368-4108-bddb-dde267ae0d0f",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Control Zombie 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Control Zombie",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Loyalty",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "5045bf89-b0e4-4910-a88b-a9bdba836e93",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Mind-Reading 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "a5b22286-be52-4112-9e8a-2da5946455f9",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Dream Viewing 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Dream Viewing",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Mind-Reading",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "4c817e07-a7fd-4e8f-a584-e1131ca7af1f",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Mind-Search 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "31e3d92f-a244-4d10-8d5e-740d2147b619",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Mind-Reading 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Mind-Reading",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Mind-Search",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "0f6807c9-9162-4a3b-a95f-c02df6b7a649",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Possession 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
+							"id": "6a6d76eb-7f7b-4942-a0de-e320c2575ece",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Mind-Search 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Mind-Search",
+									"amount": 2
+								}
+							]
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Possession",
-							"amount": 2
+							"id": "2e8692b8-6625-479a-bf23-d7cd100e5740",
+							"type": "eqp_modifier",
+							"name": "Amulet of resist Possession 2",
+							"cost_type": "to_final_cost",
+							"cost": "+100",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "Magic Resistance against Possession",
+									"amount": 2
+								}
+							]
 						}
-					]
-				},
-				{
-					"id": "9eef6f28-a1bb-4647-ada4-0162def5e5df",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Suggestion 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Suggestion",
-							"amount": 2
-						}
-					]
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 700,
+						"extended_weight": "0 lb"
+					}
 				}
 			],
+			"description": "Druid Equipment",
+			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 900,
+				"extended_value": 1600,
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "ff5d61a9-d9df-4083-8725-486784848fbb",
-			"type": "equipment",
-			"description": "Amulet of Secrets of the Grave",
-			"legality_class": "4",
-			"modifiers": [
+			"id": "515c99f5-4bb8-44f3-b654-cbb99c411bd4",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
 				{
-					"id": "bf5815c7-43a8-4790-8260-a496e07c1f6b",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Bind Spirit 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Bind Spirit",
-							"amount": 2
-						}
-					]
+					"id": "da7a0bf5-af50-4aac-8116-f332ed7667c2",
+					"type": "equipment",
+					"description": "Glimmering Sphere",
+					"notes": "Power item capacity 25; Provides 50 ablative DR that recharges at 1/day",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 37000,
+					"weight": "0.02 lb",
+					"max_uses": 50,
+					"uses": 50,
+					"equipped": true,
+					"calc": {
+						"extended_value": 37000,
+						"extended_weight": "0.02 lb"
+					}
 				},
 				{
-					"id": "5c74268e-f8b9-41d0-8391-a977e4e5ccc5",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Command Spirit 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Command Spirit",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "cbc17f06-6368-4108-bddb-dde267ae0d0f",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Control Zombie 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Control Zombie",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "a5b22286-be52-4112-9e8a-2da5946455f9",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Dream Viewing 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Dream Viewing",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "31e3d92f-a244-4d10-8d5e-740d2147b619",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Mind-Reading 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Mind-Reading",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "6a6d76eb-7f7b-4942-a0de-e320c2575ece",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Mind-Search 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Mind-Search",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "2e8692b8-6625-479a-bf23-d7cd100e5740",
-					"type": "eqp_modifier",
-					"name": "Amulet of resist Possession 2",
-					"cost_type": "to_final_cost",
-					"cost": "+100",
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "Magic Resistance against Possession",
-							"amount": 2
-						}
-					]
+					"id": "9dc8c353-e757-482d-8b17-6c281fe068d1",
+					"type": "equipment",
+					"description": "Cavernbloom Lantern",
+					"notes": "Sheds light like a torch; has shutters to block light; has a lens to focus light strong enough to read comfortably by; flower lives 1 year if well-cared for ",
+					"legality_class": "4",
+					"quantity": 1,
+					"value": 100,
+					"weight": "2 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 100,
+						"extended_weight": "2 lb"
+					}
 				}
 			],
+			"description": "Shadow Elf Equipment",
+			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 700,
-				"extended_weight": "0 lb"
+				"extended_value": 37100,
+				"extended_weight": "2.02 lb"
 			}
 		}
 	]
