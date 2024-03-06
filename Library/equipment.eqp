@@ -2353,7 +2353,7 @@
 					"type": "equipment",
 					"description": "Stickfinger",
 					"reference": "DFCSM:37",
-					"notes": "grants Clinging and Ham-Fisted if extremities aren't covered, move at 1/4 move with just hands or feet, 1/2 move with hands and feet",
+					"notes": "grants Clinging and Ham-Fisted for 1d hours if extremities aren't covered, move at 1/4 move with just hands or feet, 1/2 move with hands and feet",
 					"legality_class": "4",
 					"quantity": 1,
 					"value": 3000,
