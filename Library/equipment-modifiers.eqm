@@ -45,11 +45,13 @@
 				{
 					"id": "8813cc16-4f09-4495-a891-b9ca4f894738",
 					"type": "eqp_modifier_container",
+					"open": true,
 					"children": [
 						{
 							"id": "fa2b3bb0-98ff-4fc6-80a0-bdd7c6d85e6e",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Head",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+10",
 							"weight": "x3/4"
@@ -58,6 +60,7 @@
 							"id": "6848bb20-765b-4020-bdac-df3f4bb7f5e3",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Skull",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+6.5",
 							"weight": "x3/4"
@@ -66,6 +69,7 @@
 							"id": "91abd475-fc3f-4378-813f-530243fc69d8",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Greathelm",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+11.5",
 							"weight": "x3/4"
@@ -74,6 +78,7 @@
 							"id": "33dbcae0-c870-4ffb-b2f9-73ba0e4e6d7a",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Neck",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+1.5",
 							"weight": "x3/4"
@@ -82,6 +87,7 @@
 							"id": "b89b138f-fd2c-4476-8472-c6e53d6bf782",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Torso+Groin",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+32.5",
 							"weight": "x3/4"
@@ -90,6 +96,7 @@
 							"id": "b9e95953-a660-4322-b94d-e18bf104612e",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Arms",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+16.5",
 							"weight": "x3/4"
@@ -98,6 +105,7 @@
 							"id": "d32f28b7-b2c1-424c-afa3-8beadeabca8f",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Legs",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+32.5",
 							"weight": "x3/4"
@@ -106,6 +114,7 @@
 							"id": "d70ef94c-a560-466e-873c-48764c04af89",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Hands",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+3.5",
 							"weight": "x3/4"
@@ -114,6 +123,7 @@
 							"id": "4108affc-b7b0-4e61-a680-cf688e4695ba",
 							"type": "eqp_modifier",
 							"name": "Lighten -25%, Feet",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+3.5",
 							"weight": "x3/4"
@@ -125,11 +135,13 @@
 				{
 					"id": "314b2d4f-b06e-4a8b-8a97-1b5fc422b758",
 					"type": "eqp_modifier_container",
+					"open": true,
 					"children": [
 						{
 							"id": "5512076f-54ff-4246-81ef-ebe6c64ddff4",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Head",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+50",
 							"weight": "x1/2"
@@ -138,6 +150,7 @@
 							"id": "637f2e7f-5ac5-4e34-9f50-fcf0fbfef09f",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Skull",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+33",
 							"weight": "x1/2"
@@ -146,6 +159,7 @@
 							"id": "0a7556f0-d6d8-4065-9f85-120c717ac648",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Greathelm",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+57",
 							"weight": "x1/2"
@@ -154,6 +168,7 @@
 							"id": "bcbae195-fbe3-4cbb-a2e9-14f30edbc396",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Neck",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+8",
 							"weight": "x1/2"
@@ -162,6 +177,7 @@
 							"id": "1ad2b4f8-feaf-45e9-af5a-6a168f4c6efd",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Torso+Groin",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+165",
 							"weight": "x1/2"
@@ -170,6 +186,7 @@
 							"id": "f58863b3-97d0-4bf0-a511-27fefde511cc",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Arms",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+82.5",
 							"weight": "x1/2"
@@ -178,6 +195,7 @@
 							"id": "b1c3e92b-bdb4-4c26-80c2-dcf328e009ab",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Legs",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+165",
 							"weight": "x1/2"
@@ -186,6 +204,7 @@
 							"id": "b41ce9f1-a6b6-4a66-a4de-068161670f68",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Hands",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+16.5",
 							"weight": "x1/2"
@@ -194,6 +213,7 @@
 							"id": "b801bb0a-5fb1-4bb5-8387-9695b83e4cf9",
 							"type": "eqp_modifier",
 							"name": "Lighten -50%, Feet",
+							"cost_type": "to_final_cost",
 							"weight_type": "to_final_weight",
 							"cost": "+16.5",
 							"weight": "x1/2"
@@ -205,11 +225,13 @@
 				{
 					"id": "efed6be0-6d57-49c4-ba62-d5d39b653a10",
 					"type": "eqp_modifier_container",
+					"open": true,
 					"children": [
 						{
 							"id": "94c4afbd-1f8c-41b2-99e6-c2885b987031",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Head",
+							"cost_type": "to_final_cost",
 							"cost": "+5",
 							"features": [
 								{
@@ -228,6 +250,7 @@
 							"id": "c658eb9c-c616-458f-8589-cd9791ba855a",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Skull",
+							"cost_type": "to_final_cost",
 							"cost": "+3.5",
 							"features": [
 								{
@@ -241,6 +264,7 @@
 							"id": "179bee13-882f-4ee4-80d6-53c5ece2804e",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Greathelm",
+							"cost_type": "to_final_cost",
 							"cost": "+5.5",
 							"features": [
 								{
@@ -264,6 +288,7 @@
 							"id": "46ff036a-6add-4f04-9f5f-ba5ca9a157a2",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Neck",
+							"cost_type": "to_final_cost",
 							"cost": "+1",
 							"features": [
 								{
@@ -277,6 +302,7 @@
 							"id": "a4f9e32f-54dd-47be-afda-4978aabce073",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Torso+Groin",
+							"cost_type": "to_final_cost",
 							"cost": "+17",
 							"features": [
 								{
@@ -300,6 +326,7 @@
 							"id": "a56be9bb-88e2-40f4-b14c-955c4515e4a5",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Arms",
+							"cost_type": "to_final_cost",
 							"cost": "+8",
 							"features": [
 								{
@@ -313,6 +340,7 @@
 							"id": "4c5fd2dc-ea56-4a8a-84b2-337b52b057c0",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Legs",
+							"cost_type": "to_final_cost",
 							"cost": "+17",
 							"features": [
 								{
@@ -326,6 +354,7 @@
 							"id": "cc0323cc-85a1-497c-8816-d9fd98a2d0f2",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Hands",
+							"cost_type": "to_final_cost",
 							"cost": "+2",
 							"features": [
 								{
@@ -339,6 +368,7 @@
 							"id": "b69b38d8-76a3-42ba-82e6-22d1be3d2a55",
 							"type": "eqp_modifier",
 							"name": "Fortify 1, Feet",
+							"cost_type": "to_final_cost",
 							"cost": "+2",
 							"features": [
 								{
@@ -355,11 +385,13 @@
 				{
 					"id": "2b0831ad-9183-4e4a-94ad-36346f550ad1",
 					"type": "eqp_modifier_container",
+					"open": true,
 					"children": [
 						{
 							"id": "1bbf6be5-6b1b-42a3-96a6-d6263c9e5774",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Head",
+							"cost_type": "to_final_cost",
 							"cost": "+20",
 							"features": [
 								{
@@ -378,6 +410,7 @@
 							"id": "201e8333-3edc-4db7-ba34-2aee3b49851c",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Skull",
+							"cost_type": "to_final_cost",
 							"cost": "+15",
 							"features": [
 								{
@@ -391,6 +424,7 @@
 							"id": "b91148eb-c8c9-4366-a010-0265657009a6",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Greathelm",
+							"cost_type": "to_final_cost",
 							"cost": "+22",
 							"features": [
 								{
@@ -414,6 +448,7 @@
 							"id": "728ecf4c-15d4-4e4a-ad09-3e367cb44c7f",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Neck",
+							"cost_type": "to_final_cost",
 							"cost": "+4",
 							"features": [
 								{
@@ -427,6 +462,7 @@
 							"id": "26c71760-641f-4f6e-bd2b-a8df6b0308d5",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Torso+Groin",
+							"cost_type": "to_final_cost",
 							"cost": "+65",
 							"features": [
 								{
@@ -450,6 +486,7 @@
 							"id": "f96a025d-de17-4017-a14c-97e928c35343",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Arms",
+							"cost_type": "to_final_cost",
 							"cost": "+32.5",
 							"features": [
 								{
@@ -463,6 +500,7 @@
 							"id": "e792c5be-0241-4b31-b5ad-95501b7f2e90",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Legs",
+							"cost_type": "to_final_cost",
 							"cost": "+65",
 							"features": [
 								{
@@ -476,6 +514,7 @@
 							"id": "cfe8a0eb-1004-4666-9082-ec8bc390e371",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Hands",
+							"cost_type": "to_final_cost",
 							"cost": "+6.5",
 							"features": [
 								{
@@ -489,6 +528,7 @@
 							"id": "b25f8902-2b0d-46ab-888c-e03943de72e2",
 							"type": "eqp_modifier",
 							"name": "Fortify 2, Feet",
+							"cost_type": "to_final_cost",
 							"cost": "+6.5",
 							"features": [
 								{
@@ -507,6 +547,7 @@
 					"type": "eqp_modifier",
 					"name": "Deflect 1",
 					"notes": "full body deflection, disregard DF1 pricing it's inconsistent",
+					"cost_type": "to_final_cost",
 					"cost": "+100",
 					"features": [
 						{

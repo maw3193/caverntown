@@ -2,8 +2,33 @@
 	"type": "character",
 	"version": 4,
 	"id": "2df35eee-ebdd-4008-9dd9-e5b3ef7e7b10",
-	"total_points": 475,
+	"total_points": 500,
 	"points_record": [
+		{
+			"when": "2024-04-11T22:27:12+01:00",
+			"points": 6,
+			"reason": "put mountainheart's soul to rest, kept the necrogauntlet"
+		},
+		{
+			"when": "2024-04-03T21:50:31+01:00",
+			"points": 5,
+			"reason": "slew the lich, recovered the necrogauntlet"
+		},
+		{
+			"when": "2024-03-22T21:39:57Z",
+			"points": 5,
+			"reason": "fought undead ambush, unmasked formosus"
+		},
+		{
+			"when": "2024-03-13T22:25:54Z",
+			"points": 5,
+			"reason": "outsmarted the horrid skull; museum trip"
+		},
+		{
+			"when": "2024-03-08T18:26:12Z",
+			"points": 4,
+			"reason": "Railroad session 1"
+		},
 		{
 			"when": "2024-03-01T21:18:32Z",
 			"points": 5,
@@ -469,7 +494,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -484,7 +509,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8
+							"all": 10
 						}
 					}
 				},
@@ -498,7 +523,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -512,7 +537,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -526,7 +551,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -538,7 +563,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 5
+							"all": 7
 						}
 					}
 				},
@@ -552,7 +577,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 5
+							"all": 7
 						}
 					}
 				},
@@ -566,7 +591,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -580,7 +605,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -594,7 +619,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -608,7 +633,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -622,7 +647,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -635,7 +660,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 5
+							"all": 7
 						}
 					}
 				}
@@ -751,16 +776,17 @@
 			"attr_id": "basic_move",
 			"adj": 0,
 			"calc": {
-				"value": 5,
+				"value": 7,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "fp",
 			"adj": 0,
+			"damage": 7,
 			"calc": {
 				"value": 12,
-				"current": 12,
+				"current": 5,
 				"points": 0
 			}
 		},
@@ -785,29 +811,30 @@
 		{
 			"attr_id": "energy_reserve_magic",
 			"adj": 0,
+			"damage": 2,
 			"calc": {
-				"value": 1,
-				"current": 1,
+				"value": 2,
+				"current": 0,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "power_item_scholar",
 			"adj": 0,
-			"damage": 7,
+			"damage": 4,
 			"calc": {
 				"value": 14,
-				"current": 7,
+				"current": 10,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "power_item_magic",
 			"adj": 0,
-			"damage": 7,
+			"damage": 12,
 			"calc": {
 				"value": 15,
-				"current": 8,
+				"current": 3,
 				"points": 0
 			}
 		}
@@ -816,7 +843,6 @@
 		{
 			"id": "2597f4e9-e61b-4613-8b16-d1065db6d2a4",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "acfc217d-0f9d-417c-b4d0-7f4dfae72e4b",
@@ -851,7 +877,6 @@
 							"per_level": true
 						}
 					],
-					"disabled": true,
 					"can_level": true,
 					"calc": {
 						"points": 0
@@ -906,8 +931,23 @@
 							"per_level": true
 						}
 					],
-					"disabled": true,
 					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "9d62029e-9ea2-4ace-8f05-f006bbf982a1",
+					"type": "trait",
+					"name": "Active Resist Sound",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "fa98f1ab-7f97-4b91-b2ee-312eed7cb1e6",
+					"type": "trait",
+					"name": "Active Mage Sight",
 					"calc": {
 						"points": 0
 					}
@@ -925,7 +965,6 @@
 					"id": "83ce6bf8-64c4-49fc-a5e1-594c62dea56d",
 					"type": "trait",
 					"name": "Created a Servant",
-					"disabled": true,
 					"calc": {
 						"points": 0
 					}
@@ -934,6 +973,7 @@
 					"id": "9aa108cc-f5ed-4a6e-b5f4-e3ef2ed2fca7",
 					"type": "trait",
 					"name": "Potion of Weakness",
+					"disabled": true,
 					"features": [
 						{
 							"type": "attribute_bonus",
@@ -946,12 +986,12 @@
 							"amount": -3
 						}
 					],
-					"disabled": true,
 					"calc": {
 						"points": 0
 					}
 				}
 			],
+			"open": true,
 			"name": "*Active Effects",
 			"calc": {
 				"points": 0
@@ -1165,11 +1205,11 @@
 					"disabled": true
 				}
 			],
-			"levels": 3,
+			"levels": 4,
 			"points_per_level": 5,
 			"can_level": true,
 			"calc": {
-				"points": 15
+				"points": 20
 			}
 		},
 		{
@@ -1192,7 +1232,6 @@
 		{
 			"id": "c920e691-555b-40c1-b251-ca12a0f5c0f6",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "9d8f19ab-b99b-4d5f-96d1-b361f55f0029",
@@ -1512,6 +1551,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Dark Elf",
 			"reference": "DFC2:45",
 			"ancestry": "Elf",
@@ -1523,7 +1563,6 @@
 		{
 			"id": "e8f145b5-3d08-4f67-be21-8b6c4abd0bdd",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "45225802-e8d6-4b61-bed8-552d7c58db57",
@@ -1571,6 +1610,7 @@
 						"Disadvantage",
 						"Mental"
 					],
+					"cr": 12,
 					"base_points": -5,
 					"features": [
 						{
@@ -1579,7 +1619,6 @@
 							"amount": -3
 						}
 					],
-					"cr": 12,
 					"calc": {
 						"points": -5
 					}
@@ -1594,8 +1633,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -5,
 					"cr": 12,
+					"base_points": -5,
 					"calc": {
 						"points": -5
 					}
@@ -1670,8 +1709,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
 					"cr": 12,
+					"base_points": -10,
 					"calc": {
 						"points": -10
 					}
@@ -2288,6 +2327,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Sage",
 			"calc": {
 				"points": 213
@@ -2296,7 +2336,6 @@
 		{
 			"id": "c2792a10-0213-4ca7-bbc5-66dd982c942f",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "bea43991-d090-43a8-9f8e-ddd246d4c27c",
@@ -2386,6 +2425,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Scholar",
 			"calc": {
 				"points": 3
@@ -2394,7 +2434,6 @@
 		{
 			"id": "a9cf5c96-3b1d-4682-b119-58e0cc23a878",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "d652edad-f660-4fea-9e6c-3fce563a4ea4",
@@ -2468,7 +2507,7 @@
 							"disabled": true
 						}
 					],
-					"levels": 1,
+					"levels": 2,
 					"points_per_level": 3,
 					"features": [
 						{
@@ -2480,7 +2519,7 @@
 					],
 					"can_level": true,
 					"calc": {
-						"points": 3
+						"points": 6
 					}
 				},
 				{
@@ -2542,11 +2581,46 @@
 					"calc": {
 						"points": 1
 					}
+				},
+				{
+					"id": "911a6564-aa45-4b2f-b05c-a22b9440bef5",
+					"type": "trait",
+					"name": "Reduced Footprint (Delay)",
+					"reference": "TMS29",
+					"notes": "Can ignore an instance of chosen spell as being 'on'",
+					"tags": [
+						"Magic Perk",
+						"Supernatural"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "973b7744-3be3-4684-91f9-cdeafcd212ae",
+					"type": "trait",
+					"name": "Reduced Footprint (Lend Energy)",
+					"reference": "TMS29",
+					"notes": "Can ignore an instance of chosen spell as being 'on'",
+					"tags": [
+						"Magic Perk",
+						"Supernatural"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
 				}
 			],
+			"open": true,
 			"name": "Wizard",
 			"calc": {
-				"points": 31
+				"points": 36
 			}
 		},
 		{
@@ -2631,6 +2705,25 @@
 	],
 	"skills": [
 		{
+			"id": "3dff5f41-9bea-4c1d-9ad3-4aac0af91ac9",
+			"type": "skill_container",
+			"children": [
+				{
+					"id": "2295721b-3d4f-4b29-a882-e9dd37ba0753",
+					"type": "skill",
+					"name": "Hidden Lore",
+					"reference": "B199,MA57",
+					"tags": [
+						"Knowledge"
+					],
+					"specialization": "Dreams",
+					"difficulty": "iq/a"
+				}
+			],
+			"open": true,
+			"name": "Book-Learned Skills"
+		},
+		{
 			"id": "cfcbce28-bf61-4bb5-b854-320884a23136",
 			"type": "skill",
 			"name": "Hazardous Materials",
@@ -2660,35 +2753,72 @@
 			}
 		},
 		{
-			"id": "7f952109-bf51-4f27-8371-e19b24864873",
-			"type": "technique",
-			"name": "Targeted Attack (Pistol Shot/Vitals)",
-			"reference": "MA68",
+			"id": "e4fc7535-190f-4266-8978-11a9237ceb5e",
+			"type": "skill",
+			"name": "Physiology",
+			"reference": "B213",
 			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Technique",
-				"Weapon"
+				"Medical",
+				"Natural Science"
 			],
-			"difficulty": "h",
-			"points": 3,
-			"default": {
-				"type": "skill",
-				"name": "Guns",
-				"specialization": "Pistol",
-				"modifier": -3
+			"specialization": "Undead",
+			"tech_level": "5",
+			"difficulty": "iq/h",
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
-			"limit": -1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Diagnosis",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Surgery",
+					"modifier": -5
+				}
+			],
 			"calc": {
-				"level": 15,
-				"rsl": "-1"
+				"level": 13,
+				"rsl": "IQ-2"
 			}
 		},
 		{
 			"id": "ee073ced-c3a2-4873-8e23-fdd11a8ddc4b",
 			"type": "skill_container",
-			"open": true,
 			"children": [
+				{
+					"id": "9991e5f4-7dcc-45b7-a291-99277f0af2fb",
+					"type": "skill",
+					"name": "Alchemy",
+					"reference": "B174",
+					"tags": [
+						"Magical",
+						"Natural Science",
+						"Occult"
+					],
+					"tech_level": "5",
+					"difficulty": "iq/vh",
+					"points": 16,
+					"calc": {
+						"level": 20,
+						"rsl": "IQ+5"
+					}
+				},
 				{
 					"id": "9f7e894b-f98a-4e7e-bb61-a00186460127",
 					"type": "skill",
@@ -2738,14 +2868,253 @@
 					}
 				},
 				{
-					"id": "ea230af2-874e-49ee-b2a3-6f99dc24bf81",
+					"id": "9980fcc1-78d6-40ba-9837-4be7a9eb1451",
+					"type": "skill",
+					"name": "Climbing",
+					"reference": "B183",
+					"tags": [
+						"Athletic",
+						"Criminal",
+						"Exploration",
+						"Outdoor",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"points": 1,
+					"encumbrance_penalty_multiplier": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					],
+					"calc": {
+						"level": 10,
+						"rsl": "DX-1"
+					}
+				},
+				{
+					"id": "2dee18c1-862f-411d-a283-179b9ad29b28",
+					"type": "skill",
+					"name": "Cloak",
+					"reference": "B184",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"points": 2,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Net",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 12,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "7f1a710b-694f-413a-8e91-562baea3df6d",
+					"type": "skill",
+					"name": "Fast-Draw",
+					"reference": "B194,MA56",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Pistol",
+					"difficulty": "dx/e",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "DX+1"
+					}
+				},
+				{
+					"id": "8fc4bf55-44bb-4891-b9cd-51ab616572ff",
+					"type": "skill",
+					"name": "Fast-Draw",
+					"reference": "B194,MA56",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Potion",
+					"difficulty": "dx/e",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "DX+1"
+					}
+				},
+				{
+					"id": "3db38e7a-374f-45d6-9142-c11d08a4b9b8",
+					"type": "skill",
+					"name": "First Aid",
+					"reference": "B195",
+					"notes": "20 minutes; 1d-2 HP restored",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"tech_level": "5",
+					"difficulty": "iq/e",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 15,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "5d84271b-e360-4b80-83d1-767006199dc1",
+					"type": "skill",
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Pistol",
+					"tech_level": "",
+					"difficulty": "dx/e",
+					"points": 12,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -4,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"specialization": "Pistol",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 16,
+						"rsl": "DX+4"
+					}
+				},
+				{
+					"id": "ba709a1c-011c-4419-9657-c501c3d513ea",
 					"type": "skill",
 					"name": "Hidden Lore",
 					"reference": "B199,MA57",
 					"tags": [
 						"Knowledge"
 					],
-					"specialization": "Magical Writings",
+					"specialization": "Demons",
 					"difficulty": "iq/a",
 					"points": 1,
 					"calc": {
@@ -2764,6 +3133,137 @@
 					"specialization": "Faeries",
 					"difficulty": "iq/a",
 					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+2"
+					}
+				},
+				{
+					"id": "ea230af2-874e-49ee-b2a3-6f99dc24bf81",
+					"type": "skill",
+					"name": "Hidden Lore",
+					"reference": "B199,MA57",
+					"tags": [
+						"Knowledge"
+					],
+					"specialization": "Magical Writings",
+					"difficulty": "iq/a",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+2"
+					}
+				},
+				{
+					"id": "4b653bc2-12c7-4d8c-a456-4a9e97419f9f",
+					"type": "skill",
+					"name": "Hidden Lore",
+					"reference": "B199,MA57",
+					"tags": [
+						"Knowledge"
+					],
+					"specialization": "Undead",
+					"difficulty": "iq/a",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+2"
+					}
+				},
+				{
+					"id": "22df69bc-5103-4055-a973-146e9f1ec255",
+					"type": "skill",
+					"name": "Lockpicking",
+					"reference": "B206",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street",
+						"Technical"
+					],
+					"tech_level": "5",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"calc": {
+						"level": 14,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "862c1ecd-f87f-42bf-b55a-9a473af2ef03",
+					"type": "skill",
+					"name": "Observation",
+					"reference": "B211",
+					"tags": [
+						"Criminal",
+						"Military",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "per/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "per",
+						"modifier": -5,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Shadowing",
+							"modifier": -5
+						}
+					],
+					"calc": {
+						"level": 14,
+						"rsl": "Per-1"
+					}
+				},
+				{
+					"id": "185b95f5-cea8-4257-9ab6-c655b713d7e4",
+					"type": "skill",
+					"name": "Occultism",
+					"reference": "B212",
+					"tags": [
+						"Magical",
+						"Occult"
+					],
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
 					"calc": {
 						"level": 17,
 						"rsl": "IQ+2"
@@ -2813,38 +3313,6 @@
 					"calc": {
 						"level": 13,
 						"rsl": "IQ-2"
-					}
-				},
-				{
-					"id": "ba709a1c-011c-4419-9657-c501c3d513ea",
-					"type": "skill",
-					"name": "Hidden Lore",
-					"reference": "B199,MA57",
-					"tags": [
-						"Knowledge"
-					],
-					"specialization": "Demons",
-					"difficulty": "iq/a",
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+2"
-					}
-				},
-				{
-					"id": "4b653bc2-12c7-4d8c-a456-4a9e97419f9f",
-					"type": "skill",
-					"name": "Hidden Lore",
-					"reference": "B199,MA57",
-					"tags": [
-						"Knowledge"
-					],
-					"specialization": "Undead",
-					"difficulty": "iq/a",
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -2954,42 +3422,35 @@
 					}
 				},
 				{
-					"id": "cd56ac31-5812-4de4-a76c-75d82b19e5bc",
+					"id": "aaf26c6e-3c99-4b22-8080-694bf9c0ac68",
 					"type": "skill",
-					"name": "Speed-Reading",
-					"reference": "B222",
+					"name": "Savoir-Faire",
+					"reference": "B218,MA59",
 					"tags": [
-						"Scholarly"
-					],
-					"difficulty": "iq/a",
-					"points": 2,
-					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "ee973c06-8c58-4a49-ae50-4b483e65884d",
-					"type": "skill",
-					"name": "Teaching",
-					"reference": "B224",
-					"tags": [
-						"Scholarly",
+						"Business",
+						"Knowledge",
 						"Social"
 					],
-					"difficulty": "iq/a",
+					"specialization": "High Society",
+					"difficulty": "iq/e",
 					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
-						"modifier": -5,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
+						"modifier": -4,
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
 					},
 					"defaults": [
 						{
 							"type": "iq",
-							"modifier": -5
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Savoir-Faire",
+							"specialization": "Servant",
+							"modifier": -2
 						}
 					],
 					"calc": {
@@ -2998,301 +3459,66 @@
 					}
 				},
 				{
-					"id": "e6e6cf31-74da-430b-9b93-4758c9c314f5",
+					"id": "5b3a42a1-dba0-41df-a017-9a12427a9ffe",
 					"type": "skill",
-					"name": "Writing",
-					"reference": "B228",
-					"tags": [
-						"Arts",
-						"Entertainment",
-						"Scholarly"
-					],
-					"difficulty": "iq/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 14,
-						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "185b95f5-cea8-4257-9ab6-c655b713d7e4",
-					"type": "skill",
-					"name": "Occultism",
-					"reference": "B212",
-					"tags": [
-						"Magical",
-						"Occult"
-					],
-					"difficulty": "iq/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+2"
-					}
-				},
-				{
-					"id": "f5dafbd2-d4ae-4562-8cef-56f92ad9221e",
-					"type": "skill",
-					"name": "Traps",
-					"reference": "B226",
+					"name": "Scrounging",
+					"reference": "B218",
 					"tags": [
 						"Criminal",
-						"Military",
 						"Street"
 					],
-					"tech_level": "5",
-					"difficulty": "iq/a",
-					"points": 2,
+					"difficulty": "per/e",
+					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Lockpicking",
-						"modifier": -3,
+						"type": "per",
+						"modifier": -4,
 						"level": 11,
 						"adjusted_level": 11,
 						"points": -11
 					},
 					"defaults": [
 						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Lockpicking",
-							"modifier": -3
+							"type": "per",
+							"modifier": -4
 						}
 					],
 					"calc": {
 						"level": 15,
-						"rsl": "IQ+0"
+						"rsl": "Per+0"
 					}
 				},
 				{
-					"id": "428acd57-b87d-43bb-be6e-b19b11af9b16",
+					"id": "dd576ab4-2484-4a1e-a576-4d7a87e5ad41",
 					"type": "skill",
-					"name": "Surgery",
-					"reference": "B223",
+					"name": "Search",
+					"reference": "B219",
 					"tags": [
-						"Medical"
+						"Police",
+						"Spy"
 					],
-					"tech_level": "5",
-					"difficulty": "iq/vh",
-					"points": 2,
-					"defaulted_from": {
-						"type": "skill",
-						"name": "Physiology",
-						"specialization": "Demons",
-						"modifier": -8,
-						"level": 5,
-						"adjusted_level": 5,
-						"points": -5
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "First Aid",
-							"modifier": -12
-						},
-						{
-							"type": "skill",
-							"name": "Physician",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Physiology",
-							"modifier": -8
-						},
-						{
-							"type": "skill",
-							"name": "Veterinary",
-							"modifier": -5
-						}
-					],
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "skill_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "first aid"
-								}
-							},
-							{
-								"type": "skill_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "physician"
-								}
-							}
-						]
-					},
-					"calc": {
-						"level": 13,
-						"rsl": "IQ-2"
-					}
-				},
-				{
-					"id": "9991e5f4-7dcc-45b7-a291-99277f0af2fb",
-					"type": "skill",
-					"name": "Alchemy",
-					"reference": "B174",
-					"tags": [
-						"Magical",
-						"Natural Science",
-						"Occult"
-					],
-					"tech_level": "5",
-					"difficulty": "iq/vh",
-					"points": 16,
-					"calc": {
-						"level": 20,
-						"rsl": "IQ+5"
-					}
-				},
-				{
-					"id": "63b023c4-7efa-4c11-b667-2f988980993f",
-					"type": "skill",
-					"name": "Thaumatology",
-					"reference": "B225",
-					"tags": [
-						"Magical",
-						"Occult"
-					],
-					"difficulty": "iq/vh",
+					"difficulty": "per/a",
 					"points": 1,
 					"defaulted_from": {
-						"type": "iq",
-						"modifier": -7,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"type": "per",
+						"modifier": -5,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"defaults": [
 						{
-							"type": "iq",
-							"modifier": -7
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Criminology",
+							"modifier": -5
 						}
 					],
 					"calc": {
-						"level": 21,
-						"rsl": "IQ+6"
-					}
-				},
-				{
-					"id": "5d84271b-e360-4b80-83d1-767006199dc1",
-					"type": "skill",
-					"name": "Guns",
-					"reference": "B198",
-					"tags": [
-						"Combat",
-						"Ranged Combat",
-						"Weapon"
-					],
-					"specialization": "Pistol",
-					"tech_level": "",
-					"difficulty": "dx/e",
-					"points": 12,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Grenade Launcher",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Gyroc",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Light Anti-Armor Weapon",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Light Machine Gun",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Musket",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"specialization": "Pistol",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Rifle",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Shotgun",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Submachine Gun",
-							"modifier": -2
-						}
-					],
-					"calc": {
-						"level": 16,
-						"rsl": "DX+4"
+						"level": 14,
+						"rsl": "Per-1"
 					}
 				},
 				{
@@ -3361,176 +3587,18 @@
 					}
 				},
 				{
-					"id": "2dee18c1-862f-411d-a283-179b9ad29b28",
+					"id": "cd56ac31-5812-4de4-a76c-75d82b19e5bc",
 					"type": "skill",
-					"name": "Cloak",
-					"reference": "B184",
+					"name": "Speed-Reading",
+					"reference": "B222",
 					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
+						"Scholarly"
 					],
-					"difficulty": "dx/a",
+					"difficulty": "iq/a",
 					"points": 2,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Net",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"modifier": -4
-						}
-					],
-					"calc": {
-						"level": 12,
-						"rsl": "DX+0"
-					}
-				},
-				{
-					"id": "862c1ecd-f87f-42bf-b55a-9a473af2ef03",
-					"type": "skill",
-					"name": "Observation",
-					"reference": "B211",
-					"tags": [
-						"Criminal",
-						"Military",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "per/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -5,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Shadowing",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 14,
-						"rsl": "Per-1"
-					}
-				},
-				{
-					"id": "5b3a42a1-dba0-41df-a017-9a12427a9ffe",
-					"type": "skill",
-					"name": "Scrounging",
-					"reference": "B218",
-					"tags": [
-						"Criminal",
-						"Street"
-					],
-					"difficulty": "per/e",
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -4,
-						"level": 11,
-						"adjusted_level": 11,
-						"points": -11
-					},
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -4
-						}
-					],
 					"calc": {
 						"level": 15,
-						"rsl": "Per+0"
-					}
-				},
-				{
-					"id": "dd576ab4-2484-4a1e-a576-4d7a87e5ad41",
-					"type": "skill",
-					"name": "Search",
-					"reference": "B219",
-					"tags": [
-						"Police",
-						"Spy"
-					],
-					"difficulty": "per/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -5,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Criminology",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 14,
-						"rsl": "Per-1"
-					}
-				},
-				{
-					"id": "9980fcc1-78d6-40ba-9837-4be7a9eb1451",
-					"type": "skill",
-					"name": "Climbing",
-					"reference": "B183",
-					"tags": [
-						"Athletic",
-						"Criminal",
-						"Exploration",
-						"Outdoor",
-						"Street"
-					],
-					"difficulty": "dx/a",
-					"points": 1,
-					"encumbrance_penalty_multiplier": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 11,
-						"rsl": "DX-1"
+						"rsl": "IQ+0"
 					}
 				},
 				{
@@ -3565,84 +3633,101 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "DX+0"
 					}
 				},
 				{
-					"id": "3db38e7a-374f-45d6-9142-c11d08a4b9b8",
+					"id": "428acd57-b87d-43bb-be6e-b19b11af9b16",
 					"type": "skill",
-					"name": "First Aid",
-					"reference": "B195",
-					"notes": "20 minutes; 1d-2 HP restored",
+					"name": "Surgery",
+					"reference": "B223",
 					"tags": [
-						"Everyman",
 						"Medical"
 					],
 					"tech_level": "5",
-					"difficulty": "iq/e",
-					"points": 1,
+					"difficulty": "iq/vh",
+					"points": 2,
 					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 11,
-						"adjusted_level": 11,
-						"points": -11
+						"type": "skill",
+						"name": "Physiology",
+						"specialization": "Undead",
+						"modifier": -8,
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
-							"type": "iq",
-							"modifier": -4
+							"type": "skill",
+							"name": "First Aid",
+							"modifier": -12
 						},
 						{
 							"type": "skill",
-							"name": "Esoteric Medicine"
+							"name": "Physician",
+							"modifier": -5
 						},
 						{
 							"type": "skill",
-							"name": "Physician"
+							"name": "Physiology",
+							"modifier": -8
 						},
 						{
 							"type": "skill",
 							"name": "Veterinary",
-							"modifier": -4
+							"modifier": -5
 						}
 					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "first aid"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "physician"
+								}
+							}
+						]
+					},
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+0"
+						"level": 13,
+						"rsl": "IQ-2"
 					}
 				},
 				{
-					"id": "aaf26c6e-3c99-4b22-8080-694bf9c0ac68",
+					"id": "ee973c06-8c58-4a49-ae50-4b483e65884d",
 					"type": "skill",
-					"name": "Savoir-Faire",
-					"reference": "B218,MA59",
+					"name": "Teaching",
+					"reference": "B224",
 					"tags": [
-						"Business",
-						"Knowledge",
+						"Scholarly",
 						"Social"
 					],
-					"specialization": "High Society",
-					"difficulty": "iq/e",
+					"difficulty": "iq/a",
 					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
-						"modifier": -4,
-						"level": 11,
-						"adjusted_level": 11,
-						"points": -11
+						"modifier": -5,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"defaults": [
 						{
 							"type": "iq",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Savoir-Faire",
-							"specialization": "Servant",
-							"modifier": -2
+							"modifier": -5
 						}
 					],
 					"calc": {
@@ -3651,54 +3736,81 @@
 					}
 				},
 				{
-					"id": "7f1a710b-694f-413a-8e91-562baea3df6d",
+					"id": "63b023c4-7efa-4c11-b667-2f988980993f",
 					"type": "skill",
-					"name": "Fast-Draw",
-					"reference": "B194,MA56",
+					"name": "Thaumatology",
+					"reference": "B225",
 					"tags": [
-						"Combat",
-						"Ranged Combat",
-						"Weapon"
+						"Magical",
+						"Occult"
 					],
-					"specialization": "Pistol",
-					"difficulty": "dx/e",
+					"difficulty": "iq/vh",
 					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -7,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -7
+						}
+					],
 					"calc": {
-						"level": 13,
-						"rsl": "DX+1"
+						"level": 21,
+						"rsl": "IQ+6"
 					}
 				},
 				{
-					"id": "8fc4bf55-44bb-4891-b9cd-51ab616572ff",
+					"id": "f5dafbd2-d4ae-4562-8cef-56f92ad9221e",
 					"type": "skill",
-					"name": "Fast-Draw",
-					"reference": "B194,MA56",
-					"tags": [
-						"Combat",
-						"Ranged Combat",
-						"Weapon"
-					],
-					"specialization": "Potion",
-					"difficulty": "dx/e",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "DX+1"
-					}
-				},
-				{
-					"id": "22df69bc-5103-4055-a973-146e9f1ec255",
-					"type": "skill",
-					"name": "Lockpicking",
-					"reference": "B206",
+					"name": "Traps",
+					"reference": "B226",
 					"tags": [
 						"Criminal",
-						"Police",
-						"Spy",
-						"Street",
-						"Technical"
+						"Military",
+						"Street"
 					],
 					"tech_level": "5",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Lockpicking",
+						"modifier": -3,
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Lockpicking",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 14,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "e6e6cf31-74da-430b-9b93-4758c9c314f5",
+					"type": "skill",
+					"name": "Writing",
+					"reference": "B228",
+					"tags": [
+						"Arts",
+						"Entertainment",
+						"Scholarly"
+					],
 					"difficulty": "iq/a",
 					"points": 1,
 					"defaulted_from": {
@@ -3720,37 +3832,39 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Sage"
 		},
 		{
-			"id": "3dff5f41-9bea-4c1d-9ad3-4aac0af91ac9",
-			"type": "skill_container",
-			"open": true,
-			"children": [
-				{
-					"id": "2295721b-3d4f-4b29-a882-e9dd37ba0753",
-					"type": "skill",
-					"name": "Hidden Lore",
-					"reference": "B199,MA57",
-					"tags": [
-						"Knowledge"
-					],
-					"specialization": "Dreams",
-					"difficulty": "iq/a",
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+2"
-					}
-				}
+			"id": "7f952109-bf51-4f27-8371-e19b24864873",
+			"type": "technique",
+			"name": "Targeted Attack (Pistol Shot/Vitals)",
+			"reference": "MA68",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
 			],
-			"name": "Book-Learned Skills"
+			"difficulty": "h",
+			"points": 3,
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -3
+			},
+			"limit": -1,
+			"calc": {
+				"level": 15,
+				"rsl": "-1"
+			}
 		}
 	],
 	"spells": [
 		{
 			"id": "ca063d67-cef3-4325-ab7a-ad2be8c36c3a",
 			"type": "spell_container",
-			"open": true,
 			"children": [
 				{
 					"id": "59b3d99e-0e51-49b5-b2be-321538aaabda",
@@ -6315,7 +6429,7 @@
 					"maintenance_cost": "-",
 					"casting_time": "1-3 sec",
 					"duration": "Instant",
-					"points": 1,
+					"points": 2,
 					"prereqs": {
 						"type": "prereq_list",
 						"all": true,
@@ -6376,8 +6490,8 @@
 						}
 					],
 					"calc": {
-						"level": 19,
-						"rsl": "IQ+4"
+						"level": 20,
+						"rsl": "IQ+5"
 					}
 				},
 				{
@@ -6553,8 +6667,720 @@
 						"level": 19,
 						"rsl": "IQ+4"
 					}
+				},
+				{
+					"id": "e116997b-30f9-4d94-a2c7-c8267a8120f9",
+					"type": "spell",
+					"name": "Mage Sight",
+					"reference": "M102",
+					"tags": [
+						"Knowledge"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "detect magic"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "80d9093f-f82b-4d73-9f49-20e0b76cbdc1",
+					"type": "spell",
+					"name": "Increase Burden",
+					"reference": "M143",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Varies",
+					"casting_time": "3 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "apportation"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "4b06921f-0baf-4c6c-ae13-953e76c11c08",
+					"type": "spell",
+					"name": "Detect Magic",
+					"reference": "M101",
+					"tags": [
+						"Knowledge"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Knowledge"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "5 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (knowledge)"
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "b2d98827-e2b5-42db-a612-87605dcbe4df",
+					"type": "spell",
+					"name": "Keen Vision",
+					"reference": "M133",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt increase",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "30 min",
+					"points": 1,
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "bf54ea62-40d2-43ac-b48c-226401dda011",
+					"type": "spell",
+					"name": "Keen Hearing",
+					"reference": "M133",
+					"tags": [
+						"Mind Control",
+						"Sound"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control",
+						"Sound"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "30 min",
+					"points": 1,
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "2239a990-a74c-4b11-86dd-0a4e8851291f",
+					"type": "spell",
+					"name": "Alertness",
+					"reference": "M133",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/pt increase",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "10 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "starts_with",
+									"qualifier": "keen"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 18,
+						"rsl": "IQ+3"
+					}
+				},
+				{
+					"id": "26da1109-8947-4963-9f96-d9467432bb2e",
+					"type": "spell",
+					"name": "Rear Vision",
+					"reference": "M134",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "1",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "alertness"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "de65eaf0-c04c-491f-9eb8-289f9cf60f92",
+					"type": "spell",
+					"name": "Foolishness",
+					"reference": "M134",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-5",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 12
+								},
+								"which": "iq"
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "27887f70-0cf9-43c6-83aa-fce9b3b2ab71",
+					"type": "spell",
+					"name": "Daze",
+					"reference": "M134",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "foolishness"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "dd90f675-8bc0-470f-9b22-c01ede4c5c21",
+					"type": "spell",
+					"name": "Sleep",
+					"reference": "M135",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "3 sec",
+					"duration": "Until awakened",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "daze"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "e03b5084-c989-4049-875c-68a4e08b669b",
+					"type": "spell",
+					"name": "Mental Stun",
+					"reference": "M135",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Until recovery roll made",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "daze"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "stun"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "1a3bdb3b-cec4-4dca-a882-6a52869da241",
+					"type": "spell",
+					"name": "Wisdom",
+					"reference": "M135",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4/pt of IQ",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Mind Control"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "0bb5999f-35e7-4d53-934b-2a2b94de881b",
+					"type": "spell",
+					"name": "Independence",
+					"reference": "M96",
+					"tags": [
+						"Illusion \u0026 Creation"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Illusion \u0026 Creation"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "Varies",
+					"duration": "Varies",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "simple illusion"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "759799ef-fe94-4c31-9bf3-7543246e0e31",
+					"type": "spell",
+					"name": "Initiative",
+					"reference": "M97",
+					"tags": [
+						"Illusion \u0026 Creation"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Illusion \u0026 Creation"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "Varies",
+					"maintenance_cost": "-",
+					"casting_time": "10 sec",
+					"duration": "Varies",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "independence"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "wisdom"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "6dbc6c6f-50df-4968-bd4a-bb08dbc40537",
+					"type": "spell",
+					"name": "Blink",
+					"reference": "M148",
+					"tags": [
+						"Gate",
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Gate",
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Blocking",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (gate)"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (movement)"
+										}
+									}
+								]
+							},
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 13
+								},
+								"which": "iq"
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college_count",
+								"has": true,
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 10
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 19,
+						"rsl": "IQ+4"
+					}
 				}
 			],
+			"open": true,
 			"name": "Learned Spells"
 		},
 		{
@@ -6597,10 +7423,6 @@
 								}
 							}
 						]
-					},
-					"calc": {
-						"level": 19,
-						"rsl": "IQ+4"
 					}
 				},
 				{
@@ -7035,82 +7857,21 @@
 					]
 				},
 				{
-					"id": "4b06921f-0baf-4c6c-ae13-953e76c11c08",
+					"id": "b4b43e73-3157-4c70-8a0b-9ee6a3f59aea",
 					"type": "spell",
-					"name": "Detect Magic",
-					"reference": "M101",
+					"name": "Resist Fire",
+					"reference": "M74",
 					"tags": [
-						"Knowledge"
+						"Fire"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Knowledge"
+						"Fire"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
-					"casting_cost": "2",
-					"maintenance_cost": "-",
-					"casting_time": "5 sec",
-					"duration": "Instant",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 1
-								},
-								"notes": {
-									"compare": "does_not_contain",
-									"qualifier": "one college"
-								}
-							},
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 1
-								},
-								"notes": {
-									"compare": "contains",
-									"qualifier": "one college (knowledge)"
-								}
-							}
-						]
-					},
-					"calc": {
-						"level": 19,
-						"rsl": "IQ+4"
-					}
-				},
-				{
-					"id": "e116997b-30f9-4d94-a2c7-c8267a8120f9",
-					"type": "spell",
-					"name": "Mage Sight",
-					"reference": "M102",
-					"tags": [
-						"Knowledge"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Knowledge"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "3",
-					"maintenance_cost": "2",
+					"casting_cost": "2#",
+					"maintenance_cost": "Half",
 					"casting_time": "1 sec",
 					"duration": "1 min",
 					"prereqs": {
@@ -7123,7 +7884,7 @@
 								"has": true,
 								"qualifier": {
 									"compare": "is",
-									"qualifier": "detect magic"
+									"qualifier": "fireproof"
 								},
 								"quantity": {
 									"compare": "at_least",
@@ -7131,33 +7892,238 @@
 								}
 							}
 						]
-					},
-					"calc": {
-						"level": 19,
-						"rsl": "IQ+4",
-						"unsatisfied_reason": "Prerequisites have not been met:\n● Requires all of:\n  ● Has is at least 1 spell whose name is \"detect magic\""
 					}
 				}
 			],
+			"open": true,
 			"name": "Book-Learned Spells"
 		}
 	],
 	"equipment": [
 		{
+			"id": "851c3583-9cd0-493f-9b92-cb3083df20cf",
+			"type": "equipment",
+			"description": "Amulet of Secrets of Life",
+			"legality_class": "4",
+			"modifiers": [
+				{
+					"id": "c2386ff1-2e53-4f93-a5d3-19aab4dfb987",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Charm 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Charm",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "b0c45f2c-a01c-4b2d-8bd8-0977a98b3c30",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Dream Viewing 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Dream Viewing",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "850ed399-0648-411a-8374-e2f0e3a3ece5",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Enslave 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Enslave",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "1e89889a-6f5d-4f23-bd9a-db1422fa6fdc",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Geas 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Geas",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "89f46749-5601-40f6-a070-662f86f74f01",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Loyalty 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Loyalty",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "5045bf89-b0e4-4910-a88b-a9bdba836e93",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Reading 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Reading",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "4c817e07-a7fd-4e8f-a584-e1131ca7af1f",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Mind-Search 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Mind-Search",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "0f6807c9-9162-4a3b-a95f-c02df6b7a649",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Possession 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Possession",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "9eef6f28-a1bb-4647-ada4-0162def5e5df",
+					"type": "eqp_modifier",
+					"name": "Amulet of resist Suggestion 2",
+					"cost_type": "to_final_cost",
+					"cost": "+100",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Magic Resistance against Suggestion",
+							"amount": 2
+						}
+					]
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 900,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "efc80393-939e-4dd9-ad87-2057ba182810",
 			"type": "equipment_container",
-			"open": true,
 			"children": [
 				{
 					"id": "57092fee-702a-44c9-b460-ab5fa119c2b4",
 					"type": "equipment_container",
-					"open": true,
 					"children": [
 						{
 							"id": "a01d7ea2-9361-4682-8851-e218de384d97",
 							"type": "equipment_container",
-							"open": true,
 							"children": [
+								{
+									"id": "77c386ae-a86e-4fcb-994a-a72e92d23c6e",
+									"type": "equipment",
+									"description": "Corpsebane .45 (11.43x28mmR)",
+									"reference": "HT176",
+									"tags": [
+										"Ammunition",
+										"Warheads"
+									],
+									"modifiers": [
+										{
+											"id": "9f365db4-c136-45dc-a7f3-99541c98b3c6",
+											"type": "eqp_modifier",
+											"name": "Shattersand Explosive",
+											"notes": "Made of semi-precious gems but functions in mana",
+											"cost": "x5"
+										},
+										{
+											"id": "23e10df8-cf71-4d32-af7d-6357107b278f",
+											"type": "eqp_modifier",
+											"name": "Penetrating Weapon",
+											"reference": "DF1:30",
+											"cost_type": "to_final_cost",
+											"disabled": true,
+											"cost": "+25"
+										},
+										{
+											"id": "a58737fe-2e8b-4cb8-a7d8-e3f808b10a55",
+											"type": "eqp_modifier",
+											"name": "Corpsebane",
+											"cost_type": "to_final_cost",
+											"cost": "+100"
+										}
+									],
+									"value": 0.5,
+									"weight": "0.045 lb",
+									"weapons": [
+										{
+											"id": "415561aa-bbe8-48d4-8b1a-658a2b7eab50",
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi++",
+												"base": "2d-1",
+												"armor_divisor": 0.5
+											},
+											"usage": "bullet",
+											"rate_of_fire": "1",
+											"calc": {
+												"damage": "2d-1(0.5) pi++"
+											}
+										},
+										{
+											"id": "52efc3bf-62f5-468b-98de-a65138a2bb00",
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "cr",
+												"base": "4d"
+											},
+											"usage": "corpsebane poison",
+											"usage_notes": "vs. HT to halve damage",
+											"rate_of_fire": "1",
+											"calc": {
+												"damage": "4d cr"
+											}
+										}
+									],
+									"equipped": true,
+									"calc": {
+										"extended_value": 0,
+										"extended_weight": "0 lb"
+									}
+								},
 								{
 									"id": "ea7451e9-bd85-4b0e-a169-ea0ca9520ad1",
 									"type": "equipment",
@@ -7184,6 +8150,7 @@
 											"cost": "+25"
 										}
 									],
+									"quantity": 2,
 									"value": 0.5,
 									"weight": "0.045 lb",
 									"weapons": [
@@ -7203,11 +8170,12 @@
 									],
 									"equipped": true,
 									"calc": {
-										"extended_value": 0,
-										"extended_weight": "0 lb"
+										"extended_value": 55,
+										"extended_weight": "0.09 lb"
 									}
 								}
 							],
+							"open": true,
 							"description": "Revolver, .45",
 							"reference": "HT95",
 							"notes": "Power Item capacity 6",
@@ -7357,11 +8325,12 @@
 							],
 							"equipped": true,
 							"calc": {
-								"extended_value": 550,
-								"extended_weight": "2.2 lb"
+								"extended_value": 605,
+								"extended_weight": "2.29 lb"
 							}
 						}
 					],
+					"open": true,
 					"description": "Lanyard",
 					"reference": "HT154",
 					"notes": "-6 to hit. DR 2. HP 2.",
@@ -7373,8 +8342,8 @@
 					"value": 1,
 					"equipped": true,
 					"calc": {
-						"extended_value": 551,
-						"extended_weight": "2.2 lb"
+						"extended_value": 606,
+						"extended_weight": "2.29 lb"
 					}
 				},
 				{
@@ -7387,12 +8356,13 @@
 						"Concoctions",
 						"Concoctions:Potions"
 					],
+					"quantity": 12,
 					"value": 13.5,
 					"weight": "0.5 lb",
 					"equipped": true,
 					"calc": {
-						"extended_value": 0,
-						"extended_weight": "0 lb"
+						"extended_value": 162,
+						"extended_weight": "6 lb"
 					}
 				},
 				{
@@ -7559,9 +8529,9 @@
 								}
 							],
 							"calc": {
-								"level": 7,
+								"level": 6,
 								"damage": "1d-2 cut",
-								"parry": "11F"
+								"parry": "10F"
 							}
 						},
 						{
@@ -7606,9 +8576,9 @@
 								}
 							],
 							"calc": {
-								"level": 7,
+								"level": 6,
 								"damage": "1d-2 imp",
-								"parry": "11F"
+								"parry": "10F"
 							}
 						}
 					],
@@ -7619,6 +8589,7 @@
 					}
 				}
 			],
+			"open": true,
 			"description": "Delver's Webbing",
 			"reference": "DF1:25",
 			"notes": "20 lb small items. Ready/Fast-Draw. +1 to Fast-Draw.",
@@ -7667,20 +8638,121 @@
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 1321,
-				"extended_weight": "5.7 lb"
+				"extended_value": 1538,
+				"extended_weight": "11.79 lb"
 			}
 		},
 		{
 			"id": "d5c64e46-73f7-4fd3-810c-221736ce1535",
 			"type": "equipment_container",
-			"open": true,
 			"children": [
+				{
+					"id": "1784341b-e64a-4512-8ab2-b85cbd0b0195",
+					"type": "equipment",
+					"description": "Great Healing Potion",
+					"reference": "DF1:29",
+					"notes": "Potion. 4d HP. homebrewed",
+					"tags": [
+						"Concoctions",
+						"Concoctions:Potions"
+					],
+					"quantity": 4,
+					"value": 100,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "2 lb"
+					}
+				},
 				{
 					"id": "723878ed-312b-4bdc-b69c-c6a65e4b5369",
 					"type": "equipment_container",
-					"open": true,
 					"children": [
+						{
+							"id": "c52b5e03-90d5-4f15-955f-f198777c2a7d",
+							"type": "equipment_container",
+							"open": true,
+							"description": "What do your elf-eyes see? (Wizardly Grimoire of Detect Magic, Mage Sight, Light, Mage Light)",
+							"quantity": 1,
+							"value": 400,
+							"weight": "12 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "12 lb"
+							}
+						},
+						{
+							"id": "99fa156f-8e5f-4707-b5ec-bf0ea12583a5",
+							"type": "equipment_container",
+							"open": true,
+							"description": "Fire Magic for No-Hopers (Wizardly Grimoire of Ignite Fire, Shape Fire, Seek Fire, Create Fire, Flame Jet)",
+							"quantity": 1,
+							"value": 500,
+							"weight": "12 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "12 lb"
+							}
+						},
+						{
+							"id": "88d076a0-0827-4765-bbf2-60531345f7ac",
+							"type": "equipment",
+							"description": "Paut",
+							"reference": "DF1:29",
+							"notes": "Potion. 4 FP (Magic). Homebrew",
+							"tags": [
+								"Concoctions",
+								"Concoctions:Potions"
+							],
+							"quantity": 11,
+							"value": 13.5,
+							"weight": "0.5 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 148.5,
+								"extended_weight": "5.5 lb"
+							}
+						},
+						{
+							"id": "7e71e1ab-8181-440d-9677-af447f6ec013",
+							"type": "equipment",
+							"description": "Magic Resistance Potion",
+							"reference": "DF1:29",
+							"notes": "Potion. Magic Resistance +5. -5 to wizard spells.",
+							"tags": [
+								"Concoctions",
+								"Concoctions:Potions"
+							],
+							"value": 1600,
+							"weight": "0.5 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 0,
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "6baa8140-c036-4886-9630-14654d012fd5",
+							"type": "equipment",
+							"description": "Balm of Regeneration",
+							"reference": "DF1:29",
+							"notes": "Salve. Heal 2 HP for 1 FP every second until Full HP or 0 FP. homebrewed",
+							"tags": [
+								"Concoctions",
+								"Concoctions:Potions"
+							],
+							"quantity": 1,
+							"value": 90,
+							"weight": "0.5 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 90,
+								"extended_weight": "0.5 lb"
+							}
+						},
 						{
 							"id": "42849d28-6060-42a9-a4c4-2fd59a24e340",
 							"type": "equipment",
@@ -7740,7 +8812,7 @@
 									"cost": "+25"
 								}
 							],
-							"quantity": 7,
+							"quantity": 29,
 							"value": 0.5,
 							"weight": "0.045 lb",
 							"weapons": [
@@ -7760,8 +8832,150 @@
 							],
 							"equipped": true,
 							"calc": {
-								"extended_value": 192.5,
-								"extended_weight": "0.315 lb"
+								"extended_value": 797.5,
+								"extended_weight": "1.305 lb"
+							}
+						},
+						{
+							"id": "83c5eff9-afa2-4398-9a63-cf3b16e355d4",
+							"type": "equipment",
+							"description": "Corpsebane Penetrating .45 (11.43x28mmR)",
+							"reference": "HT176",
+							"tags": [
+								"Ammunition",
+								"Warheads"
+							],
+							"modifiers": [
+								{
+									"id": "9f365db4-c136-45dc-a7f3-99541c98b3c6",
+									"type": "eqp_modifier",
+									"name": "Shattersand Explosive",
+									"notes": "Made of semi-precious gems but functions in mana",
+									"cost": "x5"
+								},
+								{
+									"id": "23e10df8-cf71-4d32-af7d-6357107b278f",
+									"type": "eqp_modifier",
+									"name": "Penetrating Weapon",
+									"reference": "DF1:30",
+									"cost_type": "to_final_cost",
+									"cost": "+25"
+								},
+								{
+									"id": "a58737fe-2e8b-4cb8-a7d8-e3f808b10a55",
+									"type": "eqp_modifier",
+									"name": "Corpsebane",
+									"cost_type": "to_final_cost",
+									"cost": "+100"
+								}
+							],
+							"value": 0.5,
+							"weight": "0.045 lb",
+							"weapons": [
+								{
+									"id": "415561aa-bbe8-48d4-8b1a-658a2b7eab50",
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "2d-1"
+									},
+									"usage": "bullet",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "2d-1 pi++"
+									}
+								},
+								{
+									"id": "52efc3bf-62f5-468b-98de-a65138a2bb00",
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cr",
+										"base": "4d"
+									},
+									"usage": "corpsebane poison",
+									"usage_notes": "vs. HT to halve damage",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "4d cr"
+									}
+								}
+							],
+							"equipped": true,
+							"calc": {
+								"extended_value": 0,
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "581546a9-c6d8-4526-8e98-42da777be2e6",
+							"type": "equipment",
+							"description": "Corpsebane .45 (11.43x28mmR)",
+							"reference": "HT176",
+							"tags": [
+								"Ammunition",
+								"Warheads"
+							],
+							"modifiers": [
+								{
+									"id": "9f365db4-c136-45dc-a7f3-99541c98b3c6",
+									"type": "eqp_modifier",
+									"name": "Shattersand Explosive",
+									"notes": "Made of semi-precious gems but functions in mana",
+									"cost": "x5"
+								},
+								{
+									"id": "23e10df8-cf71-4d32-af7d-6357107b278f",
+									"type": "eqp_modifier",
+									"name": "Penetrating Weapon",
+									"reference": "DF1:30",
+									"cost_type": "to_final_cost",
+									"disabled": true,
+									"cost": "+25"
+								},
+								{
+									"id": "a58737fe-2e8b-4cb8-a7d8-e3f808b10a55",
+									"type": "eqp_modifier",
+									"name": "Corpsebane",
+									"cost_type": "to_final_cost",
+									"cost": "+100"
+								}
+							],
+							"value": 0.5,
+							"weight": "0.045 lb",
+							"weapons": [
+								{
+									"id": "415561aa-bbe8-48d4-8b1a-658a2b7eab50",
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "2d-1",
+										"armor_divisor": 0.5
+									},
+									"usage": "bullet",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "2d-1(0.5) pi++"
+									}
+								},
+								{
+									"id": "52efc3bf-62f5-468b-98de-a65138a2bb00",
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cr",
+										"base": "4d"
+									},
+									"usage": "corpsebane poison",
+									"usage_notes": "vs. HT to halve damage",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "4d cr"
+									}
+								}
+							],
+							"equipped": true,
+							"calc": {
+								"extended_value": 0,
+								"extended_weight": "0 lb"
 							}
 						},
 						{
@@ -7794,12 +9008,12 @@
 							"id": "808bb56e-1bf1-4ca2-aa58-5a5c364bb0cb",
 							"type": "equipment",
 							"description": "C-notes",
-							"notes": "last added post-Slayer dream",
+							"notes": "last added post-mountainheart",
 							"quantity": 1,
-							"value": 11817.33,
+							"value": 44045.63,
 							"equipped": true,
 							"calc": {
-								"extended_value": 11817.33,
+								"extended_value": 44045.63,
 								"extended_weight": "0 lb"
 							}
 						},
@@ -7824,7 +9038,6 @@
 						{
 							"id": "168172a1-f9de-4c8c-a696-757b1eb8c023",
 							"type": "equipment_container",
-							"open": true,
 							"children": [
 								{
 									"id": "202220e2-f0f9-4cc2-a142-48b287dffc3c",
@@ -7844,30 +9057,6 @@
 											"amount": 1
 										}
 									],
-									"calc": {
-										"extended_value": 0,
-										"extended_weight": "0 lb"
-									}
-								},
-								{
-									"id": "dfd76602-ce73-407c-98df-8084998896b7",
-									"type": "equipment",
-									"description": "Spell Memorisation: Share Energy",
-									"notes": "for scholarly magicians to track what they memorised",
-									"legality_class": "4",
-									"quantity": 1,
-									"features": [
-										{
-											"type": "spell_point_bonus",
-											"match": "spell_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "Share Energy"
-											},
-											"amount": 1
-										}
-									],
-									"equipped": true,
 									"calc": {
 										"extended_value": 0,
 										"extended_weight": "0 lb"
@@ -7999,6 +9188,7 @@
 							}
 						}
 					],
+					"open": true,
 					"description": "Quick-Release Backpack",
 					"reference": "DF1:25",
 					"notes": "40 lb. Drop as Free Action. Fragile items break on 1 on 1d.",
@@ -8036,11 +9226,12 @@
 					},
 					"equipped": true,
 					"calc": {
-						"extended_value": 16861.5,
-						"extended_weight": "5.082 lb"
+						"extended_value": 50833.3,
+						"extended_weight": "36.072 lb"
 					}
 				}
 			],
+			"open": true,
 			"description": "* NOT ACTUALLY CARRIED*",
 			"legality_class": "4",
 			"quantity": 1,
@@ -8052,7 +9243,7 @@
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 16861.5,
+				"extended_value": 51233.3,
 				"extended_weight": "0 lb"
 			}
 		},
@@ -8181,20 +9372,43 @@
 			"type": "equipment_container",
 			"children": [
 				{
+					"id": "dfd76602-ce73-407c-98df-8084998896b7",
+					"type": "equipment",
+					"description": "Spell Memorisation: Share Energy",
+					"notes": "for scholarly magicians to track what they memorised",
+					"legality_class": "4",
+					"quantity": 1,
+					"features": [
+						{
+							"type": "spell_point_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Share Energy"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
 					"id": "9a30b9f7-85d4-49a4-9a9e-2cce5e6f1471",
 					"type": "equipment",
-					"description": "Library Memorisation: Hidden Lore (Dreams)",
+					"description": "Skill Memorisation: Physiology (Undead)",
 					"quantity": 1,
 					"features": [
 						{
 							"type": "skill_point_bonus",
 							"name": {
 								"compare": "is",
-								"qualifier": "Hidden Lore"
+								"qualifier": "Physiology"
 							},
 							"specialization": {
 								"compare": "is",
-								"qualifier": "Dreams"
+								"qualifier": "Undead"
 							},
 							"amount": 1
 						}
@@ -8271,7 +9485,6 @@
 							"amount": 1
 						}
 					],
-					"equipped": true,
 					"calc": {
 						"extended_value": 0,
 						"extended_weight": "0 lb"
@@ -8295,13 +9508,13 @@
 							"amount": 1
 						}
 					],
-					"equipped": true,
 					"calc": {
 						"extended_value": 0,
 						"extended_weight": "0 lb"
 					}
 				}
 			],
+			"open": true,
 			"description": "Memorisations",
 			"legality_class": "4",
 			"quantity": 1,
@@ -8479,7 +9692,6 @@
 		{
 			"id": "27218cad-c391-4ae8-b498-df747214ba26",
 			"type": "equipment_container",
-			"open": true,
 			"children": [
 				{
 					"id": "b9fe1121-8802-41b4-81fc-07e136922a48",
@@ -8508,6 +9720,34 @@
 					"type": "equipment_container",
 					"open": true,
 					"description": "He's a ballchinian, and other demonic weak spots (Primer of Physiology(Demons))",
+					"quantity": 1,
+					"value": 50,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "94073e4f-49a9-4ae8-bc9b-3e4491e33e45",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Destroy the Brain and other helpful advice (Primer of Physiology(Undead))",
+					"quantity": 1,
+					"value": 50,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "7377aa3d-3d1f-4c4e-a7c9-3692313f9176",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Touch, Lick or Stand Near (Textbook of Hazardous Materials(magic))",
 					"quantity": 1,
 					"value": 50,
 					"weight": "6 lb",
@@ -8706,30 +9946,16 @@
 					}
 				},
 				{
-					"id": "c52b5e03-90d5-4f15-955f-f198777c2a7d",
+					"id": "ebfc7341-f9c7-4bd9-9fc8-f22ff36b77c3",
 					"type": "equipment_container",
 					"open": true,
-					"description": "What do your elf-eyes see? (Wizardly Grimoire of Detect Magic, Mage Sight, Light, Mage Light)",
+					"description": "Magic for Middle-Managers (Wizardly Grimoire of Seek Earth, Shape Earth, Earth to Stone, Create Earth, Sound, Simple Illusion, Complex Illusion, Perfect Illusion, Create Object, Create Servant)",
 					"quantity": 1,
-					"value": 400,
+					"value": 1000,
 					"weight": "12 lb",
 					"equipped": true,
 					"calc": {
-						"extended_value": 400,
-						"extended_weight": "12 lb"
-					}
-				},
-				{
-					"id": "99fa156f-8e5f-4707-b5ec-bf0ea12583a5",
-					"type": "equipment_container",
-					"open": true,
-					"description": "Fire Magic for No-Hopers (Wizardly Grimoire of Ignite Fire, Shape Fire, Seek Fire, Create Fire, Flame Jet)",
-					"quantity": 1,
-					"value": 500,
-					"weight": "12 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 500,
+						"extended_value": 1000,
 						"extended_weight": "12 lb"
 					}
 				},
@@ -8738,6 +9964,21 @@
 					"type": "equipment_container",
 					"open": true,
 					"description": "Textbook of Essential Fuel",
+					"notes": "allows up to 2 points memorised; may roll IQ+Magery-6 to cast at default",
+					"quantity": 1,
+					"value": 200,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 200,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "06f969b3-3f72-4eab-b700-20a2a0e1cde6",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Textbook of Resist Fire",
 					"notes": "allows up to 2 points memorised; may roll IQ+Magery-6 to cast at default",
 					"quantity": 1,
 					"value": 200,
@@ -8807,21 +10048,66 @@
 						"extended_value": 400,
 						"extended_weight": "6 lb"
 					}
+				},
+				{
+					"id": "2e1c50d6-cd3e-4bc0-86d1-8b8d204253c6",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Formulary of Alkahest",
+					"notes": "allows up to 8 points memorised",
+					"quantity": 1,
+					"value": 400,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "07103317-854b-4ea7-8cbb-997266d2704a",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Formulary of Magebane",
+					"notes": "allows up to 8 points memorised",
+					"quantity": 1,
+					"value": 400,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "24e002e2-41f6-452a-8080-b1cff446bc9b",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Formulary of Meteroric Paint",
+					"notes": "allows up to 8 points memorised",
+					"quantity": 1,
+					"value": 400,
+					"weight": "6 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "6 lb"
+					}
 				}
 			],
+			"open": true,
 			"description": "K'Larr's Library",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 4200,
-				"extended_weight": "99 lb"
+				"extended_value": 5800,
+				"extended_weight": "123 lb"
 			}
 		},
 		{
 			"id": "78afe8cd-332d-42f9-9ef6-88c6d665b6ac",
 			"type": "equipment_container",
-			"open": true,
 			"children": [
 				{
 					"id": "c0dfd91e-3fa9-4243-bfd4-0c6d4bf21630",
@@ -8845,6 +10131,7 @@
 					}
 				}
 			],
+			"open": true,
 			"description": "Memorisations",
 			"legality_class": "4",
 			"quantity": 1,
@@ -8964,20 +10251,19 @@
 		{
 			"id": "0f8fa222-165c-42e7-90f7-b0c06e10654b",
 			"type": "note_container",
-			"open": true,
 			"children": [
 				{
 					"id": "2d8b8774-1f7d-430b-a86e-d0462f9cefe2",
 					"type": "note",
-					"text": "Brewing techniques\n===\n\nIs there a way for me to make a servant brew for me?  \nCreate Servant can only give non-IQ-based skill at 16.  \nInitiative would let me give the servant my IQ and skill, but requires 6 mind-control spells, Independence, Wisdom, then Initiative (9 spells total)"
+					"text": "Brewing techniques\n===\n\nIs there a way for me to make a servant brew for me?  \nCreate Servant can only give non-IQ-based skill at 16.\nInitiative would let me give the servant my IQ and skill, but requires 6 mind-control spells, Independence, Wisdom, then Initiative (9 spells total)\n\nInitiative can give IQ15 and IQ+4, so skill 19"
 				}
 			],
+			"open": true,
 			"text": "Schemes"
 		},
 		{
 			"id": "4b9ab914-543b-4031-8958-178ed6a11649",
 			"type": "note_container",
-			"open": true,
 			"children": [
 				{
 					"id": "943ed466-d27a-4258-968e-ec822e0439cd",
@@ -8987,20 +10273,19 @@
 				{
 					"id": "03348106-98b5-4fd8-b8c9-623427800bfc",
 					"type": "note",
-					"text": "Other books:\n1. \"Energy Caddy's handbook\" Grimoire of Lend Energy, Share Energy, Recover Energy(4) $600 12lbs\n2. \"Housekeeping for the dedicated Servant\" Grimoire of Haste, Hinder, Grease, Great Haste $400 12lbs\n3. \"Lazy Lockpicking\" Grimoire of Apportation, Locksmith, Lockmaster $300 9lbs\n4. \"Magic for middle-managers\" Grimoire of Seek Earth, Shape Earth, Earth to Stone, Create Earth, Sound, Simple Illusion, Complex Illusion, Perfect Illusion, Create Object, Create Servant $1000 12lbs\n5. \"Touch, lick or stand near?\" Textbook of Hazardous Materials (Magical) $50 6lbs\n6. \"Ia! Ia! Atoep Fhtagn!\" Textbook of Spoken Elder Tongue $100 6lbs\n7. \"Diabolical Runes\" Textbook of Written Demontongue $100 6lbs\n8. \"Uruk glob ishi krimp shar-kuk\" Textbook of Spoken Orcish $50 6lbs\n9. \"What does God need with a pancreas?\" Primer of Physiology (Divine Servitors) $50 3lbs\n10. \"Hidden Gems and other vital organs\" Primer of Physiology (Elementals) $50 3lbs\n11. \"How many hearts does a centaur have?\" Primer of Physiology (Hybrids) $50 3lbs\n12. \"Destroy the Brain and other helpful advice\" Primer of Physiology (Undead) $50 3lbs\n13. Formula Book: Bladeblack 4pts\n14. Formula Book: Super-Speed Potion 12pts \n15. Formula Book: Alkahest 8pts \n16. Formula Book: Magebane 8pts\n17. Formula Book: Meteoric Paint 8pts\n18. \"The Wicked King's Big Book of War\" Textbook of Tactics $50 6lbs"
+					"text": "Other books:\n1. \"Energy Caddy's handbook\" Grimoire of Lend Energy, Share Energy, Recover Energy(4) $600 12lbs\n2. \"Housekeeping for the dedicated Servant\" Grimoire of Haste, Hinder, Grease, Great Haste $400 12lbs\n3. \"Lazy Lockpicking\" Grimoire of Apportation, Locksmith, Lockmaster $300 9lbs\n6. \"Ia! Ia! Atoep Fhtagn!\" Textbook of Spoken Elder Tongue $100 6lbs\n7. \"Diabolical Runes\" Textbook of Written Demontongue $100 6lbs\n8. \"Uruk glob ishi krimp shar-kuk\" Textbook of Spoken Orcish $50 6lbs\n9. \"What does God need with a pancreas?\" Primer of Physiology (Divine Servitors) $50 3lbs\n10. \"Hidden Gems and other vital organs\" Primer of Physiology (Elementals) $50 3lbs\n11. \"How many hearts does a centaur have?\" Primer of Physiology (Hybrids) $50 3lbs\n12. \"Destroy the Brain and other helpful advice\" Primer of Physiology (Undead) $50 3lbs\n13. Formula Book: Bladeblack 4pts\n14. Formula Book: Super-Speed Potion 12pts \n15. Formula Book: Magebane 8pts\n16. Formula Book: Meteoric Paint 8pts\n17. \"The Wicked King's Big Book of War\" Textbook of Tactics $50 6lbs"
 				}
 			],
+			"open": true,
 			"text": "Manuals"
 		},
 		{
 			"id": "6476ab4d-8bf6-45cc-9995-b61f136a7ec9",
 			"type": "note_container",
-			"open": true,
 			"children": [
 				{
 					"id": "2223dbc6-212d-4fff-ba3a-f05701bf031f",
 					"type": "note_container",
-					"open": true,
 					"children": [
 						{
 							"id": "23be634f-0257-49c1-b826-9ddee47d0fc5",
@@ -9013,17 +10298,16 @@
 							"text": "Glimmering Sphere, $37k (more like $33k after trading in old Power Item)"
 						}
 					],
+					"open": true,
 					"text": "With Money"
 				},
 				{
 					"id": "99482f3e-2c26-4b7d-91dd-7f9861e70513",
 					"type": "note_container",
-					"open": true,
 					"children": [
 						{
 							"id": "06a17a3f-2323-49b1-b6bd-c81e89ea60a8",
 							"type": "note_container",
-							"open": true,
 							"children": [
 								{
 									"id": "1c022edc-e1e5-4173-a3d2-b00e933c9fca",
@@ -9041,6 +10325,7 @@
 									"text": "Poltergeist -\u003e Winged Knife, 2 points, 2 missile spells"
 								}
 							],
+							"open": true,
 							"text": "Spells before Spellslinger"
 						},
 						{
@@ -9051,12 +10336,16 @@
 						{
 							"id": "b0aec639-7780-407f-9ded-afcb3536fbac",
 							"type": "note_container",
-							"open": true,
 							"children": [
 								{
 									"id": "152af8da-bc03-4e4e-a7de-84724e86c4db",
 									"type": "note",
 									"text": "Get Missile Shield at 20 and make everyone immune to bullets?"
+								},
+								{
+									"id": "83930542-80d6-4d40-8eb7-04d1792b5ee8",
+									"type": "note",
+									"text": "Teach Slayer a lesson: 6 Mind-Control(Mental Stun, Emotion Control, Foolishness, Daze, Sleep, Mass Sleep) -\u003e Wisdom"
 								},
 								{
 									"id": "8a5b0b3e-4d0a-4e4f-8511-74a1052ca936",
@@ -9099,6 +10388,7 @@
 									"text": "6 Mind-Control Spells -\u003e Wisdom + Independence -\u003e Initiative to make creations work"
 								}
 							],
+							"open": true,
 							"text": "Spell Wishlist"
 						},
 						{
@@ -9129,7 +10419,6 @@
 						{
 							"id": "e2803e45-f78b-41d9-a337-8b65fc1bd843",
 							"type": "note_container",
-							"open": true,
 							"children": [
 								{
 									"id": "8318b6e1-b418-4811-92ce-12d5e2d164a3",
@@ -9157,6 +10446,7 @@
 									"text": "Backstabbing and Acrobatics are now on-template!"
 								}
 							],
+							"open": true,
 							"text": "Get Elfier"
 						},
 						{
@@ -9165,15 +10455,17 @@
 							"text": "Lifting ST, to carry more gear.\nAvailable up to level 5 as off-template training"
 						}
 					],
+					"open": true,
 					"text": "With Points"
 				}
 			],
+			"open": true,
 			"text": "Shopping list"
 		},
 		{
 			"id": "dc80d589-8422-4594-9d24-e7c8e3f52fcf",
 			"type": "note",
-			"text": "Wizard Rank 3 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (80% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 9 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - non-members get a single point of training at Rank*5% discount"
+			"text": "Wizard Rank 4 provides:\n* Add Rank to skill rolls interacting with the org (e.g. Writing to get them as a sponsor ($100 per margin of success, but want 3x as much value back in loot))\n* Add Rank to reaction rolls from guild members.\n* Add Rank to Wealth level when selling loot to them (80% at Rank 1; don't forget Reaction roll with +1 Wealth on 16+; Haggling vs 15 for +1 wealth but failure is -2 Wealth).\n* Subtract Rank*10% from training expenses.\n* Subtract Rank*5% from professional goods prices.\n* Subtract Rank*5% from hireling fees.\n* Assistance Rolls:\n  * Base Assistance Roll vs 10 (add Smooth Operator and Charisma, complementary bonus from Diplomacy, modified by appropriateness/inappropriateness)\n  * Make an Assistance Roll for:\n    * Accommodations - ((Rank+2)*10% discount cost of living for Rank+1 weeks)\n    * Artifact - Magic Item worth (Rank+1)*$2000 loaned, but no control over what's provided.\n    * Augury - (Rank+1) heroes get to reroll like Luck next adventure.\n    * Lore - Somewhat Reliable Contact Group answers with skill (Rank+14), wrong info only on an 18.\n    * Map - Sketchy quality map at skill 0-1.\n    * Recharge - party recharges items at (Rank+1)*10% discount.\n    * Spellcasting - Spell costing no more than (Rank+1)*5FP cast at skill (Rank+15)\n    * Training - non-members get a single point of training at Rank*5% discount"
 		},
 		{
 			"id": "8ab497b7-f2ec-430a-9716-cd2d0dc96454",
@@ -9183,7 +10475,7 @@
 		{
 			"id": "26819d18-705f-4c88-8f3d-95050718d99d",
 			"type": "note",
-			"text": "It is at least day 49 (week after memory palace invasion)"
+			"text": "It is at least day 70 (3 weeks after dinner party)"
 		},
 		{
 			"id": "2c4fe470-1086-40c2-baf5-9f8e0c102cbd",
@@ -9197,28 +10489,28 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2024-03-01T21:24:54Z",
+	"modified_date": "2024-04-25T19:12:27+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
 		"basic_lift": "20 lb",
 		"lifting_st_bonus": 1,
-		"dodge_bonus": 5,
+		"dodge_bonus": 7,
 		"parry_bonus": 5,
 		"block_bonus": 5,
 		"move": [
+			7,
 			5,
 			4,
-			3,
 			2,
 			1
 		],
 		"dodge": [
+			15,
+			14,
 			13,
 			12,
-			11,
-			10,
-			9
+			11
 		]
 	}
 }

@@ -175,6 +175,106 @@
 			}
 		},
 		{
+			"id": "43ef3f89-def3-4295-80cd-d35a1a18854b",
+			"type": "equipment_container",
+			"open": true,
+			"description": "Dwarven Equipment",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "513801ea-bc4f-4e7c-b812-420e1531f21e",
+			"type": "equipment",
+			"description": "Dwarven Dreadnought Suit",
+			"reference": "PY52:18",
+			"notes": "Covers eyes, blocking vision but a visor can be opened to expose the eyes and face",
+			"tech_level": "5^",
+			"legality_class": "2",
+			"tags": [
+				"Body Armor"
+			],
+			"modifiers": [
+				{
+					"id": "061604b0-dec4-40f5-88b4-cb3b58b753d9",
+					"type": "eqp_modifier",
+					"name": "Sealed",
+					"reference": "PY96:25",
+					"notes": "Impermeable to liquids and gases. Wearer has the Sealed (B82) advantage when fully covered",
+					"tech_level": "6",
+					"cost": "106.75"
+				}
+			],
+			"quantity": 1,
+			"value": 4150,
+			"weight": "138.348 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "skull",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "face",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "eye",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "neck",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "torso",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "vitals",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "groin",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "leg",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "hand",
+					"amount": 18
+				},
+				{
+					"type": "dr_bonus",
+					"location": "foot",
+					"amount": 18
+				}
+			],
+			"calc": {
+				"extended_value": 4256.75,
+				"extended_weight": "138.348 lb"
+			}
+		},
+		{
 			"id": "69183862-345c-4d91-843d-dd3be783a523",
 			"type": "equipment_container",
 			"children": [
@@ -2186,6 +2286,106 @@
 						"extended_value": 5000,
 						"extended_weight": "0.25 lb"
 					}
+				},
+				{
+					"id": "e39dbfbc-504e-46d5-b05f-3126b935a798",
+					"type": "equipment",
+					"description": "Shadow Ranger Longbow",
+					"reference": "B275",
+					"tech_level": "0",
+					"tags": [
+						"Missile Weapon",
+						"UsesAmmoType:Arrow"
+					],
+					"modifiers": [
+						{
+							"id": "aa614393-2959-4e53-9515-7f35c67cd4b8",
+							"type": "eqp_modifier",
+							"name": "Elven",
+							"reference": "DFA106",
+							"notes": "Lets a bow shoot at +2 to ST for range and damage purposes without increasing its required ST (manually adjust)",
+							"tags": [
+								"Weapons"
+							],
+							"cost_type": "to_base_cost",
+							"cost": "+16 CF",
+							"features": [
+								{
+									"type": "weapon_min_st_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "4711cb88-ecc4-48aa-92f4-7a4bc6582925",
+							"type": "eqp_modifier",
+							"name": "Balanced",
+							"reference": "DFA106",
+							"tags": [
+								"Weapons"
+							],
+							"cost_type": "to_base_cost",
+							"cost": "+4 CF",
+							"features": [
+								{
+									"type": "weapon_acc_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
+					"rated_strength": 19,
+					"quantity": 1,
+					"value": 200,
+					"weight": "3 lb",
+					"weapons": [
+						{
+							"id": "8759c6ab-39fa-475c-9378-5329ad63a91c",
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "2"
+							},
+							"strength": "11†",
+							"accuracy": "3",
+							"range": "x15/x20",
+							"rate_of_fire": "1",
+							"shots": "1(2)",
+							"bulk": "-8",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Bow"
+								}
+							],
+							"calc": {
+								"damage": "thr+2 imp"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 4200,
+						"extended_weight": "3 lb"
+					}
 				}
 			],
 			"description": "Shadow Elf Equipment",
@@ -2193,8 +2393,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 42100,
-				"extended_weight": "2.27 lb"
+				"extended_value": 46300,
+				"extended_weight": "5.27 lb"
 			}
 		},
 		{
