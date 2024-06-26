@@ -2,8 +2,43 @@
 	"type": "character",
 	"version": 4,
 	"id": "2df35eee-ebdd-4008-9dd9-e5b3ef7e7b10",
-	"total_points": 500,
+	"total_points": 539,
 	"points_record": [
+		{
+			"when": "2024-06-26T22:08:45+01:00",
+			"points": 8,
+			"reason": "finished the adventure"
+		},
+		{
+			"when": "2024-06-18T17:44:13+01:00",
+			"points": 10,
+			"reason": "things"
+		},
+		{
+			"when": "2024-05-31T21:07:30+01:00",
+			"points": 5,
+			"reason": "trade deal, foiled ambush"
+		},
+		{
+			"when": "2024-05-31T21:06:04+01:00",
+			"points": 3,
+			"reason": "town talk"
+		},
+		{
+			"when": "2024-05-23T18:56:08+01:00",
+			"points": 4,
+			"reason": "fought the metal dragon"
+		},
+		{
+			"when": "2024-05-16T18:40:46+01:00",
+			"points": 5,
+			"reason": "cleansed the dark cave"
+		},
+		{
+			"when": "2024-04-25T22:21:32+01:00",
+			"points": 4,
+			"reason": "road to shadow enclave, mycelium patch"
+		},
 		{
 			"when": "2024-04-11T22:27:12+01:00",
 			"points": 6,
@@ -491,6 +526,7 @@
 					"table_name": "Eyes",
 					"hit_penalty": -9,
 					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"notes": "",
 					"calc": {
 						"roll_range": "-",
 						"dr": {
@@ -506,6 +542,7 @@
 					"hit_penalty": -7,
 					"dr_bonus": 2,
 					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"notes": "",
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
@@ -520,6 +557,7 @@
 					"slots": 1,
 					"hit_penalty": -5,
 					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"notes": "",
 					"calc": {
 						"roll_range": "5",
 						"dr": {
@@ -534,6 +572,7 @@
 					"slots": 2,
 					"hit_penalty": -2,
 					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"notes": "",
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
@@ -548,6 +587,7 @@
 					"slots": 1,
 					"hit_penalty": -2,
 					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"notes": "",
 					"calc": {
 						"roll_range": "8",
 						"dr": {
@@ -560,6 +600,7 @@
 					"choice_name": "Torso",
 					"table_name": "Torso",
 					"slots": 2,
+					"notes": "",
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
@@ -574,6 +615,7 @@
 					"slots": 1,
 					"hit_penalty": -3,
 					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"notes": "",
 					"calc": {
 						"roll_range": "11",
 						"dr": {
@@ -588,6 +630,7 @@
 					"slots": 1,
 					"hit_penalty": -2,
 					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"notes": "",
 					"calc": {
 						"roll_range": "12",
 						"dr": {
@@ -602,6 +645,7 @@
 					"slots": 2,
 					"hit_penalty": -2,
 					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"notes": "",
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
@@ -616,6 +660,7 @@
 					"slots": 1,
 					"hit_penalty": -4,
 					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"notes": "",
 					"calc": {
 						"roll_range": "15",
 						"dr": {
@@ -630,6 +675,7 @@
 					"slots": 1,
 					"hit_penalty": -4,
 					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"notes": "",
 					"calc": {
 						"roll_range": "16",
 						"dr": {
@@ -644,6 +690,7 @@
 					"slots": 2,
 					"hit_penalty": -5,
 					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"notes": "",
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
@@ -657,6 +704,7 @@
 					"table_name": "Vitals",
 					"hit_penalty": -3,
 					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"notes": "",
 					"calc": {
 						"roll_range": "-",
 						"dr": {
@@ -783,10 +831,10 @@
 		{
 			"attr_id": "fp",
 			"adj": 0,
-			"damage": 7,
+			"damage": 1,
 			"calc": {
 				"value": 12,
-				"current": 5,
+				"current": 11,
 				"points": 0
 			}
 		},
@@ -802,9 +850,10 @@
 		{
 			"attr_id": "energy_reserve_scholar",
 			"adj": 0,
+			"damage": 1,
 			"calc": {
 				"value": 1,
-				"current": 1,
+				"current": 0,
 				"points": 0
 			}
 		},
@@ -821,20 +870,20 @@
 		{
 			"attr_id": "power_item_scholar",
 			"adj": 0,
-			"damage": 4,
+			"damage": 13,
 			"calc": {
 				"value": 14,
-				"current": 10,
+				"current": 1,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "power_item_magic",
 			"adj": 0,
-			"damage": 12,
+			"damage": 25,
 			"calc": {
-				"value": 15,
-				"current": 3,
+				"value": 25,
+				"current": 0,
 				"points": 0
 			}
 		}
@@ -6263,8 +6312,8 @@
 					"duration": "Instant",
 					"points": 1,
 					"calc": {
-						"level": 19,
-						"rsl": "IQ+4"
+						"level": 20,
+						"rsl": "IQ+5"
 					}
 				},
 				{
@@ -6319,8 +6368,8 @@
 						]
 					},
 					"calc": {
-						"level": 19,
-						"rsl": "IQ+4"
+						"level": 20,
+						"rsl": "IQ+5"
 					}
 				},
 				{
@@ -8041,6 +8090,37 @@
 			}
 		},
 		{
+			"id": "02fed4ef-621c-4a1b-98aa-46e2f9c2471a",
+			"type": "equipment",
+			"description": "Glimmering Sphere",
+			"notes": "Power item capacity 25; Provides 50 ablative DR that recharges at 1/day",
+			"legality_class": "4",
+			"modifiers": [
+				{
+					"id": "1f521277-cbcb-4996-ac66-08ead2f238fa",
+					"type": "eqp_modifier",
+					"name": "Magical Power Item (25)",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "power_item_magic",
+							"amount": 25
+						}
+					]
+				}
+			],
+			"quantity": 1,
+			"value": 37000,
+			"weight": "0.02 lb",
+			"max_uses": 50,
+			"uses": 41,
+			"equipped": true,
+			"calc": {
+				"extended_value": 37000,
+				"extended_weight": "0.02 lb"
+			}
+		},
+		{
 			"id": "efc80393-939e-4dd9-ad87-2057ba182810",
 			"type": "equipment_container",
 			"children": [
@@ -8150,7 +8230,7 @@
 											"cost": "+25"
 										}
 									],
-									"quantity": 2,
+									"quantity": 6,
 									"value": 0.5,
 									"weight": "0.045 lb",
 									"weapons": [
@@ -8170,8 +8250,8 @@
 									],
 									"equipped": true,
 									"calc": {
-										"extended_value": 55,
-										"extended_weight": "0.09 lb"
+										"extended_value": 165,
+										"extended_weight": "0.27 lb"
 									}
 								}
 							],
@@ -8325,8 +8405,8 @@
 							],
 							"equipped": true,
 							"calc": {
-								"extended_value": 605,
-								"extended_weight": "2.29 lb"
+								"extended_value": 715,
+								"extended_weight": "2.47 lb"
 							}
 						}
 					],
@@ -8342,8 +8422,8 @@
 					"value": 1,
 					"equipped": true,
 					"calc": {
-						"extended_value": 606,
-						"extended_weight": "2.29 lb"
+						"extended_value": 716,
+						"extended_weight": "2.47 lb"
 					}
 				},
 				{
@@ -8356,13 +8436,13 @@
 						"Concoctions",
 						"Concoctions:Potions"
 					],
-					"quantity": 12,
+					"quantity": 10,
 					"value": 13.5,
 					"weight": "0.5 lb",
 					"equipped": true,
 					"calc": {
-						"extended_value": 162,
-						"extended_weight": "6 lb"
+						"extended_value": 135,
+						"extended_weight": "5 lb"
 					}
 				},
 				{
@@ -8638,8 +8718,8 @@
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 1538,
-				"extended_weight": "11.79 lb"
+				"extended_value": 1621,
+				"extended_weight": "10.97 lb"
 			}
 		},
 		{
@@ -8812,7 +8892,7 @@
 									"cost": "+25"
 								}
 							],
-							"quantity": 29,
+							"quantity": 23,
 							"value": 0.5,
 							"weight": "0.045 lb",
 							"weapons": [
@@ -8832,8 +8912,8 @@
 							],
 							"equipped": true,
 							"calc": {
-								"extended_value": 797.5,
-								"extended_weight": "1.305 lb"
+								"extended_value": 632.5,
+								"extended_weight": "1.035 lb"
 							}
 						},
 						{
@@ -9008,12 +9088,12 @@
 							"id": "808bb56e-1bf1-4ca2-aa58-5a5c364bb0cb",
 							"type": "equipment",
 							"description": "C-notes",
-							"notes": "last added post-mountainheart",
+							"notes": "last added post-metal-dragon",
 							"quantity": 1,
-							"value": 44045.63,
+							"value": 12312.13,
 							"equipped": true,
 							"calc": {
-								"extended_value": 44045.63,
+								"extended_value": 12312.13,
 								"extended_weight": "0 lb"
 							}
 						},
@@ -9175,6 +9255,85 @@
 							}
 						},
 						{
+							"id": "8617febf-5bb8-4288-b055-5db72e90adea",
+							"type": "equipment_container",
+							"open": true,
+							"description": "Get In The Sea (Wizardly Grimoire of Purify Air, Create Air, Seek Water, Purify Water, Create Water, Destroy Water, Breathe Water)",
+							"quantity": 1,
+							"value": 700,
+							"weight": "12 lb",
+							"features": [
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Breathe Water"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Destroy Water"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Purify Air"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Create Air"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Seek Water"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Purify Water"
+									},
+									"amount": 1
+								},
+								{
+									"type": "spell_point_bonus",
+									"match": "spell_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Create Water"
+									},
+									"amount": 1
+								}
+							],
+							"equipped": true,
+							"calc": {
+								"extended_value": 700,
+								"extended_weight": "12 lb"
+							}
+						},
+						{
 							"id": "de7b4bfa-1ac5-4378-841a-d216bff22d81",
 							"type": "equipment",
 							"description": "Wizards Guild library card",
@@ -9226,8 +9385,9 @@
 					},
 					"equipped": true,
 					"calc": {
-						"extended_value": 50833.3,
-						"extended_weight": "36.072 lb"
+						"extended_value": 19634.8,
+						"extended_weight": "47.802 lb",
+						"unsatisfied_reason": "Prerequisites have not been met:\n● Requires all of:\n  ● Has a contained weight which is at most 40"
 					}
 				}
 			],
@@ -9243,7 +9403,7 @@
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 51233.3,
+				"extended_value": 20034.8,
 				"extended_weight": "0 lb"
 			}
 		},
@@ -9644,35 +9804,6 @@
 			}
 		},
 		{
-			"id": "28a271a5-b053-4d46-b9f4-3c96c9cd6f8d",
-			"type": "equipment",
-			"description": "Platinum Wallet Chain",
-			"legality_class": "4",
-			"modifiers": [
-				{
-					"id": "8f9d64ac-0f62-4e04-a906-a96203988a6a",
-					"type": "eqp_modifier",
-					"name": "Magical Power Item (15)",
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "power_item_magic",
-							"amount": 15
-						}
-					]
-				}
-			],
-			"quantity": 1,
-			"value": 3840,
-			"weight": "0.1 lb",
-			"max_uses": 15,
-			"equipped": true,
-			"calc": {
-				"extended_value": 3840,
-				"extended_weight": "0.1 lb"
-			}
-		},
-		{
 			"id": "cdd305c6-7a89-4d5b-aefa-2f559f950f5d",
 			"type": "equipment",
 			"description": "Uniform badge",
@@ -9867,85 +9998,6 @@
 					}
 				},
 				{
-					"id": "8617febf-5bb8-4288-b055-5db72e90adea",
-					"type": "equipment_container",
-					"open": true,
-					"description": "Get In The Sea (Wizardly Grimoire of Purify Air, Create Air, Seek Water, Purify Water, Create Water, Destroy Water, Breathe Water)",
-					"quantity": 1,
-					"value": 700,
-					"weight": "12 lb",
-					"features": [
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Breathe Water"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Destroy Water"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Purify Air"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Create Air"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Seek Water"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Purify Water"
-							},
-							"amount": 1
-						},
-						{
-							"type": "spell_point_bonus",
-							"match": "spell_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "Create Water"
-							},
-							"amount": 1
-						}
-					],
-					"equipped": true,
-					"calc": {
-						"extended_value": 700,
-						"extended_weight": "12 lb"
-					}
-				},
-				{
 					"id": "ebfc7341-f9c7-4bd9-9fc8-f22ff36b77c3",
 					"type": "equipment_container",
 					"open": true,
@@ -10101,8 +10153,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 5800,
-				"extended_weight": "123 lb"
+				"extended_value": 5100,
+				"extended_weight": "111 lb"
 			}
 		},
 		{
@@ -10489,7 +10541,7 @@
 		}
 	],
 	"created_date": "2022-07-24T00:35:00+01:00",
-	"modified_date": "2024-04-25T19:12:27+01:00",
+	"modified_date": "2024-06-26T21:50:37+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
