@@ -696,7 +696,6 @@
 		{
 			"id": "d33da83c-8783-4886-839d-8654f8b41184",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "d5e36d98-8c6b-44fd-bd68-56741bae3535",
@@ -794,6 +793,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "*Active Effects",
 			"calc": {
 				"points": 0
@@ -802,7 +802,6 @@
 		{
 			"id": "35badb78-97f9-416b-a4ad-3c254ce7b108",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "389877fc-21b5-4066-9ba7-72d2ffc5d50d",
@@ -1672,6 +1671,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Giant Spider Familiar",
 			"reference": "DF5:25",
 			"calc": {
@@ -1681,7 +1681,6 @@
 		{
 			"id": "cb63df98-6adf-4555-bf84-4adcd6e2981c",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "ae3dc83b-d110-4ba2-a827-ccd0685873ce",
@@ -2000,6 +1999,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Dark Elf",
 			"reference": "DFC2:45",
 			"ancestry": "Human",
@@ -2011,12 +2011,10 @@
 		{
 			"id": "1bd74d60-a3fc-4b41-ab4e-6707b924972a",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "5b91ecff-b40e-4679-8606-58e3a05d464e",
 					"type": "trait_container",
-					"open": true,
 					"children": [
 						{
 							"id": "6cbfe1fc-8925-4bca-94b2-88e39e41e2f0",
@@ -2123,6 +2121,7 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Attributes",
 					"calc": {
 						"points": 153
@@ -2214,7 +2213,6 @@
 				{
 					"id": "45152a38-d8e4-4761-aafd-6bf51e09ecb4",
 					"type": "trait_container",
-					"open": true,
 					"children": [
 						{
 							"id": "40cdea57-480e-459b-88e8-28f81f94e329",
@@ -2345,6 +2343,7 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Class Advantages",
 					"calc": {
 						"points": 83
@@ -2353,7 +2352,6 @@
 				{
 					"id": "76d6bcbb-3adc-4cd3-b464-6a7d134015d5",
 					"type": "trait_container",
-					"open": true,
 					"children": [
 						{
 							"id": "bb38ad5e-3aee-45f2-9f65-c818ba4400a8",
@@ -2478,12 +2476,14 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Class Disadvantages",
 					"calc": {
 						"points": -35
 					}
 				}
 			],
+			"open": true,
 			"name": "Wizard",
 			"calc": {
 				"points": 200
@@ -2608,12 +2608,10 @@
 		{
 			"id": "855d2da5-eca7-4cba-97fc-90fadadddffc",
 			"type": "skill_container",
-			"open": true,
 			"children": [
 				{
 					"id": "f883b575-812e-43f8-8beb-378884e4158a",
 					"type": "skill_container",
-					"open": true,
 					"children": [
 						{
 							"id": "96b2724d-6d57-4108-a937-c5d4deef071c",
@@ -2710,12 +2708,12 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Primary Skills"
 				},
 				{
 					"id": "991a62d1-91db-4178-bff2-d1581b6d39bf",
 					"type": "skill_container",
-					"open": true,
 					"children": [
 						{
 							"id": "4f8df24c-9f74-4ac9-b430-c0f5c44722c5",
@@ -2967,12 +2965,12 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Secondary Skills"
 				},
 				{
 					"id": "74b945af-ac34-488f-a8cd-f448f7e9bb70",
 					"type": "skill_container",
-					"open": true,
 					"children": [
 						{
 							"id": "40e834eb-146f-41e5-9dfa-b5ad65394b8d",
@@ -3004,7 +3002,7 @@
 								"Street"
 							],
 							"difficulty": "dx/a",
-							"points": 1,
+							"points": 19,
 							"encumbrance_penalty_multiplier": 1,
 							"defaulted_from": {
 								"type": "iq",
@@ -3024,8 +3022,8 @@
 								}
 							],
 							"calc": {
-								"level": 12,
-								"rsl": "DX+0"
+								"level": 17,
+								"rsl": "DX+5"
 							}
 						},
 						{
@@ -3145,9 +3143,11 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Background Skills"
 				}
 			],
+			"open": true,
 			"name": "Wizard"
 		}
 	],
@@ -3155,7 +3155,6 @@
 		{
 			"id": "f5840d8f-b823-4022-9779-0d5874b4403d",
 			"type": "spell_container",
-			"open": true,
 			"children": [
 				{
 					"id": "499b3370-493e-4cb4-8037-b864dbcaee89",
@@ -3955,7 +3954,6 @@
 				{
 					"id": "18d4239c-4c63-43e1-99c8-2e673d45f1ed",
 					"type": "spell_container",
-					"open": true,
 					"children": [
 						{
 							"id": "de3a442f-445a-4b43-94e7-1d1e210a4c92",
@@ -4801,9 +4799,11 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "Favourites"
 				}
 			],
+			"open": true,
 			"name": "Wizard Spells"
 		}
 	],
@@ -5032,7 +5032,6 @@
 		{
 			"id": "2cf64626-96e3-4280-81c2-7ae5b8859630",
 			"type": "equipment_container",
-			"open": true,
 			"children": [
 				{
 					"id": "86bc4a98-7fbc-4a5d-9439-fa191f5ccbcc",
@@ -5054,6 +5053,7 @@
 					}
 				}
 			],
+			"open": true,
 			"description": "Potion Belt",
 			"reference": "DF1:25",
 			"notes": "4 bottles/8 vials. Ready/Fast-Draw. +2 DR for contents.",
@@ -5918,7 +5918,7 @@
 		}
 	],
 	"created_date": "2024-03-26T17:24:00Z",
-	"modified_date": "2024-04-08T18:03:47+01:00",
+	"modified_date": "2024-05-28T18:02:30+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
