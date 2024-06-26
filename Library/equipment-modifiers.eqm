@@ -12,7 +12,6 @@
 		{
 			"id": "f4b73ce9-a602-4cde-9b82-5a647b352b55",
 			"type": "eqp_modifier_container",
-			"open": true,
 			"children": [
 				{
 					"id": "cd7351a6-7edf-42ae-af8f-27af75b7deac",
@@ -45,7 +44,6 @@
 				{
 					"id": "8813cc16-4f09-4495-a891-b9ca4f894738",
 					"type": "eqp_modifier_container",
-					"open": true,
 					"children": [
 						{
 							"id": "fa2b3bb0-98ff-4fc6-80a0-bdd7c6d85e6e",
@@ -129,13 +127,13 @@
 							"weight": "x3/4"
 						}
 					],
+					"open": true,
 					"name": "Lighten -25%",
 					"notes": "Non-overlapping enchantments *cannot* be combined on the same item"
 				},
 				{
 					"id": "314b2d4f-b06e-4a8b-8a97-1b5fc422b758",
 					"type": "eqp_modifier_container",
-					"open": true,
 					"children": [
 						{
 							"id": "5512076f-54ff-4246-81ef-ebe6c64ddff4",
@@ -219,13 +217,13 @@
 							"weight": "x1/2"
 						}
 					],
+					"open": true,
 					"name": "Lighten -50%",
 					"notes": "Non-overlapping enchantments *cannot* be combined on the same item"
 				},
 				{
 					"id": "efed6be0-6d57-49c4-ba62-d5d39b653a10",
 					"type": "eqp_modifier_container",
-					"open": true,
 					"children": [
 						{
 							"id": "94c4afbd-1f8c-41b2-99e6-c2885b987031",
@@ -379,13 +377,13 @@
 							]
 						}
 					],
+					"open": true,
 					"name": "Fortify 1",
 					"notes": "Non-overlapping enchantments can be combined on the same item"
 				},
 				{
 					"id": "2b0831ad-9183-4e4a-94ad-36346f550ad1",
 					"type": "eqp_modifier_container",
-					"open": true,
 					"children": [
 						{
 							"id": "1bbf6be5-6b1b-42a3-96a6-d6263c9e5774",
@@ -539,6 +537,7 @@
 							]
 						}
 					],
+					"open": true,
 					"name": "Fortify 2",
 					"notes": "Non-overlapping enchantments can be combined on the same item"
 				},
@@ -673,6 +672,14 @@
 					"amount": 1
 				}
 			]
+		},
+		{
+			"id": "45b7ea68-6e55-43ed-876a-8eae3483df22",
+			"type": "eqp_modifier",
+			"name": "Serpent's Fang",
+			"notes": "holds 4 doses of poison and delivers them automatically on an impaling hit; an elixir provides 2 doses of poison; a grenade provides 4 doses of poison",
+			"cost_type": "to_base_cost",
+			"cost": "+9 CF"
 		}
 	]
 }
